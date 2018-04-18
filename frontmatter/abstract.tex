@@ -1,0 +1,55 @@
+%
+% File: abstract.tex
+% Author: V?ctor Bre?a-Medina
+% Description: Contains the text for thesis abstract
+%
+% UoB guidelines:
+%
+% Each copy must include an abstract or summary of the dissertation in not
+% more than 300 words, on one side of A4, which should be single-spaced in a
+% font size in the range 10 to 12. If the dissertation is in a language other
+% than English, an abstract in that language and an abstract in English must
+% be included.
+
+\chapter*{Abstract}
+\begin{SingleSpace}
+\initial 
+{T}he need for robust object detection in 3D point clouds has greatly increased with the ongoing push for autonomous vehicles(AVs). Most of these systems use Light Detection and Ranging(LiDAR), cameras or a combination of both in order to perform object detection \cite{ku2017joint}. LiDAR presents objects as point clouds in a 3D space thus offering critical shape information of objects in view. However, this representation is sparse and suffers from drawbacks such as occlusion. As a result, LiDAR-based detection performs poorly as compared to multimodal methods that have helped overcome this.\cite{zhou2017voxelnet}. However, multimodal methods are often complex to set up and synchronise \cite{ku2017joint}. Consequently, if one of the systems fails, the whole system would be rendered redundant. This can be catastrophic for self driving cars and therefore it is important to address this form of dependence. 
+
+Following this, the aim of this project is to prototype and evaluate a point cloud object detection deep network inspired by recent research by Zhou et al \cite{zhou2017voxelnet}. In their work they were able to prototype and evaluate VoxelNet, an end to end Region Proposal Network(RPN) that outperformed state-of-the-art LiDAR-based 3D object detection methods. 
+
+The objectives of the  project are as follows:
+\begin{enumerate}
+    \item \textbf{Detailed analysis of state-of-the-art Lidar-Based object detection deep networks.}
+    \item \textbf {Design a deep neural architecture to detect objects in point clouds without the assistance of any other sensor, like a HD camera.}
+    \item \textbf {Test and evaluate the implemented neural network.}
+\end{enumerate}
+
+
+
+
+
+\subsection{Deliverables}
+
+\begin{itemize}
+    \item \textbf{End to end point cloud based object detection RPN.} This will be a software implementation of the system that will be publicly available through a Github repository.
+    \item \textbf{Evaluation report.} In this report, the following topics will be discussed. 
+    \begin{enumerate}
+        \item Performance analysis of system and analysis criteria.
+        \item A comparison between the implemented system and other state-of-the-art detection systems, potentially through a public benchmark. 
+        \item The ethical and safety implications of the system and its viability in a real world setting. 
+        \item Economic analysis of the LiDAR-based system and its potential impact on the development of AVs. 
+    \end{enumerate}
+\end{itemize}
+
+    
+\subsection{Added Value}
+
+This project will implement and open source a sophisticated cloud point detection technique for use in autonomous vehicles.
+
+In doing so, the project will democratize access to proprietary technology by Apple to be used and developed further by future researchers working with object detection in point clouds.
+
+\clearpage
+
+\end{SingleSpace}}
+
