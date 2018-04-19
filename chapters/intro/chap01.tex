@@ -24,6 +24,49 @@ However, this estimate is dependent on how well the AV system is designed to be 
 According to the Environmental Protection Agency, more than a  quarter of greenhouse gases are from the transportation sector. A major contributor of this is traffic congestion due to various factors such as traffic destabilizing shockwave propagation and road accidents. Autonomous vehicles are able to mitigate this as they are able to gauge and calculate the motion vectors of different objects around them. By using traffic smoothing algorithms and smarter implementations such as the slot mechanism developed by MIT, traffic congestion can be greatly reduced and as a result lower fuel consumption. Furthermore, most companies working with AVs are moving towards electrical vehicles and thus reducing the impact of fossil fuels on the environment. 
 
 
+This project seeks to develop further s
+
+
+
+\section{Aims and Objectives}
+The objectives of the  project are as follows:
+\begin{enumerate}
+	\item Detailed analysis of state-of-the-art Lidar-Based object detection deep neural networks.
+	\item Implement voxel feature encoding layer for grouping point clouds
+	\item Implement region proposal network for object detection from voxels.
+	\item Test and evaluate the implemented neural network against results of state-of-the-art point cloud object detection methods.
+\end{enumerate}
+
+\section{Deliverables}
+
+The deliverables are split into technical and analytical. 
+\begin{itemize}
+	 \item \textbf{End to end point cloud object detection RPN.} This will be a software implementation of the system that will be publicly available through a Github repository.
+	\item \textbf{Evaluation report.} In this report, the following topics will be discussed. 
+	\begin{enumerate}
+		\item A review of related research and implementations tackling object detection using LiDAR cloud points. 
+		\item Performance analysis of system and analysis criteria.
+		\item A comparison between the implemented system and other state-of-the-art detection systems, potentially through a public benchmark. 
+		\item The ethical and safety implications of the system and its viability in a real world setting. 
+		\item Economic analysis of the LiDAR-based system and its potential impact on the development of AVs. 
+		\item Validation of DNN performance with other public datasets containing data from AVs. 
+	\end{enumerate}
+\end{itemize}
+
+\section{Added Value}
+
+This project will implement and open source a sophisticated cloud point detection technique for use in autonomous vehicles.
+
+In doing so, the project will democratize access to proprietary technology by Apple \cite{zhou2017voxelnet} to be used and developed further by future researchers working with object detection in point clouds.
+Following the detailed review, I intend to propose ways through which this project can be implemented to reduce the cost of AVs in order to make them more viable. 
+If successful, this project will provide a possible framework for the main stream adoption of AVs. 
+
+\section{Research scope}
+The focus of this project is mainly with regard to computer vision, deep learning and robotics. Computer vision is the task of obtaining, processing, analysing and contextualising visual information to produce numerical information that can be understood and manipulated by computers. This is necessary in order to process and analyse the LiDAR data. Deep learning is a broad term used to describe methods that utilise the use of deep neural networks that have a large number of layers. DNNs have become a heavily researched an invested area due to their ability to capture complex underlying models from data. This will be crucial for detecting objects from point clouds. 
+This project will combine existing research using computer vision and deep learning such as \cite{qi2017pointnet}\cite{zhou2017voxelnet} to develop a Region Proposal Network capable of accurately detecting objects in point clouds. 
+
+\section{Report structure}
+
 
 
 \section{History and Current Setups}
@@ -40,6 +83,7 @@ Currently, autonomous vehicles are grouped into 5 different categories by the NH
     \item \textbf{Level 4} - Highly autonomous with the vehicle capable of handling most conditions but the driver has the option to take control. 
     \item \textbf{level 5} - Completely autonomous with the vehicle capable of handling all conditions.
 \end{itemize}
+
 
 
 

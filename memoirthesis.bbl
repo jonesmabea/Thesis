@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{bonnefon2015autonomous}
+{\sc J.-F. Bonnefon, A.~Shariff, and I.~Rahwan}, {\em Autonomous vehicles need
+  experimental ethics: Are we ready for utilitarian cars?}, arXiv preprint
+  arXiv:1510.03346,  (2015).
+
+\bibitem{gasser2016fundamental}
+{\sc T.~M. Gasser}, {\em Fundamental and special legal questions for autonomous
+  vehicles}, in Autonomous Driving, Springer, 2016, pp.~523--551.
+
+\bibitem{Geiger2013IJRR}
+{\sc A.~Geiger, P.~Lenz, C.~Stiller, and R.~Urtasun}, {\em Vision meets
+  robotics: The {KITTI} dataset}, International Journal of Robotics Research
+  (IJRR),  (2013).
+
+\bibitem{girshickICCV15fastrcnn}
+{\sc R.~Girshick}, {\em Fast r-cnn}, in International Conference on Computer
+  Vision ({ICCV}), 2015.
+
+\bibitem{ku2018defense}
+{\sc J.~Ku, A.~Harakeh, and S.~L. Waslander}, {\em In defense of classical
+  image processing: Fast depth completion on the cpu}, arXiv preprint
+  arXiv:1802.00036,  (2018).
+
+\bibitem{ku2017joint}
+{\sc J.~Ku, M.~Mozifian, J.~Lee, A.~Harakeh, and S.~Waslander}, {\em Joint 3d
+  proposal generation and object detection from view aggregation}, arXiv
+  preprint arXiv:1712.02294,  (2017).
+
+\bibitem{li20163d}
+{\sc B.~Li}, {\em 3d fully convolutional network for vehicle detection in point
+  cloud}, arXiv preprint arXiv:1611.08069,  (2016).
+
+\bibitem{qi2017pointnet}
+{\sc C.~R. Qi, H.~Su, K.~Mo, and L.~J. Guibas}, {\em Pointnet: Deep learning on
+  point sets for 3d classification and segmentation}, Proc. Computer Vision and
+  Pattern Recognition (CVPR), IEEE, 1 (2017), p.~4.
+
+\bibitem{qi2017pointnet++}
+{\sc C.~R. Qi, L.~Yi, H.~Su, and L.~J. Guibas}, {\em Pointnet++: Deep
+  hierarchical feature learning on point sets in a metric space}, in Advances
+  in Neural Information Processing Systems, 2017, pp.~5105--5114.
+
+\bibitem{ren2015faster}
+{\sc S.~Ren, K.~He, R.~Girshick, and J.~Sun}, {\em Faster r-cnn: Towards
+  real-time object detection with region proposal networks}, in Advances in
+  neural information processing systems, 2015, pp.~91--99.
+
+\bibitem{yolo}
+{\sc M.~{Simon}, S.~{Milz}, K.~{Amende}, and H.-M. {Gross}}, {\em
+  {Complex-YOLO: Real-time 3D Object Detection on Point Clouds}}, ArXiv
+  e-prints,  (2018).
+
+\bibitem{zhou2017voxelnet}
+{\sc Y.~Zhou and O.~Tuzel}, {\em Voxelnet: End-to-end learning for point cloud
+  based 3d object detection}, arXiv preprint arXiv:1711.06396,  (2017).
+
+\end{thebibliography}
