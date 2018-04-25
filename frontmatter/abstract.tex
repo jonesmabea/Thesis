@@ -11,10 +11,19 @@
 % than English, an abstract in that language and an abstract in English must
 % be included.
 
-\chapter*{Abstract}
+\chapter*{Executive Summary}
 \begin{SingleSpace}
 \initial 
-{T}he need for robust object detection in 3D point clouds has greatly increased with the ongoing push for autonomous vehicles(AVs). Most of these systems use Light Detection and Ranging(LiDAR), cameras or a combination of both in order to perform object detection \cite{ku2017joint}. LiDAR presents objects as point clouds in a 3D space thus offering critical shape information of objects in view. However, this representation is sparse and suffers from drawbacks such as occlusion. As a result, LiDAR-based detection performs poorly as compared to multimodal methods that have helped overcome this.\cite{zhou2017voxelnet}. However, multimodal methods are often complex to set up and synchronise \cite{ku2017joint} with the cost of components running into thousands of pounds. Furthermore, if one of the systems fails, the whole system would be rendered redundant. This can be catastrophic for self driving cars and therefore it is important to address this form of dependence.
+{T}he need for robust object detection in 3D point clouds has greatly increased with the ongoing push for autonomous vehicles(AVs). Most of these systems use Light Detection and Ranging(LiDAR), cameras or a combination of both in order to perform object detection \cite{ku2017joint}. LiDAR presents objects as point clouds in a 3D space thus offering critical shape information of objects in view. However, this representation is sparse and suffers from drawbacks such as occlusion. As a result, LiDAR-based detection performs poorly as compared to multimodal methods that have helped overcome this.\cite{zhou2017voxelnet}. However, multimodal methods are often complex to set up and synchronise \cite{ku2017joint} with the cost of components running into thousands of pounds.
+
+The aim of this project is to replicate and improve on the novel  VoxelNet  by Zhou et al \cite{zhou2017voxelnet}. 
+Doing so will be of added value as the implementation is currently proprietary to Apple Inc. If successful, my implementation will be made open source and can be used for further research in the field of object detection from LiDAR point clouds. In addition, through the evaluation and analysis, I hope to propose ways in which my implementation can be used in making cheaper AVs through the use of Solid-state LiDAR without having to use cameras at all. 
+
+In light of this, twos main objectives emerge. The first is to develop a region proposal network for object detection from LiDAR point clouds. This will be implementred using the TensorFlow \cite{abadi2016tensorflow.} machine learning framework.
+The second will be a detailed evaluation report containing research into this topic area as well as an analysis and comparison of the performance of my implementation. 
+
+This project will be 65\% type I (Software Development)  and 35\% type II (Theoretical). Software development of the deep learning framework will involve obtaining AV videos and point cloud data from public datasets such as KITTI \cite{Geiger2013IJRR}. This data will then be used in the development and training of the RPN. On completion of development, the model will be evaluated against the KITTI benchmark \cite{Geiger2012CVPR}.
+
 
 
 \clearpage

@@ -10,7 +10,7 @@
 In the coming decade there is expected to be proliferation of new technologies that have been aided by recent developments in Artificial Intelligence(AI) and Machine Learning(ML). AI and ML have become topics of increasing interest in academic fields and industries globally. As a result, collaborations between these two fields has become increasingly common. 
 With increase in computational power and the development of newer AI algorithms robotic technologies have greatly advanced and are now able to perform complex tasks that were once too difficult, dangerous or even impossible for humans to perform. Consequently, industries have benefited from the accuracy and efficiency provided by these robots. 
 
-An area that has developed a wide range of interest currently is the topic of autonomous vehicles. The idea of autonomous vehicles(AVs) is not new and as early as 2005, DARPA had invested heavily in the creation of unmanned trucks and organised for the Urban Challenge to allow for different teams to showcase their unmanned vehicles. However, due to the challenges such as low computational power and underdeveloped AI and ML systems, the resulting implementations were not practical and had a high fault rate of 1 fault in 100 miles compared to the human fault rate of around 1 in 100 million miles. Nonetheless, from this challenge, it was clear that the prospect of AVs was plausible and indeed possible. 
+An area that has developed a wide range of interest currently is the topic of autonomous vehicles. The idea of autonomous vehicles(AVs) is not new and as early as 2005, DARPA had invested heavily in the creation of unmanned trucks and organised for the Urban Challenge \cite{buehler2009darpa} to allow for different teams to showcase their unmanned vehicles. However, due to the challenges such as low computational power and underdeveloped AI and ML systems, the resulting implementations were not practical and had a high fault rate of 1 fault in 100 miles compared to the human fault rate of around 1 in 100 million miles. Nonetheless, from this challenge, it was clear that the prospect of AVs was plausible and indeed possible. 
 
 Currently there are a number of companies that are developing AVs . These companies have been able to develop vehicles that are capable of certain levels of automation. These levels are defined as:
 \begin{itemize}
@@ -34,10 +34,12 @@ However, this estimate is dependent on how well the AV system is designed to be 
 According to the Environmental Protection Agency, more than a  quarter of greenhouse gases are from the transportation sector. A major contributor of this is traffic congestion due to various factors such as traffic destabilizing shockwave propagation and road accidents. Autonomous vehicles are able to mitigate this as they are able to gauge and calculate the motion vectors of different objects around them. By using traffic smoothing algorithms and smarter implementations such as the slot mechanism developed by MIT, traffic congestion can be greatly reduced and as a result lower fuel consumption. Furthermore, most companies working with AVs are moving towards electrical vehicles and thus reducing the impact of fossil fuels on the environment. 
 
 
-This project aims to evaluate and develop a novel solution to aid perception in AVs by developing an end to end region proposal network capable of accurate object detection from point clouds. 
+
 
 \section{Aims and Objectives}
-The objectives of the  project are as follows:
+This project aims to evaluate and develop a novel solution to aid perception in AVs by developing an end to end region proposal network capable of accurate object detection from LiDAR point clouds. 
+
+To achieve this aim, the following objectives will be undertaken:
 \begin{enumerate}
 	\item Detailed analysis of state-of-the-art LiDAR-Based object detection deep neural networks.
 	\item Implement voxel feature encoding layer for grouping point clouds
@@ -63,10 +65,9 @@ The deliverables are split into technical and analytical.
 
 \section{Added Value}
 
-This project will implement and open source a sophisticated cloud point detection technique for use in autonomous vehicles.
-
-In doing so, the project will democratize access to proprietary technology by Apple \cite{zhou2017voxelnet} to be used and developed further by future researchers working with object detection in point clouds.
-Following the detailed review, I intend to propose ways through which this project can be implemented to reduce the cost of AVs in order to make them more viable. 
+This project will implement and open source a sophisticated cloud point detection technique for use in autonomous vehicles. The implementation will be able to detect classes of objects such as cyclists, pedestrians and other vehicles on a real-time basis.
+In doing so, the project will democratize access to proprietary technology by Apple \cite{zhou2017voxelnet} to be used and developed further by future researchers working with object detection in point clouds. 
+Following the detailed evaluation, I intend to propose ways through which this project can be implemented to reduce the cost of AVs in order to make them more viable. 
 If successful, this project will provide a possible framework for the main stream adoption of AVs. 
 
 \section{Research scope}
@@ -75,6 +76,9 @@ This project will combine existing research using computer vision and deep learn
 
 \section{Report structure}
 
+Chapter 2 discusses the different components of AVs, current implementations in the industry, a background on the research that has been undertaked in the field of object detection and finally a brief overview of deep learning frameworks. 
+
+Chapter 3 is the final discussion that forms the conclusion of the review. In this chapter, I discuss va
 
 
 

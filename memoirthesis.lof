@@ -2,7 +2,9 @@
 \par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Components of Waymo's Self Driving Car (Waymo)}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , PUCK\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Components of Waymo's Self Driving Car \cite {waymo_2018}\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces CNN Visualisation \cite {zeiler2014visualizing}\relax }}{13}{figure.caption.9}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -3,44 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-You've used 12 entries,
+Warning--I didn't find a database entry for "abadi2016tensorflow."
+Warning--to sort, need author or key in intelsolutions_2018
+You've used 32 entries,
             2030 wiz_defined-function locations,
-            557 strings with 5815 characters,
-and the built_in function-call counts, 3783 in all, are:
-= -- 326
-> -- 213
+            671 strings with 9191 characters,
+and the built_in function-call counts, 11172 in all, are:
+= -- 1012
+> -- 545
 < -- 0
-+ -- 84
-- -- 72
-* -- 311
-:= -- 633
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 72
++ -- 219
+- -- 184
+* -- 857
+:= -- 1738
+add.period$ -- 32
+call.type$ -- 32
+change.case$ -- 183
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 175
-empty$ -- 280
-format.name$ -- 72
-if$ -- 767
+cite$ -- 33
+duplicate$ -- 518
+empty$ -- 899
+format.name$ -- 184
+if$ -- 2381
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 12
-newline$ -- 39
-num.names$ -- 24
-pop$ -- 84
+int.to.str$ -- 32
+missing$ -- 32
+newline$ -- 99
+num.names$ -- 62
+pop$ -- 236
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 155
 quote$ -- 0
-skip$ -- 103
+skip$ -- 377
 stack$ -- 0
-substring$ -- 158
-swap$ -- 50
+substring$ -- 632
+swap$ -- 180
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 0
-while$ -- 34
-width$ -- 14
-write$ -- 103
+type$ -- 122
+warning$ -- 1
+while$ -- 108
+width$ -- 34
+write$ -- 284
+(There were 2 warnings)
