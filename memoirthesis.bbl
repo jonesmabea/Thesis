@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{intelsolutions_2018}
-2018.
-
 \bibitem{abadi2016tensorflow}
 {\sc M.~Abadi, P.~Barham, J.~Chen, Z.~Chen, A.~Davis, J.~Dean, M.~Devin,
   S.~Ghemawat, G.~Irving, M.~Isard, et~al.}, {\em Tensorflow: A system for
@@ -30,6 +27,16 @@
 \bibitem{buehler2009darpa}
 {\sc M.~Buehler, K.~Iagnemma, and S.~Singh}, {\em The DARPA urban challenge:
   autonomous vehicles in city traffic}, vol.~56, springer, 2009.
+
+\bibitem{chen2016monocular}
+{\sc X.~Chen, K.~Kundu, Z.~Zhang, H.~Ma, S.~Fidler, and R.~Urtasun}, {\em
+  Monocular 3d object detection for autonomous driving}, in Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition, 2016,
+  pp.~2147--2156.
+
+\bibitem{chen2017multi}
+{\sc X.~Chen, H.~Ma, J.~Wan, B.~Li, and T.~Xia}, {\em Multi-view 3d object
+  detection network for autonomous driving}, in IEEE CVPR, vol.~1, 2017, p.~3.
 
 \bibitem{dalal2005histograms}
 {\sc N.~Dalal and B.~Triggs}, {\em Histograms of oriented gradients for human
@@ -64,6 +71,11 @@
   Using depth cameras for dense 3d modeling of indoor environments}, in In the
   12th International Symposium on Experimental Robotics (ISER, Citeseer, 2010.
 
+\bibitem{intelsolutions_2018}
+{\sc Intel}, 2018.
+\newblock
+  https://www.intel.co.uk/content/www/uk/en/automotive/go-automated-driving.html.
+
 \bibitem{ku2018defense}
 {\sc J.~Ku, A.~Harakeh, and S.~L. Waslander}, {\em In defense of classical
   image processing: Fast depth completion on the cpu}, arXiv preprint
@@ -83,6 +95,10 @@
 {\sc B.~Li}, {\em 3d fully convolutional network for vehicle detection in point
   cloud}, arXiv preprint arXiv:1611.08069,  (2016).
 
+\bibitem{li2016vehicle}
+{\sc B.~Li, T.~Zhang, and T.~Xia}, {\em Vehicle detection from 3d lidar using
+  fully convolutional network}, arXiv preprint arXiv:1608.07916,  (2016).
+
 \bibitem{lin2018architectural}
 {\sc S.-C. Lin, Y.~Zhang, C.-H. Hsu, M.~Skach, M.~E. Haque, L.~Tang, and
   J.~Mars}, {\em The architectural implications of autonomous driving:
@@ -95,8 +111,14 @@
   in Computer vision, 1999. The proceedings of the seventh IEEE international
   conference on, vol.~2, Ieee, 1999, pp.~1150--1157.
 
+\bibitem{medsker2001recurrent}
+{\sc L.~Medsker and L.~Jain}, {\em Recurrent neural networks}, Design and
+  Applications, 5 (2001).
+
 \bibitem{mobileye_2018}
 {\sc MobilEye}, {\em Enabling autonomous - mobileeye}, 2018.
+\newblock
+  https://www.mobileye.com/future-of-mobility/mobileye-enabling-autonomous/.
 
 \bibitem{newell1985prospects}
 {\sc A.~Newell and S.~K. Card}, {\em The prospects for psychological science in
@@ -109,7 +131,7 @@
   pp.~305--313.
 
 \bibitem{qi2017pointnet}
-{\sc C.~R. Qi, H.~Su, K.~Mo, and L.~J. Guibas}, {\em Pointnet: Deep learning on
+{\sc C.~R. Qi, H.~Su, K.~Mo, and L.~J. Guibas}, {\em net: Deep learning on
   point sets for 3d classification and segmentation}, Proc. Computer Vision and
   Pattern Recognition (CVPR), IEEE, 1 (2017), p.~4.
 
@@ -122,6 +144,12 @@
 {\sc S.~Ren, K.~He, R.~Girshick, and J.~Sun}, {\em Faster r-cnn: Towards
   real-time object detection with region proposal networks}, in Advances in
   neural information processing systems, 2015, pp.~91--99.
+
+\bibitem{navigantresearch_2018}
+{\sc N.~Research}, {\em Navigant research leaderboard: Automated driving
+  vehicles}, Jan 2018.
+\newblock
+  https://www.navigantresearch.com/research/navigant-research-leaderboard-automated-driving-vehicles.
 
 \bibitem{yolo}
 {\sc M.~{Simon}, S.~{Milz}, K.~{Amende}, and H.-M. {Gross}}, {\em
@@ -140,6 +168,13 @@
 
 \bibitem{waymo_2018}
 {\sc Waymo}, {\em Waymo safety report}, 2018.
+\newblock https://waymo.com/safety/.
+
+\bibitem{yang2016exploit}
+{\sc F.~Yang, W.~Choi, and Y.~Lin}, {\em Exploit all the layers: Fast and
+  accurate cnn object detector with scale dependent pooling and cascaded
+  rejection classifiers}, in Proceedings of the IEEE Conference on Computer
+  Vision and Pattern Recognition, 2016, pp.~2129--2137.
 
 \bibitem{zeiler2014visualizing}
 {\sc M.~D. Zeiler and R.~Fergus}, {\em Visualizing and understanding
