@@ -1,11 +1,3 @@
-model_checkpoint_path: "checkpoint-00148481"
-all_model_checkpoint_paths: "checkpoint-00140129"
-all_model_checkpoint_paths: "checkpoint-00141057"
-all_model_checkpoint_paths: "checkpoint-00141985"
-all_model_checkpoint_paths: "checkpoint-00142913"
-all_model_checkpoint_paths: "checkpoint-00143841"
-all_model_checkpoint_paths: "checkpoint-00144769"
-all_model_checkpoint_paths: "checkpoint-00145697"
-all_model_checkpoint_paths: "checkpoint-00146625"
-all_model_checkpoint_paths: "checkpoint-00147553"
-all_model_checkpoint_paths: "checkpoint-00148481"
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e4b4390e784cbf3fb1db1efbde730363916fc4ca911795786bd30df900f3742
+size 545
