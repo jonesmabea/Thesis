@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#SBATCH --job-name VoxelNet
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 28
+#SBATCH --gres=gpu:2
+#SBATCH --time 120:00:00
+#SBATCH --partition gpu
+#SBATCH --output gpu2.out
+#SBATCH --exclusive
+#SBATCH --mem=128000
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo Slurm job ID is $SLURM_JOB_ID
+echo This job runs on the following machines:
+echo `echo $SLURM_JOB_NODELIST | uniq`
+
+echo $SLURM_JOB_NODELIST > machine.file.$SLURM_JOBID
+numnodes=`wc machine.file.$SLURM_JOBID | awk '{ print $1 }'`
+echo $numnodes
+module load languages/anaconda3/3.5-4.2.0-tflow-1.7
+#export TMPDIR=/mnt/storage/home/ja17618/advanced-hpc-lbm/
+#module load languages/anaconda2/5.0.1.tensorflow-1.6.0
+source activate vox
+#export I_MPI_DEBUG=5 
+#module load CUDA/8.0.44-GCC-5.4.0-2.26
+#export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+#module load clang-ykt/2017-07-24
+#module use /mnt/storage/scratch/jp8463/modules/modulefiles
+#module add OpenMPI/2.0.1-gcccuda-2016.10
+#module add libs/cudnn/5.1-cuda-8.0
+#module load languages/intel/2017.0
+#conda info --envs
+#which python
+python train.py --alpha 1 --beta 10 --tag batch2_a1_b10_lr001 --single-batch-size 2 --lr 0.01 --vis True
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+srun --nodes=1 --gres=gpu:2 --partition gpu_veryshort --job-name=gpujob --time=00:10:00 --mem=64000 --pty bash
+

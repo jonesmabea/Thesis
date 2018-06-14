@@ -1,0 +1,4738 @@
+Running on host gpu25.bc4.acrc.priv
+Time is Mon May 21 18:02:01 BST 2018
+Directory is /mnt/storage/home/ja17618/scratch/voxelnet
+Slurm job ID is 1178838
+This job runs on the following machines:
+gpu25
+1
+COMET INFO: Experiment is live on comet.ml https://www.comet.ml/jonesmabea/first/a42b5adb26d04ed1ab2c10d850ff7598
+
+2018-05-21 18:02:30.425466: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-21 18:02:31.987211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-05-21 18:02:32.139249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:86:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-05-21 18:02:32.139379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-05-21 18:02:34.915673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-21 18:02:34.915722: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-05-21 18:02:34.915744: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N N 
+2018-05-21 18:02:34.915749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   N N 
+2018-05-21 18:02:34.916562: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 16280 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-05-21 18:02:34.917220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 16280 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:86:00.0, compute capability: 6.0)
+Reading model parameters from ./save_model/fully_trained_160
+predict ['000001' '000002' '000004' '000005']
+write out 2 objects to 000001
+write out 3 objects to 000002
+write out 2 objects to 000004
+write out 1 objects to 000005
+predict ['000006' '000008' '000015' '000019']
+write out 6 objects to 000006
+write out 10 objects to 000008
+write out 2 objects to 000015
+write out 4 objects to 000019
+predict ['000020' '000021' '000023' '000024']
+write out 1 objects to 000020
+write out 6 objects to 000021
+write out 7 objects to 000023
+write out 8 objects to 000024
+predict ['000025' '000027' '000028' '000031']
+write out 10 objects to 000025
+write out 2 objects to 000027
+write out 1 objects to 000028
+write out 9 objects to 000031
+predict ['000033' '000035' '000037' '000039']
+write out 3 objects to 000033
+write out 8 objects to 000035
+write out 5 objects to 000037
+write out 8 objects to 000039
+predict ['000040' '000042' '000047' '000048']
+write out 2 objects to 000040
+write out 1 objects to 000042
+write out 9 objects to 000047
+write out 2 objects to 000048
+predict ['000050' '000052' '000053' '000058']
+write out 4 objects to 000050
+write out 6 objects to 000052
+write out 8 objects to 000053
+write out 2 objects to 000058
+predict ['000059' '000061' '000062' '000063']
+write out 7 objects to 000059
+write out 6 objects to 000061
+write out 3 objects to 000062
+write out 4 objects to 000063
+predict ['000065' '000066' '000076' '000077']
+write out 0 objects to 000065
+write out 2 objects to 000066
+write out 0 objects to 000076
+write out 5 objects to 000077
+predict ['000078' '000081' '000089' '000090']
+write out 4 objects to 000078
+write out 0 objects to 000081
+write out 6 objects to 000089
+write out 2 objects to 000090
+predict ['000093' '000094' '000098' '000102']
+write out 6 objects to 000093
+write out 2 objects to 000094
+write out 4 objects to 000098
+write out 2 objects to 000102
+predict ['000104' '000106' '000107' '000108']
+write out 4 objects to 000104
+write out 4 objects to 000106
+write out 9 objects to 000107
+write out 2 objects to 000108
+predict ['000116' '000117' '000118' '000122']
+write out 4 objects to 000116
+write out 10 objects to 000117
+write out 0 objects to 000118
+write out 1 objects to 000122
+predict ['000124' '000126' '000128' '000132']
+write out 1 objects to 000124
+write out 4 objects to 000126
+write out 2 objects to 000128
+write out 1 objects to 000132
+predict ['000134' '000135' '000137' '000139']
+write out 2 objects to 000134
+write out 9 objects to 000135
+write out 2 objects to 000137
+write out 2 objects to 000139
+predict ['000140' '000143' '000147' '000151']
+write out 4 objects to 000140
+write out 3 objects to 000143
+write out 2 objects to 000147
+write out 2 objects to 000151
+predict ['000152' '000153' '000156' '000159']
+write out 8 objects to 000152
+write out 2 objects to 000153
+write out 1 objects to 000156
+write out 7 objects to 000159
+predict ['000161' '000167' '000168' '000169']
+write out 11 objects to 000161
+write out 2 objects to 000167
+write out 3 objects to 000168
+write out 15 objects to 000169
+predict ['000170' '000173' '000174' '000175']
+write out 1 objects to 000170
+write out 9 objects to 000173
+write out 4 objects to 000174
+write out 3 objects to 000175
+predict ['000181' '000182' '000183' '000186']
+write out 12 objects to 000181
+write out 4 objects to 000182
+write out 8 objects to 000183
+write out 5 objects to 000186
+predict ['000187' '000188' '000190' '000191']
+write out 0 objects to 000187
+write out 4 objects to 000188
+write out 2 objects to 000190
+write out 13 objects to 000191
+predict ['000192' '000194' '000195' '000196']
+write out 7 objects to 000192
+write out 2 objects to 000194
+write out 0 objects to 000195
+write out 3 objects to 000196
+predict ['000197' '000199' '000201' '000203']
+write out 8 objects to 000197
+write out 0 objects to 000199
+write out 10 objects to 000201
+write out 1 objects to 000203
+predict ['000204' '000207' '000211' '000212']
+write out 3 objects to 000204
+write out 4 objects to 000207
+write out 5 objects to 000211
+write out 8 objects to 000212
+predict ['000213' '000216' '000218' '000223']
+write out 11 objects to 000213
+write out 3 objects to 000216
+write out 13 objects to 000218
+write out 3 objects to 000223
+predict ['000224' '000226' '000229' '000230']
+write out 1 objects to 000224
+write out 9 objects to 000226
+write out 1 objects to 000229
+write out 2 objects to 000230
+predict ['000231' '000234' '000235' '000236']
+write out 5 objects to 000231
+write out 8 objects to 000234
+write out 4 objects to 000235
+write out 12 objects to 000236
+predict ['000237' '000239' '000242' '000246']
+write out 3 objects to 000237
+write out 3 objects to 000239
+write out 4 objects to 000242
+write out 10 objects to 000246
+predict ['000247' '000248' '000249' '000250']
+write out 1 objects to 000247
+write out 13 objects to 000248
+write out 10 objects to 000249
+write out 3 objects to 000250
+predict ['000251' '000252' '000260' '000262']
+write out 0 objects to 000251
+write out 3 objects to 000252
+write out 2 objects to 000260
+write out 10 objects to 000262
+predict ['000263' '000265' '000266' '000268']
+write out 1 objects to 000263
+write out 6 objects to 000265
+write out 7 objects to 000266
+write out 5 objects to 000268
+predict ['000269' '000270' '000272' '000273']
+write out 7 objects to 000269
+write out 4 objects to 000270
+write out 1 objects to 000272
+write out 4 objects to 000273
+predict ['000278' '000279' '000281' '000283']
+write out 2 objects to 000278
+write out 7 objects to 000279
+write out 3 objects to 000281
+write out 2 objects to 000283
+predict ['000284' '000289' '000290' '000291']
+write out 12 objects to 000284
+write out 2 objects to 000289
+write out 1 objects to 000290
+write out 4 objects to 000291
+predict ['000293' '000297' '000301' '000302']
+write out 4 objects to 000293
+write out 6 objects to 000297
+write out 7 objects to 000301
+write out 4 objects to 000302
+predict ['000305' '000307' '000308' '000309']
+write out 5 objects to 000305
+write out 1 objects to 000307
+write out 2 objects to 000308
+write out 4 objects to 000309
+predict ['000311' '000312' '000314' '000315']
+write out 10 objects to 000311
+write out 5 objects to 000312
+write out 2 objects to 000314
+write out 2 objects to 000315
+predict ['000319' '000320' '000321' '000323']
+write out 6 objects to 000319
+write out 4 objects to 000320
+write out 2 objects to 000321
+write out 13 objects to 000323
+predict ['000324' '000327' '000328' '000329']
+write out 0 objects to 000324
+write out 0 objects to 000327
+write out 10 objects to 000328
+write out 3 objects to 000329
+predict ['000332' '000333' '000335' '000336']
+write out 1 objects to 000332
+write out 5 objects to 000333
+write out 7 objects to 000335
+write out 2 objects to 000336
+predict ['000340' '000341' '000343' '000345']
+write out 4 objects to 000340
+write out 2 objects to 000341
+write out 5 objects to 000343
+write out 8 objects to 000345
+predict ['000346' '000347' '000350' '000351']
+write out 13 objects to 000346
+write out 1 objects to 000347
+write out 9 objects to 000350
+write out 8 objects to 000351
+predict ['000352' '000354' '000355' '000356']
+write out 7 objects to 000352
+write out 10 objects to 000354
+write out 3 objects to 000355
+write out 9 objects to 000356
+predict ['000357' '000359' '000360' '000361']
+write out 8 objects to 000357
+write out 3 objects to 000359
+write out 3 objects to 000360
+write out 6 objects to 000361
+predict ['000362' '000365' '000366' '000369']
+write out 8 objects to 000362
+write out 0 objects to 000365
+write out 3 objects to 000366
+write out 12 objects to 000369
+predict ['000370' '000372' '000373' '000376']
+write out 10 objects to 000370
+write out 3 objects to 000372
+write out 6 objects to 000373
+write out 3 objects to 000376
+predict ['000377' '000378' '000379' '000381']
+write out 5 objects to 000377
+write out 3 objects to 000378
+write out 1 objects to 000379
+write out 0 objects to 000381
+predict ['000382' '000383' '000385' '000386']
+write out 5 objects to 000382
+write out 1 objects to 000383
+write out 5 objects to 000385
+write out 11 objects to 000386
+predict ['000388' '000391' '000392' '000393']
+write out 1 objects to 000388
+write out 6 objects to 000391
+write out 16 objects to 000392
+write out 12 objects to 000393
+predict ['000394' '000395' '000396' '000397']
+write out 0 objects to 000394
+write out 12 objects to 000395
+write out 2 objects to 000396
+write out 13 objects to 000397
+predict ['000398' '000399' '000401' '000402']
+write out 0 objects to 000398
+write out 1 objects to 000399
+write out 10 objects to 000401
+write out 3 objects to 000402
+predict ['000403' '000404' '000407' '000408']
+write out 9 objects to 000403
+write out 12 objects to 000404
+write out 2 objects to 000407
+write out 11 objects to 000408
+predict ['000409' '000413' '000414' '000415']
+write out 2 objects to 000409
+write out 4 objects to 000413
+write out 1 objects to 000414
+write out 10 objects to 000415
+predict ['000419' '000420' '000422' '000427']
+write out 1 objects to 000419
+write out 5 objects to 000420
+write out 1 objects to 000422
+write out 13 objects to 000427
+predict ['000428' '000429' '000430' '000436']
+write out 1 objects to 000428
+write out 12 objects to 000429
+write out 5 objects to 000430
+write out 10 objects to 000436
+predict ['000437' '000440' '000443' '000446']
+write out 2 objects to 000437
+write out 2 objects to 000440
+write out 10 objects to 000443
+write out 1 objects to 000446
+predict ['000448' '000450' '000451' '000452']
+write out 3 objects to 000448
+write out 3 objects to 000450
+write out 1 objects to 000451
+write out 3 objects to 000452
+predict ['000453' '000454' '000455' '000457']
+write out 4 objects to 000453
+write out 1 objects to 000454
+write out 10 objects to 000455
+write out 5 objects to 000457
+predict ['000459' '000463' '000468' '000469']
+write out 4 objects to 000459
+write out 9 objects to 000463
+write out 6 objects to 000468
+write out 0 objects to 000469
+predict ['000472' '000473' '000475' '000476']
+write out 5 objects to 000472
+write out 2 objects to 000473
+write out 7 objects to 000475
+write out 1 objects to 000476
+predict ['000477' '000478' '000479' '000480']
+write out 0 objects to 000477
+write out 5 objects to 000478
+write out 3 objects to 000479
+write out 3 objects to 000480
+predict ['000481' '000485' '000486' '000489']
+write out 3 objects to 000481
+write out 7 objects to 000485
+write out 7 objects to 000486
+write out 1 objects to 000489
+predict ['000491' '000492' '000493' '000494']
+write out 4 objects to 000491
+write out 12 objects to 000492
+write out 5 objects to 000493
+write out 5 objects to 000494
+predict ['000495' '000496' '000498' '000499']
+write out 4 objects to 000495
+write out 0 objects to 000496
+write out 1 objects to 000498
+write out 0 objects to 000499
+predict ['000503' '000504' '000506' '000508']
+write out 5 objects to 000503
+write out 2 objects to 000504
+write out 5 objects to 000506
+write out 2 objects to 000508
+predict ['000509' '000510' '000512' '000515']
+write out 1 objects to 000509
+write out 13 objects to 000510
+write out 1 objects to 000512
+write out 11 objects to 000515
+predict ['000517' '000519' '000521' '000524']
+write out 5 objects to 000517
+write out 12 objects to 000519
+write out 4 objects to 000521
+write out 4 objects to 000524
+predict ['000527' '000528' '000530' '000533']
+write out 10 objects to 000527
+write out 3 objects to 000528
+write out 2 objects to 000530
+write out 1 objects to 000533
+predict ['000536' '000541' '000542' '000543']
+write out 4 objects to 000536
+write out 8 objects to 000541
+write out 4 objects to 000542
+write out 3 objects to 000543
+predict ['000545' '000546' '000548' '000551']
+write out 4 objects to 000545
+write out 2 objects to 000546
+write out 6 objects to 000548
+write out 3 objects to 000551
+predict ['000554' '000555' '000558' '000559']
+write out 11 objects to 000554
+write out 3 objects to 000555
+write out 9 objects to 000558
+write out 1 objects to 000559
+predict ['000560' '000561' '000564' '000566']
+write out 4 objects to 000560
+write out 1 objects to 000561
+write out 2 objects to 000564
+write out 3 objects to 000566
+predict ['000567' '000568' '000569' '000571']
+write out 13 objects to 000567
+write out 3 objects to 000568
+write out 2 objects to 000569
+write out 1 objects to 000571
+predict ['000572' '000581' '000583' '000588']
+write out 10 objects to 000572
+write out 2 objects to 000581
+write out 5 objects to 000583
+write out 6 objects to 000588
+predict ['000589' '000590' '000591' '000595']
+write out 3 objects to 000589
+write out 15 objects to 000590
+write out 7 objects to 000591
+write out 7 objects to 000595
+predict ['000600' '000601' '000604' '000610']
+write out 6 objects to 000600
+write out 3 objects to 000601
+write out 0 objects to 000604
+write out 4 objects to 000610
+predict ['000611' '000612' '000613' '000614']
+write out 1 objects to 000611
+write out 14 objects to 000612
+write out 5 objects to 000613
+write out 4 objects to 000614
+predict ['000615' '000618' '000619' '000620']
+write out 7 objects to 000615
+write out 5 objects to 000618
+write out 5 objects to 000619
+write out 10 objects to 000620
+predict ['000624' '000625' '000626' '000628']
+write out 5 objects to 000624
+write out 0 objects to 000625
+write out 7 objects to 000626
+write out 13 objects to 000628
+predict ['000630' '000634' '000635' '000636']
+write out 2 objects to 000630
+write out 5 objects to 000634
+write out 2 objects to 000635
+write out 1 objects to 000636
+predict ['000639' '000642' '000644' '000645']
+write out 9 objects to 000639
+write out 4 objects to 000642
+write out 5 objects to 000644
+write out 3 objects to 000645
+predict ['000647' '000648' '000650' '000655']
+write out 5 objects to 000647
+write out 4 objects to 000648
+write out 2 objects to 000650
+write out 4 objects to 000655
+predict ['000657' '000658' '000659' '000660']
+write out 1 objects to 000657
+write out 1 objects to 000658
+write out 3 objects to 000659
+write out 2 objects to 000660
+predict ['000667' '000669' '000670' '000674']
+write out 7 objects to 000667
+write out 12 objects to 000669
+write out 3 objects to 000670
+write out 5 objects to 000674
+predict ['000677' '000679' '000682' '000683']
+write out 7 objects to 000677
+write out 3 objects to 000679
+write out 2 objects to 000682
+write out 5 objects to 000683
+predict ['000684' '000691' '000692' '000694']
+write out 13 objects to 000684
+write out 14 objects to 000691
+write out 13 objects to 000692
+write out 13 objects to 000694
+predict ['000696' '000698' '000699' '000700']
+write out 7 objects to 000696
+write out 2 objects to 000698
+write out 3 objects to 000699
+write out 4 objects to 000700
+predict ['000702' '000704' '000706' '000708']
+write out 4 objects to 000702
+write out 3 objects to 000704
+write out 7 objects to 000706
+write out 11 objects to 000708
+predict ['000716' '000717' '000718' '000721']
+write out 2 objects to 000716
+write out 2 objects to 000717
+write out 0 objects to 000718
+write out 1 objects to 000721
+predict ['000722' '000725' '000727' '000728']
+write out 1 objects to 000722
+write out 11 objects to 000725
+write out 4 objects to 000727
+write out 3 objects to 000728
+predict ['000729' '000731' '000734' '000736']
+write out 16 objects to 000729
+write out 3 objects to 000731
+write out 9 objects to 000734
+write out 6 objects to 000736
+predict ['000737' '000740' '000741' '000745']
+write out 13 objects to 000737
+write out 2 objects to 000740
+write out 11 objects to 000741
+write out 7 objects to 000745
+predict ['000746' '000748' '000750' '000751']
+write out 0 objects to 000746
+write out 3 objects to 000748
+write out 3 objects to 000750
+write out 9 objects to 000751
+predict ['000752' '000754' '000756' '000761']
+write out 10 objects to 000752
+write out 7 objects to 000754
+write out 8 objects to 000756
+write out 2 objects to 000761
+predict ['000765' '000766' '000767' '000768']
+write out 3 objects to 000765
+write out 3 objects to 000766
+write out 2 objects to 000767
+write out 10 objects to 000768
+predict ['000769' '000771' '000772' '000773']
+write out 2 objects to 000769
+write out 2 objects to 000771
+write out 3 objects to 000772
+write out 1 objects to 000773
+predict ['000774' '000778' '000779' '000782']
+write out 1 objects to 000774
+write out 10 objects to 000778
+write out 1 objects to 000779
+write out 7 objects to 000782
+predict ['000790' '000792' '000795' '000798']
+write out 4 objects to 000790
+write out 6 objects to 000792
+write out 6 objects to 000795
+write out 12 objects to 000798
+predict ['000800' '000801' '000802' '000803']
+write out 6 objects to 000800
+write out 4 objects to 000801
+write out 6 objects to 000802
+write out 2 objects to 000803
+predict ['000804' '000805' '000806' '000807']
+write out 7 objects to 000804
+write out 8 objects to 000805
+write out 2 objects to 000806
+write out 1 objects to 000807
+predict ['000809' '000810' '000811' '000812']
+write out 9 objects to 000809
+write out 2 objects to 000810
+write out 0 objects to 000811
+write out 2 objects to 000812
+predict ['000816' '000819' '000823' '000826']
+write out 2 objects to 000816
+write out 11 objects to 000819
+write out 5 objects to 000823
+write out 1 objects to 000826
+predict ['000831' '000837' '000838' '000840']
+write out 11 objects to 000831
+write out 9 objects to 000837
+write out 3 objects to 000838
+write out 1 objects to 000840
+predict ['000841' '000843' '000844' '000847']
+write out 0 objects to 000841
+write out 8 objects to 000843
+write out 3 objects to 000844
+write out 6 objects to 000847
+predict ['000848' '000849' '000850' '000852']
+write out 3 objects to 000848
+write out 6 objects to 000849
+write out 9 objects to 000850
+write out 3 objects to 000852
+predict ['000854' '000859' '000862' '000863']
+write out 4 objects to 000854
+write out 5 objects to 000859
+write out 0 objects to 000862
+write out 4 objects to 000863
+predict ['000869' '000873' '000874' '000875']
+write out 9 objects to 000869
+write out 12 objects to 000873
+write out 0 objects to 000874
+write out 6 objects to 000875
+predict ['000876' '000877' '000878' '000879']
+write out 2 objects to 000876
+write out 2 objects to 000877
+write out 2 objects to 000878
+write out 1 objects to 000879
+predict ['000881' '000884' '000885' '000889']
+write out 2 objects to 000881
+write out 5 objects to 000884
+write out 6 objects to 000885
+write out 1 objects to 000889
+predict ['000893' '000894' '000897' '000899']
+write out 1 objects to 000893
+write out 4 objects to 000894
+write out 2 objects to 000897
+write out 4 objects to 000899
+predict ['000904' '000907' '000909' '000911']
+write out 4 objects to 000904
+write out 8 objects to 000907
+write out 9 objects to 000909
+write out 5 objects to 000911
+predict ['000912' '000915' '000916' '000917']
+write out 6 objects to 000912
+write out 4 objects to 000915
+write out 4 objects to 000916
+write out 3 objects to 000917
+predict ['000920' '000922' '000923' '000926']
+write out 5 objects to 000920
+write out 6 objects to 000922
+write out 1 objects to 000923
+write out 3 objects to 000926
+predict ['000928' '000930' '000931' '000932']
+write out 1 objects to 000928
+write out 7 objects to 000930
+write out 1 objects to 000931
+write out 2 objects to 000932
+predict ['000938' '000939' '000940' '000942']
+write out 6 objects to 000938
+write out 4 objects to 000939
+write out 4 objects to 000940
+write out 7 objects to 000942
+predict ['000943' '000944' '000948' '000949']
+write out 5 objects to 000943
+write out 10 objects to 000944
+write out 2 objects to 000948
+write out 2 objects to 000949
+predict ['000952' '000953' '000956' '000958']
+write out 4 objects to 000952
+write out 10 objects to 000953
+write out 8 objects to 000956
+write out 4 objects to 000958
+predict ['000961' '000963' '000964' '000966']
+write out 1 objects to 000961
+write out 6 objects to 000963
+write out 1 objects to 000964
+write out 0 objects to 000966
+predict ['000967' '000969' '000970' '000971']
+write out 2 objects to 000967
+write out 3 objects to 000969
+write out 7 objects to 000970
+write out 0 objects to 000971
+predict ['000973' '000974' '000976' '000979']
+write out 2 objects to 000973
+write out 3 objects to 000974
+write out 6 objects to 000976
+write out 4 objects to 000979
+predict ['000981' '000983' '000984' '000985']
+write out 3 objects to 000981
+write out 7 objects to 000983
+write out 2 objects to 000984
+write out 11 objects to 000985
+predict ['000986' '000988' '000991' '000999']
+write out 9 objects to 000986
+write out 3 objects to 000988
+write out 4 objects to 000991
+write out 2 objects to 000999
+predict ['001002' '001006' '001007' '001008']
+write out 5 objects to 001002
+write out 1 objects to 001006
+write out 16 objects to 001007
+write out 4 objects to 001008
+predict ['001010' '001011' '001012' '001013']
+write out 9 objects to 001010
+write out 9 objects to 001011
+write out 6 objects to 001012
+write out 12 objects to 001013
+predict ['001014' '001015' '001018' '001019']
+write out 3 objects to 001014
+write out 6 objects to 001015
+write out 1 objects to 001018
+write out 1 objects to 001019
+predict ['001021' '001022' '001025' '001026']
+write out 1 objects to 001021
+write out 4 objects to 001022
+write out 4 objects to 001025
+write out 3 objects to 001026
+predict ['001027' '001035' '001037' '001039']
+write out 3 objects to 001027
+write out 9 objects to 001035
+write out 0 objects to 001037
+write out 4 objects to 001039
+predict ['001042' '001043' '001046' '001050']
+write out 4 objects to 001042
+write out 9 objects to 001043
+write out 1 objects to 001046
+write out 5 objects to 001050
+predict ['001051' '001053' '001054' '001055']
+write out 3 objects to 001051
+write out 2 objects to 001053
+write out 15 objects to 001054
+write out 5 objects to 001055
+predict ['001058' '001063' '001065' '001066']
+write out 3 objects to 001058
+write out 3 objects to 001063
+write out 13 objects to 001065
+write out 1 objects to 001066
+predict ['001067' '001068' '001069' '001070']
+write out 3 objects to 001067
+write out 1 objects to 001068
+write out 5 objects to 001069
+write out 3 objects to 001070
+predict ['001071' '001075' '001076' '001077']
+write out 12 objects to 001071
+write out 2 objects to 001075
+write out 3 objects to 001076
+write out 14 objects to 001077
+predict ['001078' '001083' '001084' '001086']
+write out 12 objects to 001078
+write out 10 objects to 001083
+write out 7 objects to 001084
+write out 8 objects to 001086
+predict ['001088' '001089' '001094' '001095']
+write out 0 objects to 001088
+write out 8 objects to 001089
+write out 5 objects to 001094
+write out 2 objects to 001095
+predict ['001096' '001097' '001099' '001101']
+write out 9 objects to 001096
+write out 4 objects to 001097
+write out 5 objects to 001099
+write out 3 objects to 001101
+predict ['001102' '001104' '001106' '001107']
+write out 13 objects to 001102
+write out 12 objects to 001104
+write out 1 objects to 001106
+write out 7 objects to 001107
+predict ['001108' '001111' '001113' '001114']
+write out 11 objects to 001108
+write out 3 objects to 001111
+write out 1 objects to 001113
+write out 3 objects to 001114
+predict ['001115' '001116' '001118' '001120']
+write out 1 objects to 001115
+write out 5 objects to 001116
+write out 7 objects to 001118
+write out 9 objects to 001120
+predict ['001123' '001125' '001127' '001129']
+write out 7 objects to 001123
+write out 6 objects to 001125
+write out 8 objects to 001127
+write out 6 objects to 001129
+predict ['001131' '001132' '001133' '001134']
+write out 4 objects to 001131
+write out 1 objects to 001132
+write out 5 objects to 001133
+write out 7 objects to 001134
+predict ['001135' '001136' '001138' '001139']
+write out 1 objects to 001135
+write out 10 objects to 001136
+write out 11 objects to 001138
+write out 9 objects to 001139
+predict ['001140' '001141' '001143' '001144']
+write out 15 objects to 001140
+write out 3 objects to 001141
+write out 5 objects to 001143
+write out 3 objects to 001144
+predict ['001145' '001147' '001148' '001149']
+write out 6 objects to 001145
+write out 6 objects to 001147
+write out 2 objects to 001148
+write out 0 objects to 001149
+predict ['001150' '001152' '001153' '001154']
+write out 6 objects to 001150
+write out 3 objects to 001152
+write out 6 objects to 001153
+write out 5 objects to 001154
+predict ['001155' '001158' '001162' '001163']
+write out 2 objects to 001155
+write out 10 objects to 001158
+write out 10 objects to 001162
+write out 9 objects to 001163
+predict ['001167' '001172' '001173' '001176']
+write out 1 objects to 001167
+write out 5 objects to 001172
+write out 4 objects to 001173
+write out 2 objects to 001176
+predict ['001177' '001178' '001179' '001180']
+write out 4 objects to 001177
+write out 3 objects to 001178
+write out 3 objects to 001179
+write out 13 objects to 001180
+predict ['001182' '001183' '001187' '001188']
+write out 7 objects to 001182
+write out 8 objects to 001183
+write out 5 objects to 001187
+write out 0 objects to 001188
+predict ['001189' '001191' '001192' '001193']
+write out 0 objects to 001189
+write out 0 objects to 001191
+write out 5 objects to 001192
+write out 3 objects to 001193
+predict ['001194' '001195' '001198' '001199']
+write out 1 objects to 001194
+write out 11 objects to 001195
+write out 3 objects to 001198
+write out 19 objects to 001199
+predict ['001203' '001206' '001207' '001213']
+write out 4 objects to 001203
+write out 11 objects to 001206
+write out 3 objects to 001207
+write out 2 objects to 001213
+predict ['001214' '001216' '001217' '001218']
+write out 6 objects to 001214
+write out 2 objects to 001216
+write out 5 objects to 001217
+write out 1 objects to 001218
+predict ['001221' '001222' '001224' '001225']
+write out 7 objects to 001221
+write out 8 objects to 001222
+write out 10 objects to 001224
+write out 3 objects to 001225
+predict ['001226' '001228' '001230' '001232']
+write out 9 objects to 001226
+write out 0 objects to 001228
+write out 13 objects to 001230
+write out 8 objects to 001232
+predict ['001234' '001235' '001236' '001237']
+write out 3 objects to 001234
+write out 1 objects to 001235
+write out 1 objects to 001236
+write out 13 objects to 001237
+predict ['001239' '001241' '001242' '001243']
+write out 1 objects to 001239
+write out 6 objects to 001241
+write out 0 objects to 001242
+write out 6 objects to 001243
+predict ['001244' '001245' '001246' '001249']
+write out 11 objects to 001244
+write out 2 objects to 001245
+write out 13 objects to 001246
+write out 0 objects to 001249
+predict ['001251' '001252' '001253' '001254']
+write out 1 objects to 001251
+write out 1 objects to 001252
+write out 5 objects to 001253
+write out 10 objects to 001254
+predict ['001255' '001257' '001259' '001260']
+write out 3 objects to 001255
+write out 1 objects to 001257
+write out 3 objects to 001259
+write out 2 objects to 001260
+predict ['001261' '001263' '001265' '001266']
+write out 5 objects to 001261
+write out 3 objects to 001263
+write out 2 objects to 001265
+write out 1 objects to 001266
+predict ['001267' '001268' '001269' '001270']
+write out 2 objects to 001267
+write out 8 objects to 001268
+write out 2 objects to 001269
+write out 7 objects to 001270
+predict ['001271' '001272' '001273' '001274']
+write out 3 objects to 001271
+write out 0 objects to 001272
+write out 4 objects to 001273
+write out 9 objects to 001274
+predict ['001275' '001281' '001284' '001286']
+write out 7 objects to 001275
+write out 2 objects to 001281
+write out 3 objects to 001284
+write out 0 objects to 001286
+predict ['001287' '001289' '001291' '001292']
+write out 14 objects to 001287
+write out 4 objects to 001289
+write out 4 objects to 001291
+write out 2 objects to 001292
+predict ['001294' '001295' '001296' '001303']
+write out 11 objects to 001294
+write out 3 objects to 001295
+write out 6 objects to 001296
+write out 3 objects to 001303
+predict ['001304' '001305' '001306' '001307']
+write out 3 objects to 001304
+write out 3 objects to 001305
+write out 13 objects to 001306
+write out 2 objects to 001307
+predict ['001308' '001314' '001317' '001318']
+write out 2 objects to 001308
+write out 0 objects to 001314
+write out 7 objects to 001317
+write out 6 objects to 001318
+predict ['001329' '001330' '001331' '001332']
+write out 1 objects to 001329
+write out 2 objects to 001330
+write out 3 objects to 001331
+write out 6 objects to 001332
+predict ['001333' '001334' '001336' '001337']
+write out 7 objects to 001333
+write out 5 objects to 001334
+write out 4 objects to 001336
+write out 5 objects to 001337
+predict ['001339' '001342' '001344' '001345']
+write out 2 objects to 001339
+write out 1 objects to 001342
+write out 2 objects to 001344
+write out 1 objects to 001345
+predict ['001346' '001347' '001350' '001352']
+write out 11 objects to 001346
+write out 10 objects to 001347
+write out 2 objects to 001350
+write out 2 objects to 001352
+predict ['001353' '001355' '001356' '001359']
+write out 2 objects to 001353
+write out 7 objects to 001355
+write out 2 objects to 001356
+write out 1 objects to 001359
+predict ['001363' '001365' '001372' '001374']
+write out 9 objects to 001363
+write out 4 objects to 001365
+write out 7 objects to 001372
+write out 1 objects to 001374
+predict ['001375' '001376' '001377' '001380']
+write out 2 objects to 001375
+write out 8 objects to 001376
+write out 5 objects to 001377
+write out 4 objects to 001380
+predict ['001381' '001382' '001384' '001386']
+write out 2 objects to 001381
+write out 2 objects to 001382
+write out 1 objects to 001384
+write out 3 objects to 001386
+predict ['001387' '001388' '001389' '001391']
+write out 2 objects to 001387
+write out 9 objects to 001388
+write out 9 objects to 001389
+write out 13 objects to 001391
+predict ['001395' '001397' '001398' '001407']
+write out 2 objects to 001395
+write out 0 objects to 001397
+write out 4 objects to 001398
+write out 4 objects to 001407
+predict ['001410' '001411' '001412' '001415']
+write out 12 objects to 001410
+write out 4 objects to 001411
+write out 11 objects to 001412
+write out 8 objects to 001415
+predict ['001416' '001419' '001421' '001424']
+write out 8 objects to 001416
+write out 2 objects to 001419
+write out 0 objects to 001421
+write out 8 objects to 001424
+predict ['001427' '001431' '001432' '001435']
+write out 4 objects to 001427
+write out 2 objects to 001431
+write out 1 objects to 001432
+write out 7 objects to 001435
+predict ['001437' '001438' '001439' '001441']
+write out 1 objects to 001437
+write out 6 objects to 001438
+write out 4 objects to 001439
+write out 0 objects to 001441
+predict ['001442' '001443' '001445' '001446']
+write out 4 objects to 001442
+write out 6 objects to 001443
+write out 6 objects to 001445
+write out 10 objects to 001446
+predict ['001448' '001450' '001451' '001458']
+write out 3 objects to 001448
+write out 0 objects to 001450
+write out 6 objects to 001451
+write out 10 objects to 001458
+predict ['001461' '001463' '001466' '001469']
+write out 6 objects to 001461
+write out 1 objects to 001463
+write out 1 objects to 001466
+write out 8 objects to 001469
+predict ['001471' '001477' '001478' '001480']
+write out 2 objects to 001471
+write out 0 objects to 001477
+write out 3 objects to 001478
+write out 5 objects to 001480
+predict ['001481' '001485' '001487' '001488']
+write out 11 objects to 001481
+write out 2 objects to 001485
+write out 1 objects to 001487
+write out 3 objects to 001488
+predict ['001489' '001495' '001497' '001501']
+write out 3 objects to 001489
+write out 10 objects to 001495
+write out 11 objects to 001497
+write out 2 objects to 001501
+predict ['001502' '001507' '001508' '001511']
+write out 0 objects to 001502
+write out 6 objects to 001507
+write out 7 objects to 001508
+write out 2 objects to 001511
+predict ['001513' '001514' '001516' '001517']
+write out 14 objects to 001513
+write out 12 objects to 001514
+write out 2 objects to 001516
+write out 3 objects to 001517
+predict ['001521' '001522' '001524' '001525']
+write out 3 objects to 001521
+write out 12 objects to 001522
+write out 1 objects to 001524
+write out 2 objects to 001525
+predict ['001526' '001527' '001528' '001533']
+write out 3 objects to 001526
+write out 0 objects to 001527
+write out 4 objects to 001528
+write out 8 objects to 001533
+predict ['001535' '001536' '001537' '001538']
+write out 10 objects to 001535
+write out 3 objects to 001536
+write out 1 objects to 001537
+write out 7 objects to 001538
+predict ['001542' '001545' '001546' '001547']
+write out 4 objects to 001542
+write out 9 objects to 001545
+write out 3 objects to 001546
+write out 0 objects to 001547
+predict ['001549' '001552' '001555' '001557']
+write out 1 objects to 001549
+write out 8 objects to 001552
+write out 5 objects to 001555
+write out 7 objects to 001557
+predict ['001560' '001562' '001564' '001565']
+write out 9 objects to 001560
+write out 7 objects to 001562
+write out 9 objects to 001564
+write out 7 objects to 001565
+predict ['001567' '001569' '001573' '001574']
+write out 4 objects to 001567
+write out 2 objects to 001569
+write out 9 objects to 001573
+write out 2 objects to 001574
+predict ['001576' '001577' '001579' '001582']
+write out 9 objects to 001576
+write out 1 objects to 001577
+write out 2 objects to 001579
+write out 6 objects to 001582
+predict ['001583' '001585' '001586' '001587']
+write out 20 objects to 001583
+write out 11 objects to 001585
+write out 5 objects to 001586
+write out 1 objects to 001587
+predict ['001588' '001589' '001590' '001591']
+write out 2 objects to 001588
+write out 1 objects to 001589
+write out 7 objects to 001590
+write out 11 objects to 001591
+predict ['001592' '001594' '001596' '001597']
+write out 8 objects to 001592
+write out 9 objects to 001594
+write out 14 objects to 001596
+write out 4 objects to 001597
+predict ['001600' '001602' '001603' '001605']
+write out 3 objects to 001600
+write out 9 objects to 001602
+write out 12 objects to 001603
+write out 2 objects to 001605
+predict ['001606' '001610' '001613' '001615']
+write out 7 objects to 001606
+write out 7 objects to 001610
+write out 2 objects to 001613
+write out 4 objects to 001615
+predict ['001616' '001617' '001619' '001621']
+write out 11 objects to 001616
+write out 1 objects to 001617
+write out 1 objects to 001619
+write out 3 objects to 001621
+predict ['001625' '001627' '001629' '001631']
+write out 11 objects to 001625
+write out 2 objects to 001627
+write out 4 objects to 001629
+write out 4 objects to 001631
+predict ['001633' '001634' '001635' '001640']
+write out 6 objects to 001633
+write out 13 objects to 001634
+write out 1 objects to 001635
+write out 1 objects to 001640
+predict ['001643' '001645' '001647' '001650']
+write out 15 objects to 001643
+write out 6 objects to 001645
+write out 4 objects to 001647
+write out 3 objects to 001650
+predict ['001654' '001656' '001658' '001660']
+write out 0 objects to 001654
+write out 3 objects to 001656
+write out 4 objects to 001658
+write out 3 objects to 001660
+predict ['001662' '001664' '001665' '001666']
+write out 7 objects to 001662
+write out 4 objects to 001664
+write out 4 objects to 001665
+write out 4 objects to 001666
+predict ['001667' '001670' '001675' '001680']
+write out 0 objects to 001667
+write out 5 objects to 001670
+write out 1 objects to 001675
+write out 6 objects to 001680
+predict ['001682' '001683' '001684' '001689']
+write out 7 objects to 001682
+write out 8 objects to 001683
+write out 1 objects to 001684
+write out 0 objects to 001689
+predict ['001693' '001694' '001697' '001699']
+write out 5 objects to 001693
+write out 2 objects to 001694
+write out 11 objects to 001697
+write out 6 objects to 001699
+predict ['001701' '001702' '001704' '001705']
+write out 10 objects to 001701
+write out 1 objects to 001702
+write out 1 objects to 001704
+write out 8 objects to 001705
+predict ['001706' '001707' '001709' '001710']
+write out 3 objects to 001706
+write out 2 objects to 001707
+write out 11 objects to 001709
+write out 6 objects to 001710
+predict ['001711' '001712' '001713' '001714']
+write out 3 objects to 001711
+write out 0 objects to 001712
+write out 2 objects to 001713
+write out 2 objects to 001714
+predict ['001717' '001718' '001719' '001721']
+write out 0 objects to 001717
+write out 9 objects to 001718
+write out 1 objects to 001719
+write out 9 objects to 001721
+predict ['001722' '001726' '001727' '001729']
+write out 5 objects to 001722
+write out 3 objects to 001726
+write out 2 objects to 001727
+write out 2 objects to 001729
+predict ['001732' '001733' '001740' '001741']
+write out 2 objects to 001732
+write out 7 objects to 001733
+write out 5 objects to 001740
+write out 15 objects to 001741
+predict ['001742' '001745' '001746' '001749']
+write out 11 objects to 001742
+write out 12 objects to 001745
+write out 10 objects to 001746
+write out 2 objects to 001749
+predict ['001750' '001751' '001752' '001755']
+write out 3 objects to 001750
+write out 4 objects to 001751
+write out 1 objects to 001752
+write out 3 objects to 001755
+predict ['001758' '001762' '001764' '001765']
+write out 0 objects to 001758
+write out 6 objects to 001762
+write out 15 objects to 001764
+write out 9 objects to 001765
+predict ['001768' '001771' '001772' '001774']
+write out 2 objects to 001768
+write out 5 objects to 001771
+write out 7 objects to 001772
+write out 2 objects to 001774
+predict ['001776' '001778' '001780' '001781']
+write out 7 objects to 001776
+write out 8 objects to 001778
+write out 15 objects to 001780
+write out 4 objects to 001781
+predict ['001782' '001783' '001786' '001787']
+write out 1 objects to 001782
+write out 4 objects to 001783
+write out 3 objects to 001786
+write out 4 objects to 001787
+predict ['001794' '001795' '001797' '001800']
+write out 13 objects to 001794
+write out 3 objects to 001795
+write out 3 objects to 001797
+write out 2 objects to 001800
+predict ['001801' '001802' '001804' '001807']
+write out 11 objects to 001801
+write out 2 objects to 001802
+write out 0 objects to 001804
+write out 3 objects to 001807
+predict ['001808' '001813' '001814' '001817']
+write out 3 objects to 001808
+write out 3 objects to 001813
+write out 3 objects to 001814
+write out 0 objects to 001817
+predict ['001818' '001820' '001822' '001823']
+write out 2 objects to 001818
+write out 7 objects to 001820
+write out 2 objects to 001822
+write out 3 objects to 001823
+predict ['001824' '001825' '001828' '001831']
+write out 2 objects to 001824
+write out 8 objects to 001825
+write out 3 objects to 001828
+write out 2 objects to 001831
+predict ['001835' '001840' '001844' '001846']
+write out 0 objects to 001835
+write out 12 objects to 001840
+write out 4 objects to 001844
+write out 0 objects to 001846
+predict ['001848' '001851' '001852' '001853']
+write out 7 objects to 001848
+write out 3 objects to 001851
+write out 13 objects to 001852
+write out 1 objects to 001853
+predict ['001854' '001855' '001856' '001858']
+write out 2 objects to 001854
+write out 11 objects to 001855
+write out 4 objects to 001856
+write out 10 objects to 001858
+predict ['001859' '001861' '001862' '001863']
+write out 9 objects to 001859
+write out 2 objects to 001861
+write out 8 objects to 001862
+write out 2 objects to 001863
+predict ['001867' '001868' '001869' '001872']
+write out 7 objects to 001867
+write out 9 objects to 001868
+write out 2 objects to 001869
+write out 6 objects to 001872
+predict ['001875' '001877' '001878' '001880']
+write out 3 objects to 001875
+write out 4 objects to 001877
+write out 6 objects to 001878
+write out 2 objects to 001880
+predict ['001881' '001884' '001885' '001886']
+write out 0 objects to 001881
+write out 3 objects to 001884
+write out 0 objects to 001885
+write out 3 objects to 001886
+predict ['001887' '001888' '001890' '001892']
+write out 6 objects to 001887
+write out 4 objects to 001888
+write out 2 objects to 001890
+write out 0 objects to 001892
+predict ['001893' '001897' '001898' '001900']
+write out 11 objects to 001893
+write out 5 objects to 001897
+write out 12 objects to 001898
+write out 3 objects to 001900
+predict ['001904' '001905' '001909' '001919']
+write out 4 objects to 001904
+write out 3 objects to 001905
+write out 12 objects to 001909
+write out 6 objects to 001919
+predict ['001920' '001923' '001924' '001925']
+write out 3 objects to 001920
+write out 0 objects to 001923
+write out 3 objects to 001924
+write out 7 objects to 001925
+predict ['001926' '001927' '001928' '001929']
+write out 10 objects to 001926
+write out 2 objects to 001927
+write out 10 objects to 001928
+write out 8 objects to 001929
+predict ['001931' '001932' '001933' '001934']
+write out 1 objects to 001931
+write out 5 objects to 001932
+write out 2 objects to 001933
+write out 1 objects to 001934
+predict ['001936' '001937' '001940' '001941']
+write out 3 objects to 001936
+write out 11 objects to 001937
+write out 3 objects to 001940
+write out 11 objects to 001941
+predict ['001942' '001943' '001945' '001946']
+write out 8 objects to 001942
+write out 3 objects to 001943
+write out 1 objects to 001945
+write out 0 objects to 001946
+predict ['001952' '001954' '001959' '001960']
+write out 2 objects to 001952
+write out 8 objects to 001954
+write out 10 objects to 001959
+write out 7 objects to 001960
+predict ['001966' '001967' '001969' '001972']
+write out 9 objects to 001966
+write out 7 objects to 001967
+write out 11 objects to 001969
+write out 1 objects to 001972
+predict ['001977' '001978' '001979' '001980']
+write out 7 objects to 001977
+write out 3 objects to 001978
+write out 6 objects to 001979
+write out 4 objects to 001980
+predict ['001982' '001983' '001984' '001985']
+write out 0 objects to 001982
+write out 1 objects to 001983
+write out 0 objects to 001984
+write out 3 objects to 001985
+predict ['001986' '001989' '001991' '001995']
+write out 7 objects to 001986
+write out 3 objects to 001989
+write out 11 objects to 001991
+write out 0 objects to 001995
+predict ['001996' '001997' '001999' '002000']
+write out 4 objects to 001996
+write out 3 objects to 001997
+write out 18 objects to 001999
+write out 4 objects to 002000
+predict ['002001' '002002' '002004' '002008']
+write out 2 objects to 002001
+write out 7 objects to 002002
+write out 3 objects to 002004
+write out 5 objects to 002008
+predict ['002010' '002011' '002012' '002013']
+write out 2 objects to 002010
+write out 3 objects to 002011
+write out 9 objects to 002012
+write out 2 objects to 002013
+predict ['002014' '002017' '002019' '002021']
+write out 4 objects to 002014
+write out 3 objects to 002017
+write out 2 objects to 002019
+write out 6 objects to 002021
+predict ['002022' '002025' '002027' '002028']
+write out 2 objects to 002022
+write out 1 objects to 002025
+write out 4 objects to 002027
+write out 11 objects to 002028
+predict ['002029' '002034' '002035' '002036']
+write out 6 objects to 002029
+write out 1 objects to 002034
+write out 9 objects to 002035
+write out 0 objects to 002036
+predict ['002037' '002038' '002042' '002043']
+write out 2 objects to 002037
+write out 5 objects to 002038
+write out 0 objects to 002042
+write out 5 objects to 002043
+predict ['002044' '002045' '002046' '002048']
+write out 11 objects to 002044
+write out 1 objects to 002045
+write out 3 objects to 002046
+write out 4 objects to 002048
+predict ['002049' '002050' '002052' '002054']
+write out 3 objects to 002049
+write out 19 objects to 002050
+write out 5 objects to 002052
+write out 5 objects to 002054
+predict ['002056' '002057' '002058' '002062']
+write out 6 objects to 002056
+write out 7 objects to 002057
+write out 1 objects to 002058
+write out 6 objects to 002062
+predict ['002068' '002071' '002073' '002074']
+write out 8 objects to 002068
+write out 1 objects to 002071
+write out 1 objects to 002073
+write out 3 objects to 002074
+predict ['002075' '002076' '002078' '002079']
+write out 4 objects to 002075
+write out 9 objects to 002076
+write out 5 objects to 002078
+write out 5 objects to 002079
+predict ['002081' '002082' '002085' '002086']
+write out 3 objects to 002081
+write out 15 objects to 002082
+write out 10 objects to 002085
+write out 9 objects to 002086
+predict ['002087' '002089' '002091' '002093']
+write out 3 objects to 002087
+write out 3 objects to 002089
+write out 1 objects to 002091
+write out 5 objects to 002093
+predict ['002094' '002100' '002101' '002102']
+write out 1 objects to 002094
+write out 1 objects to 002100
+write out 6 objects to 002101
+write out 10 objects to 002102
+predict ['002103' '002107' '002108' '002111']
+write out 7 objects to 002103
+write out 8 objects to 002107
+write out 0 objects to 002108
+write out 4 objects to 002111
+predict ['002112' '002113' '002115' '002118']
+write out 6 objects to 002112
+write out 3 objects to 002113
+write out 2 objects to 002115
+write out 2 objects to 002118
+predict ['002120' '002121' '002123' '002124']
+write out 1 objects to 002120
+write out 5 objects to 002121
+write out 5 objects to 002123
+write out 2 objects to 002124
+predict ['002127' '002128' '002130' '002131']
+write out 3 objects to 002127
+write out 5 objects to 002128
+write out 7 objects to 002130
+write out 4 objects to 002131
+predict ['002135' '002136' '002137' '002138']
+write out 20 objects to 002135
+write out 9 objects to 002136
+write out 8 objects to 002137
+write out 3 objects to 002138
+predict ['002139' '002140' '002142' '002151']
+write out 10 objects to 002139
+write out 7 objects to 002140
+write out 12 objects to 002142
+write out 7 objects to 002151
+predict ['002152' '002153' '002158' '002159']
+write out 9 objects to 002152
+write out 11 objects to 002153
+write out 9 objects to 002158
+write out 2 objects to 002159
+predict ['002160' '002161' '002163' '002165']
+write out 1 objects to 002160
+write out 7 objects to 002161
+write out 3 objects to 002163
+write out 1 objects to 002165
+predict ['002166' '002168' '002169' '002170']
+write out 3 objects to 002166
+write out 11 objects to 002168
+write out 6 objects to 002169
+write out 3 objects to 002170
+predict ['002173' '002177' '002179' '002182']
+write out 7 objects to 002173
+write out 8 objects to 002177
+write out 1 objects to 002179
+write out 10 objects to 002182
+predict ['002183' '002185' '002187' '002188']
+write out 8 objects to 002183
+write out 7 objects to 002185
+write out 11 objects to 002187
+write out 2 objects to 002188
+predict ['002193' '002196' '002200' '002201']
+write out 6 objects to 002193
+write out 1 objects to 002196
+write out 6 objects to 002200
+write out 8 objects to 002201
+predict ['002202' '002206' '002207' '002209']
+write out 4 objects to 002202
+write out 0 objects to 002206
+write out 3 objects to 002207
+write out 9 objects to 002209
+predict ['002215' '002216' '002218' '002219']
+write out 4 objects to 002215
+write out 10 objects to 002216
+write out 3 objects to 002218
+write out 11 objects to 002219
+predict ['002220' '002224' '002225' '002228']
+write out 0 objects to 002220
+write out 2 objects to 002224
+write out 6 objects to 002225
+write out 4 objects to 002228
+predict ['002229' '002232' '002233' '002234']
+write out 2 objects to 002229
+write out 5 objects to 002232
+write out 3 objects to 002233
+write out 9 objects to 002234
+predict ['002239' '002243' '002245' '002246']
+write out 4 objects to 002239
+write out 1 objects to 002243
+write out 3 objects to 002245
+write out 2 objects to 002246
+predict ['002248' '002250' '002251' '002254']
+write out 5 objects to 002248
+write out 5 objects to 002250
+write out 1 objects to 002251
+write out 8 objects to 002254
+predict ['002255' '002257' '002258' '002260']
+write out 4 objects to 002255
+write out 16 objects to 002257
+write out 3 objects to 002258
+write out 4 objects to 002260
+predict ['002262' '002266' '002272' '002276']
+write out 8 objects to 002262
+write out 5 objects to 002266
+write out 7 objects to 002272
+write out 3 objects to 002276
+predict ['002277' '002279' '002280' '002282']
+write out 4 objects to 002277
+write out 3 objects to 002279
+write out 1 objects to 002280
+write out 0 objects to 002282
+predict ['002283' '002284' '002286' '002287']
+write out 2 objects to 002283
+write out 0 objects to 002284
+write out 4 objects to 002286
+write out 0 objects to 002287
+predict ['002290' '002291' '002292' '002293']
+write out 17 objects to 002290
+write out 4 objects to 002291
+write out 4 objects to 002292
+write out 9 objects to 002293
+predict ['002294' '002295' '002298' '002299']
+write out 5 objects to 002294
+write out 11 objects to 002295
+write out 3 objects to 002298
+write out 0 objects to 002299
+predict ['002300' '002303' '002304' '002306']
+write out 6 objects to 002300
+write out 10 objects to 002303
+write out 3 objects to 002304
+write out 5 objects to 002306
+predict ['002307' '002308' '002310' '002314']
+write out 3 objects to 002307
+write out 0 objects to 002308
+write out 0 objects to 002310
+write out 9 objects to 002314
+predict ['002315' '002319' '002320' '002325']
+write out 1 objects to 002315
+write out 1 objects to 002319
+write out 1 objects to 002320
+write out 2 objects to 002325
+predict ['002327' '002329' '002330' '002332']
+write out 4 objects to 002327
+write out 3 objects to 002329
+write out 4 objects to 002330
+write out 6 objects to 002332
+predict ['002334' '002336' '002337' '002338']
+write out 0 objects to 002334
+write out 3 objects to 002336
+write out 1 objects to 002337
+write out 6 objects to 002338
+predict ['002340' '002341' '002344' '002345']
+write out 11 objects to 002340
+write out 7 objects to 002341
+write out 14 objects to 002344
+write out 9 objects to 002345
+predict ['002346' '002347' '002348' '002353']
+write out 4 objects to 002346
+write out 3 objects to 002347
+write out 1 objects to 002348
+write out 2 objects to 002353
+predict ['002356' '002357' '002359' '002362']
+write out 3 objects to 002356
+write out 11 objects to 002357
+write out 6 objects to 002359
+write out 1 objects to 002362
+predict ['002365' '002366' '002367' '002369']
+write out 4 objects to 002365
+write out 8 objects to 002366
+write out 9 objects to 002367
+write out 1 objects to 002369
+predict ['002370' '002372' '002376' '002378']
+write out 3 objects to 002370
+write out 5 objects to 002372
+write out 6 objects to 002376
+write out 10 objects to 002378
+predict ['002380' '002382' '002383' '002384']
+write out 9 objects to 002380
+write out 4 objects to 002382
+write out 4 objects to 002383
+write out 6 objects to 002384
+predict ['002385' '002386' '002387' '002391']
+write out 12 objects to 002385
+write out 2 objects to 002386
+write out 7 objects to 002387
+write out 2 objects to 002391
+predict ['002392' '002393' '002397' '002398']
+write out 9 objects to 002392
+write out 1 objects to 002393
+write out 8 objects to 002397
+write out 9 objects to 002398
+predict ['002399' '002404' '002405' '002411']
+write out 16 objects to 002399
+write out 5 objects to 002404
+write out 9 objects to 002405
+write out 2 objects to 002411
+predict ['002414' '002415' '002418' '002419']
+write out 10 objects to 002414
+write out 6 objects to 002415
+write out 4 objects to 002418
+write out 6 objects to 002419
+predict ['002420' '002422' '002423' '002424']
+write out 3 objects to 002420
+write out 4 objects to 002422
+write out 6 objects to 002423
+write out 0 objects to 002424
+predict ['002425' '002428' '002429' '002432']
+write out 1 objects to 002425
+write out 4 objects to 002428
+write out 2 objects to 002429
+write out 1 objects to 002432
+predict ['002433' '002434' '002439' '002440']
+write out 6 objects to 002433
+write out 2 objects to 002434
+write out 5 objects to 002439
+write out 0 objects to 002440
+predict ['002442' '002446' '002450' '002454']
+write out 4 objects to 002442
+write out 6 objects to 002446
+write out 12 objects to 002450
+write out 12 objects to 002454
+predict ['002455' '002457' '002458' '002460']
+write out 11 objects to 002455
+write out 0 objects to 002457
+write out 1 objects to 002458
+write out 3 objects to 002460
+predict ['002461' '002462' '002463' '002473']
+write out 6 objects to 002461
+write out 7 objects to 002462
+write out 2 objects to 002463
+write out 6 objects to 002473
+predict ['002474' '002476' '002477' '002478']
+write out 8 objects to 002474
+write out 10 objects to 002476
+write out 7 objects to 002477
+write out 2 objects to 002478
+predict ['002479' '002483' '002486' '002488']
+write out 6 objects to 002479
+write out 2 objects to 002483
+write out 10 objects to 002486
+write out 3 objects to 002488
+predict ['002490' '002492' '002495' '002497']
+write out 12 objects to 002490
+write out 6 objects to 002492
+write out 8 objects to 002495
+write out 5 objects to 002497
+predict ['002499' '002500' '002502' '002503']
+write out 1 objects to 002499
+write out 1 objects to 002500
+write out 7 objects to 002502
+write out 19 objects to 002503
+predict ['002504' '002505' '002506' '002509']
+write out 1 objects to 002504
+write out 3 objects to 002505
+write out 3 objects to 002506
+write out 4 objects to 002509
+predict ['002511' '002516' '002519' '002520']
+write out 3 objects to 002511
+write out 2 objects to 002516
+write out 5 objects to 002519
+write out 13 objects to 002520
+predict ['002521' '002525' '002526' '002528']
+write out 3 objects to 002521
+write out 2 objects to 002525
+write out 0 objects to 002526
+write out 2 objects to 002528
+predict ['002529' '002530' '002531' '002532']
+write out 0 objects to 002529
+write out 3 objects to 002530
+write out 2 objects to 002531
+write out 3 objects to 002532
+predict ['002534' '002538' '002539' '002540']
+write out 2 objects to 002534
+write out 4 objects to 002538
+write out 2 objects to 002539
+write out 10 objects to 002540
+predict ['002541' '002543' '002546' '002548']
+write out 7 objects to 002541
+write out 6 objects to 002543
+write out 8 objects to 002546
+write out 0 objects to 002548
+predict ['002552' '002556' '002557' '002558']
+write out 11 objects to 002552
+write out 1 objects to 002556
+write out 0 objects to 002557
+write out 16 objects to 002558
+predict ['002562' '002563' '002564' '002565']
+write out 3 objects to 002562
+write out 2 objects to 002563
+write out 2 objects to 002564
+write out 2 objects to 002565
+predict ['002568' '002569' '002570' '002572']
+write out 1 objects to 002568
+write out 2 objects to 002569
+write out 5 objects to 002570
+write out 9 objects to 002572
+predict ['002574' '002575' '002577' '002580']
+write out 4 objects to 002574
+write out 6 objects to 002575
+write out 2 objects to 002577
+write out 7 objects to 002580
+predict ['002581' '002583' '002584' '002585']
+write out 3 objects to 002581
+write out 1 objects to 002583
+write out 10 objects to 002584
+write out 2 objects to 002585
+predict ['002586' '002590' '002594' '002598']
+write out 3 objects to 002586
+write out 1 objects to 002590
+write out 9 objects to 002594
+write out 2 objects to 002598
+predict ['002599' '002600' '002601' '002602']
+write out 11 objects to 002599
+write out 1 objects to 002600
+write out 9 objects to 002601
+write out 2 objects to 002602
+predict ['002603' '002604' '002606' '002612']
+write out 2 objects to 002603
+write out 11 objects to 002604
+write out 5 objects to 002606
+write out 4 objects to 002612
+predict ['002613' '002615' '002619' '002621']
+write out 0 objects to 002613
+write out 20 objects to 002615
+write out 1 objects to 002619
+write out 3 objects to 002621
+predict ['002625' '002626' '002628' '002630']
+write out 4 objects to 002625
+write out 2 objects to 002626
+write out 1 objects to 002628
+write out 1 objects to 002630
+predict ['002631' '002633' '002635' '002636']
+write out 4 objects to 002631
+write out 4 objects to 002633
+write out 6 objects to 002635
+write out 5 objects to 002636
+predict ['002638' '002640' '002641' '002644']
+write out 17 objects to 002638
+write out 1 objects to 002640
+write out 7 objects to 002641
+write out 6 objects to 002644
+predict ['002645' '002646' '002651' '002653']
+write out 8 objects to 002645
+write out 11 objects to 002646
+write out 0 objects to 002651
+write out 2 objects to 002653
+predict ['002656' '002657' '002661' '002663']
+write out 3 objects to 002656
+write out 2 objects to 002657
+write out 4 objects to 002661
+write out 0 objects to 002663
+predict ['002666' '002669' '002673' '002674']
+write out 0 objects to 002666
+write out 1 objects to 002669
+write out 6 objects to 002673
+write out 14 objects to 002674
+predict ['002675' '002677' '002680' '002681']
+write out 1 objects to 002675
+write out 6 objects to 002677
+write out 0 objects to 002680
+write out 4 objects to 002681
+predict ['002685' '002686' '002690' '002692']
+write out 7 objects to 002685
+write out 0 objects to 002686
+write out 2 objects to 002690
+write out 2 objects to 002692
+predict ['002693' '002694' '002695' '002696']
+write out 0 objects to 002693
+write out 5 objects to 002694
+write out 0 objects to 002695
+write out 4 objects to 002696
+predict ['002699' '002702' '002706' '002707']
+write out 4 objects to 002699
+write out 4 objects to 002702
+write out 3 objects to 002706
+write out 0 objects to 002707
+predict ['002709' '002710' '002711' '002712']
+write out 4 objects to 002709
+write out 5 objects to 002710
+write out 9 objects to 002711
+write out 5 objects to 002712
+predict ['002713' '002715' '002717' '002720']
+write out 2 objects to 002713
+write out 2 objects to 002715
+write out 2 objects to 002717
+write out 1 objects to 002720
+predict ['002721' '002722' '002724' '002725']
+write out 5 objects to 002721
+write out 1 objects to 002722
+write out 5 objects to 002724
+write out 2 objects to 002725
+predict ['002726' '002727' '002728' '002729']
+write out 4 objects to 002726
+write out 7 objects to 002727
+write out 2 objects to 002728
+write out 4 objects to 002729
+predict ['002730' '002735' '002737' '002740']
+write out 14 objects to 002730
+write out 3 objects to 002735
+write out 8 objects to 002737
+write out 1 objects to 002740
+predict ['002742' '002744' '002745' '002746']
+write out 0 objects to 002742
+write out 5 objects to 002744
+write out 3 objects to 002745
+write out 6 objects to 002746
+predict ['002747' '002748' '002749' '002752']
+write out 11 objects to 002747
+write out 10 objects to 002748
+write out 2 objects to 002749
+write out 12 objects to 002752
+predict ['002753' '002755' '002757' '002758']
+write out 11 objects to 002753
+write out 3 objects to 002755
+write out 1 objects to 002757
+write out 4 objects to 002758
+predict ['002760' '002761' '002763' '002764']
+write out 3 objects to 002760
+write out 0 objects to 002761
+write out 0 objects to 002763
+write out 2 objects to 002764
+predict ['002765' '002767' '002772' '002773']
+write out 5 objects to 002765
+write out 0 objects to 002767
+write out 3 objects to 002772
+write out 10 objects to 002773
+predict ['002775' '002783' '002786' '002787']
+write out 3 objects to 002775
+write out 2 objects to 002783
+write out 10 objects to 002786
+write out 10 objects to 002787
+predict ['002789' '002793' '002794' '002796']
+write out 4 objects to 002789
+write out 7 objects to 002793
+write out 3 objects to 002794
+write out 4 objects to 002796
+predict ['002797' '002800' '002801' '002804']
+write out 3 objects to 002797
+write out 2 objects to 002800
+write out 4 objects to 002801
+write out 5 objects to 002804
+predict ['002805' '002806' '002809' '002810']
+write out 6 objects to 002805
+write out 4 objects to 002806
+write out 3 objects to 002809
+write out 2 objects to 002810
+predict ['002811' '002812' '002814' '002815']
+write out 0 objects to 002811
+write out 9 objects to 002812
+write out 2 objects to 002814
+write out 13 objects to 002815
+predict ['002818' '002820' '002826' '002827']
+write out 8 objects to 002818
+write out 2 objects to 002820
+write out 9 objects to 002826
+write out 4 objects to 002827
+predict ['002828' '002830' '002831' '002833']
+write out 1 objects to 002828
+write out 1 objects to 002830
+write out 9 objects to 002831
+write out 0 objects to 002833
+predict ['002836' '002839' '002840' '002841']
+write out 1 objects to 002836
+write out 12 objects to 002839
+write out 3 objects to 002840
+write out 11 objects to 002841
+predict ['002844' '002845' '002846' '002847']
+write out 3 objects to 002844
+write out 9 objects to 002845
+write out 15 objects to 002846
+write out 15 objects to 002847
+predict ['002848' '002853' '002856' '002858']
+write out 9 objects to 002848
+write out 11 objects to 002853
+write out 4 objects to 002856
+write out 5 objects to 002858
+predict ['002861' '002863' '002866' '002867']
+write out 6 objects to 002861
+write out 1 objects to 002863
+write out 5 objects to 002866
+write out 5 objects to 002867
+predict ['002875' '002876' '002877' '002878']
+write out 0 objects to 002875
+write out 2 objects to 002876
+write out 3 objects to 002877
+write out 12 objects to 002878
+predict ['002879' '002880' '002881' '002883']
+write out 8 objects to 002879
+write out 4 objects to 002880
+write out 0 objects to 002881
+write out 3 objects to 002883
+predict ['002885' '002889' '002890' '002891']
+write out 2 objects to 002885
+write out 1 objects to 002889
+write out 6 objects to 002890
+write out 2 objects to 002891
+predict ['002892' '002893' '002894' '002895']
+write out 6 objects to 002892
+write out 3 objects to 002893
+write out 10 objects to 002894
+write out 7 objects to 002895
+predict ['002896' '002900' '002901' '002902']
+write out 7 objects to 002896
+write out 0 objects to 002900
+write out 3 objects to 002901
+write out 6 objects to 002902
+predict ['002903' '002905' '002908' '002911']
+write out 1 objects to 002903
+write out 6 objects to 002905
+write out 0 objects to 002908
+write out 7 objects to 002911
+predict ['002914' '002916' '002917' '002919']
+write out 1 objects to 002914
+write out 5 objects to 002916
+write out 3 objects to 002917
+write out 4 objects to 002919
+predict ['002924' '002925' '002928' '002930']
+write out 3 objects to 002924
+write out 5 objects to 002925
+write out 5 objects to 002928
+write out 7 objects to 002930
+predict ['002934' '002935' '002937' '002942']
+write out 9 objects to 002934
+write out 9 objects to 002935
+write out 5 objects to 002937
+write out 6 objects to 002942
+predict ['002944' '002945' '002947' '002948']
+write out 3 objects to 002944
+write out 3 objects to 002945
+write out 9 objects to 002947
+write out 5 objects to 002948
+predict ['002951' '002953' '002955' '002957']
+write out 1 objects to 002951
+write out 10 objects to 002953
+write out 4 objects to 002955
+write out 6 objects to 002957
+predict ['002958' '002959' '002960' '002961']
+write out 1 objects to 002958
+write out 10 objects to 002959
+write out 9 objects to 002960
+write out 4 objects to 002961
+predict ['002962' '002963' '002964' '002966']
+write out 3 objects to 002962
+write out 9 objects to 002963
+write out 11 objects to 002964
+write out 3 objects to 002966
+predict ['002971' '002974' '002976' '002977']
+write out 3 objects to 002971
+write out 9 objects to 002974
+write out 12 objects to 002976
+write out 3 objects to 002977
+predict ['002978' '002979' '002982' '002984']
+write out 10 objects to 002978
+write out 2 objects to 002979
+write out 5 objects to 002982
+write out 11 objects to 002984
+predict ['002985' '002988' '002991' '002993']
+write out 6 objects to 002985
+write out 10 objects to 002988
+write out 6 objects to 002991
+write out 3 objects to 002993
+predict ['002994' '002995' '002997' '002999']
+write out 0 objects to 002994
+write out 1 objects to 002995
+write out 4 objects to 002997
+write out 3 objects to 002999
+predict ['003000' '003001' '003003' '003004']
+write out 1 objects to 003000
+write out 12 objects to 003001
+write out 2 objects to 003003
+write out 11 objects to 003004
+predict ['003005' '003006' '003007' '003010']
+write out 6 objects to 003005
+write out 5 objects to 003006
+write out 2 objects to 003007
+write out 4 objects to 003010
+predict ['003011' '003019' '003022' '003024']
+write out 3 objects to 003011
+write out 8 objects to 003019
+write out 7 objects to 003022
+write out 4 objects to 003024
+predict ['003025' '003027' '003029' '003030']
+write out 5 objects to 003025
+write out 7 objects to 003027
+write out 1 objects to 003029
+write out 10 objects to 003030
+predict ['003031' '003032' '003033' '003034']
+write out 1 objects to 003031
+write out 4 objects to 003032
+write out 6 objects to 003033
+write out 5 objects to 003034
+predict ['003035' '003038' '003042' '003043']
+write out 9 objects to 003035
+write out 2 objects to 003038
+write out 6 objects to 003042
+write out 11 objects to 003043
+predict ['003046' '003047' '003048' '003050']
+write out 4 objects to 003046
+write out 3 objects to 003047
+write out 11 objects to 003048
+write out 2 objects to 003050
+predict ['003052' '003053' '003054' '003055']
+write out 5 objects to 003052
+write out 6 objects to 003053
+write out 0 objects to 003054
+write out 11 objects to 003055
+predict ['003056' '003058' '003061' '003062']
+write out 5 objects to 003056
+write out 4 objects to 003058
+write out 7 objects to 003061
+write out 2 objects to 003062
+predict ['003065' '003066' '003067' '003071']
+write out 7 objects to 003065
+write out 3 objects to 003066
+write out 3 objects to 003067
+write out 1 objects to 003071
+predict ['003073' '003074' '003076' '003080']
+write out 4 objects to 003073
+write out 3 objects to 003074
+write out 1 objects to 003076
+write out 2 objects to 003080
+predict ['003082' '003087' '003088' '003090']
+write out 0 objects to 003082
+write out 8 objects to 003087
+write out 1 objects to 003088
+write out 1 objects to 003090
+predict ['003094' '003096' '003099' '003101']
+write out 10 objects to 003094
+write out 0 objects to 003096
+write out 3 objects to 003099
+write out 5 objects to 003101
+predict ['003102' '003103' '003106' '003107']
+write out 6 objects to 003102
+write out 9 objects to 003103
+write out 2 objects to 003106
+write out 15 objects to 003107
+predict ['003109' '003110' '003112' '003114']
+write out 3 objects to 003109
+write out 1 objects to 003110
+write out 2 objects to 003112
+write out 1 objects to 003114
+predict ['003116' '003118' '003124' '003126']
+write out 12 objects to 003116
+write out 5 objects to 003118
+write out 7 objects to 003124
+write out 3 objects to 003126
+predict ['003127' '003129' '003131' '003133']
+write out 4 objects to 003127
+write out 2 objects to 003129
+write out 7 objects to 003131
+write out 1 objects to 003133
+predict ['003134' '003135' '003136' '003137']
+write out 3 objects to 003134
+write out 9 objects to 003135
+write out 3 objects to 003136
+write out 2 objects to 003137
+predict ['003141' '003142' '003144' '003145']
+write out 9 objects to 003141
+write out 3 objects to 003142
+write out 2 objects to 003144
+write out 1 objects to 003145
+predict ['003146' '003148' '003150' '003153']
+write out 6 objects to 003146
+write out 2 objects to 003148
+write out 5 objects to 003150
+write out 2 objects to 003153
+predict ['003156' '003159' '003161' '003162']
+write out 7 objects to 003156
+write out 12 objects to 003159
+write out 2 objects to 003161
+write out 0 objects to 003162
+predict ['003165' '003167' '003170' '003172']
+write out 3 objects to 003165
+write out 10 objects to 003167
+write out 7 objects to 003170
+write out 6 objects to 003172
+predict ['003174' '003175' '003177' '003179']
+write out 1 objects to 003174
+write out 3 objects to 003175
+write out 0 objects to 003177
+write out 3 objects to 003179
+predict ['003180' '003181' '003182' '003183']
+write out 3 objects to 003180
+write out 5 objects to 003181
+write out 4 objects to 003182
+write out 2 objects to 003183
+predict ['003187' '003190' '003192' '003194']
+write out 5 objects to 003187
+write out 3 objects to 003190
+write out 10 objects to 003192
+write out 9 objects to 003194
+predict ['003197' '003199' '003202' '003203']
+write out 12 objects to 003197
+write out 0 objects to 003199
+write out 1 objects to 003202
+write out 12 objects to 003203
+predict ['003204' '003207' '003210' '003211']
+write out 2 objects to 003204
+write out 2 objects to 003207
+write out 5 objects to 003210
+write out 11 objects to 003211
+predict ['003214' '003216' '003217' '003219']
+write out 7 objects to 003214
+write out 6 objects to 003216
+write out 2 objects to 003217
+write out 17 objects to 003219
+predict ['003221' '003222' '003224' '003225']
+write out 0 objects to 003221
+write out 5 objects to 003222
+write out 11 objects to 003224
+write out 7 objects to 003225
+predict ['003226' '003228' '003229' '003231']
+write out 3 objects to 003226
+write out 6 objects to 003228
+write out 2 objects to 003229
+write out 8 objects to 003231
+predict ['003232' '003233' '003236' '003239']
+write out 0 objects to 003232
+write out 3 objects to 003233
+write out 10 objects to 003236
+write out 9 objects to 003239
+predict ['003240' '003242' '003247' '003250']
+write out 11 objects to 003240
+write out 2 objects to 003242
+write out 0 objects to 003247
+write out 1 objects to 003250
+predict ['003251' '003252' '003254' '003255']
+write out 2 objects to 003251
+write out 7 objects to 003252
+write out 7 objects to 003254
+write out 4 objects to 003255
+predict ['003257' '003259' '003265' '003266']
+write out 4 objects to 003257
+write out 1 objects to 003259
+write out 6 objects to 003265
+write out 1 objects to 003266
+predict ['003269' '003272' '003275' '003276']
+write out 0 objects to 003269
+write out 2 objects to 003272
+write out 5 objects to 003275
+write out 1 objects to 003276
+predict ['003280' '003281' '003283' '003288']
+write out 6 objects to 003280
+write out 5 objects to 003281
+write out 8 objects to 003283
+write out 15 objects to 003288
+predict ['003292' '003295' '003296' '003298']
+write out 3 objects to 003292
+write out 1 objects to 003295
+write out 6 objects to 003296
+write out 6 objects to 003298
+predict ['003300' '003301' '003302' '003304']
+write out 6 objects to 003300
+write out 10 objects to 003301
+write out 6 objects to 003302
+write out 12 objects to 003304
+predict ['003305' '003306' '003308' '003310']
+write out 3 objects to 003305
+write out 3 objects to 003306
+write out 9 objects to 003308
+write out 13 objects to 003310
+predict ['003312' '003313' '003315' '003316']
+write out 6 objects to 003312
+write out 8 objects to 003313
+write out 0 objects to 003315
+write out 2 objects to 003316
+predict ['003318' '003319' '003322' '003323']
+write out 1 objects to 003318
+write out 3 objects to 003319
+write out 3 objects to 003322
+write out 5 objects to 003323
+predict ['003324' '003325' '003330' '003331']
+write out 1 objects to 003324
+write out 9 objects to 003325
+write out 0 objects to 003330
+write out 0 objects to 003331
+predict ['003337' '003338' '003341' '003343']
+write out 8 objects to 003337
+write out 9 objects to 003338
+write out 10 objects to 003341
+write out 4 objects to 003343
+predict ['003346' '003347' '003350' '003351']
+write out 6 objects to 003346
+write out 4 objects to 003347
+write out 3 objects to 003350
+write out 4 objects to 003351
+predict ['003352' '003353' '003355' '003357']
+write out 7 objects to 003352
+write out 8 objects to 003353
+write out 9 objects to 003355
+write out 8 objects to 003357
+predict ['003358' '003364' '003365' '003366']
+write out 5 objects to 003358
+write out 2 objects to 003364
+write out 1 objects to 003365
+write out 2 objects to 003366
+predict ['003367' '003368' '003370' '003373']
+write out 3 objects to 003367
+write out 4 objects to 003368
+write out 6 objects to 003370
+write out 3 objects to 003373
+predict ['003375' '003379' '003385' '003386']
+write out 17 objects to 003375
+write out 1 objects to 003379
+write out 1 objects to 003385
+write out 10 objects to 003386
+predict ['003393' '003394' '003395' '003396']
+write out 1 objects to 003393
+write out 7 objects to 003394
+write out 6 objects to 003395
+write out 10 objects to 003396
+predict ['003397' '003399' '003401' '003402']
+write out 2 objects to 003397
+write out 3 objects to 003399
+write out 2 objects to 003401
+write out 0 objects to 003402
+predict ['003403' '003404' '003405' '003406']
+write out 2 objects to 003403
+write out 5 objects to 003404
+write out 2 objects to 003405
+write out 3 objects to 003406
+predict ['003407' '003408' '003409' '003410']
+write out 10 objects to 003407
+write out 7 objects to 003408
+write out 13 objects to 003409
+write out 6 objects to 003410
+predict ['003411' '003412' '003417' '003419']
+write out 1 objects to 003411
+write out 1 objects to 003412
+write out 6 objects to 003417
+write out 2 objects to 003419
+predict ['003421' '003422' '003425' '003426']
+write out 0 objects to 003421
+write out 1 objects to 003422
+write out 1 objects to 003425
+write out 2 objects to 003426
+predict ['003428' '003429' '003430' '003432']
+write out 1 objects to 003428
+write out 3 objects to 003429
+write out 5 objects to 003430
+write out 3 objects to 003432
+predict ['003434' '003435' '003443' '003447']
+write out 6 objects to 003434
+write out 0 objects to 003435
+write out 8 objects to 003443
+write out 1 objects to 003447
+predict ['003448' '003449' '003450' '003453']
+write out 2 objects to 003448
+write out 2 objects to 003449
+write out 3 objects to 003450
+write out 2 objects to 003453
+predict ['003456' '003461' '003464' '003465']
+write out 2 objects to 003456
+write out 5 objects to 003461
+write out 2 objects to 003464
+write out 5 objects to 003465
+predict ['003466' '003467' '003469' '003470']
+write out 6 objects to 003466
+write out 6 objects to 003467
+write out 1 objects to 003469
+write out 5 objects to 003470
+predict ['003471' '003474' '003478' '003480']
+write out 9 objects to 003471
+write out 12 objects to 003474
+write out 7 objects to 003478
+write out 2 objects to 003480
+predict ['003481' '003482' '003483' '003484']
+write out 0 objects to 003481
+write out 3 objects to 003482
+write out 6 objects to 003483
+write out 5 objects to 003484
+predict ['003487' '003488' '003489' '003490']
+write out 4 objects to 003487
+write out 12 objects to 003488
+write out 4 objects to 003489
+write out 6 objects to 003490
+predict ['003491' '003492' '003495' '003496']
+write out 1 objects to 003491
+write out 0 objects to 003492
+write out 1 objects to 003495
+write out 3 objects to 003496
+predict ['003497' '003502' '003503' '003504']
+write out 6 objects to 003497
+write out 2 objects to 003502
+write out 7 objects to 003503
+write out 2 objects to 003504
+predict ['003506' '003511' '003515' '003517']
+write out 5 objects to 003506
+write out 4 objects to 003511
+write out 8 objects to 003515
+write out 7 objects to 003517
+predict ['003519' '003520' '003521' '003524']
+write out 1 objects to 003519
+write out 4 objects to 003520
+write out 16 objects to 003521
+write out 6 objects to 003524
+predict ['003527' '003528' '003529' '003530']
+write out 4 objects to 003527
+write out 4 objects to 003528
+write out 10 objects to 003529
+write out 2 objects to 003530
+predict ['003531' '003535' '003539' '003543']
+write out 11 objects to 003531
+write out 1 objects to 003535
+write out 4 objects to 003539
+write out 4 objects to 003543
+predict ['003544' '003547' '003550' '003552']
+write out 3 objects to 003544
+write out 5 objects to 003547
+write out 3 objects to 003550
+write out 3 objects to 003552
+predict ['003553' '003554' '003557' '003558']
+write out 2 objects to 003553
+write out 6 objects to 003554
+write out 4 objects to 003557
+write out 2 objects to 003558
+predict ['003559' '003562' '003563' '003568']
+write out 2 objects to 003559
+write out 3 objects to 003562
+write out 13 objects to 003563
+write out 11 objects to 003568
+predict ['003571' '003573' '003574' '003580']
+write out 0 objects to 003571
+write out 0 objects to 003573
+write out 15 objects to 003574
+write out 1 objects to 003580
+predict ['003582' '003583' '003584' '003588']
+write out 1 objects to 003582
+write out 1 objects to 003583
+write out 1 objects to 003584
+write out 4 objects to 003588
+predict ['003600' '003601' '003604' '003605']
+write out 3 objects to 003600
+write out 3 objects to 003601
+write out 3 objects to 003604
+write out 13 objects to 003605
+predict ['003607' '003608' '003609' '003611']
+write out 2 objects to 003607
+write out 0 objects to 003608
+write out 10 objects to 003609
+write out 2 objects to 003611
+predict ['003614' '003616' '003618' '003620']
+write out 2 objects to 003614
+write out 4 objects to 003616
+write out 7 objects to 003618
+write out 9 objects to 003620
+predict ['003621' '003622' '003623' '003624']
+write out 12 objects to 003621
+write out 8 objects to 003622
+write out 2 objects to 003623
+write out 5 objects to 003624
+predict ['003627' '003629' '003630' '003631']
+write out 4 objects to 003627
+write out 2 objects to 003629
+write out 0 objects to 003630
+write out 1 objects to 003631
+predict ['003632' '003633' '003634' '003635']
+write out 1 objects to 003632
+write out 11 objects to 003633
+write out 1 objects to 003634
+write out 5 objects to 003635
+predict ['003643' '003645' '003647' '003649']
+write out 2 objects to 003643
+write out 2 objects to 003645
+write out 8 objects to 003647
+write out 0 objects to 003649
+predict ['003652' '003653' '003655' '003658']
+write out 5 objects to 003652
+write out 9 objects to 003653
+write out 6 objects to 003655
+write out 4 objects to 003658
+predict ['003659' '003661' '003662' '003667']
+write out 8 objects to 003659
+write out 11 objects to 003661
+write out 9 objects to 003662
+write out 2 objects to 003667
+predict ['003668' '003669' '003671' '003676']
+write out 1 objects to 003668
+write out 3 objects to 003669
+write out 3 objects to 003671
+write out 18 objects to 003676
+predict ['003677' '003678' '003679' '003682']
+write out 4 objects to 003677
+write out 2 objects to 003678
+write out 4 objects to 003679
+write out 2 objects to 003682
+predict ['003683' '003684' '003688' '003689']
+write out 2 objects to 003683
+write out 8 objects to 003684
+write out 1 objects to 003688
+write out 2 objects to 003689
+predict ['003690' '003691' '003692' '003702']
+write out 7 objects to 003690
+write out 9 objects to 003691
+write out 2 objects to 003692
+write out 2 objects to 003702
+predict ['003703' '003705' '003707' '003708']
+write out 2 objects to 003703
+write out 4 objects to 003705
+write out 0 objects to 003707
+write out 6 objects to 003708
+predict ['003711' '003712' '003715' '003716']
+write out 3 objects to 003711
+write out 3 objects to 003712
+write out 6 objects to 003715
+write out 5 objects to 003716
+predict ['003718' '003719' '003723' '003726']
+write out 1 objects to 003718
+write out 9 objects to 003719
+write out 5 objects to 003723
+write out 1 objects to 003726
+predict ['003728' '003735' '003736' '003737']
+write out 2 objects to 003728
+write out 5 objects to 003735
+write out 11 objects to 003736
+write out 0 objects to 003737
+predict ['003738' '003739' '003746' '003747']
+write out 1 objects to 003738
+write out 2 objects to 003739
+write out 9 objects to 003746
+write out 5 objects to 003747
+predict ['003748' '003750' '003751' '003753']
+write out 2 objects to 003748
+write out 1 objects to 003750
+write out 5 objects to 003751
+write out 1 objects to 003753
+predict ['003755' '003756' '003762' '003763']
+write out 11 objects to 003755
+write out 4 objects to 003756
+write out 3 objects to 003762
+write out 3 objects to 003763
+predict ['003764' '003769' '003771' '003775']
+write out 6 objects to 003764
+write out 2 objects to 003769
+write out 4 objects to 003771
+write out 4 objects to 003775
+predict ['003777' '003778' '003779' '003781']
+write out 5 objects to 003777
+write out 9 objects to 003778
+write out 9 objects to 003779
+write out 13 objects to 003781
+predict ['003782' '003787' '003788' '003793']
+write out 12 objects to 003782
+write out 0 objects to 003787
+write out 3 objects to 003788
+write out 1 objects to 003793
+predict ['003794' '003798' '003800' '003802']
+write out 2 objects to 003794
+write out 1 objects to 003798
+write out 8 objects to 003800
+write out 10 objects to 003802
+predict ['003804' '003805' '003807' '003808']
+write out 14 objects to 003804
+write out 4 objects to 003805
+write out 8 objects to 003807
+write out 6 objects to 003808
+predict ['003809' '003811' '003812' '003814']
+write out 1 objects to 003809
+write out 8 objects to 003811
+write out 7 objects to 003812
+write out 1 objects to 003814
+predict ['003820' '003822' '003826' '003827']
+write out 5 objects to 003820
+write out 14 objects to 003822
+write out 2 objects to 003826
+write out 1 objects to 003827
+predict ['003828' '003830' '003834' '003835']
+write out 2 objects to 003828
+write out 13 objects to 003830
+write out 2 objects to 003834
+write out 1 objects to 003835
+predict ['003837' '003841' '003847' '003852']
+write out 2 objects to 003837
+write out 1 objects to 003841
+write out 7 objects to 003847
+write out 9 objects to 003852
+predict ['003854' '003856' '003859' '003860']
+write out 4 objects to 003854
+write out 2 objects to 003856
+write out 7 objects to 003859
+write out 8 objects to 003860
+predict ['003864' '003866' '003869' '003870']
+write out 13 objects to 003864
+write out 7 objects to 003866
+write out 0 objects to 003869
+write out 13 objects to 003870
+predict ['003872' '003873' '003874' '003878']
+write out 13 objects to 003872
+write out 1 objects to 003873
+write out 1 objects to 003874
+write out 1 objects to 003878
+predict ['003879' '003880' '003881' '003883']
+write out 6 objects to 003879
+write out 3 objects to 003880
+write out 2 objects to 003881
+write out 3 objects to 003883
+predict ['003885' '003886' '003890' '003891']
+write out 7 objects to 003885
+write out 4 objects to 003886
+write out 0 objects to 003890
+write out 15 objects to 003891
+predict ['003892' '003894' '003897' '003898']
+write out 3 objects to 003892
+write out 9 objects to 003894
+write out 1 objects to 003897
+write out 5 objects to 003898
+predict ['003899' '003901' '003902' '003905']
+write out 3 objects to 003899
+write out 12 objects to 003901
+write out 9 objects to 003902
+write out 0 objects to 003905
+predict ['003907' '003909' '003914' '003915']
+write out 2 objects to 003907
+write out 6 objects to 003909
+write out 3 objects to 003914
+write out 11 objects to 003915
+predict ['003916' '003920' '003923' '003924']
+write out 4 objects to 003916
+write out 3 objects to 003920
+write out 9 objects to 003923
+write out 2 objects to 003924
+predict ['003926' '003931' '003932' '003934']
+write out 2 objects to 003926
+write out 9 objects to 003931
+write out 8 objects to 003932
+write out 3 objects to 003934
+predict ['003937' '003938' '003943' '003945']
+write out 7 objects to 003937
+write out 7 objects to 003938
+write out 2 objects to 003943
+write out 1 objects to 003945
+predict ['003946' '003948' '003950' '003956']
+write out 3 objects to 003946
+write out 3 objects to 003948
+write out 3 objects to 003950
+write out 3 objects to 003956
+predict ['003958' '003961' '003962' '003964']
+write out 11 objects to 003958
+write out 3 objects to 003961
+write out 1 objects to 003962
+write out 4 objects to 003964
+predict ['003965' '003969' '003970' '003972']
+write out 3 objects to 003965
+write out 0 objects to 003969
+write out 3 objects to 003970
+write out 1 objects to 003972
+predict ['003975' '003977' '003980' '003981']
+write out 11 objects to 003975
+write out 2 objects to 003977
+write out 5 objects to 003980
+write out 0 objects to 003981
+predict ['003982' '003984' '003986' '003992']
+write out 9 objects to 003982
+write out 14 objects to 003984
+write out 6 objects to 003986
+write out 2 objects to 003992
+predict ['003996' '003998' '004000' '004001']
+write out 4 objects to 003996
+write out 2 objects to 003998
+write out 1 objects to 004000
+write out 3 objects to 004001
+predict ['004002' '004003' '004004' '004007']
+write out 1 objects to 004002
+write out 1 objects to 004003
+write out 6 objects to 004004
+write out 10 objects to 004007
+predict ['004008' '004009' '004010' '004011']
+write out 3 objects to 004008
+write out 6 objects to 004009
+write out 13 objects to 004010
+write out 6 objects to 004011
+predict ['004016' '004021' '004026' '004027']
+write out 2 objects to 004016
+write out 0 objects to 004021
+write out 8 objects to 004026
+write out 10 objects to 004027
+predict ['004028' '004032' '004033' '004034']
+write out 5 objects to 004028
+write out 11 objects to 004032
+write out 3 objects to 004033
+write out 4 objects to 004034
+predict ['004036' '004038' '004040' '004041']
+write out 4 objects to 004036
+write out 6 objects to 004038
+write out 1 objects to 004040
+write out 1 objects to 004041
+predict ['004042' '004045' '004048' '004049']
+write out 2 objects to 004042
+write out 13 objects to 004045
+write out 9 objects to 004048
+write out 0 objects to 004049
+predict ['004051' '004055' '004059' '004061']
+write out 8 objects to 004051
+write out 0 objects to 004055
+write out 2 objects to 004059
+write out 8 objects to 004061
+predict ['004063' '004064' '004065' '004068']
+write out 8 objects to 004063
+write out 3 objects to 004064
+write out 3 objects to 004065
+write out 2 objects to 004068
+predict ['004072' '004074' '004077' '004079']
+write out 2 objects to 004072
+write out 5 objects to 004074
+write out 3 objects to 004077
+write out 1 objects to 004079
+predict ['004081' '004082' '004083' '004085']
+write out 1 objects to 004081
+write out 9 objects to 004082
+write out 6 objects to 004083
+write out 1 objects to 004085
+predict ['004087' '004089' '004091' '004092']
+write out 3 objects to 004087
+write out 2 objects to 004089
+write out 4 objects to 004091
+write out 5 objects to 004092
+predict ['004095' '004096' '004098' '004100']
+write out 12 objects to 004095
+write out 9 objects to 004096
+write out 7 objects to 004098
+write out 13 objects to 004100
+predict ['004101' '004104' '004105' '004107']
+write out 4 objects to 004101
+write out 2 objects to 004104
+write out 4 objects to 004105
+write out 5 objects to 004107
+predict ['004108' '004109' '004110' '004111']
+write out 3 objects to 004108
+write out 3 objects to 004109
+write out 3 objects to 004110
+write out 1 objects to 004111
+predict ['004113' '004116' '004117' '004118']
+write out 2 objects to 004113
+write out 0 objects to 004116
+write out 3 objects to 004117
+write out 7 objects to 004118
+predict ['004119' '004120' '004121' '004122']
+write out 3 objects to 004119
+write out 6 objects to 004120
+write out 1 objects to 004121
+write out 3 objects to 004122
+predict ['004124' '004125' '004126' '004128']
+write out 4 objects to 004124
+write out 0 objects to 004125
+write out 2 objects to 004126
+write out 5 objects to 004128
+predict ['004129' '004130' '004131' '004132']
+write out 1 objects to 004129
+write out 3 objects to 004130
+write out 3 objects to 004131
+write out 0 objects to 004132
+predict ['004136' '004137' '004138' '004140']
+write out 1 objects to 004136
+write out 12 objects to 004137
+write out 13 objects to 004138
+write out 1 objects to 004140
+predict ['004142' '004143' '004148' '004149']
+write out 1 objects to 004142
+write out 1 objects to 004143
+write out 9 objects to 004148
+write out 2 objects to 004149
+predict ['004150' '004152' '004153' '004154']
+write out 11 objects to 004150
+write out 2 objects to 004152
+write out 4 objects to 004153
+write out 9 objects to 004154
+predict ['004155' '004156' '004157' '004158']
+write out 8 objects to 004155
+write out 8 objects to 004156
+write out 5 objects to 004157
+write out 9 objects to 004158
+predict ['004160' '004161' '004162' '004163']
+write out 6 objects to 004160
+write out 11 objects to 004161
+write out 7 objects to 004162
+write out 11 objects to 004163
+predict ['004164' '004168' '004171' '004172']
+write out 4 objects to 004164
+write out 2 objects to 004168
+write out 4 objects to 004171
+write out 3 objects to 004172
+predict ['004173' '004174' '004175' '004185']
+write out 2 objects to 004173
+write out 5 objects to 004174
+write out 3 objects to 004175
+write out 4 objects to 004185
+predict ['004187' '004188' '004189' '004190']
+write out 4 objects to 004187
+write out 9 objects to 004188
+write out 2 objects to 004189
+write out 4 objects to 004190
+predict ['004191' '004195' '004196' '004202']
+write out 6 objects to 004191
+write out 2 objects to 004195
+write out 10 objects to 004196
+write out 1 objects to 004202
+predict ['004205' '004206' '004207' '004209']
+write out 5 objects to 004205
+write out 10 objects to 004206
+write out 12 objects to 004207
+write out 4 objects to 004209
+predict ['004210' '004213' '004214' '004215']
+write out 1 objects to 004210
+write out 12 objects to 004213
+write out 8 objects to 004214
+write out 4 objects to 004215
+predict ['004220' '004221' '004222' '004223']
+write out 8 objects to 004220
+write out 8 objects to 004221
+write out 4 objects to 004222
+write out 1 objects to 004223
+predict ['004224' '004226' '004228' '004232']
+write out 0 objects to 004224
+write out 8 objects to 004226
+write out 8 objects to 004228
+write out 11 objects to 004232
+predict ['004237' '004239' '004241' '004242']
+write out 1 objects to 004237
+write out 3 objects to 004239
+write out 4 objects to 004241
+write out 3 objects to 004242
+predict ['004243' '004246' '004248' '004249']
+write out 9 objects to 004243
+write out 12 objects to 004246
+write out 8 objects to 004248
+write out 8 objects to 004249
+predict ['004250' '004251' '004254' '004255']
+write out 3 objects to 004250
+write out 7 objects to 004251
+write out 11 objects to 004254
+write out 3 objects to 004255
+predict ['004256' '004259' '004260' '004263']
+write out 3 objects to 004256
+write out 8 objects to 004259
+write out 7 objects to 004260
+write out 13 objects to 004263
+predict ['004270' '004271' '004275' '004277']
+write out 10 objects to 004270
+write out 1 objects to 004271
+write out 8 objects to 004275
+write out 6 objects to 004277
+predict ['004278' '004280' '004281' '004282']
+write out 1 objects to 004278
+write out 3 objects to 004280
+write out 4 objects to 004281
+write out 6 objects to 004282
+predict ['004284' '004285' '004288' '004289']
+write out 2 objects to 004284
+write out 1 objects to 004285
+write out 13 objects to 004288
+write out 13 objects to 004289
+predict ['004290' '004291' '004293' '004294']
+write out 10 objects to 004290
+write out 1 objects to 004291
+write out 3 objects to 004293
+write out 10 objects to 004294
+predict ['004295' '004298' '004299' '004300']
+write out 10 objects to 004295
+write out 5 objects to 004298
+write out 3 objects to 004299
+write out 11 objects to 004300
+predict ['004301' '004303' '004305' '004306']
+write out 9 objects to 004301
+write out 5 objects to 004303
+write out 0 objects to 004305
+write out 8 objects to 004306
+predict ['004307' '004309' '004311' '004312']
+write out 10 objects to 004307
+write out 10 objects to 004309
+write out 9 objects to 004311
+write out 13 objects to 004312
+predict ['004314' '004318' '004319' '004321']
+write out 4 objects to 004314
+write out 4 objects to 004318
+write out 3 objects to 004319
+write out 4 objects to 004321
+predict ['004323' '004324' '004326' '004327']
+write out 1 objects to 004323
+write out 9 objects to 004324
+write out 15 objects to 004326
+write out 3 objects to 004327
+predict ['004329' '004330' '004335' '004336']
+write out 5 objects to 004329
+write out 3 objects to 004330
+write out 1 objects to 004335
+write out 5 objects to 004336
+predict ['004337' '004338' '004340' '004342']
+write out 3 objects to 004337
+write out 3 objects to 004338
+write out 2 objects to 004340
+write out 2 objects to 004342
+predict ['004343' '004345' '004348' '004349']
+write out 0 objects to 004343
+write out 2 objects to 004345
+write out 5 objects to 004348
+write out 3 objects to 004349
+predict ['004350' '004352' '004353' '004360']
+write out 9 objects to 004350
+write out 9 objects to 004352
+write out 4 objects to 004353
+write out 14 objects to 004360
+predict ['004362' '004363' '004364' '004367']
+write out 4 objects to 004362
+write out 9 objects to 004363
+write out 1 objects to 004364
+write out 1 objects to 004367
+predict ['004368' '004369' '004370' '004373']
+write out 8 objects to 004368
+write out 13 objects to 004369
+write out 12 objects to 004370
+write out 5 objects to 004373
+predict ['004374' '004377' '004383' '004384']
+write out 1 objects to 004374
+write out 1 objects to 004377
+write out 5 objects to 004383
+write out 2 objects to 004384
+predict ['004385' '004388' '004391' '004392']
+write out 3 objects to 004385
+write out 5 objects to 004388
+write out 11 objects to 004391
+write out 12 objects to 004392
+predict ['004393' '004396' '004397' '004398']
+write out 2 objects to 004393
+write out 2 objects to 004396
+write out 3 objects to 004397
+write out 1 objects to 004398
+predict ['004401' '004402' '004403' '004404']
+write out 10 objects to 004401
+write out 3 objects to 004402
+write out 4 objects to 004403
+write out 2 objects to 004404
+predict ['004406' '004407' '004414' '004415']
+write out 10 objects to 004406
+write out 1 objects to 004407
+write out 3 objects to 004414
+write out 1 objects to 004415
+predict ['004418' '004419' '004420' '004421']
+write out 7 objects to 004418
+write out 2 objects to 004419
+write out 5 objects to 004420
+write out 6 objects to 004421
+predict ['004422' '004423' '004424' '004425']
+write out 2 objects to 004422
+write out 2 objects to 004423
+write out 10 objects to 004424
+write out 3 objects to 004425
+predict ['004426' '004429' '004430' '004433']
+write out 5 objects to 004426
+write out 2 objects to 004429
+write out 7 objects to 004430
+write out 4 objects to 004433
+predict ['004434' '004435' '004437' '004438']
+write out 5 objects to 004434
+write out 3 objects to 004435
+write out 1 objects to 004437
+write out 3 objects to 004438
+predict ['004439' '004440' '004443' '004444']
+write out 2 objects to 004439
+write out 7 objects to 004440
+write out 3 objects to 004443
+write out 6 objects to 004444
+predict ['004447' '004450' '004452' '004454']
+write out 11 objects to 004447
+write out 5 objects to 004450
+write out 6 objects to 004452
+write out 2 objects to 004454
+predict ['004456' '004458' '004460' '004462']
+write out 3 objects to 004456
+write out 5 objects to 004458
+write out 1 objects to 004460
+write out 11 objects to 004462
+predict ['004465' '004469' '004470' '004472']
+write out 1 objects to 004465
+write out 0 objects to 004469
+write out 0 objects to 004470
+write out 7 objects to 004472
+predict ['004474' '004475' '004480' '004481']
+write out 3 objects to 004474
+write out 6 objects to 004475
+write out 4 objects to 004480
+write out 8 objects to 004481
+predict ['004482' '004483' '004485' '004486']
+write out 0 objects to 004482
+write out 5 objects to 004483
+write out 3 objects to 004485
+write out 4 objects to 004486
+predict ['004487' '004489' '004490' '004491']
+write out 2 objects to 004487
+write out 2 objects to 004489
+write out 2 objects to 004490
+write out 6 objects to 004491
+predict ['004493' '004494' '004496' '004501']
+write out 12 objects to 004493
+write out 6 objects to 004494
+write out 14 objects to 004496
+write out 3 objects to 004501
+predict ['004502' '004508' '004511' '004513']
+write out 1 objects to 004502
+write out 0 objects to 004508
+write out 15 objects to 004511
+write out 10 objects to 004513
+predict ['004516' '004517' '004519' '004520']
+write out 12 objects to 004516
+write out 8 objects to 004517
+write out 12 objects to 004519
+write out 9 objects to 004520
+predict ['004521' '004526' '004527' '004528']
+write out 2 objects to 004521
+write out 8 objects to 004526
+write out 1 objects to 004527
+write out 5 objects to 004528
+predict ['004529' '004530' '004531' '004532']
+write out 3 objects to 004529
+write out 0 objects to 004530
+write out 3 objects to 004531
+write out 1 objects to 004532
+predict ['004534' '004540' '004541' '004542']
+write out 3 objects to 004534
+write out 5 objects to 004540
+write out 11 objects to 004541
+write out 6 objects to 004542
+predict ['004547' '004548' '004549' '004551']
+write out 1 objects to 004547
+write out 3 objects to 004548
+write out 9 objects to 004549
+write out 5 objects to 004551
+predict ['004553' '004556' '004557' '004562']
+write out 6 objects to 004553
+write out 2 objects to 004556
+write out 5 objects to 004557
+write out 0 objects to 004562
+predict ['004566' '004567' '004568' '004569']
+write out 2 objects to 004566
+write out 1 objects to 004567
+write out 2 objects to 004568
+write out 3 objects to 004569
+predict ['004570' '004573' '004574' '004576']
+write out 2 objects to 004570
+write out 2 objects to 004573
+write out 2 objects to 004574
+write out 4 objects to 004576
+predict ['004578' '004581' '004582' '004585']
+write out 10 objects to 004578
+write out 1 objects to 004581
+write out 2 objects to 004582
+write out 3 objects to 004585
+predict ['004587' '004588' '004589' '004591']
+write out 8 objects to 004587
+write out 0 objects to 004588
+write out 2 objects to 004589
+write out 1 objects to 004591
+predict ['004596' '004598' '004599' '004603']
+write out 5 objects to 004596
+write out 7 objects to 004598
+write out 3 objects to 004599
+write out 11 objects to 004603
+predict ['004608' '004609' '004610' '004611']
+write out 5 objects to 004608
+write out 7 objects to 004609
+write out 10 objects to 004610
+write out 2 objects to 004611
+predict ['004612' '004615' '004618' '004620']
+write out 6 objects to 004612
+write out 3 objects to 004615
+write out 3 objects to 004618
+write out 7 objects to 004620
+predict ['004622' '004624' '004626' '004629']
+write out 7 objects to 004622
+write out 6 objects to 004624
+write out 3 objects to 004626
+write out 3 objects to 004629
+predict ['004630' '004632' '004633' '004634']
+write out 2 objects to 004630
+write out 7 objects to 004632
+write out 13 objects to 004633
+write out 1 objects to 004634
+predict ['004636' '004638' '004640' '004644']
+write out 11 objects to 004636
+write out 1 objects to 004638
+write out 8 objects to 004640
+write out 4 objects to 004644
+predict ['004647' '004648' '004649' '004650']
+write out 2 objects to 004647
+write out 12 objects to 004648
+write out 3 objects to 004649
+write out 2 objects to 004650
+predict ['004651' '004652' '004655' '004657']
+write out 4 objects to 004651
+write out 8 objects to 004652
+write out 1 objects to 004655
+write out 4 objects to 004657
+predict ['004658' '004660' '004665' '004666']
+write out 3 objects to 004658
+write out 3 objects to 004660
+write out 2 objects to 004665
+write out 10 objects to 004666
+predict ['004667' '004668' '004669' '004672']
+write out 3 objects to 004667
+write out 9 objects to 004668
+write out 2 objects to 004669
+write out 6 objects to 004672
+predict ['004673' '004679' '004680' '004682']
+write out 7 objects to 004673
+write out 0 objects to 004679
+write out 2 objects to 004680
+write out 11 objects to 004682
+predict ['004683' '004685' '004686' '004687']
+write out 1 objects to 004683
+write out 7 objects to 004685
+write out 14 objects to 004686
+write out 2 objects to 004687
+predict ['004688' '004689' '004691' '004692']
+write out 5 objects to 004688
+write out 11 objects to 004689
+write out 9 objects to 004691
+write out 3 objects to 004692
+predict ['004693' '004694' '004695' '004697']
+write out 0 objects to 004693
+write out 6 objects to 004694
+write out 2 objects to 004695
+write out 3 objects to 004697
+predict ['004698' '004699' '004700' '004705']
+write out 1 objects to 004698
+write out 1 objects to 004699
+write out 7 objects to 004700
+write out 2 objects to 004705
+predict ['004706' '004708' '004709' '004710']
+write out 1 objects to 004706
+write out 10 objects to 004708
+write out 1 objects to 004709
+write out 8 objects to 004710
+predict ['004711' '004713' '004714' '004715']
+write out 7 objects to 004711
+write out 11 objects to 004713
+write out 3 objects to 004714
+write out 12 objects to 004715
+predict ['004716' '004717' '004718' '004720']
+write out 10 objects to 004716
+write out 6 objects to 004717
+write out 3 objects to 004718
+write out 3 objects to 004720
+predict ['004721' '004722' '004724' '004725']
+write out 9 objects to 004721
+write out 1 objects to 004722
+write out 0 objects to 004724
+write out 4 objects to 004725
+predict ['004726' '004730' '004732' '004734']
+write out 3 objects to 004726
+write out 10 objects to 004730
+write out 3 objects to 004732
+write out 8 objects to 004734
+predict ['004735' '004737' '004738' '004739']
+write out 13 objects to 004735
+write out 2 objects to 004737
+write out 3 objects to 004738
+write out 11 objects to 004739
+predict ['004740' '004742' '004743' '004744']
+write out 2 objects to 004740
+write out 10 objects to 004742
+write out 13 objects to 004743
+write out 5 objects to 004744
+predict ['004745' '004746' '004748' '004752']
+write out 4 objects to 004745
+write out 0 objects to 004746
+write out 14 objects to 004748
+write out 6 objects to 004752
+predict ['004753' '004756' '004759' '004762']
+write out 5 objects to 004753
+write out 10 objects to 004756
+write out 2 objects to 004759
+write out 0 objects to 004762
+predict ['004763' '004764' '004766' '004768']
+write out 3 objects to 004763
+write out 8 objects to 004764
+write out 11 objects to 004766
+write out 4 objects to 004768
+predict ['004769' '004770' '004773' '004776']
+write out 7 objects to 004769
+write out 7 objects to 004770
+write out 1 objects to 004773
+write out 1 objects to 004776
+predict ['004777' '004782' '004783' '004787']
+write out 6 objects to 004777
+write out 2 objects to 004782
+write out 1 objects to 004783
+write out 16 objects to 004787
+predict ['004788' '004790' '004791' '004792']
+write out 2 objects to 004788
+write out 6 objects to 004790
+write out 4 objects to 004791
+write out 3 objects to 004792
+predict ['004797' '004799' '004800' '004804']
+write out 0 objects to 004797
+write out 3 objects to 004799
+write out 17 objects to 004800
+write out 3 objects to 004804
+predict ['004806' '004807' '004810' '004811']
+write out 3 objects to 004806
+write out 2 objects to 004807
+write out 6 objects to 004810
+write out 6 objects to 004811
+predict ['004813' '004814' '004815' '004816']
+write out 5 objects to 004813
+write out 6 objects to 004814
+write out 1 objects to 004815
+write out 3 objects to 004816
+predict ['004817' '004821' '004822' '004825']
+write out 6 objects to 004817
+write out 5 objects to 004821
+write out 9 objects to 004822
+write out 0 objects to 004825
+predict ['004829' '004830' '004831' '004832']
+write out 2 objects to 004829
+write out 6 objects to 004830
+write out 5 objects to 004831
+write out 8 objects to 004832
+predict ['004835' '004839' '004843' '004846']
+write out 3 objects to 004835
+write out 2 objects to 004839
+write out 5 objects to 004843
+write out 4 objects to 004846
+predict ['004848' '004849' '004850' '004851']
+write out 4 objects to 004848
+write out 2 objects to 004849
+write out 6 objects to 004850
+write out 15 objects to 004851
+predict ['004852' '004858' '004859' '004860']
+write out 3 objects to 004852
+write out 10 objects to 004858
+write out 7 objects to 004859
+write out 9 objects to 004860
+predict ['004861' '004862' '004863' '004864']
+write out 3 objects to 004861
+write out 6 objects to 004862
+write out 3 objects to 004863
+write out 2 objects to 004864
+predict ['004867' '004868' '004871' '004873']
+write out 5 objects to 004867
+write out 5 objects to 004868
+write out 13 objects to 004871
+write out 1 objects to 004873
+predict ['004874' '004875' '004881' '004885']
+write out 9 objects to 004874
+write out 3 objects to 004875
+write out 7 objects to 004881
+write out 13 objects to 004885
+predict ['004887' '004888' '004891' '004892']
+write out 7 objects to 004887
+write out 3 objects to 004888
+write out 5 objects to 004891
+write out 7 objects to 004892
+predict ['004893' '004895' '004896' '004898']
+write out 1 objects to 004893
+write out 3 objects to 004895
+write out 9 objects to 004896
+write out 1 objects to 004898
+predict ['004902' '004903' '004904' '004905']
+write out 9 objects to 004902
+write out 0 objects to 004903
+write out 3 objects to 004904
+write out 6 objects to 004905
+predict ['004907' '004909' '004914' '004917']
+write out 1 objects to 004907
+write out 14 objects to 004909
+write out 2 objects to 004914
+write out 3 objects to 004917
+predict ['004918' '004920' '004921' '004924']
+write out 2 objects to 004918
+write out 7 objects to 004920
+write out 1 objects to 004921
+write out 1 objects to 004924
+predict ['004926' '004927' '004928' '004929']
+write out 13 objects to 004926
+write out 2 objects to 004927
+write out 0 objects to 004928
+write out 11 objects to 004929
+predict ['004931' '004932' '004934' '004935']
+write out 0 objects to 004931
+write out 5 objects to 004932
+write out 13 objects to 004934
+write out 6 objects to 004935
+predict ['004938' '004941' '004942' '004943']
+write out 15 objects to 004938
+write out 3 objects to 004941
+write out 4 objects to 004942
+write out 12 objects to 004943
+predict ['004944' '004946' '004947' '004948']
+write out 1 objects to 004944
+write out 11 objects to 004946
+write out 1 objects to 004947
+write out 9 objects to 004948
+predict ['004949' '004953' '004954' '004956']
+write out 1 objects to 004949
+write out 6 objects to 004953
+write out 1 objects to 004954
+write out 4 objects to 004956
+predict ['004958' '004959' '004960' '004962']
+write out 9 objects to 004958
+write out 11 objects to 004959
+write out 1 objects to 004960
+write out 6 objects to 004962
+predict ['004963' '004966' '004974' '004976']
+write out 3 objects to 004963
+write out 8 objects to 004966
+write out 7 objects to 004974
+write out 1 objects to 004976
+predict ['004979' '004981' '004983' '004985']
+write out 10 objects to 004979
+write out 9 objects to 004981
+write out 4 objects to 004983
+write out 14 objects to 004985
+predict ['004986' '004988' '004989' '004990']
+write out 0 objects to 004986
+write out 4 objects to 004988
+write out 0 objects to 004989
+write out 13 objects to 004990
+predict ['004993' '004994' '004995' '004996']
+write out 12 objects to 004993
+write out 3 objects to 004994
+write out 3 objects to 004995
+write out 1 objects to 004996
+predict ['004998' '004999' '005001' '005002']
+write out 2 objects to 004998
+write out 15 objects to 004999
+write out 5 objects to 005001
+write out 3 objects to 005002
+predict ['005004' '005008' '005010' '005013']
+write out 2 objects to 005004
+write out 15 objects to 005008
+write out 10 objects to 005010
+write out 10 objects to 005013
+predict ['005014' '005015' '005017' '005019']
+write out 5 objects to 005014
+write out 2 objects to 005015
+write out 0 objects to 005017
+write out 12 objects to 005019
+predict ['005021' '005024' '005026' '005028']
+write out 2 objects to 005021
+write out 9 objects to 005024
+write out 10 objects to 005026
+write out 2 objects to 005028
+predict ['005032' '005034' '005036' '005037']
+write out 3 objects to 005032
+write out 8 objects to 005034
+write out 6 objects to 005036
+write out 2 objects to 005037
+predict ['005038' '005040' '005041' '005045']
+write out 10 objects to 005038
+write out 8 objects to 005040
+write out 5 objects to 005041
+write out 6 objects to 005045
+predict ['005049' '005050' '005052' '005053']
+write out 16 objects to 005049
+write out 0 objects to 005050
+write out 5 objects to 005052
+write out 10 objects to 005053
+predict ['005054' '005055' '005056' '005057']
+write out 8 objects to 005054
+write out 3 objects to 005055
+write out 7 objects to 005056
+write out 10 objects to 005057
+predict ['005058' '005062' '005063' '005064']
+write out 9 objects to 005058
+write out 3 objects to 005062
+write out 5 objects to 005063
+write out 2 objects to 005064
+predict ['005065' '005067' '005068' '005070']
+write out 3 objects to 005065
+write out 5 objects to 005067
+write out 1 objects to 005068
+write out 1 objects to 005070
+predict ['005072' '005073' '005074' '005075']
+write out 8 objects to 005072
+write out 10 objects to 005073
+write out 10 objects to 005074
+write out 1 objects to 005075
+predict ['005077' '005078' '005079' '005080']
+write out 4 objects to 005077
+write out 4 objects to 005078
+write out 4 objects to 005079
+write out 3 objects to 005080
+predict ['005081' '005082' '005086' '005090']
+write out 4 objects to 005081
+write out 4 objects to 005082
+write out 4 objects to 005086
+write out 5 objects to 005090
+predict ['005093' '005094' '005095' '005101']
+write out 1 objects to 005093
+write out 10 objects to 005094
+write out 5 objects to 005095
+write out 2 objects to 005101
+predict ['005103' '005105' '005108' '005109']
+write out 5 objects to 005103
+write out 4 objects to 005105
+write out 2 objects to 005108
+write out 9 objects to 005109
+predict ['005110' '005112' '005113' '005120']
+write out 1 objects to 005110
+write out 5 objects to 005112
+write out 3 objects to 005113
+write out 4 objects to 005120
+predict ['005121' '005122' '005124' '005125']
+write out 20 objects to 005121
+write out 20 objects to 005122
+write out 0 objects to 005124
+write out 8 objects to 005125
+predict ['005127' '005128' '005133' '005135']
+write out 5 objects to 005127
+write out 6 objects to 005128
+write out 4 objects to 005133
+write out 8 objects to 005135
+predict ['005136' '005138' '005139' '005140']
+write out 8 objects to 005136
+write out 14 objects to 005138
+write out 6 objects to 005139
+write out 5 objects to 005140
+predict ['005141' '005143' '005144' '005145']
+write out 1 objects to 005141
+write out 4 objects to 005143
+write out 9 objects to 005144
+write out 16 objects to 005145
+predict ['005147' '005149' '005153' '005155']
+write out 0 objects to 005147
+write out 2 objects to 005149
+write out 3 objects to 005153
+write out 4 objects to 005155
+predict ['005156' '005157' '005158' '005161']
+write out 7 objects to 005156
+write out 8 objects to 005157
+write out 1 objects to 005158
+write out 4 objects to 005161
+predict ['005162' '005163' '005164' '005166']
+write out 13 objects to 005162
+write out 6 objects to 005163
+write out 8 objects to 005164
+write out 9 objects to 005166
+predict ['005167' '005168' '005170' '005172']
+write out 1 objects to 005167
+write out 1 objects to 005168
+write out 2 objects to 005170
+write out 3 objects to 005172
+predict ['005174' '005175' '005176' '005179']
+write out 7 objects to 005174
+write out 3 objects to 005175
+write out 8 objects to 005176
+write out 7 objects to 005179
+predict ['005180' '005181' '005182' '005184']
+write out 7 objects to 005180
+write out 2 objects to 005181
+write out 11 objects to 005182
+write out 5 objects to 005184
+predict ['005185' '005188' '005189' '005190']
+write out 3 objects to 005185
+write out 6 objects to 005188
+write out 13 objects to 005189
+write out 20 objects to 005190
+predict ['005191' '005194' '005197' '005198']
+write out 9 objects to 005191
+write out 2 objects to 005194
+write out 1 objects to 005197
+write out 13 objects to 005198
+predict ['005199' '005201' '005206' '005213']
+write out 3 objects to 005199
+write out 7 objects to 005201
+write out 4 objects to 005206
+write out 2 objects to 005213
+predict ['005214' '005217' '005218' '005219']
+write out 11 objects to 005214
+write out 2 objects to 005217
+write out 0 objects to 005218
+write out 2 objects to 005219
+predict ['005221' '005222' '005226' '005227']
+write out 6 objects to 005221
+write out 5 objects to 005222
+write out 0 objects to 005226
+write out 2 objects to 005227
+predict ['005229' '005230' '005233' '005234']
+write out 7 objects to 005229
+write out 0 objects to 005230
+write out 2 objects to 005233
+write out 5 objects to 005234
+predict ['005236' '005237' '005240' '005241']
+write out 3 objects to 005236
+write out 3 objects to 005237
+write out 2 objects to 005240
+write out 9 objects to 005241
+predict ['005242' '005244' '005246' '005249']
+write out 4 objects to 005242
+write out 1 objects to 005244
+write out 3 objects to 005246
+write out 3 objects to 005249
+predict ['005251' '005255' '005256' '005260']
+write out 13 objects to 005251
+write out 9 objects to 005255
+write out 4 objects to 005256
+write out 8 objects to 005260
+predict ['005262' '005267' '005268' '005271']
+write out 3 objects to 005262
+write out 3 objects to 005267
+write out 3 objects to 005268
+write out 1 objects to 005271
+predict ['005273' '005274' '005275' '005276']
+write out 6 objects to 005273
+write out 13 objects to 005274
+write out 4 objects to 005275
+write out 7 objects to 005276
+predict ['005279' '005280' '005282' '005284']
+write out 5 objects to 005279
+write out 14 objects to 005280
+write out 1 objects to 005282
+write out 3 objects to 005284
+predict ['005287' '005289' '005292' '005296']
+write out 8 objects to 005287
+write out 5 objects to 005289
+write out 1 objects to 005292
+write out 3 objects to 005296
+predict ['005297' '005298' '005299' '005304']
+write out 3 objects to 005297
+write out 5 objects to 005298
+write out 2 objects to 005299
+write out 1 objects to 005304
+predict ['005307' '005308' '005309' '005311']
+write out 3 objects to 005307
+write out 5 objects to 005308
+write out 1 objects to 005309
+write out 5 objects to 005311
+predict ['005312' '005313' '005315' '005316']
+write out 3 objects to 005312
+write out 2 objects to 005313
+write out 4 objects to 005315
+write out 7 objects to 005316
+predict ['005318' '005319' '005321' '005322']
+write out 6 objects to 005318
+write out 7 objects to 005319
+write out 12 objects to 005321
+write out 4 objects to 005322
+predict ['005323' '005325' '005328' '005329']
+write out 3 objects to 005323
+write out 4 objects to 005325
+write out 3 objects to 005328
+write out 0 objects to 005329
+predict ['005330' '005333' '005334' '005335']
+write out 8 objects to 005330
+write out 7 objects to 005333
+write out 4 objects to 005334
+write out 4 objects to 005335
+predict ['005336' '005337' '005338' '005341']
+write out 5 objects to 005336
+write out 8 objects to 005337
+write out 0 objects to 005338
+write out 0 objects to 005341
+predict ['005342' '005343' '005345' '005347']
+write out 3 objects to 005342
+write out 0 objects to 005343
+write out 5 objects to 005345
+write out 2 objects to 005347
+predict ['005349' '005350' '005359' '005360']
+write out 3 objects to 005349
+write out 8 objects to 005350
+write out 3 objects to 005359
+write out 8 objects to 005360
+predict ['005363' '005365' '005366' '005368']
+write out 2 objects to 005363
+write out 2 objects to 005365
+write out 14 objects to 005366
+write out 3 objects to 005368
+predict ['005369' '005371' '005372' '005375']
+write out 2 objects to 005369
+write out 6 objects to 005371
+write out 1 objects to 005372
+write out 2 objects to 005375
+predict ['005377' '005378' '005379' '005381']
+write out 4 objects to 005377
+write out 3 objects to 005378
+write out 9 objects to 005379
+write out 17 objects to 005381
+predict ['005385' '005386' '005389' '005390']
+write out 6 objects to 005385
+write out 20 objects to 005386
+write out 6 objects to 005389
+write out 0 objects to 005390
+predict ['005391' '005404' '005405' '005413']
+write out 2 objects to 005391
+write out 6 objects to 005404
+write out 2 objects to 005405
+write out 0 objects to 005413
+predict ['005415' '005422' '005423' '005426']
+write out 10 objects to 005415
+write out 0 objects to 005422
+write out 6 objects to 005423
+write out 16 objects to 005426
+predict ['005427' '005429' '005430' '005431']
+write out 13 objects to 005427
+write out 0 objects to 005429
+write out 6 objects to 005430
+write out 12 objects to 005431
+predict ['005434' '005437' '005441' '005443']
+write out 0 objects to 005434
+write out 2 objects to 005437
+write out 3 objects to 005441
+write out 10 objects to 005443
+predict ['005444' '005445' '005447' '005448']
+write out 2 objects to 005444
+write out 1 objects to 005445
+write out 1 objects to 005447
+write out 4 objects to 005448
+predict ['005449' '005450' '005452' '005453']
+write out 9 objects to 005449
+write out 4 objects to 005450
+write out 4 objects to 005452
+write out 5 objects to 005453
+predict ['005458' '005459' '005460' '005461']
+write out 2 objects to 005458
+write out 5 objects to 005459
+write out 0 objects to 005460
+write out 9 objects to 005461
+predict ['005465' '005466' '005467' '005471']
+write out 17 objects to 005465
+write out 8 objects to 005466
+write out 5 objects to 005467
+write out 1 objects to 005471
+predict ['005472' '005473' '005474' '005476']
+write out 2 objects to 005472
+write out 6 objects to 005473
+write out 1 objects to 005474
+write out 2 objects to 005476
+predict ['005477' '005479' '005481' '005482']
+write out 4 objects to 005477
+write out 9 objects to 005479
+write out 7 objects to 005481
+write out 2 objects to 005482
+predict ['005484' '005486' '005487' '005489']
+write out 2 objects to 005484
+write out 8 objects to 005486
+write out 14 objects to 005487
+write out 5 objects to 005489
+predict ['005494' '005495' '005498' '005505']
+write out 3 objects to 005494
+write out 2 objects to 005495
+write out 7 objects to 005498
+write out 10 objects to 005505
+predict ['005510' '005511' '005514' '005515']
+write out 1 objects to 005510
+write out 3 objects to 005511
+write out 8 objects to 005514
+write out 5 objects to 005515
+predict ['005523' '005525' '005528' '005531']
+write out 6 objects to 005523
+write out 2 objects to 005525
+write out 5 objects to 005528
+write out 5 objects to 005531
+predict ['005532' '005534' '005536' '005538']
+write out 0 objects to 005532
+write out 8 objects to 005534
+write out 0 objects to 005536
+write out 3 objects to 005538
+predict ['005540' '005542' '005544' '005545']
+write out 0 objects to 005540
+write out 11 objects to 005542
+write out 3 objects to 005544
+write out 3 objects to 005545
+predict ['005546' '005551' '005552' '005555']
+write out 14 objects to 005546
+write out 2 objects to 005551
+write out 14 objects to 005552
+write out 1 objects to 005555
+predict ['005556' '005557' '005558' '005559']
+write out 10 objects to 005556
+write out 8 objects to 005557
+write out 4 objects to 005558
+write out 0 objects to 005559
+predict ['005560' '005565' '005566' '005570']
+write out 7 objects to 005560
+write out 3 objects to 005565
+write out 3 objects to 005566
+write out 10 objects to 005570
+predict ['005571' '005572' '005573' '005576']
+write out 8 objects to 005571
+write out 8 objects to 005572
+write out 15 objects to 005573
+write out 3 objects to 005576
+predict ['005577' '005580' '005581' '005582']
+write out 4 objects to 005577
+write out 12 objects to 005580
+write out 4 objects to 005581
+write out 1 objects to 005582
+predict ['005584' '005586' '005587' '005588']
+write out 2 objects to 005584
+write out 7 objects to 005586
+write out 3 objects to 005587
+write out 11 objects to 005588
+predict ['005589' '005590' '005595' '005596']
+write out 12 objects to 005589
+write out 3 objects to 005590
+write out 16 objects to 005595
+write out 3 objects to 005596
+predict ['005600' '005601' '005602' '005603']
+write out 4 objects to 005600
+write out 0 objects to 005601
+write out 8 objects to 005602
+write out 1 objects to 005603
+predict ['005610' '005613' '005616' '005617']
+write out 9 objects to 005610
+write out 5 objects to 005613
+write out 4 objects to 005616
+write out 2 objects to 005617
+predict ['005618' '005619' '005623' '005625']
+write out 10 objects to 005618
+write out 6 objects to 005619
+write out 7 objects to 005623
+write out 14 objects to 005625
+predict ['005630' '005631' '005633' '005634']
+write out 8 objects to 005630
+write out 7 objects to 005631
+write out 2 objects to 005633
+write out 6 objects to 005634
+predict ['005635' '005638' '005639' '005640']
+write out 4 objects to 005635
+write out 2 objects to 005638
+write out 9 objects to 005639
+write out 4 objects to 005640
+predict ['005642' '005643' '005649' '005650']
+write out 3 objects to 005642
+write out 5 objects to 005643
+write out 1 objects to 005649
+write out 2 objects to 005650
+predict ['005652' '005653' '005656' '005658']
+write out 10 objects to 005652
+write out 2 objects to 005653
+write out 2 objects to 005656
+write out 3 objects to 005658
+predict ['005659' '005660' '005662' '005664']
+write out 5 objects to 005659
+write out 9 objects to 005660
+write out 3 objects to 005662
+write out 10 objects to 005664
+predict ['005668' '005669' '005672' '005673']
+write out 9 objects to 005668
+write out 3 objects to 005669
+write out 4 objects to 005672
+write out 2 objects to 005673
+predict ['005676' '005677' '005680' '005683']
+write out 2 objects to 005676
+write out 8 objects to 005677
+write out 14 objects to 005680
+write out 1 objects to 005683
+predict ['005685' '005687' '005689' '005695']
+write out 8 objects to 005685
+write out 5 objects to 005687
+write out 2 objects to 005689
+write out 11 objects to 005695
+predict ['005698' '005699' '005700' '005703']
+write out 6 objects to 005698
+write out 1 objects to 005699
+write out 10 objects to 005700
+write out 4 objects to 005703
+predict ['005704' '005706' '005707' '005708']
+write out 7 objects to 005704
+write out 4 objects to 005706
+write out 5 objects to 005707
+write out 1 objects to 005708
+predict ['005709' '005712' '005713' '005714']
+write out 4 objects to 005709
+write out 4 objects to 005712
+write out 1 objects to 005713
+write out 1 objects to 005714
+predict ['005717' '005724' '005725' '005727']
+write out 10 objects to 005717
+write out 0 objects to 005724
+write out 6 objects to 005725
+write out 2 objects to 005727
+predict ['005728' '005729' '005731' '005735']
+write out 11 objects to 005728
+write out 15 objects to 005729
+write out 1 objects to 005731
+write out 0 objects to 005735
+predict ['005736' '005739' '005740' '005741']
+write out 4 objects to 005736
+write out 4 objects to 005739
+write out 1 objects to 005740
+write out 5 objects to 005741
+predict ['005743' '005744' '005745' '005746']
+write out 1 objects to 005743
+write out 2 objects to 005744
+write out 4 objects to 005745
+write out 1 objects to 005746
+predict ['005747' '005751' '005754' '005757']
+write out 2 objects to 005747
+write out 7 objects to 005751
+write out 11 objects to 005754
+write out 14 objects to 005757
+predict ['005760' '005762' '005763' '005765']
+write out 4 objects to 005760
+write out 20 objects to 005762
+write out 2 objects to 005763
+write out 3 objects to 005765
+predict ['005777' '005782' '005783' '005784']
+write out 9 objects to 005777
+write out 3 objects to 005782
+write out 2 objects to 005783
+write out 9 objects to 005784
+predict ['005785' '005786' '005787' '005790']
+write out 1 objects to 005785
+write out 2 objects to 005786
+write out 3 objects to 005787
+write out 1 objects to 005790
+predict ['005793' '005794' '005796' '005800']
+write out 4 objects to 005793
+write out 5 objects to 005794
+write out 4 objects to 005796
+write out 9 objects to 005800
+predict ['005801' '005803' '005805' '005806']
+write out 0 objects to 005801
+write out 12 objects to 005803
+write out 0 objects to 005805
+write out 0 objects to 005806
+predict ['005807' '005811' '005812' '005818']
+write out 4 objects to 005807
+write out 10 objects to 005811
+write out 1 objects to 005812
+write out 0 objects to 005818
+predict ['005819' '005820' '005821' '005822']
+write out 6 objects to 005819
+write out 6 objects to 005820
+write out 4 objects to 005821
+write out 6 objects to 005822
+predict ['005826' '005827' '005829' '005834']
+write out 1 objects to 005826
+write out 4 objects to 005827
+write out 6 objects to 005829
+write out 12 objects to 005834
+predict ['005839' '005840' '005841' '005843']
+write out 6 objects to 005839
+write out 4 objects to 005840
+write out 0 objects to 005841
+write out 9 objects to 005843
+predict ['005852' '005854' '005855' '005856']
+write out 4 objects to 005852
+write out 1 objects to 005854
+write out 11 objects to 005855
+write out 1 objects to 005856
+predict ['005857' '005859' '005864' '005869']
+write out 1 objects to 005857
+write out 2 objects to 005859
+write out 10 objects to 005864
+write out 2 objects to 005869
+predict ['005873' '005876' '005878' '005879']
+write out 3 objects to 005873
+write out 6 objects to 005876
+write out 4 objects to 005878
+write out 2 objects to 005879
+predict ['005881' '005882' '005883' '005885']
+write out 9 objects to 005881
+write out 3 objects to 005882
+write out 3 objects to 005883
+write out 10 objects to 005885
+predict ['005887' '005889' '005892' '005893']
+write out 4 objects to 005887
+write out 4 objects to 005889
+write out 7 objects to 005892
+write out 7 objects to 005893
+predict ['005894' '005899' '005900' '005901']
+write out 2 objects to 005894
+write out 0 objects to 005899
+write out 8 objects to 005900
+write out 12 objects to 005901
+predict ['005903' '005905' '005906' '005907']
+write out 13 objects to 005903
+write out 0 objects to 005905
+write out 3 objects to 005906
+write out 3 objects to 005907
+predict ['005909' '005910' '005911' '005912']
+write out 9 objects to 005909
+write out 1 objects to 005910
+write out 4 objects to 005911
+write out 5 objects to 005912
+predict ['005913' '005914' '005916' '005917']
+write out 4 objects to 005913
+write out 2 objects to 005914
+write out 2 objects to 005916
+write out 10 objects to 005917
+predict ['005918' '005919' '005921' '005922']
+write out 13 objects to 005918
+write out 9 objects to 005919
+write out 3 objects to 005921
+write out 5 objects to 005922
+predict ['005923' '005925' '005926' '005927']
+write out 5 objects to 005923
+write out 1 objects to 005925
+write out 3 objects to 005926
+write out 8 objects to 005927
+predict ['005931' '005933' '005935' '005938']
+write out 0 objects to 005931
+write out 3 objects to 005933
+write out 9 objects to 005935
+write out 1 objects to 005938
+predict ['005939' '005944' '005947' '005948']
+write out 2 objects to 005939
+write out 2 objects to 005944
+write out 5 objects to 005947
+write out 17 objects to 005948
+predict ['005949' '005952' '005955' '005958']
+write out 4 objects to 005949
+write out 9 objects to 005952
+write out 10 objects to 005955
+write out 1 objects to 005958
+predict ['005961' '005962' '005963' '005965']
+write out 1 objects to 005961
+write out 6 objects to 005962
+write out 8 objects to 005963
+write out 1 objects to 005965
+predict ['005969' '005970' '005972' '005975']
+write out 2 objects to 005969
+write out 8 objects to 005970
+write out 6 objects to 005972
+write out 6 objects to 005975
+predict ['005978' '005981' '005982' '005984']
+write out 1 objects to 005978
+write out 5 objects to 005981
+write out 7 objects to 005982
+write out 1 objects to 005984
+predict ['005985' '005986' '005988' '005994']
+write out 6 objects to 005985
+write out 7 objects to 005986
+write out 1 objects to 005988
+write out 2 objects to 005994
+predict ['005996' '005997' '005999' '006001']
+write out 8 objects to 005996
+write out 3 objects to 005997
+write out 7 objects to 005999
+write out 2 objects to 006001
+predict ['006002' '006003' '006005' '006008']
+write out 5 objects to 006002
+write out 8 objects to 006003
+write out 9 objects to 006005
+write out 12 objects to 006008
+predict ['006009' '006010' '006012' '006013']
+write out 4 objects to 006009
+write out 2 objects to 006010
+write out 1 objects to 006012
+write out 3 objects to 006013
+predict ['006014' '006016' '006023' '006024']
+write out 5 objects to 006014
+write out 9 objects to 006016
+write out 2 objects to 006023
+write out 2 objects to 006024
+predict ['006026' '006027' '006028' '006029']
+write out 9 objects to 006026
+write out 7 objects to 006027
+write out 1 objects to 006028
+write out 0 objects to 006029
+predict ['006030' '006031' '006033' '006034']
+write out 3 objects to 006030
+write out 5 objects to 006031
+write out 6 objects to 006033
+write out 16 objects to 006034
+predict ['006036' '006038' '006039' '006041']
+write out 4 objects to 006036
+write out 1 objects to 006038
+write out 6 objects to 006039
+write out 6 objects to 006041
+predict ['006042' '006043' '006044' '006045']
+write out 1 objects to 006042
+write out 3 objects to 006043
+write out 2 objects to 006044
+write out 12 objects to 006045
+predict ['006046' '006047' '006048' '006050']
+write out 2 objects to 006046
+write out 6 objects to 006047
+write out 9 objects to 006048
+write out 8 objects to 006050
+predict ['006052' '006054' '006057' '006058']
+write out 14 objects to 006052
+write out 7 objects to 006054
+write out 1 objects to 006057
+write out 3 objects to 006058
+predict ['006060' '006061' '006062' '006063']
+write out 11 objects to 006060
+write out 3 objects to 006061
+write out 3 objects to 006062
+write out 10 objects to 006063
+predict ['006066' '006067' '006068' '006070']
+write out 11 objects to 006066
+write out 5 objects to 006067
+write out 4 objects to 006068
+write out 0 objects to 006070
+predict ['006071' '006074' '006075' '006077']
+write out 4 objects to 006071
+write out 3 objects to 006074
+write out 1 objects to 006075
+write out 17 objects to 006077
+predict ['006078' '006083' '006085' '006086']
+write out 13 objects to 006078
+write out 0 objects to 006083
+write out 2 objects to 006085
+write out 2 objects to 006086
+predict ['006087' '006088' '006093' '006095']
+write out 2 objects to 006087
+write out 3 objects to 006088
+write out 3 objects to 006093
+write out 3 objects to 006095
+predict ['006096' '006097' '006098' '006100']
+write out 2 objects to 006096
+write out 6 objects to 006097
+write out 5 objects to 006098
+write out 4 objects to 006100
+predict ['006102' '006103' '006106' '006107']
+write out 4 objects to 006102
+write out 8 objects to 006103
+write out 10 objects to 006106
+write out 2 objects to 006107
+predict ['006110' '006114' '006115' '006116']
+write out 10 objects to 006110
+write out 6 objects to 006114
+write out 3 objects to 006115
+write out 5 objects to 006116
+predict ['006117' '006118' '006121' '006122']
+write out 7 objects to 006117
+write out 2 objects to 006118
+write out 0 objects to 006121
+write out 8 objects to 006122
+predict ['006123' '006125' '006126' '006127']
+write out 4 objects to 006123
+write out 5 objects to 006125
+write out 6 objects to 006126
+write out 10 objects to 006127
+predict ['006130' '006133' '006136' '006139']
+write out 0 objects to 006130
+write out 1 objects to 006133
+write out 4 objects to 006136
+write out 0 objects to 006139
+predict ['006144' '006146' '006148' '006151']
+write out 9 objects to 006144
+write out 6 objects to 006146
+write out 2 objects to 006148
+write out 0 objects to 006151
+predict ['006152' '006154' '006156' '006161']
+write out 0 objects to 006152
+write out 12 objects to 006154
+write out 15 objects to 006156
+write out 7 objects to 006161
+predict ['006163' '006165' '006167' '006168']
+write out 19 objects to 006163
+write out 0 objects to 006165
+write out 5 objects to 006167
+write out 1 objects to 006168
+predict ['006169' '006173' '006176' '006177']
+write out 6 objects to 006169
+write out 5 objects to 006173
+write out 2 objects to 006176
+write out 0 objects to 006177
+predict ['006182' '006185' '006186' '006187']
+write out 2 objects to 006182
+write out 3 objects to 006185
+write out 8 objects to 006186
+write out 12 objects to 006187
+predict ['006190' '006194' '006195' '006196']
+write out 5 objects to 006190
+write out 0 objects to 006194
+write out 7 objects to 006195
+write out 3 objects to 006196
+predict ['006198' '006202' '006204' '006208']
+write out 8 objects to 006198
+write out 9 objects to 006202
+write out 2 objects to 006204
+write out 5 objects to 006208
+predict ['006210' '006213' '006215' '006219']
+write out 1 objects to 006210
+write out 7 objects to 006213
+write out 0 objects to 006215
+write out 2 objects to 006219
+predict ['006222' '006227' '006228' '006229']
+write out 0 objects to 006222
+write out 2 objects to 006227
+write out 1 objects to 006228
+write out 3 objects to 006229
+predict ['006232' '006233' '006238' '006240']
+write out 6 objects to 006232
+write out 7 objects to 006233
+write out 8 objects to 006238
+write out 1 objects to 006240
+predict ['006244' '006246' '006247' '006249']
+write out 1 objects to 006244
+write out 4 objects to 006246
+write out 1 objects to 006247
+write out 4 objects to 006249
+predict ['006250' '006258' '006263' '006265']
+write out 3 objects to 006250
+write out 0 objects to 006258
+write out 7 objects to 006263
+write out 2 objects to 006265
+predict ['006266' '006267' '006269' '006270']
+write out 5 objects to 006266
+write out 2 objects to 006267
+write out 4 objects to 006269
+write out 2 objects to 006270
+predict ['006272' '006273' '006274' '006275']
+write out 7 objects to 006272
+write out 6 objects to 006273
+write out 3 objects to 006274
+write out 6 objects to 006275
+predict ['006276' '006278' '006280' '006282']
+write out 3 objects to 006276
+write out 6 objects to 006278
+write out 1 objects to 006280
+write out 0 objects to 006282
+predict ['006286' '006287' '006288' '006297']
+write out 5 objects to 006286
+write out 1 objects to 006287
+write out 1 objects to 006288
+write out 6 objects to 006297
+predict ['006300' '006301' '006302' '006305']
+write out 10 objects to 006300
+write out 5 objects to 006301
+write out 3 objects to 006302
+write out 6 objects to 006305
+predict ['006306' '006312' '006314' '006315']
+write out 15 objects to 006306
+write out 14 objects to 006312
+write out 15 objects to 006314
+write out 7 objects to 006315
+predict ['006316' '006317' '006321' '006322']
+write out 1 objects to 006316
+write out 5 objects to 006317
+write out 0 objects to 006321
+write out 11 objects to 006322
+predict ['006324' '006331' '006332' '006333']
+write out 6 objects to 006324
+write out 0 objects to 006331
+write out 4 objects to 006332
+write out 4 objects to 006333
+predict ['006334' '006338' '006339' '006340']
+write out 8 objects to 006334
+write out 9 objects to 006338
+write out 3 objects to 006339
+write out 4 objects to 006340
+predict ['006342' '006343' '006344' '006345']
+write out 12 objects to 006342
+write out 0 objects to 006343
+write out 12 objects to 006344
+write out 14 objects to 006345
+predict ['006348' '006349' '006351' '006353']
+write out 2 objects to 006348
+write out 0 objects to 006349
+write out 1 objects to 006351
+write out 2 objects to 006353
+predict ['006354' '006355' '006356' '006357']
+write out 0 objects to 006354
+write out 4 objects to 006355
+write out 9 objects to 006356
+write out 2 objects to 006357
+predict ['006360' '006364' '006366' '006368']
+write out 3 objects to 006360
+write out 1 objects to 006364
+write out 5 objects to 006366
+write out 9 objects to 006368
+predict ['006369' '006370' '006371' '006372']
+write out 3 objects to 006369
+write out 9 objects to 006370
+write out 8 objects to 006371
+write out 6 objects to 006372
+predict ['006377' '006379' '006380' '006381']
+write out 2 objects to 006377
+write out 13 objects to 006379
+write out 2 objects to 006380
+write out 6 objects to 006381
+predict ['006385' '006386' '006388' '006391']
+write out 4 objects to 006385
+write out 5 objects to 006386
+write out 5 objects to 006388
+write out 10 objects to 006391
+predict ['006393' '006394' '006395' '006396']
+write out 1 objects to 006393
+write out 7 objects to 006394
+write out 0 objects to 006395
+write out 3 objects to 006396
+predict ['006403' '006405' '006406' '006407']
+write out 6 objects to 006403
+write out 2 objects to 006405
+write out 3 objects to 006406
+write out 6 objects to 006407
+predict ['006409' '006410' '006411' '006415']
+write out 4 objects to 006409
+write out 6 objects to 006410
+write out 0 objects to 006411
+write out 1 objects to 006415
+predict ['006416' '006417' '006420' '006423']
+write out 7 objects to 006416
+write out 5 objects to 006417
+write out 4 objects to 006420
+write out 13 objects to 006423
+predict ['006424' '006425' '006426' '006427']
+write out 5 objects to 006424
+write out 5 objects to 006425
+write out 14 objects to 006426
+write out 0 objects to 006427
+predict ['006433' '006434' '006435' '006436']
+write out 2 objects to 006433
+write out 0 objects to 006434
+write out 2 objects to 006435
+write out 2 objects to 006436
+predict ['006437' '006439' '006440' '006441']
+write out 4 objects to 006437
+write out 2 objects to 006439
+write out 3 objects to 006440
+write out 2 objects to 006441
+predict ['006442' '006444' '006445' '006446']
+write out 3 objects to 006442
+write out 2 objects to 006444
+write out 6 objects to 006445
+write out 1 objects to 006446
+predict ['006451' '006452' '006453' '006454']
+write out 0 objects to 006451
+write out 3 objects to 006452
+write out 1 objects to 006453
+write out 5 objects to 006454
+predict ['006462' '006464' '006465' '006468']
+write out 4 objects to 006462
+write out 0 objects to 006464
+write out 3 objects to 006465
+write out 7 objects to 006468
+predict ['006469' '006470' '006472' '006473']
+write out 10 objects to 006469
+write out 7 objects to 006470
+write out 0 objects to 006472
+write out 1 objects to 006473
+predict ['006474' '006475' '006477' '006478']
+write out 12 objects to 006474
+write out 1 objects to 006475
+write out 2 objects to 006477
+write out 3 objects to 006478
+predict ['006481' '006482' '006483' '006484']
+write out 2 objects to 006481
+write out 2 objects to 006482
+write out 6 objects to 006483
+write out 1 objects to 006484
+predict ['006486' '006488' '006491' '006493']
+write out 2 objects to 006486
+write out 2 objects to 006488
+write out 1 objects to 006491
+write out 7 objects to 006493
+predict ['006496' '006497' '006498' '006503']
+write out 2 objects to 006496
+write out 9 objects to 006497
+write out 6 objects to 006498
+write out 4 objects to 006503
+predict ['006505' '006506' '006507' '006508']
+write out 1 objects to 006505
+write out 9 objects to 006506
+write out 4 objects to 006507
+write out 5 objects to 006508
+predict ['006512' '006514' '006515' '006516']
+write out 1 objects to 006512
+write out 5 objects to 006514
+write out 5 objects to 006515
+write out 1 objects to 006516
+predict ['006517' '006519' '006520' '006521']
+write out 1 objects to 006517
+write out 9 objects to 006519
+write out 10 objects to 006520
+write out 1 objects to 006521
+predict ['006524' '006525' '006529' '006530']
+write out 6 objects to 006524
+write out 7 objects to 006525
+write out 2 objects to 006529
+write out 6 objects to 006530
+predict ['006531' '006532' '006533' '006534']
+write out 6 objects to 006531
+write out 7 objects to 006532
+write out 2 objects to 006533
+write out 4 objects to 006534
+predict ['006535' '006537' '006540' '006542']
+write out 12 objects to 006535
+write out 3 objects to 006537
+write out 4 objects to 006540
+write out 5 objects to 006542
+predict ['006548' '006549' '006551' '006553']
+write out 5 objects to 006548
+write out 14 objects to 006549
+write out 4 objects to 006551
+write out 4 objects to 006553
+predict ['006555' '006556' '006558' '006560']
+write out 2 objects to 006555
+write out 6 objects to 006556
+write out 2 objects to 006558
+write out 6 objects to 006560
+predict ['006561' '006563' '006565' '006568']
+write out 6 objects to 006561
+write out 4 objects to 006563
+write out 0 objects to 006565
+write out 8 objects to 006568
+predict ['006569' '006570' '006574' '006576']
+write out 7 objects to 006569
+write out 5 objects to 006570
+write out 3 objects to 006574
+write out 5 objects to 006576
+predict ['006577' '006578' '006581' '006582']
+write out 3 objects to 006577
+write out 0 objects to 006578
+write out 4 objects to 006581
+write out 2 objects to 006582
+predict ['006583' '006586' '006588' '006590']
+write out 0 objects to 006583
+write out 1 objects to 006586
+write out 9 objects to 006588
+write out 8 objects to 006590
+predict ['006592' '006593' '006595' '006596']
+write out 2 objects to 006592
+write out 6 objects to 006593
+write out 12 objects to 006595
+write out 1 objects to 006596
+predict ['006597' '006602' '006603' '006604']
+write out 5 objects to 006597
+write out 11 objects to 006602
+write out 1 objects to 006603
+write out 3 objects to 006604
+predict ['006611' '006612' '006613' '006614']
+write out 5 objects to 006611
+write out 7 objects to 006612
+write out 2 objects to 006613
+write out 5 objects to 006614
+predict ['006618' '006623' '006624' '006625']
+write out 4 objects to 006618
+write out 3 objects to 006623
+write out 8 objects to 006624
+write out 6 objects to 006625
+predict ['006626' '006628' '006629' '006632']
+write out 1 objects to 006626
+write out 9 objects to 006628
+write out 6 objects to 006629
+write out 6 objects to 006632
+predict ['006633' '006634' '006636' '006637']
+write out 4 objects to 006633
+write out 2 objects to 006634
+write out 2 objects to 006636
+write out 9 objects to 006637
+predict ['006638' '006641' '006643' '006647']
+write out 15 objects to 006638
+write out 2 objects to 006641
+write out 2 objects to 006643
+write out 3 objects to 006647
+predict ['006649' '006650' '006651' '006655']
+write out 5 objects to 006649
+write out 1 objects to 006650
+write out 2 objects to 006651
+write out 7 objects to 006655
+predict ['006656' '006658' '006659' '006660']
+write out 0 objects to 006656
+write out 8 objects to 006658
+write out 6 objects to 006659
+write out 10 objects to 006660
+predict ['006664' '006666' '006667' '006669']
+write out 5 objects to 006664
+write out 0 objects to 006666
+write out 6 objects to 006667
+write out 8 objects to 006669
+predict ['006670' '006674' '006676' '006677']
+write out 5 objects to 006670
+write out 5 objects to 006674
+write out 0 objects to 006676
+write out 2 objects to 006677
+predict ['006678' '006679' '006682' '006685']
+write out 19 objects to 006678
+write out 9 objects to 006679
+write out 7 objects to 006682
+write out 0 objects to 006685
+predict ['006686' '006692' '006693' '006694']
+write out 4 objects to 006686
+write out 8 objects to 006692
+write out 1 objects to 006693
+write out 6 objects to 006694
+predict ['006695' '006696' '006698' '006701']
+write out 11 objects to 006695
+write out 2 objects to 006696
+write out 3 objects to 006698
+write out 2 objects to 006701
+predict ['006703' '006709' '006710' '006711']
+write out 1 objects to 006703
+write out 1 objects to 006709
+write out 11 objects to 006710
+write out 4 objects to 006711
+predict ['006712' '006713' '006714' '006715']
+write out 6 objects to 006712
+write out 4 objects to 006713
+write out 2 objects to 006714
+write out 2 objects to 006715
+predict ['006719' '006720' '006723' '006725']
+write out 3 objects to 006719
+write out 3 objects to 006720
+write out 4 objects to 006723
+write out 9 objects to 006725
+predict ['006726' '006729' '006731' '006732']
+write out 7 objects to 006726
+write out 3 objects to 006729
+write out 6 objects to 006731
+write out 4 objects to 006732
+predict ['006733' '006734' '006737' '006738']
+write out 10 objects to 006733
+write out 4 objects to 006734
+write out 2 objects to 006737
+write out 1 objects to 006738
+predict ['006741' '006744' '006745' '006747']
+write out 1 objects to 006741
+write out 3 objects to 006744
+write out 2 objects to 006745
+write out 2 objects to 006747
+predict ['006751' '006752' '006753' '006754']
+write out 5 objects to 006751
+write out 7 objects to 006752
+write out 9 objects to 006753
+write out 8 objects to 006754
+predict ['006755' '006756' '006758' '006759']
+write out 8 objects to 006755
+write out 7 objects to 006756
+write out 6 objects to 006758
+write out 1 objects to 006759
+predict ['006760' '006761' '006762' '006764']
+write out 3 objects to 006760
+write out 3 objects to 006761
+write out 2 objects to 006762
+write out 6 objects to 006764
+predict ['006765' '006767' '006768' '006770']
+write out 9 objects to 006765
+write out 3 objects to 006767
+write out 2 objects to 006768
+write out 6 objects to 006770
+predict ['006771' '006772' '006773' '006777']
+write out 1 objects to 006771
+write out 8 objects to 006772
+write out 2 objects to 006773
+write out 1 objects to 006777
+predict ['006778' '006780' '006781' '006782']
+write out 4 objects to 006778
+write out 14 objects to 006780
+write out 9 objects to 006781
+write out 4 objects to 006782
+predict ['006783' '006785' '006786' '006789']
+write out 14 objects to 006783
+write out 3 objects to 006785
+write out 1 objects to 006786
+write out 10 objects to 006789
+predict ['006791' '006792' '006794' '006796']
+write out 6 objects to 006791
+write out 2 objects to 006792
+write out 1 objects to 006794
+write out 3 objects to 006796
+predict ['006797' '006798' '006800' '006803']
+write out 2 objects to 006797
+write out 11 objects to 006798
+write out 2 objects to 006800
+write out 2 objects to 006803
+predict ['006804' '006806' '006807' '006808']
+write out 1 objects to 006804
+write out 5 objects to 006806
+write out 0 objects to 006807
+write out 4 objects to 006808
+predict ['006811' '006812' '006813' '006815']
+write out 4 objects to 006811
+write out 4 objects to 006812
+write out 3 objects to 006813
+write out 2 objects to 006815
+predict ['006816' '006818' '006819' '006822']
+write out 3 objects to 006816
+write out 2 objects to 006818
+write out 0 objects to 006819
+write out 6 objects to 006822
+predict ['006828' '006829' '006832' '006833']
+write out 0 objects to 006828
+write out 4 objects to 006829
+write out 0 objects to 006832
+write out 19 objects to 006833
+predict ['006836' '006837' '006841' '006843']
+write out 5 objects to 006836
+write out 6 objects to 006837
+write out 3 objects to 006841
+write out 7 objects to 006843
+predict ['006844' '006847' '006849' '006850']
+write out 9 objects to 006844
+write out 1 objects to 006847
+write out 1 objects to 006849
+write out 2 objects to 006850
+predict ['006852' '006853' '006854' '006855']
+write out 3 objects to 006852
+write out 14 objects to 006853
+write out 3 objects to 006854
+write out 3 objects to 006855
+predict ['006856' '006858' '006860' '006862']
+write out 6 objects to 006856
+write out 4 objects to 006858
+write out 2 objects to 006860
+write out 12 objects to 006862
+predict ['006863' '006866' '006868' '006870']
+write out 5 objects to 006863
+write out 8 objects to 006866
+write out 8 objects to 006868
+write out 8 objects to 006870
+predict ['006872' '006873' '006874' '006876']
+write out 1 objects to 006872
+write out 0 objects to 006873
+write out 1 objects to 006874
+write out 3 objects to 006876
+predict ['006879' '006881' '006882' '006884']
+write out 12 objects to 006879
+write out 7 objects to 006881
+write out 2 objects to 006882
+write out 2 objects to 006884
+predict ['006885' '006887' '006889' '006891']
+write out 8 objects to 006885
+write out 2 objects to 006887
+write out 13 objects to 006889
+write out 4 objects to 006891
+predict ['006895' '006897' '006898' '006899']
+write out 4 objects to 006895
+write out 12 objects to 006897
+write out 0 objects to 006898
+write out 2 objects to 006899
+predict ['006900' '006901' '006903' '006906']
+write out 2 objects to 006900
+write out 0 objects to 006901
+write out 0 objects to 006903
+write out 2 objects to 006906
+predict ['006907' '006908' '006910' '006913']
+write out 6 objects to 006907
+write out 4 objects to 006908
+write out 17 objects to 006910
+write out 18 objects to 006913
+predict ['006914' '006917' '006922' '006925']
+write out 6 objects to 006914
+write out 12 objects to 006917
+write out 12 objects to 006922
+write out 1 objects to 006925
+predict ['006928' '006930' '006936' '006937']
+write out 14 objects to 006928
+write out 2 objects to 006930
+write out 7 objects to 006936
+write out 1 objects to 006937
+predict ['006938' '006942' '006943' '006944']
+write out 2 objects to 006938
+write out 11 objects to 006942
+write out 9 objects to 006943
+write out 5 objects to 006944
+predict ['006945' '006948' '006950' '006953']
+write out 5 objects to 006945
+write out 9 objects to 006948
+write out 10 objects to 006950
+write out 13 objects to 006953
+predict ['006954' '006955' '006956' '006959']
+write out 4 objects to 006954
+write out 0 objects to 006955
+write out 4 objects to 006956
+write out 5 objects to 006959
+predict ['006960' '006962' '006964' '006968']
+write out 11 objects to 006960
+write out 1 objects to 006962
+write out 2 objects to 006964
+write out 7 objects to 006968
+predict ['006971' '006973' '006977' '006978']
+write out 0 objects to 006971
+write out 5 objects to 006973
+write out 3 objects to 006977
+write out 4 objects to 006978
+predict ['006980' '006981' '006982' '006987']
+write out 1 objects to 006980
+write out 2 objects to 006981
+write out 6 objects to 006982
+write out 9 objects to 006987
+predict ['006989' '006990' '006992' '006994']
+write out 5 objects to 006989
+write out 5 objects to 006990
+write out 14 objects to 006992
+write out 3 objects to 006994
+predict ['006997' '006999' '007000' '007003']
+write out 5 objects to 006997
+write out 2 objects to 006999
+write out 7 objects to 007000
+write out 8 objects to 007003
+predict ['007005' '007006' '007008' '007010']
+write out 10 objects to 007005
+write out 3 objects to 007006
+write out 1 objects to 007008
+write out 5 objects to 007010
+predict ['007011' '007012' '007014' '007015']
+write out 8 objects to 007011
+write out 3 objects to 007012
+write out 7 objects to 007014
+write out 14 objects to 007015
+predict ['007016' '007019' '007022' '007023']
+write out 4 objects to 007016
+write out 8 objects to 007019
+write out 7 objects to 007022
+write out 0 objects to 007023
+predict ['007026' '007027' '007028' '007029']
+write out 11 objects to 007026
+write out 6 objects to 007027
+write out 5 objects to 007028
+write out 5 objects to 007029
+predict ['007030' '007031' '007032' '007033']
+write out 1 objects to 007030
+write out 9 objects to 007031
+write out 6 objects to 007032
+write out 4 objects to 007033
+predict ['007034' '007037' '007038' '007042']
+write out 4 objects to 007034
+write out 4 objects to 007037
+write out 4 objects to 007038
+write out 5 objects to 007042
+predict ['007043' '007047' '007048' '007049']
+write out 7 objects to 007043
+write out 9 objects to 007047
+write out 2 objects to 007048
+write out 3 objects to 007049
+predict ['007052' '007053' '007055' '007056']
+write out 5 objects to 007052
+write out 4 objects to 007053
+write out 2 objects to 007055
+write out 6 objects to 007056
+predict ['007059' '007061' '007063' '007065']
+write out 4 objects to 007059
+write out 3 objects to 007061
+write out 9 objects to 007063
+write out 6 objects to 007065
+predict ['007067' '007068' '007069' '007071']
+write out 9 objects to 007067
+write out 2 objects to 007068
+write out 11 objects to 007069
+write out 9 objects to 007071
+predict ['007072' '007074' '007076' '007078']
+write out 1 objects to 007072
+write out 3 objects to 007074
+write out 3 objects to 007076
+write out 1 objects to 007078
+predict ['007079' '007080' '007081' '007082']
+write out 0 objects to 007079
+write out 2 objects to 007080
+write out 9 objects to 007081
+write out 1 objects to 007082
+predict ['007083' '007084' '007085' '007087']
+write out 4 objects to 007083
+write out 0 objects to 007084
+write out 5 objects to 007085
+write out 7 objects to 007087
+predict ['007088' '007089' '007091' '007095']
+write out 5 objects to 007088
+write out 6 objects to 007089
+write out 7 objects to 007091
+write out 7 objects to 007095
+predict ['007098' '007100' '007103' '007109']
+write out 5 objects to 007098
+write out 4 objects to 007100
+write out 2 objects to 007103
+write out 2 objects to 007109
+predict ['007110' '007112' '007115' '007117']
+write out 0 objects to 007110
+write out 1 objects to 007112
+write out 1 objects to 007115
+write out 6 objects to 007117
+predict ['007119' '007120' '007122' '007125']
+write out 5 objects to 007119
+write out 3 objects to 007120
+write out 5 objects to 007122
+write out 4 objects to 007125
+predict ['007130' '007131' '007132' '007133']
+write out 3 objects to 007130
+write out 8 objects to 007131
+write out 7 objects to 007132
+write out 2 objects to 007133
+predict ['007135' '007136' '007138' '007139']
+write out 5 objects to 007135
+write out 1 objects to 007136
+write out 7 objects to 007138
+write out 6 objects to 007139
+predict ['007144' '007145' '007146' '007149']
+write out 3 objects to 007144
+write out 9 objects to 007145
+write out 4 objects to 007146
+write out 5 objects to 007149
+predict ['007154' '007157' '007158' '007161']
+write out 0 objects to 007154
+write out 4 objects to 007157
+write out 2 objects to 007158
+write out 1 objects to 007161
+predict ['007162' '007163' '007164' '007165']
+write out 9 objects to 007162
+write out 6 objects to 007163
+write out 3 objects to 007164
+write out 3 objects to 007165
+predict ['007166' '007168' '007169' '007172']
+write out 7 objects to 007166
+write out 4 objects to 007168
+write out 7 objects to 007169
+write out 5 objects to 007172
+predict ['007174' '007176' '007177' '007178']
+write out 11 objects to 007174
+write out 3 objects to 007176
+write out 5 objects to 007177
+write out 6 objects to 007178
+predict ['007180' '007182' '007183' '007187']
+write out 4 objects to 007180
+write out 10 objects to 007182
+write out 9 objects to 007183
+write out 1 objects to 007187
+predict ['007194' '007198' '007199' '007200']
+write out 3 objects to 007194
+write out 3 objects to 007198
+write out 1 objects to 007199
+write out 9 objects to 007200
+predict ['007201' '007202' '007204' '007205']
+write out 0 objects to 007201
+write out 0 objects to 007202
+write out 5 objects to 007204
+write out 3 objects to 007205
+predict ['007207' '007208' '007210' '007212']
+write out 1 objects to 007207
+write out 13 objects to 007208
+write out 13 objects to 007210
+write out 3 objects to 007212
+predict ['007214' '007215' '007217' '007219']
+write out 4 objects to 007214
+write out 3 objects to 007215
+write out 3 objects to 007217
+write out 5 objects to 007219
+predict ['007221' '007225' '007227' '007229']
+write out 3 objects to 007221
+write out 6 objects to 007225
+write out 2 objects to 007227
+write out 3 objects to 007229
+predict ['007230' '007232' '007233' '007235']
+write out 5 objects to 007230
+write out 5 objects to 007232
+write out 10 objects to 007233
+write out 3 objects to 007235
+predict ['007238' '007240' '007242' '007244']
+write out 3 objects to 007238
+write out 4 objects to 007240
+write out 6 objects to 007242
+write out 4 objects to 007244
+predict ['007246' '007247' '007252' '007253']
+write out 4 objects to 007246
+write out 6 objects to 007247
+write out 6 objects to 007252
+write out 1 objects to 007253
+predict ['007255' '007256' '007258' '007260']
+write out 2 objects to 007255
+write out 9 objects to 007256
+write out 3 objects to 007258
+write out 10 objects to 007260
+predict ['007261' '007262' '007265' '007266']
+write out 5 objects to 007261
+write out 1 objects to 007262
+write out 1 objects to 007265
+write out 9 objects to 007266
+predict ['007267' '007271' '007272' '007273']
+write out 4 objects to 007267
+write out 2 objects to 007271
+write out 0 objects to 007272
+write out 13 objects to 007273
+predict ['007274' '007275' '007277' '007278']
+write out 2 objects to 007274
+write out 1 objects to 007275
+write out 6 objects to 007277
+write out 1 objects to 007278
+predict ['007279' '007280' '007283' '007284']
+write out 2 objects to 007279
+write out 3 objects to 007280
+write out 9 objects to 007283
+write out 3 objects to 007284
+predict ['007287' '007288' '007289' '007290']
+write out 2 objects to 007287
+write out 0 objects to 007288
+write out 4 objects to 007289
+write out 1 objects to 007290
+predict ['007291' '007292' '007294' '007299']
+write out 4 objects to 007291
+write out 5 objects to 007292
+write out 5 objects to 007294
+write out 7 objects to 007299
+predict ['007300' '007302' '007303' '007304']
+write out 0 objects to 007300
+write out 0 objects to 007302
+write out 2 objects to 007303
+write out 3 objects to 007304
+predict ['007309' '007310' '007311' '007315']
+write out 12 objects to 007309
+write out 1 objects to 007310
+write out 5 objects to 007311
+write out 12 objects to 007315
+predict ['007318' '007319' '007322' '007323']
+write out 1 objects to 007318
+write out 2 objects to 007319
+write out 1 objects to 007322
+write out 8 objects to 007323
+predict ['007325' '007326' '007327' '007329']
+write out 14 objects to 007325
+write out 2 objects to 007326
+write out 0 objects to 007327
+write out 6 objects to 007329
+predict ['007330' '007331' '007336' '007337']
+write out 6 objects to 007330
+write out 3 objects to 007331
+write out 2 objects to 007336
+write out 6 objects to 007337
+predict ['007339' '007342' '007343' '007344']
+write out 12 objects to 007339
+write out 9 objects to 007342
+write out 3 objects to 007343
+write out 1 objects to 007344
+predict ['007345' '007347' '007349' '007350']
+write out 1 objects to 007345
+write out 1 objects to 007347
+write out 3 objects to 007349
+write out 10 objects to 007350
+predict ['007351' '007352' '007353' '007359']
+write out 0 objects to 007351
+write out 6 objects to 007352
+write out 7 objects to 007353
+write out 3 objects to 007359
+predict ['007360' '007364' '007369' '007371']
+write out 10 objects to 007360
+write out 10 objects to 007364
+write out 1 objects to 007369
+write out 2 objects to 007371
+predict ['007374' '007375' '007376' '007377']
+write out 6 objects to 007374
+write out 0 objects to 007375
+write out 5 objects to 007376
+write out 4 objects to 007377
+predict ['007380' '007381' '007382' '007383']
+write out 3 objects to 007380
+write out 0 objects to 007381
+write out 3 objects to 007382
+write out 5 objects to 007383
+predict ['007384' '007385' '007389' '007391']
+write out 5 objects to 007384
+write out 2 objects to 007385
+write out 3 objects to 007389
+write out 2 objects to 007391
+predict ['007395' '007396' '007397' '007398']
+write out 2 objects to 007395
+write out 11 objects to 007396
+write out 2 objects to 007397
+write out 4 objects to 007398
+predict ['007401' '007402' '007403' '007405']
+write out 9 objects to 007401
+write out 9 objects to 007402
+write out 6 objects to 007403
+write out 4 objects to 007405
+predict ['007407' '007409' '007410' '007411']
+write out 5 objects to 007407
+write out 1 objects to 007409
+write out 2 objects to 007410
+write out 8 objects to 007411
+predict ['007412' '007413' '007415' '007416']
+write out 0 objects to 007412
+write out 3 objects to 007413
+write out 6 objects to 007415
+write out 3 objects to 007416
+predict ['007419' '007420' '007421' '007422']
+write out 4 objects to 007419
+write out 1 objects to 007420
+write out 14 objects to 007421
+write out 14 objects to 007422
+predict ['007423' '007424' '007426' '007430']
+write out 7 objects to 007423
+write out 15 objects to 007424
+write out 5 objects to 007426
+write out 9 objects to 007430
+predict ['007433' '007434' '007435' '007436']
+write out 4 objects to 007433
+write out 3 objects to 007434
+write out 8 objects to 007435
+write out 0 objects to 007436
+predict ['007437' '007439' '007440' '007442']
+write out 6 objects to 007437
+write out 3 objects to 007439
+write out 8 objects to 007440
+write out 8 objects to 007442
+predict ['007445' '007447' '007448' '007449']
+write out 5 objects to 007445
+write out 6 objects to 007447
+write out 1 objects to 007448
+write out 7 objects to 007449
+predict ['007450' '007453' '007456' '007458']
+write out 2 objects to 007450
+write out 2 objects to 007453
+write out 4 objects to 007456
+write out 17 objects to 007458
+predict ['007462' '007463' '007464' '007466']
+write out 10 objects to 007462
+write out 7 objects to 007463
+write out 1 objects to 007464
+write out 3 objects to 007466
+predict ['007467' '007468' '007469' '007470']
+write out 4 objects to 007467
+write out 6 objects to 007468
+write out 3 objects to 007469
+write out 10 objects to 007470
+predict ['007473' '007475' '007477' '007478']
+write out 3 objects to 007473
+write out 9 objects to 007475
+write out 0 objects to 007477
+write out 3 objects to 007478
+COMET INFO: Uploading stats to Comet before program termination (may take several seconds)
+COMET INFO: Experiment is live on comet.ml: https://www.comet.ml/jonesmabea/first/a42b5adb26d04ed1ab2c10d850ff7598
