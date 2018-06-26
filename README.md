@@ -1,6 +1,6 @@
 # Car Driving Without Cameras 
 
-## A research project in fulfillment of MSc. Advanced COmputing at the University of Bristol 
+## A research project in fulfillment of MSc. Advanced Computing at the University of Bristol 
 
 # Introduction 
 
@@ -16,5 +16,29 @@ This project, will  focus on LiDAR which projects the surrounding environment as
 - [X] Preprocess point clouds  
 
 ## VoxelNet Model 
-- [ ] 
+- [ ] Obtain baseline results 
+- [ ] Implement CometML 
+- [ ] Evaluate original alpha and beta values
+- [ ] Evaluate original alpha and beta values with SGD
+
+  ### Parameter Tuning 
+  - [ ] Early stopping 
+  - [ ] Explore kernel initialisation 
+  - [ ] Implement different RPN architectures 
+  
+## Urban vs Non Urban Classifier 
+
+  ### Segmentation 
+   #### CityScapes Data
+   - [ ] Download Data 
+   - [ ] Preprocess 
+  
+   #### DeepLab3 Model 
+   - [ ] Implement CometML 
+   - [ ] Train 
+  
+  
+   
+  
+
 ## 
