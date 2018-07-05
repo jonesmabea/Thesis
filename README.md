@@ -27,16 +27,18 @@ This project, will  focus on LiDAR which projects the surrounding environment as
   - [ ] Implement different RPN architectures 
   
 ## Urban vs Non Urban Classifier 
-
+  
   ### Segmentation 
    #### CityScapes Data
-   - [ ] Download Data 
-   - [ ] Preprocess 
+   - [x] Download Data 
+   - [x] Preprocess 
   
    #### DeepLab3 Model 
    - [ ] Implement CometML 
-   - [ ] Train 
+   - [X] Train 
   
+  ### KITTI 
+  - [x] Classify urban and non-urban images
   
    
   
