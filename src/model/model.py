@@ -56,7 +56,7 @@ class RPN3D(object):
 
         self.delta_output = []
         self.prob_output = []
-        self.opt = tf.train.AdamOptimizer(lr)
+        self.opt = tf.train.GradientDescentOptimizer(lr)
         self.gradient_norm = []
         self.tower_grads = []
         with tf.variable_scope(tf.get_variable_scope()):
@@ -320,18 +320,18 @@ class RPN3D(object):
             # only summry 1 in a batch
             cur_tag = tag[0]
             P, Tr, R = load_calib( os.path.join( cfg.CALIB_DIR, cur_tag + '.txt' ) )
-            
+
             front_image = draw_lidar_box3d_on_image(img[0], ret_box3d[0], ret_score[0],
                                                     batch_gt_boxes3d[0], P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-            
+
             bird_view = lidar_to_bird_view_img(
                 lidar[0], factor=cfg.BV_LOG_FACTOR)
-                
+
             bird_view = draw_lidar_box3d_on_birdview(bird_view, ret_box3d[0], ret_score[0],
                                                      batch_gt_boxes3d[0], factor=cfg.BV_LOG_FACTOR, P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-            
+
             heatmap = colorize(probs[0, ...], cfg.BV_LOG_FACTOR)
-        
+
             ret_summary = session.run(self.predict_summary, {
                 self.rgb: front_image[np.newaxis, ...],
                 self.bv: bird_view[np.newaxis, ...],
@@ -339,28 +339,28 @@ class RPN3D(object):
             })
 
             return tag, ret_box3d_score, ret_summary
-        
+
         if vis:
             front_images, bird_views, heatmaps = [], [], []
             for i in range(len(img)):
                 cur_tag = tag[i]
                 P, Tr, R = load_calib( os.path.join( cfg.CALIB_DIR, cur_tag + '.txt' ) )
-                
+
                 front_image = draw_lidar_box3d_on_image(img[i], ret_box3d[i], ret_score[i],
                                                  batch_gt_boxes3d[i], P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-                                                 
+
                 bird_view = lidar_to_bird_view_img(
                                                  lidar[i], factor=cfg.BV_LOG_FACTOR)
-                                                 
+
                 bird_view = draw_lidar_box3d_on_birdview(bird_view, ret_box3d[i], ret_score[i],
                                                  batch_gt_boxes3d[i], factor=cfg.BV_LOG_FACTOR, P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-                
+
                 heatmap = colorize(probs[i, ...], cfg.BV_LOG_FACTOR)
-                
+
                 front_images.append(front_image)
                 bird_views.append(bird_view)
                 heatmaps.append(heatmap)
-            
+
             return tag, ret_box3d_score, front_images, bird_views, heatmaps
 
         return tag, ret_box3d_score
@@ -394,5 +394,3 @@ def average_gradients(tower_grads):
 
 if __name__ == '__main__':
     pass
-
-
