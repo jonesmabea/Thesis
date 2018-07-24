@@ -31,6 +31,7 @@ class RPN3D(object):
                  max_gradient_norm=5.0,
                  alpha=1.5,
                  beta=1,
+                 loss_type="original"
                  avail_gpus=['0']):
         # hyper parameters and status
         self.cls = cls
@@ -43,7 +44,7 @@ class RPN3D(object):
         self.alpha = alpha
         self.beta = beta
         self.avail_gpus = avail_gpus
-
+        self.loss_type=loss_type
         boundaries = [80, 120]
         values = [ self.learning_rate, self.learning_rate * 0.1, self.learning_rate * 0.01 ]
         lr = tf.train.piecewise_constant(self.epoch, boundaries, values)
@@ -75,7 +76,7 @@ class RPN3D(object):
                     feature = FeatureNet(
                         training=self.is_train, batch_size=self.single_batch_size)
                     rpn = MiddleAndRPN(
-                        input=feature.outputs, alpha=self.alpha, beta=self.beta, training=self.is_train)
+                        input=feature.outputs, alpha=self.alpha, beta=self.beta,loss_type=self.loss_type training=self.is_train)
                     tf.get_variable_scope().reuse_variables()
                     # input
                     self.vox_feature.append(feature.feature)
@@ -380,7 +381,7 @@ def _compute_gradients(tensor, var_list):
   grads = tf.gradients(tensor, var_list)
   return [grad if grad is not None else tf.zeros_like(var)
           for var, grad in zip(var_list, grads)]
-  
+
 def average_gradients(tower_grads):
     # ref:
     # https://github.com/tensorflow/models/blob/6db9f0282e2ab12795628de6200670892a8ad6ba/tutorials/image/cifar10/cifar10_multi_gpu_train.py#L103
