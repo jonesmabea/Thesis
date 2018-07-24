@@ -28,6 +28,8 @@
 *.out
 machine.*
 *.swp
+*.txt
+/predictions
 checkpoint*
 # OS generated files #
 ######################
