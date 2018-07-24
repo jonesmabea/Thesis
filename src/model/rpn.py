@@ -102,7 +102,7 @@ class MiddleAndRPN:
 
             self.cls_pos_loss = (-self.pos_equal_one * tf.log(self.p_pos + small_addon_for_BCE)) / self.pos_equal_one_sum
             self.cls_neg_loss = (-self.neg_equal_one * tf.log(1 - self.p_pos + small_addon_for_BCE)) / self.neg_equal_one_sum
-            
+
             self.cls_loss = tf.reduce_sum( alpha * self.cls_pos_loss + beta * self.cls_neg_loss )
             self.cls_pos_loss_rec = tf.reduce_sum( self.cls_pos_loss )
             self.cls_neg_loss_rec = tf.reduce_sum( self.cls_neg_loss )
@@ -135,6 +135,7 @@ def smooth_l1(deltas, targets, sigma=3.0):
 def ConvMD(M, Cin, Cout, k, s, p, input, training=True, activation=True, bn=True, name='conv'):
     temp_p = np.array(p)
     temp_p = np.lib.pad(temp_p, (1, 1), 'constant', constant_values=(0, 0))
+    # he_init = tf.contrib.layers.variance_scaling_initializer()
     with tf.variable_scope(name) as scope:
         if(M == 2):
             paddings = (np.array(temp_p)).repeat(2).reshape(4, 2)

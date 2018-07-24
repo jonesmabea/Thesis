@@ -84,12 +84,7 @@ plt.grid(linestyle=linestyles['dotted'])
 
 DIR_NAME = ROOT_DIR.split('/')[-1]
 
-OUTPUT_NAME = DIR_NAME + '.jpg'
+OUTPUT_NAME = "/mnt/storage/home/ja17618/scratch/voxelnet/predictions" + '.jpg'
 plt.savefig(OUTPUT_NAME)
 
 print('results parsed and saved in: ' + OUTPUT_NAME)
-
-
-
-
-
