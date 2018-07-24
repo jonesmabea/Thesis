@@ -10,6 +10,15 @@ from config import cfg
 
 small_addon_for_BCE = 1e-6
 
+def tf_print(op, tensors, message=None):
+    def print_message(x):
+        sys.stdout.write(message + " %s\n" % x)
+        return x
+
+    prints = [tf.py_func(print_message, [tensor], tensor.dtype) for tensor in tensors]
+    with tf.control_dependencies(prints):
+        op = tf.identity(op)
+    return op
 
 class MiddleAndRPN:
     def __init__(self, input, alpha=1.5, beta=1, sigma=3, training=True, name=''):
@@ -100,19 +109,36 @@ class MiddleAndRPN:
             #self.p_pos = tf.nn.softmax(p_map, dim=3)
             self.output_shape = [cfg.FEATURE_HEIGHT, cfg.FEATURE_WIDTH]
 
-            self.cls_pos_loss = (-self.pos_equal_one * tf.log(self.p_pos + small_addon_for_BCE)) / self.pos_equal_one_sum
-            self.cls_neg_loss = (-self.neg_equal_one * tf.log(1 - self.p_pos + small_addon_for_BCE)) / self.neg_equal_one_sum
+            # self.cls_pos_loss = (-self.pos_equal_one * tf.log(self.p_pos + small_addon_for_BCE)) / self.pos_equal_one_sum
+            # self.cls_neg_loss = (-self.neg_equal_one * tf.log(1 - self.p_pos + small_addon_for_BCE)) / self.neg_equal_one_sum
 
-            self.cls_loss = tf.reduce_sum( alpha * self.cls_pos_loss + beta * self.cls_neg_loss )
+            self.cls_pos_loss = (self.pos_equal_one ** beta) * tf.log(self.p_pos+small_addon_for_BCE)
+            self.cls_neg_loss = (self.neg_equal_one ** beta) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
+
+
+            # self.cls_loss = tf.reduce_sum( alpha * self.cls_pos_loss + beta * self.cls_neg_loss )
+            self.cls_loss= tf.reduce_sum((- alpha * self.cls_pos_loss) /( -(1-alpha) * self.cls_neg_loss))
+
             self.cls_pos_loss_rec = tf.reduce_sum( self.cls_pos_loss )
             self.cls_neg_loss_rec = tf.reduce_sum( self.cls_neg_loss )
-
 
             self.reg_loss = smooth_l1(r_map * self.pos_equal_one_for_reg, self.targets *
                                       self.pos_equal_one_for_reg, sigma) / self.pos_equal_one_sum
             self.reg_loss = tf.reduce_sum(self.reg_loss)
+            #
+            # self.cls_pos_loss = -(self.pos_equal_one ** beta) * tf.log(self.p_pos+small_addon_for_BCE)
+            # self.cls_neg_loss = -(self.neg_equal_one ** beta) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
+            # self.cls_pos_loss_rec = tf.reduce_sum(self.cls_pos_loss)
+            # self.cls_neg_loss_rec = tf.reduce_sum(self.cls_neg_loss)
+            # # m_r = - alpha * m
+            # n_r = - (1 - alpha) * n
 
-            self.loss = tf.reduce_sum(self.cls_loss + self.reg_loss)
+            # self.per_entry_cross_ent = - alpha * (self.pos_equal_one ** beta) * tf.log(tf.clip_by_value(self.p_pos, 1e-8, 1.0)) \
+            #               - (1 - alpha) * (self.neg_equal_one ** beta) * tf.log(tf.clip_by_value(1.0 - self.p_pos, 1e-8, 1.0))
+            self.loss= tf.reduce_sum(self.cls_loss)
+
+            # self.loss = tf.reduce_sum(self.cls_loss + self.reg_loss)
+            # self.loss = self.per_entry_cross_ent_loss
 
             self.delta_output = r_map
             self.prob_output = self.p_pos
@@ -133,9 +159,16 @@ def smooth_l1(deltas, targets, sigma=3.0):
 
 
 def ConvMD(M, Cin, Cout, k, s, p, input, training=True, activation=True, bn=True, name='conv'):
+    '''
+    Creates M-Dimensional convolutional layerself.
+    Params:
+
+
+
+
+    '''
     temp_p = np.array(p)
     temp_p = np.lib.pad(temp_p, (1, 1), 'constant', constant_values=(0, 0))
-    # he_init = tf.contrib.layers.variance_scaling_initializer()
     with tf.variable_scope(name) as scope:
         if(M == 2):
             paddings = (np.array(temp_p)).repeat(2).reshape(4, 2)

@@ -12,7 +12,15 @@ from config import cfg
 from utils import *
 from model.group_pointcloud import FeatureNet
 from model.rpn import MiddleAndRPN
+def tf_print(op, tensors, message=None):
+    def print_message(x):
+        sys.stdout.write(message + " %s\n" % x)
+        return x
 
+    prints = [tf.py_func(print_message, [tensor], tensor.dtype) for tensor in tensors]
+    with tf.control_dependencies(prints):
+        op = tf.identity(op)
+    return op
 
 class RPN3D(object):
 
@@ -56,7 +64,7 @@ class RPN3D(object):
 
         self.delta_output = []
         self.prob_output = []
-        self.opt = tf.train.GradientDescentOptimizer(lr)
+        self.opt = tf.train.AdamOptimizer(lr)
         self.gradient_norm = []
         self.tower_grads = []
         with tf.variable_scope(tf.get_variable_scope()):
@@ -87,7 +95,6 @@ class RPN3D(object):
                     # loss and grad
                     if idx == 0:
                         self.extra_update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
-
                     self.loss = rpn.loss
                     self.reg_loss = rpn.reg_loss
                     self.cls_loss = rpn.cls_loss
@@ -95,6 +102,8 @@ class RPN3D(object):
                     self.cls_neg_loss = rpn.cls_neg_loss_rec
                     self.params = tf.trainable_variables()
                     gradients = tf.gradients(self.loss, self.params)
+                    # gradients = _compute_gradients(self.loss,self.params)
+                    # tf_print(gradients,self.params,"grads")
                     clipped_gradients, gradient_norm = tf.clip_by_global_norm(
                         gradients, max_gradient_norm)
 
@@ -178,6 +187,7 @@ class RPN3D(object):
         vox_number = data[3]
         vox_coordinate = data[4]
         print('train', tag)
+
         pos_equal_one, neg_equal_one, targets = cal_rpn_target(
             label, self.rpn_output_shape, self.anchors, cls=cfg.DETECT_OBJ, coordinate='lidar')
         pos_equal_one_for_reg = np.concatenate(
@@ -200,10 +210,10 @@ class RPN3D(object):
             input_feed[self.neg_equal_one[idx]] = neg_equal_one[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
             input_feed[self.neg_equal_one_sum[idx]] = neg_equal_one_sum[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
         if train:
-            output_feed = [self.loss, self.reg_loss,
+            output_feed = [self.loss,
                            self.cls_loss, self.cls_pos_loss, self.cls_neg_loss, self.gradient_norm, self.update]
         else:
-            output_feed = [self.loss, self.reg_loss, self.cls_loss, self.cls_pos_loss, self.cls_neg_loss]
+            output_feed = [self.loss, self.cls_loss, self.cls_pos_loss, self.cls_neg_loss]
         if summary:
             output_feed.append(self.train_summary)
         # TODO: multi-gpu support for test and predict step
@@ -244,7 +254,7 @@ class RPN3D(object):
             input_feed[self.neg_equal_one[idx]] = neg_equal_one[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
             input_feed[self.neg_equal_one_sum[idx]] = neg_equal_one_sum[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
 
-        output_feed = [self.loss, self.reg_loss, self.cls_loss]
+        output_feed = [self.loss, self.cls_loss]
         if summary:
             output_feed.append(self.validate_summary)
         return session.run(output_feed, input_feed)
@@ -366,10 +376,16 @@ class RPN3D(object):
         return tag, ret_box3d_score
 
 
+def _compute_gradients(tensor, var_list):
+  grads = tf.gradients(tensor, var_list)
+  return [grad if grad is not None else tf.zeros_like(var)
+          for var, grad in zip(var_list, grads)]
+  
 def average_gradients(tower_grads):
     # ref:
     # https://github.com/tensorflow/models/blob/6db9f0282e2ab12795628de6200670892a8ad6ba/tutorials/image/cifar10/cifar10_multi_gpu_train.py#L103
     # but only contains grads, no vars
+
     average_grads = []
     for grad_and_vars in zip(*tower_grads):
         grads = []
