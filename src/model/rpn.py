@@ -21,7 +21,7 @@ def tf_print(op, tensors, message=None):
     return op
 
 class MiddleAndRPN:
-    def __init__(self, input, alpha=1.5, beta=1, sigma=3, training=True, name=''):
+    def __init__(self, input, alpha=1.5, beta=1, gamma=2, sigma=3,loss_type="original" training=True, name=''):
         # scale = [batchsize, 10, 400/200, 352/240, 128] should be the output of feature learning network
         self.input = input
         self.training = training
@@ -109,36 +109,38 @@ class MiddleAndRPN:
             #self.p_pos = tf.nn.softmax(p_map, dim=3)
             self.output_shape = [cfg.FEATURE_HEIGHT, cfg.FEATURE_WIDTH]
 
-            # self.cls_pos_loss = (-self.pos_equal_one * tf.log(self.p_pos + small_addon_for_BCE)) / self.pos_equal_one_sum
-            # self.cls_neg_loss = (-self.neg_equal_one * tf.log(1 - self.p_pos + small_addon_for_BCE)) / self.neg_equal_one_sum
+            if loss_type=="original":
+                #Original loss function from VoxelNet paper
+                self.cls_pos_loss = (-self.pos_equal_one * tf.log(self.p_pos + small_addon_for_BCE)) / self.pos_equal_one_sum
+                self.cls_neg_loss = (-self.neg_equal_one * tf.log(1 - self.p_pos + small_addon_for_BCE)) / self.neg_equal_one_sum
 
-            self.cls_pos_loss = (self.pos_equal_one ** beta) * tf.log(self.p_pos+small_addon_for_BCE)
-            self.cls_neg_loss = (self.neg_equal_one ** beta) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
+                self.cls_loss = tf.reduce_sum( alpha * self.cls_pos_loss + beta * self.cls_neg_loss )
+
+                self.cls_pos_loss_rec = tf.reduce_sum(self.cls_pos_loss)
+                self.cls_neg_loss_rec = tf.reduce_sum(self.cls_neg_loss)
+                self.reg_loss = smooth_l1(r_map * self.pos_equal_one_for_reg, self.targets *
+                                          self.pos_equal_one_for_reg, sigma) / self.pos_equal_one_sum
+                self.reg_loss = tf.reduce_sum(self.reg_loss)
+
+                self.loss = tf.reduce_sum(self.cls_loss + self.reg_loss)
+
+            elif loss_type=='focal_loss':
+                #Focal loss adapted from RetinaNet
+                self.cls_pos_loss = (self.pos_equal_one ** gamma) * tf.log(self.p_pos+small_addon_for_BCE)
+                self.cls_neg_loss = (self.neg_equal_one ** gamma) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
+
+                self.cls_loss= tf.reduce_sum((- alpha * self.cls_pos_loss) /( -(1-alpha) * self.cls_neg_loss))
+
+                self.cls_pos_loss_rec = tf.reduce_sum( self.cls_pos_loss )
+                self.cls_neg_loss_rec = tf.reduce_sum( self.cls_neg_loss )
+                #Not necessary but encountered tensor bug
+                self.reg_loss = smooth_l1(r_map * self.pos_equal_one_for_reg, self.targets *
+                                          self.pos_equal_one_for_reg, sigma) / self.pos_equal_one_sum
+                self.reg_loss = tf.reduce_sum(self.reg_loss)
+                
+                self.loss= tf.reduce_sum(self.cls_loss)
 
 
-            # self.cls_loss = tf.reduce_sum( alpha * self.cls_pos_loss + beta * self.cls_neg_loss )
-            self.cls_loss= tf.reduce_sum((- alpha * self.cls_pos_loss) /( -(1-alpha) * self.cls_neg_loss))
-
-            self.cls_pos_loss_rec = tf.reduce_sum( self.cls_pos_loss )
-            self.cls_neg_loss_rec = tf.reduce_sum( self.cls_neg_loss )
-
-            self.reg_loss = smooth_l1(r_map * self.pos_equal_one_for_reg, self.targets *
-                                      self.pos_equal_one_for_reg, sigma) / self.pos_equal_one_sum
-            self.reg_loss = tf.reduce_sum(self.reg_loss)
-            #
-            # self.cls_pos_loss = -(self.pos_equal_one ** beta) * tf.log(self.p_pos+small_addon_for_BCE)
-            # self.cls_neg_loss = -(self.neg_equal_one ** beta) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
-            # self.cls_pos_loss_rec = tf.reduce_sum(self.cls_pos_loss)
-            # self.cls_neg_loss_rec = tf.reduce_sum(self.cls_neg_loss)
-            # # m_r = - alpha * m
-            # n_r = - (1 - alpha) * n
-
-            # self.per_entry_cross_ent = - alpha * (self.pos_equal_one ** beta) * tf.log(tf.clip_by_value(self.p_pos, 1e-8, 1.0)) \
-            #               - (1 - alpha) * (self.neg_equal_one ** beta) * tf.log(tf.clip_by_value(1.0 - self.p_pos, 1e-8, 1.0))
-            self.loss= tf.reduce_sum(self.cls_loss)
-
-            # self.loss = tf.reduce_sum(self.cls_loss + self.reg_loss)
-            # self.loss = self.per_entry_cross_ent_loss
 
             self.delta_output = r_map
             self.prob_output = self.p_pos
