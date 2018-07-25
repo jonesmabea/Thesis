@@ -28,7 +28,7 @@ __C.GPU_USE_COUNT = len(__C.GPU_AVAILABLE.split(','))
 __C.GPU_MEMORY_FRACTION = 1
 
 # selected object
-__C.DETECT_OBJ = 'Car'  # Pedestrian/Cyclist
+__C.DETECT_OBJ = 'Pedestrian'  # Pedestrian/Cyclist
 if __C.DETECT_OBJ == 'Car':
     __C.Y_MIN = -40
     __C.Y_MAX = 40

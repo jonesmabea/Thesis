@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:UTF-8 -*-
 
-
+from comet_ml import Experiment
 import glob
 import argparse
 import os
@@ -10,7 +10,7 @@ import sys
 import tensorflow as tf
 # from tensorflow import tensorflow as tf
 from itertools import count
-from comet_ml import Experiment
+
 from config import cfg
 from model import RPN3D
 from utils import *
@@ -30,14 +30,24 @@ parser.add_argument('-b', '--single-batch-size', type=int, nargs='?', default=2,
 parser.add_argument('-l', '--lr', type=float, nargs='?', default=0.001,
                     help='set learning rate')
 parser.add_argument('-al', '--alpha', type=float, nargs='?', default=1.0,
-                    help='set alpha in los function')
+                    help='set alpha in original los function')
 parser.add_argument('-be', '--beta', type=float, nargs='?', default=10.0,
-                    help='set beta in los function')
+                    help='set beta in original loss function')
+parser.add_argument('-ga', '--gamma', type=float, nargs='?', default=2.0,
+                    help='set beta in focal loss function')
 parser.add_argument('--output-path', type=str, nargs='?',
-                    default='./predictions', help='results output dir')
+                    default='./predictions/default', help='results output dir')
 parser.add_argument('-v', '--vis', type=bool, nargs='?', default=True,
                     help='set the flag to True if dumping visualizations')
+
+parser.add_argument('-exp', '--experiment-name', type=str, nargs='?', default='First',
+		    help='set experiment name for comet_ml integration')
+
+parser.add_argument('-ls', '--loss', type=str, nargs='?', default='original',choices=['original','focal'],
+		    help='specify loss to be used during training')
+
 args = parser.parse_args()
+
 
 
 dataset_dir = cfg.DATA_DIR
@@ -50,7 +60,7 @@ os.makedirs(save_model_dir, exist_ok=True)
 
 
 def main(_):
-    experiment = Experiment(api_key="xXtJguCo8yFdU7dpjEpo6YbHw",project_name="First")
+    experiment = Experiment(api_key="xXtJguCo8yFdU7dpjEpo6YbHw",project_name=args.experiment_name)
     hyper_params= {"learning_rate": args.lr, "num_epochs":args.max_epoch, "batch_size": args.single_batch_size, "alpha": args.alpha,"beta":args.beta}
     experiment.log_multiple_params(hyper_params)
 
@@ -79,6 +89,8 @@ def main(_):
                 max_gradient_norm=5.0,
                 alpha=args.alpha,
                 beta=args.beta,
+                gamma=args.gamma,
+                loss_type=args.loss,
                 avail_gpus=cfg.GPU_AVAILABLE.split(',')
             )
             # param init/restore
@@ -117,18 +129,18 @@ def main(_):
                             is_summary = True
                         else:
                             is_summary = False
-
+                        epochs=args.max_epoch
                         start_time = time.time()
                         ret = model.train_step( sess, batch, train=True, summary = is_summary )
                         forward_time = time.time() - start_time
                         batch_time = time.time() - batch_time
                         param=ret
-                        params={"loss": param[0], "reg_loss": param[1], "cls_loss": param[2],"cls_pos_loss":param[3],"cls_neg_loss":param[4]}
+                        params={"loss": param[0], "cls_loss": param[1], "cls_pos_loss": param[2],"cls_neg_loss":param[3]}
                         experiment.log_multiple_metrics(params)
 
-                        print('train: {} @ epoch:{}/{} loss: {:.4f} reg_loss: {:.4f} cls_loss: {:.4f} cls_pos_loss: {:.4f} cls_neg_loss: {:.4f} forward time: {:.4f} batch time: {:.4f}'.format(counter,epoch, args.max_epoch, ret[0], ret[1], ret[2], ret[3], ret[4], forward_time, batch_time))
+                        print('train: {} @ epoch:{}/{} loss: {:.4f} cls_loss: {:.4f} cls_pos_loss: {:.4f} cls_neg_loss: {:.4f} forward time: {:.4f} batch time: {:.4f}'.format(counter,epoch, epochs, ret[0], ret[1], ret[2], ret[3], forward_time, batch_time))
                         with open('log/train.txt', 'a') as f:
-                            f.write( 'train: {} @ epoch:{}/{} loss: {:.4f} reg_loss: {:.4f} cls_loss: {:.4f} cls_pos_loss: {:.4f} cls_neg_loss: {:.4f} forward time: {:.4f} batch time: {:.4f} \n'.format(counter, epoch, args.max_epoch, ret[0], ret[1], ret[2], ret[3], ret[4], forward_time, batch_time) )
+                            f.write( 'train: {} @ epoch:{}/{} loss: {:.4f} cls_loss: {:.4f} cls_pos_loss: {:.4f} cls_neg_loss: {:.4f} forward time: {:.4f} batch time: {:.4f}'.format(counter,epoch, epochs, ret[0], ret[1], ret[2], ret[3], forward_time, batch_time))
 
                         #print(counter, summary_interval, counter % summary_interval)
                         if counter % summary_interval == 0:
