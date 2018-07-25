@@ -31,7 +31,8 @@ class RPN3D(object):
                  max_gradient_norm=5.0,
                  alpha=1.5,
                  beta=1,
-                 loss_type="original"
+                 gamma=2,
+                 loss_type="original",
                  avail_gpus=['0']):
         # hyper parameters and status
         self.cls = cls
@@ -43,6 +44,7 @@ class RPN3D(object):
         self.epoch_add_op = self.epoch.assign(self.epoch + 1)
         self.alpha = alpha
         self.beta = beta
+        self.gamma=gamma
         self.avail_gpus = avail_gpus
         self.loss_type=loss_type
         boundaries = [80, 120]
@@ -76,7 +78,7 @@ class RPN3D(object):
                     feature = FeatureNet(
                         training=self.is_train, batch_size=self.single_batch_size)
                     rpn = MiddleAndRPN(
-                        input=feature.outputs, alpha=self.alpha, beta=self.beta,loss_type=self.loss_type training=self.is_train)
+                        input=feature.outputs, alpha=self.alpha, beta=self.beta,gamma=self.gamma,loss_type=self.loss_type,cls=self.cls, training=self.is_train)
                     tf.get_variable_scope().reuse_variables()
                     # input
                     self.vox_feature.append(feature.feature)
@@ -102,7 +104,7 @@ class RPN3D(object):
                     self.cls_pos_loss = rpn.cls_pos_loss_rec
                     self.cls_neg_loss = rpn.cls_neg_loss_rec
                     self.params = tf.trainable_variables()
-                    gradients = tf.gradients(self.loss, self.params)
+                    gradients = _compute_gradients(self.loss, self.params)
                     # gradients = _compute_gradients(self.loss,self.params)
                     # tf_print(gradients,self.params,"grads")
                     clipped_gradients, gradient_norm = tf.clip_by_global_norm(
