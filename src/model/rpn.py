@@ -4,6 +4,7 @@
 
 import tensorflow as tf
 import numpy as np
+from tensorflow.python.ops import array_ops
 
 from config import cfg
 
@@ -21,7 +22,7 @@ def tf_print(op, tensors, message=None):
     return op
 
 class MiddleAndRPN:
-    def __init__(self, input, alpha=1.5, beta=1, gamma=2, sigma=3,loss_type="original" training=True, name=''):
+    def __init__(self, input, alpha=1.5, beta=1.0, gamma=2.0, sigma=3,loss_type='original', cls='Car', training=True, name=''):
         # scale = [batchsize, 10, 400/200, 352/240, 128] should be the output of feature learning network
         self.input = input
         self.training = training
@@ -40,7 +41,7 @@ class MiddleAndRPN:
         self.neg_equal_one_sum = tf.placeholder(tf.float32, [None, 1, 1, 1])
 
         with tf.variable_scope('MiddleAndRPN_' + name):
-            # convolutinal middle layers
+            # convolutional middle layers
             temp_conv = ConvMD(3, 128, 64, 3, (2, 1, 1),
                                (1, 1, 1), self.input, name='conv1')
             temp_conv = ConvMD(3, 64, 64, 3, (1, 1, 1),
@@ -53,8 +54,14 @@ class MiddleAndRPN:
 
             # rpn
             # block1:
+            # if cls=='Car':
             temp_conv = ConvMD(2, 128, 128, 3, (2, 2), (1, 1),
                                temp_conv, training=self.training, name='conv4')
+            if cls!='Car':
+                temp_conv = ConvMD(2, 128, 128, 3, (1, 1), (1,1),
+                                    temp_conv, training=self.training, name='convextra')
+
+
             temp_conv = ConvMD(2, 128, 128, 3, (1, 1), (1, 1),
                                temp_conv, training=self.training, name='conv5')
             temp_conv = ConvMD(2, 128, 128, 3, (1, 1), (1, 1),
@@ -106,6 +113,7 @@ class MiddleAndRPN:
                            temp_conv, training=self.training, activation=False, bn=False, name='conv21')
             # softmax output for positive anchor and negative anchor, scale = [None, 200/100, 176/120, 1]
             self.p_pos = tf.sigmoid(p_map)
+            # self.p_pos = tf.Print(self.p_pos,[self.p_pos], message="p_pos is:")
             #self.p_pos = tf.nn.softmax(p_map, dim=3)
             self.output_shape = [cfg.FEATURE_HEIGHT, cfg.FEATURE_WIDTH]
 
@@ -124,21 +132,22 @@ class MiddleAndRPN:
 
                 self.loss = tf.reduce_sum(self.cls_loss + self.reg_loss)
 
-            elif loss_type=='focal_loss':
-                #Focal loss adapted from RetinaNet
-                self.cls_pos_loss = (self.pos_equal_one ** gamma) * tf.log(self.p_pos+small_addon_for_BCE)
-                self.cls_neg_loss = (self.neg_equal_one ** gamma) * tf.log(1.0 - self.p_pos+small_addon_for_BCE)
+            elif loss_type=='focal':
+                #Focal Loss implemented from RetiNet
+                self.cls_pos_loss = - alpha * (self.pos_equal_one ** gamma) * tf.log(tf.clip_by_value(self.p_pos, 1e-8, 1.0))
+                self.cls_neg_loss = -(1 - alpha) * (self.neg_equal_one ** gamma) * tf.log(tf.clip_by_value(1.0 - self.p_pos, 1e-8, 1.0))
 
-                self.cls_loss= tf.reduce_sum((- alpha * self.cls_pos_loss) /( -(1-alpha) * self.cls_neg_loss))
+
+                self.cls_loss= tf.reduce_sum( self.cls_pos_loss +  self.cls_neg_loss)
 
                 self.cls_pos_loss_rec = tf.reduce_sum( self.cls_pos_loss )
                 self.cls_neg_loss_rec = tf.reduce_sum( self.cls_neg_loss )
-                #Not necessary but encountered tensor bug
+
                 self.reg_loss = smooth_l1(r_map * self.pos_equal_one_for_reg, self.targets *
                                           self.pos_equal_one_for_reg, sigma) / self.pos_equal_one_sum
                 self.reg_loss = tf.reduce_sum(self.reg_loss)
-                
-                self.loss= tf.reduce_sum(self.cls_loss)
+                self.loss= tf.reduce_sum(self.cls_loss+ (self.reg_loss-self.reg_loss))
+
 
 
 
@@ -164,9 +173,13 @@ def ConvMD(M, Cin, Cout, k, s, p, input, training=True, activation=True, bn=True
     '''
     Creates M-Dimensional convolutional layerself.
     Params:
-
-
-
+    Int M - Dimenson
+    Int Cin - Number of Channels in
+    Int Cout- Number of Channels out
+    Int k - kernel size
+    Int s - stride
+    Int p - padding
+    input - input tensor
 
     '''
     temp_p = np.array(p)
