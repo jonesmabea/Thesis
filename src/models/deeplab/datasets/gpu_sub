@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#SBATCH --job-name VoxelNet
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 28
+#SBATCH --gres=gpu:2
+#SBATCH --time 01:00:00
+#SBATCH --partition gpu_veryshort
+#SBATCH --output gpu2.out
+#SBATCH --exclusive
+#SBATCH --mem=128000
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo Slurm job ID is $SLURM_JOB_ID
+echo This job runs on the following machines:
+echo `echo $SLURM_JOB_NODELIST | uniq`
+module load languages/anaconda2/5.0.1.tensorflow-1.4
+python deeplab/train.py \
+    --logtostderr \
+    --eval_split="val" \
+    --model_variant="xception_65" \
+    --atrous_rates=6 \
+    --atrous_rates=12 \
+    --atrous_rates=18 \
+    --output_stride=16 \
+    --decoder_output_stride=4 \
+    --eval_crop_size=1025 \
+    --eval_crop_size=2049 \
+    --dataset="cityscapes" \
+    --train_logdir=${PATH_TO_TRAIN_DIR} \
+    --dataset_dir=${PATH_TO_DATASET}

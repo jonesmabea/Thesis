@@ -7,8 +7,18 @@
 \chapter{Introduction}
 \label{chap:intro}
 
-In the coming decade there is expected to be proliferation of new technologies that have been aided by recent developments in Artificial Intelligence (AI) and Machine Learning (ML). AI and ML have become topics of increasing interest in academic fields and industries globally. As a result, collaborations between these two fields has become increasingly common. 
-With increase in computational power and the development of newer AI algorithms, robotic technologies have greatly advanced. They are now able to perform complex tasks that were once too difficult, dangerous or even impossible for humans to perform. Consequently, industries have benefited from the accuracy and efficiency provided by these robots. 
+Accelerated by recent advancements in technology, the prospect of Autonomous Vehicles (AVs) driving in public roads is becoming more and more a reality. As this is an emerging field, there are numerous variations of implementations by different companies. Arguably, a key characteristic of these implementations is a large number of perception sensors including cameras, radars and light and detection ranging sensors(LiDAR). This is necessary for perceiving the environment around the vehicles in order to safely maneuver around surrounding objects. However, most of these sensors are quite expensive and also energy inefficient thus making AVs unviable. In an effort to reduce the cost, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety.
+ 
+In the multimodal approach, sensors are combined in various ways to achieve  cost effective yet accurate configurations. Common configurations include Camera only, camera and radar, camera, LiDAR and radar. This is influenced by the different stregnths and weaknesses of the sensors in terms of performance.  
+Despite extensive research on these perception sensors, their performance  in urban and non-urban contexts has not been exhaustively explored. This presents an opportunity to redesign the sensor configurations from a top down approach by first understanding their performance in different contexts then designing models that are efficient and feasible.
+
+As a starting point, this project will assess the performance of a si
+ However, the software implementations of these publications are often closed source including the datasets that they were tested on. As a result it is difficult for the academic community to replicate and validate the findings. 
+
+
+
+
+\newpage
 
 An area that has developed a wide range of interest currently is the topic of autonomous vehicles. The idea of autonomous vehicles(AVs) is not new. As early as 2005, DARPA had invested heavily in the creation of unmanned trucks and organised for the Urban Challenge \cite{buehler2009darpa} to allow for different teams to showcase their unmanned vehicles. However, due to the challenges such as low computational power and underdeveloped AI and ML systems, the resulting implementations were not practical and had a high fault rate of 1 fault in 100 miles compared to the human fault rate of around 1 in 100 million miles. Nonetheless, from this challenge, it was clear that the prospect of AVs was plausible and indeed possible. 
 
@@ -24,13 +34,11 @@ Currently, AVs are divided into five levels as defined by the National Highway T
 
 The race to level 5 autonomous by different companies has seen major competition between these industry players. As such, they have invested heavily in designing and deploying AVs. However, these vehicles tend to have various sensors as seen in figure \ref{fig:my_label}. These sensors are necessary for accurate navigation and safety. Nonetheless, they are quite expensive thereby making AVs not feasible at the moment. 
 
-In an effort to reduce the cost, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety. Researchers working in these companies have released different papers proposing different options such as LiDAR only, camera and LiDAR or camera only configurations. However, the software implementations of these publications are often closed source including the datasets that they were tested on. As a result it is difficult for the academic community to replicate and validate the findings. 
-
 
 
 
 \section{Aims and Objectives}
-Following the previous discussion, the aim of this project is to tackle the aforementioned issues by replicating VoxelNet, a region proposal network for point cloud object detection by Zhou et al \cite{zhou2017voxelnet}. In addition, we will open source this solution as well as the data sets used in order to make it reproducible. 
+Following the motivations in the presented discussion , the aim of this project is to  tackle the aforementioned issues by replicating VoxelNet, a region proposal network for point cloud object detection by Zhou et al \cite{zhou2017voxelnet}. In addition, we will open source this solution as well as the data sets used in order to make it reproducible. 
 To achieve this aim, the following objectives will be undertaken:
 \begin{enumerate}
 	\item Detailed analysis of state-of-the-art LiDAR-Based object detection deep neural networks.
