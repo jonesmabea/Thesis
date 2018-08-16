@@ -12,7 +12,15 @@ from config import cfg
 from utils import *
 from model.group_pointcloud import FeatureNet
 from model.rpn import MiddleAndRPN
+def tf_print(op, tensors, message=None):
+    def print_message(x):
+        sys.stdout.write(message + " %s\n" % x)
+        return x
 
+    prints = [tf.py_func(print_message, [tensor], tensor.dtype) for tensor in tensors]
+    with tf.control_dependencies(prints):
+        op = tf.identity(op)
+    return op
 
 class RPN3D(object):
 
@@ -23,6 +31,8 @@ class RPN3D(object):
                  max_gradient_norm=5.0,
                  alpha=1.5,
                  beta=1,
+                 gamma=2,
+                 loss_type="original",
                  avail_gpus=['0']):
         # hyper parameters and status
         self.cls = cls
@@ -34,8 +44,9 @@ class RPN3D(object):
         self.epoch_add_op = self.epoch.assign(self.epoch + 1)
         self.alpha = alpha
         self.beta = beta
+        self.gamma=gamma
         self.avail_gpus = avail_gpus
-
+        self.loss_type=loss_type
         boundaries = [80, 120]
         values = [ self.learning_rate, self.learning_rate * 0.1, self.learning_rate * 0.01 ]
         lr = tf.train.piecewise_constant(self.epoch, boundaries, values)
@@ -67,7 +78,7 @@ class RPN3D(object):
                     feature = FeatureNet(
                         training=self.is_train, batch_size=self.single_batch_size)
                     rpn = MiddleAndRPN(
-                        input=feature.outputs, alpha=self.alpha, beta=self.beta, training=self.is_train)
+                        input=feature.outputs, alpha=self.alpha, beta=self.beta,gamma=self.gamma,loss_type=self.loss_type,cls=self.cls, training=self.is_train)
                     tf.get_variable_scope().reuse_variables()
                     # input
                     self.vox_feature.append(feature.feature)
@@ -87,14 +98,15 @@ class RPN3D(object):
                     # loss and grad
                     if idx == 0:
                         self.extra_update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
-
                     self.loss = rpn.loss
                     self.reg_loss = rpn.reg_loss
                     self.cls_loss = rpn.cls_loss
                     self.cls_pos_loss = rpn.cls_pos_loss_rec
                     self.cls_neg_loss = rpn.cls_neg_loss_rec
                     self.params = tf.trainable_variables()
-                    gradients = tf.gradients(self.loss, self.params)
+                    gradients = _compute_gradients(self.loss, self.params)
+                    # gradients = _compute_gradients(self.loss,self.params)
+                    # tf_print(gradients,self.params,"grads")
                     clipped_gradients, gradient_norm = tf.clip_by_global_norm(
                         gradients, max_gradient_norm)
 
@@ -178,6 +190,7 @@ class RPN3D(object):
         vox_number = data[3]
         vox_coordinate = data[4]
         print('train', tag)
+
         pos_equal_one, neg_equal_one, targets = cal_rpn_target(
             label, self.rpn_output_shape, self.anchors, cls=cfg.DETECT_OBJ, coordinate='lidar')
         pos_equal_one_for_reg = np.concatenate(
@@ -200,10 +213,10 @@ class RPN3D(object):
             input_feed[self.neg_equal_one[idx]] = neg_equal_one[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
             input_feed[self.neg_equal_one_sum[idx]] = neg_equal_one_sum[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
         if train:
-            output_feed = [self.loss, self.reg_loss,
+            output_feed = [self.loss,
                            self.cls_loss, self.cls_pos_loss, self.cls_neg_loss, self.gradient_norm, self.update]
         else:
-            output_feed = [self.loss, self.reg_loss, self.cls_loss, self.cls_pos_loss, self.cls_neg_loss]
+            output_feed = [self.loss, self.cls_loss, self.cls_pos_loss, self.cls_neg_loss]
         if summary:
             output_feed.append(self.train_summary)
         # TODO: multi-gpu support for test and predict step
@@ -244,7 +257,7 @@ class RPN3D(object):
             input_feed[self.neg_equal_one[idx]] = neg_equal_one[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
             input_feed[self.neg_equal_one_sum[idx]] = neg_equal_one_sum[idx * self.single_batch_size:(idx + 1) * self.single_batch_size]
 
-        output_feed = [self.loss, self.reg_loss, self.cls_loss]
+        output_feed = [self.loss, self.cls_loss]
         if summary:
             output_feed.append(self.validate_summary)
         return session.run(output_feed, input_feed)
@@ -320,18 +333,18 @@ class RPN3D(object):
             # only summry 1 in a batch
             cur_tag = tag[0]
             P, Tr, R = load_calib( os.path.join( cfg.CALIB_DIR, cur_tag + '.txt' ) )
-            
+
             front_image = draw_lidar_box3d_on_image(img[0], ret_box3d[0], ret_score[0],
                                                     batch_gt_boxes3d[0], P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-            
+
             bird_view = lidar_to_bird_view_img(
                 lidar[0], factor=cfg.BV_LOG_FACTOR)
-                
+
             bird_view = draw_lidar_box3d_on_birdview(bird_view, ret_box3d[0], ret_score[0],
                                                      batch_gt_boxes3d[0], factor=cfg.BV_LOG_FACTOR, P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-            
+
             heatmap = colorize(probs[0, ...], cfg.BV_LOG_FACTOR)
-        
+
             ret_summary = session.run(self.predict_summary, {
                 self.rgb: front_image[np.newaxis, ...],
                 self.bv: bird_view[np.newaxis, ...],
@@ -339,37 +352,43 @@ class RPN3D(object):
             })
 
             return tag, ret_box3d_score, ret_summary
-        
+
         if vis:
             front_images, bird_views, heatmaps = [], [], []
             for i in range(len(img)):
                 cur_tag = tag[i]
                 P, Tr, R = load_calib( os.path.join( cfg.CALIB_DIR, cur_tag + '.txt' ) )
-                
+
                 front_image = draw_lidar_box3d_on_image(img[i], ret_box3d[i], ret_score[i],
                                                  batch_gt_boxes3d[i], P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-                                                 
+
                 bird_view = lidar_to_bird_view_img(
                                                  lidar[i], factor=cfg.BV_LOG_FACTOR)
-                                                 
+
                 bird_view = draw_lidar_box3d_on_birdview(bird_view, ret_box3d[i], ret_score[i],
                                                  batch_gt_boxes3d[i], factor=cfg.BV_LOG_FACTOR, P2=P, T_VELO_2_CAM=Tr, R_RECT_0=R)
-                
+
                 heatmap = colorize(probs[i, ...], cfg.BV_LOG_FACTOR)
-                
+
                 front_images.append(front_image)
                 bird_views.append(bird_view)
                 heatmaps.append(heatmap)
-            
+
             return tag, ret_box3d_score, front_images, bird_views, heatmaps
 
         return tag, ret_box3d_score
 
 
+def _compute_gradients(tensor, var_list):
+  grads = tf.gradients(tensor, var_list)
+  return [grad if grad is not None else tf.zeros_like(var)
+          for var, grad in zip(var_list, grads)]
+
 def average_gradients(tower_grads):
     # ref:
     # https://github.com/tensorflow/models/blob/6db9f0282e2ab12795628de6200670892a8ad6ba/tutorials/image/cifar10/cifar10_multi_gpu_train.py#L103
     # but only contains grads, no vars
+
     average_grads = []
     for grad_and_vars in zip(*tower_grads):
         grads = []
@@ -394,5 +413,3 @@ def average_gradients(tower_grads):
 
 if __name__ == '__main__':
     pass
-
-

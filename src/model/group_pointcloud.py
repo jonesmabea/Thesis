@@ -14,9 +14,10 @@ class VFELayer(object):
     def __init__(self, out_channels, name):
         super(VFELayer, self).__init__()
         self.units = int(out_channels / 2)
+        #self.kernel_initializer = tf.contrib.layers.variance_scaling_initializer()
         with tf.variable_scope(name, reuse=tf.AUTO_REUSE) as scope:
             self.dense = tf.layers.Dense(
-                self.units, tf.nn.relu, name='dense', _reuse=tf.AUTO_REUSE, _scope=scope)
+                self.units, activation=tf.nn.relu, name='dense', _reuse=tf.AUTO_REUSE, _scope=scope)
             self.batch_norm = tf.layers.BatchNormalization(
                 name='batch_norm', fused=True, _reuse=tf.AUTO_REUSE, _scope=scope)
 
@@ -74,5 +75,3 @@ class FeatureNet(object):
         # pedestrian/cyclist: [N * 10 * 200 * 240 * 128]
         self.outputs = tf.scatter_nd(
             self.coordinate, voxelwise, [self.batch_size, 10, cfg.INPUT_HEIGHT, cfg.INPUT_WIDTH, 128])
-
-
