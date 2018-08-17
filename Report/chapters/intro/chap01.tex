@@ -1,3 +1,4 @@
+% !TeX spellcheck = <engl>
 %
 % File: chap01.tex
 % Author: Victor F. Brena-Medina
@@ -7,34 +8,19 @@
 \chapter{Introduction}
 \label{chap:intro}
 
-In the coming decade there is expected to be proliferation of new technologies that have been aided by recent developments in Artificial Intelligence (AI) and Machine Learning (ML). AI and ML have become topics of increasing interest in academic fields and industries globally. As a result, collaborations between these two fields has become increasingly common. 
-With increase in computational power and the development of newer AI algorithms, robotic technologies have greatly advanced. They are now able to perform complex tasks that were once too difficult, dangerous or even impossible for humans to perform. Consequently, industries have benefited from the accuracy and efficiency provided by these robots. 
+Accelerated by recent advancements in technology, the prospect of Autonomous Vehicles (AVs) driving in public roads is becoming more and more a reality. As this is an emerging field, there are numerous variations of implementations by different companies. Arguably, a key characteristic of these implementations is a large number of perception sensors including cameras, radars and light and detection ranging sensors(LiDAR). This is necessary for perceiving the environment around the vehicles in order to safely maneuver around surrounding objects. However, most of these sensors are quite expensive and also energy inefficient thus making AVs unviable. In an effort to reduce the cost, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety.
+ 
+In the multimodal approach, sensors are combined in various ways to achieve  cost effective yet accurate configurations. Common configurations include Camera only, camera and radar, camera, LiDAR and radar. This is influenced by the different stregnths and weaknesses of the sensors in terms of performance.  
+Despite extensive research on these perception sensors, their performance  in urban and non-urban contexts has not been exhaustively explored. This presents an opportunity to redesign the sensor configurations from a top down approach by first understanding their performance in different contexts then designing models that are efficient and feasible.
 
-An area that has developed a wide range of interest currently is the topic of autonomous vehicles. The idea of autonomous vehicles(AVs) is not new. As early as 2005, DARPA had invested heavily in the creation of unmanned trucks and organised for the Urban Challenge \cite{buehler2009darpa} to allow for different teams to showcase their unmanned vehicles. However, due to the challenges such as low computational power and underdeveloped AI and ML systems, the resulting implementations were not practical and had a high fault rate of 1 fault in 100 miles compared to the human fault rate of around 1 in 100 million miles. Nonetheless, from this challenge, it was clear that the prospect of AVs was plausible and indeed possible. 
-
-Currently, AVs are divided into five levels as defined by the National Highway Traffic Safety Administration(NHTSA) depending on their level of autonomy. 
-\begin{itemize}
-	\item \textbf{Level 0} - No autonomy. 
-	\item \textbf{Level 1} - Basic driver assistance built into vehicle design.
-	\item \textbf{Level 2} - Partially autonomous but driver expected to monitor environment at all times.
-	\item \textbf{Level 3} - Conditionally autonomous with the driver not required to monitor the environment but is required to take back control if need be.
-	\item \textbf{Level 4} - Highly autonomous with the vehicle capable of handling most conditions but the driver has the option to take control. 
-	\item \textbf{level 5} - Completely autonomous with the vehicle capable of handling all conditions.
-\end{itemize}
-
-The race to level 5 autonomous by different companies has seen major competition between these industry players. As such, they have invested heavily in designing and deploying AVs. However, these vehicles tend to have various sensors as seen in figure \ref{fig:my_label}. These sensors are necessary for accurate navigation and safety. Nonetheless, they are quite expensive thereby making AVs not feasible at the moment. 
-
-In an effort to reduce the cost, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety. Researchers working in these companies have released different papers proposing different options such as LiDAR only, camera and LiDAR or camera only configurations. However, the software implementations of these publications are often closed source including the datasets that they were tested on. As a result it is difficult for the academic community to replicate and validate the findings. 
-
-
-
+In order to investigate the performance of these sensors, state of the art object detection models will be considered. Specifically, two models will be used as the templates in this evaluation. Firstly, VoxelNet \cite{zhou2017voxelnet}], is a LiDAR only  model that uses point clouds as input. Secondly, Aggregated View Object Detection(AVOD) \cite{ku2017joint} is multimodal model that fuses image and point cloud data. Both model implementations were available on GitHub and were heavily modified in order to align with the aims of this project. Nonetheless, they formed an essential foundation that cannot be understated. 
 
 \section{Aims and Objectives}
-Following the previous discussion, the aim of this project is to tackle the aforementioned issues by replicating VoxelNet, a region proposal network for point cloud object detection by Zhou et al \cite{zhou2017voxelnet}. In addition, we will open source this solution as well as the data sets used in order to make it reproducible. 
-To achieve this aim, the following objectives will be undertaken:
+Following the motivations in the presented discussion , the performance of LiDAR only and multimodal(LiDAR and Camera) models in different contexts will be investigated with the aim of reducing the number of sensors in AVs. 
+To achieve this aim, the following objectives will need to be achieved.:
 \begin{enumerate}
-	\item Detailed analysis of state-of-the-art LiDAR-Based object detection deep neural networks.
-	\item Implement voxel feature encoding layer for grouping point clouds
+	\item Context detection and characterisation of images and pointclouds. 
+	\item 
 	\item Implement region proposal network for object detection.
 	\item Test and evaluate the implemented neural network against results of state-of-the-art point cloud object detection methods.
 	\item Propose improvements to expand benefits of our implementation.
@@ -45,8 +31,12 @@ To achieve this aim, the following objectives will be undertaken:
 
 The deliverables are split into two groups. 
 \begin{itemize}
-	 \item \textbf{End to end point cloud object detection RPN \cite{ren2015faster} .} This will be a software implementation of the system that will be publicly available through a Github repository. 
-	\item \textbf{Evaluation report.} In this report, the following topics will be discussed. 
+	 \item \textbf{Image and LiDAR Context Classifier} This will be a software implementation of the system that will be publicly available through a Github repository. 
+	 \item \textbf{Modified Models} This will be a software implementation of the system that will be publicly available through a Github repository.
+	 \item \textbf{Modified Models} This will be a software implementation of the system that will be publicly available through a Github repository.
+	 \item \textbf{Validation Dataset} This will be a software implementation of the system that will be publicly available through a Github repository.
+	  
+	\item \textbf{Evaluation report.} The following topics will be discussed. 
 	\begin{enumerate}
 		\item A review of related research and implementations tackling object detection using LiDAR cloud points. 
 		\item Performance analysis of implementation and analysis criteria.
@@ -57,20 +47,9 @@ The deliverables are split into two groups.
 	\end{enumerate}
 \end{itemize}
 
-\section{Added Value}
-
-This project will implement and open source a sophisticated cloud point detection technique for use in autonomous vehicles. The implementation will be able to detect classes of objects such as cyclists, pedestrians and other vehicles on a real-time basis.
-In doing so, the project will democratize access to proprietary technology by Apple \cite{zhou2017voxelnet} to be used and developed further by future researchers working with object detection in point clouds. 
-Following the detailed evaluation, I intend to propose ways through which this project can be implemented and improves with the aim of reducing the cost of AVs. This will be complemented further with an economic viability analysis to determine the effectiveness of the suggested approach. 
-If successful, this project will provide a possible framework for the main stream adoption of AVs. 
-
-\section{Research scope}
-The focus of this project is mainly with regard to computer vision, deep learning and robotics. Computer vision is the task of obtaining, processing, analysing and contextualising visual information to produce numerical information that can be understood and manipulated by computers. This is necessary in order to process and analyse the LiDAR data. Deep learning is a broad term used to describe methods that utilise the use of deep neural networks that have a large number of layers. DNNs have become a heavily researched an invested area due to their ability to capture complex underlying models from data. This will be crucial for detecting objects from point clouds. 
-This project will combine existing research using computer vision and deep learning such as \cite{qi2017pointnet}\cite{zhou2017voxelnet} to develop a Region Proposal Network capable of accurately detecting objects in point clouds. 
-
-
 \section{Report structure}
 
+This report will consist of five main chapters. 
 Chapter 2 discusses the different components of AVs, current implementations in the industry, a background on the research that has been undertaken in the field of object detection and finally a brief overview of deep learning frameworks. 
 
 Chapter 3 is the final discussion that forms the conclusion of the review. In this chapter, I will evaluate what I hope to achieve and the assumptions and hypotheses that I have formulated. 
