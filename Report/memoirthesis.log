@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  16 AUG 2018 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  16 AUG 2018 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1987,7 +1987,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
-<logos/bristolcrest_colour.pdf, id=131, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=123, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 34.
@@ -2139,84 +2139,81 @@ LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 27.
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 34.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 27.
+(Font)              scaled to size 10.18341pt on input line 34.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2] [3])
-[4] (./chapters/Litreview/lit_rev.tex
+ [2])
+[3] [4
+
+] (./chapters/Litreview/lit_rev.tex [5
+
+]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 15.
+(Font)              scaled to size 8.36993pt on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 15.
+(Font)              scaled to size 7.06795pt on input line 27.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
+(Font)              scaled to size 8.27998pt on input line 27.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
+(Font)              scaled to size 6.99199pt on input line 27.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
+(Font)              scaled to size 8.27998pt on input line 27.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
+(Font)              scaled to size 6.99199pt on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 15.
+(Font)              scaled to size 8.36993pt on input line 27.
 
 
-LaTeX Warning: Reference `app:lidar' on page 5 undefined on input line 15.
+LaTeX Warning: Reference `app:lidar' on page 6 undefined on input line 27.
 
-<media/hdl-family.png, id=286, 752.8125pt x 484.81125pt>
+<media/hdl-family.png, id=277, 752.8125pt x 484.81125pt>
 File: media/hdl-family.png Graphic file (type png)
 <use media/hdl-family.png>
-Package pdftex.def Info: media/hdl-family.png  used on input line 19.
+Package pdftex.def Info: media/hdl-family.png  used on input line 31.
 (pdftex.def)             Requested size: 448.0pt x 288.52174pt.
+[6 <./media/hdl-family.png>]
+<media/waymo.png, id=286, 1189.44376pt x 897.3525pt>
+File: media/waymo.png Graphic file (type png)
+<use media/waymo.png>
+Package pdftex.def Info: media/waymo.png  used on input line 51.
+(pdftex.def)             Requested size: 448.0pt x 337.98514pt.
+ [7] [8 <./media/waymo.png>] [9]
+<media/avind.png, id=315, 770.88pt x 389.455pt>
+File: media/avind.png Graphic file (type png)
+<use media/avind.png>
+Package pdftex.def Info: media/avind.png  used on input line 99.
+(pdftex.def)             Requested size: 448.0pt x 226.32974pt.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 102.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 102.
+ [10 <./media/avind.png (PNG copy)>] [11]
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [12]
+
+LaTeX Warning: Reference `app:app01' on page 13 undefined on input line 178.
+
+<media/cnn.png, id=358, 848.16875pt x 199.74625pt>
+File: media/cnn.png Graphic file (type png)
+<use media/cnn.png>
+Package pdftex.def Info: media/cnn.png  used on input line 182.
+(pdftex.def)             Requested size: 448.0pt x 105.50536pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5
+) [13] [14 <./media/cnn.png (PNG copy)>] (./chapters/body/body.tex [15
 
-
-]
-<media/waymo.png, id=297, 1189.44376pt x 897.3525pt>
-File: media/waymo.png Graphic file (type png)
-<use media/waymo.png>
-Package pdftex.def Info: media/waymo.png  used on input line 39.
-(pdftex.def)             Requested size: 448.0pt x 337.98514pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./media/hdl-family.png>] [7 <./media/waymo.png>] [8]
-<media/avind.png, id=325, 770.88pt x 389.455pt>
-File: media/avind.png Graphic file (type png)
-<use media/avind.png>
-Package pdftex.def Info: media/avind.png  used on input line 87.
-(pdftex.def)             Requested size: 448.0pt x 226.32974pt.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 90.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 90.
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <./media/avind.png (PNG copy)>] [11] [12]
-
-LaTeX Warning: Reference `app:app01' on page 13 undefined on input line 166.
-
-<media/cnn.png, id=372, 848.16875pt x 199.74625pt>
-File: media/cnn.png Graphic file (type png)
-<use media/cnn.png>
-Package pdftex.def Info: media/cnn.png  used on input line 170.
-(pdftex.def)             Requested size: 448.0pt x 105.50536pt.
-) [13 <./media/cnn.png (PNG copy)>] [14
-
-] (./chapters/body/body.tex [15
 
 ])
 [16] (./chapters/conclusion/conclusion.tex
@@ -2420,28 +2417,28 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7971F6635ACA1E46B4FB7670FBA925FB;2025.
+(rerunfilecheck)             Checksum: B3D1348C219DE1A6C96DA2F65194C39D;1906.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32754 strings out of 492649
- 600313 string characters out of 6129623
+ 32747 strings out of 492649
+ 600238 string characters out of 6129623
  876643 words of memory out of 5000000
- 35469 multiletter control sequences out of 15000+600000
- 87098 words of font info for 311 fonts, out of 8000000 for 9000
+ 35467 multiletter control sequences out of 15000+600000
+ 86980 words of font info for 309 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  55i,12n,92p,1012b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/te
 xmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (38 pages, 920863 bytes).
+Output written on memoirthesis.pdf (38 pages, 918708 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 139 named destinations out of 1000 (max. 500000)
- 40734 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 484 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 40718 words of extra memory for PDF output out of 42996 (max. 10000000)
 
