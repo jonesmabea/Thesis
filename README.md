@@ -47,15 +47,15 @@ This project, will  focus on LiDAR which projects the surrounding environment as
   - [X] Implement GPU Monitor for inference code. 
 
    ### AVOD 
-    - [X] Obtain baseline results with pretrained model
-    - [X] Notebooks for interactive training and testing
-    - [X] Implement GPU Monitor for inference code. 
+  - [X] Obtain baseline results with pretrained model
+  - [X] Notebooks for interactive training and testing
+  - [X] Implement GPU Monitor for inference code. 
 
     
    ### Analysis
-    - [x] Research GPU metrics to be logged during model inference 
-    - [X] Notebooks for interactive analysis 
-    
+  - [x] Research GPU metrics to be logged during model inference 
+  - [X] Notebooks for interactive analysis 
+
    
     
 
