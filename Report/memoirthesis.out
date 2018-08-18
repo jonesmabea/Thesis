@@ -4,26 +4,23 @@
 \BOOKMARK [1][-]{section.1.1}{Aims and Objectives}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.2}{Deliverables}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{Report structure}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 7
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Components of an AV}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Legal, Ethical and Economic Considerations}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Industrial Approaches}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{Camera}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{Camera and Radar}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.3}{LiDAR, Camera and Radar}{section.2.3}% 13
-\BOOKMARK [1][-]{section.2.4}{Related Research}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.4.1}{Classic Computer Vision}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.2}{Deep Neural Networks}{section.2.4}% 16
-\BOOKMARK [1][-]{section.2.5}{Deep Learning Framework}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.5.1}{TensorFlow CNN}{section.2.5}% 18
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 19
-\BOOKMARK [1][-]{section.3.1}{ Context Classification}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.1.1}{Separation of data into urban and non urban Context}{section.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.1.2}{Visual Classification}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.3}{PointCloud classifier}{section.3.1}% 23
-\BOOKMARK [1][-]{section.3.2}{Context-Dependent Model Selection}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{Conclusion}{section.3.2}% 25
-\BOOKMARK [1][-]{section.3.3}{Validation with different datasets}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 27
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 28
-\BOOKMARK [0][-]{appendix*.11}{Bibliography}{}% 29
+\BOOKMARK [1][-]{section.2.2}{Industrial Approaches}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Camera}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Camera and Radar}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{LiDAR, Camera and Radar}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Related Research}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Classic Computer Vision}{section.2.3}% 14
+\BOOKMARK [1][-]{section.2.4}{Legal, Ethical and Economic Considerations}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Deep Neural Networks}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Datasets}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{ Context Detection and Characterisation}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Context-Dependent Model Selection}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Conclusion}{section.3.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Validation with different datasets}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Results and Analysis}{}% 23
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 24
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 25
+\BOOKMARK [0][-]{appendix*.14}{Bibliography}{}% 26
