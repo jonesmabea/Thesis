@@ -1,34 +1,46 @@
+% !TeX spellcheck = <engl>
 \let\textcircled=\pgftextcircled
+
+
 \chapter{Methodology}
-\label{chap:body}
+\label{chap:methodology}
 
 
+\section{Datasets}
+	
+While executing the project, three main datasets were used. 
+	\begin{itemize}
+		\item \textbf{KITTI }- KITTI is derived from a  VW station wagon that was driven in different traffic situations. The car was fitted with a number of sensors including a high resolution greyscale and colour cameras, Velodyne LiDAR and a GPS/IMU inertial navigation system. The dataset includes scenes from urban and rural contexts. 
+		\item \textbf{CityScapes} -  Cityscapes contains multiple street scenes from 50 difference cities. In these scenes, 5000 are finely annotated at a pixel-level with 20000 coarsely annotated. 
+	
+		\item \textbf{University of Bristol Smart Internet Lab} - Derived from the connected and autonomous vehicles project, this dataset contains LiDAR capture files from a stationary vehicle positioned at the Millennium Square in Bristol. 
+	\end{itemize}
 
-\section{ Context Classification})
-\subsection{Separation of data into urban and non urban Context}
 
-The KITTI Dataset contains annotated labels for the objects in training and testing images and pointclouds. However this annotation does not include if the image is from an urban or non-urban context. 
-In order to do so it was necessary to find a way to annotate the images and pointclouds in terms of urban or non-urban context. 
+\section{ Context Detection and Characterisation}
 
-\subsection{Visual Classification}
- The first step was visual classification of the images into urban and non urban classes. 
+Determining the context is trivial in a mapped environment where you are able to infer from a map. However in a lab setting where you are only using image data from datasets this becomes quite difficult. This is mostly due to loss of temporal and spatial information if not prior specified or if so, done coarsely. Both VoxelNet and AVOD models were trained using the KITTI dataset using image frames, point clouds. The frames were discontigous and shuffled into training and testing directories. As such it was difficult to infer the context of the frames prior as no information was provided about the location they were captured in. Notably, this was also evident in the CityScapes dataset. From this observation, it was necessary to create a context detector for images and furthermore point clouds. 
+
+In order to develop, test and train an image and point cloud context detector, I visually classified 3715 images from the KITTI dataset. The corresponding point clouds shared the same context as the classified images. 
+
+\subsection*{Image Context Detection}
  Depending on the  number of cars, vegetation, road 
 -Segmentation using Deeplab 
 extracting labelled regions 
 Used to extract regions of interest 
 
 
-\subsection{PointCloud classifier}
+\subsection*{PointCloud Context Detection}
 
 
-\subsubsection{Keypoint extraction }
+\title{Keypoint extractio }
 Intrinsic Shape Signatures 
 
-\subsubsection{Feature description}
+\title{Feature description}
 Signature of Histogram of Orientations
 
 
-\subsubsection{Matching}
+\subsubsection*{Feature Matching}
 
 
 

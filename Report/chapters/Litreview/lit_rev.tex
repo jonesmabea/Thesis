@@ -1,25 +1,29 @@
 \let\textcircled=\pgftextcircled
 
 
-\chapter{Literature Review}
-\label{chap:lit_review}
+\chapter{Background}
+\label{chap:background}
 
 The idea of autonomous vehicles(AVs) is not new. As early as 2005, DARPA had invested heavily in the creation of unmanned trucks and organised for the Urban Challenge \cite{buehler2009darpa} to allow for different teams to showcase their unmanned vehicles. However, due to the challenges such as low computational power and underdeveloped AI and ML systems, the resulting implementations were not practical and had a high fault rate of 1 fault in 100 miles compared to the human fault rate of around 1 in 100 million miles. Nonetheless, from this challenge, it was clear that the prospect of AVs was plausible and indeed possible. 
 
-Currently, AVs are divided into five levels as defined by the National Highway Traffic Safety Administration(NHTSA) depending on their level of autonomy. 
-\begin{itemize}
-	\item \textbf{Level 0} - No autonomy. 
-	\item \textbf{Level 1} - Basic driver assistance built into vehicle design.
-	\item \textbf{Level 2} - Partially autonomous but driver expected to monitor environment at all times.
-	\item \textbf{Level 3} - Conditionally autonomous with the driver not required to monitor the environment but is required to take back control if need be.
-	\item \textbf{Level 4} - Highly autonomous with the vehicle capable of handling most conditions but the driver has the option to take control. 
-	\item \textbf{level 5} - Completely autonomous with the vehicle capable of handling all conditions.
-\end{itemize}
+Currently, AVs are divided into five levels of autonomy as defined be the Society of Automotive Engineers(SAE):
+\begin{table}[H]
+	\begin{tabular}{p{1cm}p{\linewidth}}
+		\textbf{SAE level} & \textbf{Description}                                                                                                                                         \\ \hline
+		\textbf{0}         & No AV control systems. An example is blind spot indicators.                                                                                                  \\
+		\textbf{1}         & Basic driver assistance built into vehicle design. An example is the cruise control function.                                                                \\
+		\textbf{2}         & Basic AV control systems. Driver required to monitor the environment and take back control if need be. A good example is the Tesla Autpilot.                 \\
+		\textbf{3}         & AVs can safely navigate and drive within mapped environment. Driver required to monitor the environment and take back control if need be.                    \\
+		\textbf{4}         & Highly autonomous control capable of handling most conditions but the driver has the option to take control. Renault ISymbioz is an example of a level 4 AV. \\
+		\textbf{5}         & Completely autonomous with zero human involvment.                                                                                                           
+	\end{tabular}
+\end{table}
 
-The race to level 5 autonomous by different companies has seen major competition between these industry players. As such, they have invested heavily in designing and deploying AVs. However, these vehicles tend to have various sensors as seen in figure \ref{fig:my_label}. These sensors are necessary for accurate navigation and safety. Nonetheless, they are quite expensive thereby making AVs not feasible at the moment. 
+
+%The race to level 5 autonomous by different companies has seen major competition between these industry players. As such, they have invested heavily in designing and deploying AVs. However, these vehicles tend to have various sensors as seen in figure \ref{fig:my_label}. These sensors are necessary for accurate navigation and safety. Nonetheless, they are quite expensive thereby making AVs not feasible at the moment. 
+
 \section{Components of an AV}
 
-Most self-driving cars consist of 4 main components: 
 \begin{itemize}
 	\item \textbf{LiDAR} - LiDAR provides highly detailed 3D information about the environment around the vehicle and objects in it. LiDAR operates by sending out pulses of lasers and recording the reflections of the pulses from objects. By comparing this with the time taken for the lasers to be reflected(time of flight) and their direction, the distance of these objects can be calculated and mapped in a point cloud. 
 
@@ -52,20 +56,6 @@ Most self-driving cars consist of 4 main components:
 	\caption{Components of Waymo's Self Driving Car \cite{waymo_2018}}
 	\label{fig:my_label}
 \end{figure}
-
-
-
-\section{Legal, Ethical and Economic Considerations}
-
-The classic ethical dilemma for self driving cars poses a scenario whereby AVs are presented with a situation whereby a fatal accident is inevitable. For example, the AV either has to crash into a group of people in order to save the life of a passenger or to crash itself and sacrifice the life of the passenger. This dilemma highlights important legal, ethical and economic considerations to be considered by companies involved in the production of AVs and their corresponding systems. 
-
-
-According to \cite{gasser2016fundamental}, there are no public laws that cover the  use of independent autonomous vehicles in public spaces. In his article, he cites the fundamental issue as "understanding and accepting the effect of AVs as an independent action by a machine". Due to the lack of public laws on their use, he proposes extending fundamental rights such as the right to life into the framework for creating laws that cover emerging technologies that have an effect on the public, that are otherwise not accounted for in traditional laws. 
-
-Bearing this in mind, it is important to note that despite improvements in traffic safety over the years, 94\% are still caused by human beings with a large majority of them being fatal with the current human error rate being 1 in 100 million miles. This creates a realistic baseline that can then be extended in evaluating the performance of AV systems. As such, if the risk of automation is lesser than the risk of human vehicle control then the AV would be beneficial. Consequently, the AVs are not to be considered as perfect systems.
-
-With regard to economic considerations, car manufacturers involved in the production of AVs have to ensure that their AVs are able to handle numerous scenarios even if they are rare or considered statistically impossible. They should also be required to take legal liability in case any of their system components are defective and result in failures or accidents. This is important for customer trust without which they will not be able to convince customers to shift to AVs. In addition, for the adoption of AVs to be widespread, they have to be reasonably priced and efficient. With the current prices of the the various components and their power consumption, the adoption of AVs at the moment is not viable. 
-
 
 
 AVs have three main modes of operation namely,
@@ -119,6 +109,31 @@ This configuration is used by most of the leading industry players such as Waymo
 With regard to perception, classic computer vision methods have advanced over the years from simple algorithms such as SIFT\cite{lowe1999object} and SURF\cite{bay2006surf} which use descriptors to detect interesting points in images for object detection to much higher level representations such as the Histogram of Gradient(HOG)\cite{dalal2005histograms} or Haar Features\cite{viola2001rapid}  that were used in classifiers.  However, these methods have been unreliably slow and not as accurate. In addition these features are only able to model 2D data and therefore when applied to 3D data such as point clouds they are unusable. Furthermore, these feature detectors have to be hand-crafted manually which is a tedious process. As a result,  such classical methods can not be used in AVs as they are not as robust and accurate.  
 
 
+
+
+
+
+
+
+
+\section{Legal, Ethical and Economic Considerations}
+
+The classic ethical dilemma for self driving cars poses a scenario whereby AVs are presented with a situation whereby a fatal accident is inevitable. For example, the AV either has to crash into a group of people in order to save the life of a passenger or to crash itself and sacrifice the life of the passenger. This dilemma highlights important legal, ethical and economic considerations to be considered by companies involved in the production of AVs and their corresponding systems. 
+
+
+According to \cite{gasser2016fundamental}, there are no public laws that cover the  use of independent autonomous vehicles in public spaces. In his article, he cites the fundamental issue as "understanding and accepting the effect of AVs as an independent action by a machine". Due to the lack of public laws on their use, he proposes extending fundamental rights such as the right to life into the framework for creating laws that cover emerging technologies that have an effect on the public, that are otherwise not accounted for in traditional laws. 
+
+Bearing this in mind, it is important to note that despite improvements in traffic safety over the years, 94\% are still caused by human beings with a large majority of them being fatal with the current human error rate being 1 in 100 million miles. This creates a realistic baseline that can then be extended in evaluating the performance of AV systems. As such, if the risk of automation is lesser than the risk of human vehicle control then the AV would be beneficial. Consequently, the AVs are not to be considered as perfect systems.
+
+With regard to economic considerations, car manufacturers involved in the production of AVs have to ensure that their AVs are able to handle numerous scenarios even if they are rare or considered statistically impossible. They should also be required to take legal liability in case any of their system components are defective and result in failures or accidents. This is important for customer trust without which they will not be able to convince customers to shift to AVs. In addition, for the adoption of AVs to be widespread, they have to be reasonably priced and efficient. With the current prices of the the various components and their power consumption, the adoption of AVs at the moment is not viable. 
+
+
+
+
+
+
+
+
 \subsection{Deep Neural Networks}
 
 The emergence and development of Deep Neural Networks such as Convolutional Neural Networks (CNNs)\cite{lawrence1997face} has offset the reliance of classical methods of object detection in images by allowing for features to be automatically learnt by the network without the need for manual feature extraction. This is due to the fact that these networks have numerous number of deep layers that are able to capture these features.  
@@ -145,47 +160,4 @@ Pointnet\cite{qi2017pointnet} developed by Qi et al was able to overcome this ch
 An attempt at detecting objects in point clouds from a  LiDAR mounted in a vehicle was performed by \cite{li20163d}. In their work, they used a Fully Convolutional Network (FCN) to detect and localise objects in a point cloud as 3D bounding boxes. They were able to achieve this by discretising the point clouds into square grids represented by a 4D array containing the dimensions and a channel indicating if there was a point at that space in the grid. It performed significantly well in the KITTI benchmark. However, the source code was not released. 
 
 Finally, \cite{zhou2017voxelnet}  were able to create a point cloud based 3D object detection network by adding a Voxel Feature Extraction layer before a RPN that was able to divide the point cloud into voxels that were used as input for the RPN. The published results were well above the state of the art LiDAR object detection methods. As is the case with other publications, the source code was not released and therefore cannot be validated.  
-
-\section{Deep Learning Framework}
-
- As mentioned in the previous chapter one of the main deliverables will be an end to end RPN model for detecting objects in point clouds. In order to develop this I will make use of a deep learning framework. 
-At the moment, there are various distributions of deep learning frameworks that are available for different programming languages. 
-A few popular ones include:
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		Framework & Programming Language(s)  \\ \hline
-		Tensorflow &  Python, C++ , R  \\ \hline
-		PyTorch & Python  \\ \hline
-		Caffe & C, C++, Python, MATLAB \\ \hline
-		MXNet & Python, C++, R, Julia \\ \hline
-		Microsoft Cognitive Toolkit/CNTK & Python, C++ \\ \hline
-		
-	\end{tabular}
-	\caption{Popular deep learning frameworks}
-	\label{table:dlframeworks}
-\end{table}
-
-\subsection{TensorFlow CNN}
-I intend to use Tensorflow on Python to implement the RPN for the following reasons.
-\begin{enumerate}
-	\item \textbf{Large support community }
-	\item \textbf{Quick prototypying}
-	\item \textbf{Well tested and reliable}
-	\item \textbf{Portable}
-\end{enumerate}
-Figure \ref{ fig:cnn_vis} illustrates a simple CNN visualisation which forms a major part of the RPN model.  A python implementation  can be found in Appendix \ref{app:app01}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{media/cnn.png}
-	\caption{CNN Visualisation \cite{zeiler2014visualizing}}
-	\label{ fig:cnn_vis}
-\end{figure}
-
-
-
-
-
 
