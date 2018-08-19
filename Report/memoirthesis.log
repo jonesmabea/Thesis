@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  18 AUG 2018 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  19 AUG 2018 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2469,11 +2469,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32800 strings out of 492649
- 600915 string characters out of 6129623
+ 32797 strings out of 492649
+ 600888 string characters out of 6129623
  876603 words of memory out of 5000000
  35516 multiletter control sequences out of 15000+600000
- 92536 words of font info for 318 fonts, out of 8000000 for 9000
+ 92418 words of font info for 316 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  55i,12n,92p,1012b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2482,7 +2482,7 @@ xlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2018/te
 xmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (40 pages, 897304 bytes).
+Output written on memoirthesis.pdf (40 pages, 897301 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  412 compressed objects within 5 object streams
