@@ -36,15 +36,14 @@ This project, will  focus on LiDAR which projects the surrounding environment as
   - [X] Obtain baseline results with pretrained model
   - [X] Evaluate original alpha and beta values
   - [X] Evaluate original alpha and beta values with SGD
+  - [X] Notebooks for interactive training and testing
+  - [X] Implement utility tools and model functions for validation dataset.
+  - [X] Implement GPU Monitor for inference code. 
   #### Parameter Tuning 
   - [ ] Early stopping 
   - [X] Explore kernel initialisation 
   - [X] Implement different RPN architectures for pedestrian and cyclist models.
   - [X] Implement focal loss function.
-
-  - [X] Notebooks for interactive training and testing
-  - [X] Implement utility tools and model functions for validation dataset.
-  - [X] Implement GPU Monitor for inference code. 
 
    ### AVOD 
   - [X] Obtain baseline results with pretrained model
