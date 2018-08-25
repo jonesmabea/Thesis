@@ -169,7 +169,7 @@
 \usepackage{colortbl}					%Makes coloured tables
 \usepackage{wasysym}					%More math symbols
 \usepackage{mathrsfs}					%Even more math symbols
-\usepackage{float}						%Helps to place figures, tables, etc. 
+%\usepackage{float}						%Helps to place figures, tables, etc. 
 \usepackage{verbatim}					%Permits pre-formated text insertion
 \usepackage{upgreek }					%Calls other kind of greek alphabet
 \usepackage{latexsym}					%Extra symbols
@@ -200,9 +200,19 @@
 %						
 \usepackage{pdflscape}
 \usepackage{pdfpages,caption}
+
 \usepackage{listings}
 \usepackage{color}
+ \usepackage{multirow}
+ \usepackage{enumitem}
+% \usepackage[table,xcdraw]{xcolor}
 
+
+%\usepackage{subfig}
+
+%%%%%%%%%
+
+%%%%%%%%%%%
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -309,15 +319,15 @@
 }
 %
 % My subcaption style
-\newcommand{\mysubcaption}[2][\@empty]{
-	\subcaptionsize{\small}
-	\hangsubcaption
-	\subcaptionlabelfont{\rmfamily}
-	\sidecapstyle{\raggedright}
-	\setlength{\belowcaptionskip}{10pt}
-	\ifx \@empty#1 \subcaption{#2}\else \subcaption[#1]{#2}
-}
-%
+%\newcommand{\mysubcaption}[2][\@empty]{
+%	\subcaptionsize{\small}
+%	\hangsubcaption
+%	\subcaptionlabelfont{\rmfamily}
+%	\sidecapstyle{\raggedright}
+%	\setlength{\belowcaptionskip}{10pt}
+%	\ifx \@empty#1 \subcaption{#2}\else \subcaption[#1]{#2}
+%}
+%%
 %An initial of the very first character of the content
 \usepackage{lettrine}
 \newcommand{\initial}[1]{%
@@ -405,7 +415,7 @@
 \import{chapters/intro/}{chap01.tex}
 \clearemptydoublepage
 
-
+%
 \import{chapters/Litreview/}{lit_rev.tex}
 \clearemptydoublepage
 
@@ -419,7 +429,8 @@
 \clearemptydoublepage
 
 
-
+\import{chapters/future/}{future.tex}
+\clearemptydoublepage
 
 
 \import{chapters/conclusion/}{conclusion.tex}

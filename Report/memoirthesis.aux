@@ -45,9 +45,9 @@
 \newlabel{chap:background}{{\M@TitleReference {2}{Background}}{5}{Background}{chapter.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Components of an AV}{5}{section.2.1}}
 \citation{henry2010rgb}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , PUCK\relax }}{6}{figure.caption.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16\relax }}{6}{figure.caption.7}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:lidar}{{\M@TitleReference {21}{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , PUCK\relax }}{6}{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , PUCK\relax }{figure.caption.7}{}}
+\newlabel{fig:lidar}{{\M@TitleReference {21}{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16\relax }}{6}{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16\relax }{figure.caption.7}{}}
 \citation{brown2012field}
 \citation{smith1997application}
 \citation{waymo_2018}
@@ -68,47 +68,95 @@
 \citation{bay2006surf}
 \citation{dalal2005histograms}
 \citation{viola2001rapid}
+\citation{}
+\citation{}
+\citation{lawrence1997face}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Camera and Radar}{10}{subsection.2.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}LiDAR, Camera and Radar}{10}{subsection.2.2.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Related Research}{10}{section.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Classic Computer Vision}{10}{subsection.2.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Legal, Ethical and Economic Considerations}{10}{section.2.4}}
-\citation{gasser2016fundamental}
-\citation{lawrence1997face}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Object Detection}{10}{section.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Object Detection using Classic Computer Vision Methods}{10}{subsection.2.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Object Detection using Deep Learning}{10}{subsection.2.3.2}}
 \citation{chen2016monocular}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks}{11}{subsection.2.4.1}}
+\citation{chen20183d}
 \citation{chen2017multi}
 \citation{qi2017pointnet}
 \citation{medsker2001recurrent}
 \citation{qi2017pointnet++}
-\citation{li20163d}
 \citation{zhou2017voxelnet}
+\citation{}
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{12}{table.caption.10}}
+\newlabel{tab:arch}{{\M@TitleReference {21}{Modes of Operation of Common Architectures\relax }}{12}{Modes of Operation of Common Architectures\relax }{table.caption.10}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}Methodology}{15}{chapter.3}}
-\newlabel{chap:methodology}{{\M@TitleReference {3}{Methodology}}{15}{Methodology}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Datasets}{15}{section.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2} Context Detection and Characterisation}{15}{section.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.0.1}Design}{16}{subsubsection.3.2.0.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.0.2}Evaluation}{16}{subsubsection.3.2.0.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Context-Dependent Model Selection}{16}{section.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.0.1}VoxelNet }{16}{subsubsection.3.3.0.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.0.2}AVOD}{16}{subsubsection.3.3.0.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Conclusion}{16}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Validation with different datasets}{16}{section.3.4}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}Implementation}{13}{chapter.3}}
+\newlabel{chap:implementation}{{\M@TitleReference {3}{Implementation}}{13}{Implementation}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Datasets}{13}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Context Classification}{13}{subsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Lidar Performance Evaluation}{13}{subsection.3.1.2}}
+\citation{shotton2008semantic}
+\citation{shotton2011real}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Can We Automatically Detect The Context in Driving Scenes?}{14}{section.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Urban scene\relax }}{14}{figure.caption.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Non-Urban scene\relax }}{14}{figure.caption.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Image Context Detection}{14}{subsection.3.2.1}}
+\citation{}
+\citation{}
+\citation{}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Semantic Histograms\relax }}{15}{figure.caption.13}}
+\newlabel{fig:sem_hist}{{\M@TitleReference {33}{Semantic Histograms\relax }}{15}{Semantic Histograms\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}PointCloud Context Detection}{15}{subsection.3.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Ambiguous scene\relax }}{16}{figure.caption.14}}
+\newlabel{fig:ambiguous}{{\M@TitleReference {34}{Ambiguous scene\relax }}{16}{Ambiguous scene\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Implementation Issues}{16}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3} Do Some Object Detection Methods work better in Different Contexts?}{16}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}VoxelNet}{16}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Architecture Overview}{17}{subsubsection.3.3.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Implementation Details}{17}{subsubsection.3.3.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}AVOD}{17}{subsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}Architecture Overview}{17}{subsubsection.3.3.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Implementation Details}{17}{subsubsection.3.3.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Evaluating with KITTI Dataset}{17}{subsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Is VoxelNet Performance Valid for Different Datasets?}{17}{subsection.3.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Smart Internet Lab Frame CSV\relax }}{17}{figure.caption.16}}
+\newlabel{fig:sildata}{{\M@TitleReference {35}{Smart Internet Lab Frame CSV\relax }}{17}{Smart Internet Lab Frame CSV\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Veloview Frame of Smart Internet Lab data\relax }}{18}{figure.caption.17}}
+\newlabel{fig:sil}{{\M@TitleReference {36}{Veloview Frame of Smart Internet Lab data\relax }}{18}{Veloview Frame of Smart Internet Lab data\relax }{figure.caption.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{18}{table.caption.18}}
+\newlabel{vlp-hdl}{{\M@TitleReference {31}{Velodyne HDL-64E and VLP-16 Specifications.\relax }}{18}{Velodyne HDL-64E and VLP-16 Specifications.\relax }{table.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces L-CAS Annotation Tool\relax }}{19}{figure.caption.20}}
+\newlabel{fig:annot}{{\M@TitleReference {37}{L-CAS Annotation Tool\relax }}{19}{L-CAS Annotation Tool\relax }{figure.caption.20}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{17}{chapter.4}}
-\newlabel{chap:results}{{\M@TitleReference {4}{Results and Analysis}}{17}{Results and Analysis}{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{21}{chapter.4}}
+\newlabel{chap:results}{{\M@TitleReference {4}{Results and Analysis}}{21}{Results and Analysis}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Context Detection Performance}{21}{section.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.0.1}Metrics}{21}{subsubsection.4.1.0.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{21}{table.caption.21}}
+\newlabel{my-label}{{\M@TitleReference {41}{Comparison of context detection methods\relax }}{21}{Comparison of context detection methods\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Model Performance }{21}{section.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.0.1}Metrics}{21}{subsubsection.4.2.0.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.0.2}GPU Statistics}{21}{subsubsection.4.2.0.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {42}{\ignorespaces My caption\relax }}{22}{table.caption.23}}
+\newlabel{my-label}{{\M@TitleReference {42}{My caption\relax }}{22}{My caption\relax }{table.caption.23}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {43}{\ignorespaces Car Detection AP\relax }}{22}{table.caption.24}}
+\newlabel{tab:cardetap}{{\M@TitleReference {43}{Car Detection AP\relax }}{22}{Car Detection AP\relax }{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {44}{\ignorespaces Inference Time\relax }}{22}{table.caption.25}}
+\newlabel{tab:inftime}{{\M@TitleReference {44}{Inference Time\relax }}{22}{Inference Time\relax }{table.caption.25}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}Conclusion}{19}{chapter.5}}
-\newlabel{chap:conclusion}{{\M@TitleReference {5}{Conclusion}}{19}{Conclusion}{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}Future Work}{23}{chapter.5}}
+\newlabel{chap:fw}{{\M@TitleReference {5}{Future Work}}{23}{Future Work}{chapter.5}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Appendix A}{21}{appendix.A}}
-\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{22}{table.caption.13}}
-\newlabel{velodyne-table}{{\M@TitleReference {A1}{Velodyne LiDAR Family\relax }}{22}{Velodyne LiDAR Family\relax }{table.caption.13}{}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {6}Conclusion}{25}{chapter.6}}
+\newlabel{chap:conclusion}{{\M@TitleReference {6}{Conclusion}}{25}{Conclusion}{chapter.6}{}}
+\@writefile{lof}{\addvspace {10pt}}
+\@writefile{lot}{\addvspace {10pt}}
+\@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Appendix A}{27}{appendix.A}}
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{27}{table.caption.26}}
+\newlabel{velodyne-table}{{\M@TitleReference {A1}{Velodyne LiDAR Family\relax }}{27}{Velodyne LiDAR Family\relax }{table.caption.26}{}}
+\newlabel{lst:ros}{{\M@TitleReference {A.1}{Appendix A}}{27}{.pcap -> .pcd}{lstlisting.A.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {A.1}.pcap -> .pcd}{27}{lstlisting.A.1}}
 \bibstyle{siam}
 \citation{*}
 \bibdata{thesisbiblio}
@@ -118,39 +166,43 @@
 \bibcite{brown1994human}{{4}{}{{}}{{}}}
 \bibcite{brown2012field}{{5}{}{{}}{{}}}
 \bibcite{buehler2009darpa}{{6}{}{{}}{{}}}
-\bibcite{chen2016monocular}{{7}{}{{}}{{}}}
-\bibcite{chen2017multi}{{8}{}{{}}{{}}}
-\bibcite{dalal2005histograms}{{9}{}{{}}{{}}}
-\bibcite{fagnant2015preparing}{{10}{}{{}}{{}}}
-\bibcite{gasser2016fundamental}{{11}{}{{}}{{}}}
-\bibcite{Geiger2013IJRR}{{12}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{23}{appendix*.14}}
-\bibcite{Geiger2012CVPR}{{13}{}{{}}{{}}}
-\bibcite{girshickICCV15fastrcnn}{{14}{}{{}}{{}}}
-\bibcite{henry2010rgb}{{15}{}{{}}{{}}}
-\bibcite{intelsolutions_2018}{{16}{}{{}}{{}}}
-\bibcite{ku2018defense}{{17}{}{{}}{{}}}
-\bibcite{ku2017joint}{{18}{}{{}}{{}}}
-\bibcite{lawrence1997face}{{19}{}{{}}{{}}}
-\bibcite{li20163d}{{20}{}{{}}{{}}}
-\bibcite{li2016vehicle}{{21}{}{{}}{{}}}
-\bibcite{lin2018architectural}{{22}{}{{}}{{}}}
-\bibcite{lowe1999object}{{23}{}{{}}{{}}}
-\bibcite{medsker2001recurrent}{{24}{}{{}}{{}}}
-\bibcite{mobileye_2018}{{25}{}{{}}{{}}}
-\bibcite{newell1985prospects}{{26}{}{{}}{{}}}
-\bibcite{pomerleau1989alvinn}{{27}{}{{}}{{}}}
-\bibcite{qi2017pointnet}{{28}{}{{}}{{}}}
-\bibcite{qi2017pointnet++}{{29}{}{{}}{{}}}
-\bibcite{ren2015faster}{{30}{}{{}}{{}}}
-\bibcite{navigantresearch_2018}{{31}{}{{}}{{}}}
-\bibcite{yolo}{{32}{}{{}}{{}}}
-\bibcite{smith1997application}{{33}{}{{}}{{}}}
-\bibcite{viola2001rapid}{{34}{}{{}}{{}}}
-\bibcite{waymo_2018}{{35}{}{{}}{{}}}
-\bibcite{yang2016exploit}{{36}{}{{}}{{}}}
-\bibcite{zeiler2014visualizing}{{37}{}{{}}{{}}}
-\bibcite{zhou2017voxelnet}{{38}{}{{}}{{}}}
+\bibcite{chen2018deeplab}{{7}{}{{}}{{}}}
+\bibcite{chen2016monocular}{{8}{}{{}}{{}}}
+\bibcite{chen20183d}{{9}{}{{}}{{}}}
+\bibcite{chen2017multi}{{10}{}{{}}{{}}}
+\bibcite{dalal2005histograms}{{11}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{29}{appendix*.27}}
+\bibcite{fagnant2015preparing}{{12}{}{{}}{{}}}
+\bibcite{gasser2016fundamental}{{13}{}{{}}{{}}}
+\bibcite{Geiger2013IJRR}{{14}{}{{}}{{}}}
+\bibcite{Geiger2012CVPR}{{15}{}{{}}{{}}}
+\bibcite{girshickICCV15fastrcnn}{{16}{}{{}}{{}}}
+\bibcite{henry2010rgb}{{17}{}{{}}{{}}}
+\bibcite{intelsolutions_2018}{{18}{}{{}}{{}}}
+\bibcite{ku2018defense}{{19}{}{{}}{{}}}
+\bibcite{ku2017joint}{{20}{}{{}}{{}}}
+\bibcite{lawrence1997face}{{21}{}{{}}{{}}}
+\bibcite{li20163d}{{22}{}{{}}{{}}}
+\bibcite{li2016vehicle}{{23}{}{{}}{{}}}
+\bibcite{lin2018architectural}{{24}{}{{}}{{}}}
+\bibcite{lowe1999object}{{25}{}{{}}{{}}}
+\bibcite{medsker2001recurrent}{{26}{}{{}}{{}}}
+\bibcite{mobileye_2018}{{27}{}{{}}{{}}}
+\bibcite{newell1985prospects}{{28}{}{{}}{{}}}
+\bibcite{pomerleau1989alvinn}{{29}{}{{}}{{}}}
+\bibcite{qi2017pointnet}{{30}{}{{}}{{}}}
+\bibcite{qi2017pointnet++}{{31}{}{{}}{{}}}
+\bibcite{ren2015faster}{{32}{}{{}}{{}}}
+\bibcite{navigantresearch_2018}{{33}{}{{}}{{}}}
+\bibcite{shotton2011real}{{34}{}{{}}{{}}}
+\bibcite{shotton2008semantic}{{35}{}{{}}{{}}}
+\bibcite{yolo}{{36}{}{{}}{{}}}
+\bibcite{smith1997application}{{37}{}{{}}{{}}}
+\bibcite{viola2001rapid}{{38}{}{{}}{{}}}
+\bibcite{waymo_2018}{{39}{}{{}}{{}}}
+\bibcite{yang2016exploit}{{40}{}{{}}{{}}}
+\bibcite{zeiler2014visualizing}{{41}{}{{}}{{}}}
+\bibcite{zhou2017voxelnet}{{42}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{40}
-\memsetcounter{lastpage}{26}
+\memsetcounter{lastsheet}{46}
+\memsetcounter{lastpage}{32}

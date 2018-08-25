@@ -28,11 +28,23 @@
 {\sc M.~Buehler, K.~Iagnemma, and S.~Singh}, {\em The DARPA urban challenge:
   autonomous vehicles in city traffic}, vol.~56, springer, 2009.
 
+\bibitem{chen2018deeplab}
+{\sc L.-C. Chen, G.~Papandreou, I.~Kokkinos, K.~Murphy, and A.~L. Yuille}, {\em
+  Deeplab: Semantic image segmentation with deep convolutional nets, atrous
+  convolution, and fully connected crfs}, IEEE transactions on pattern analysis
+  and machine intelligence, 40 (2018), pp.~834--848.
+
 \bibitem{chen2016monocular}
 {\sc X.~Chen, K.~Kundu, Z.~Zhang, H.~Ma, S.~Fidler, and R.~Urtasun}, {\em
   Monocular 3d object detection for autonomous driving}, in Proceedings of the
   IEEE Conference on Computer Vision and Pattern Recognition, 2016,
   pp.~2147--2156.
+
+\bibitem{chen20183d}
+{\sc X.~Chen, K.~Kundu, Y.~Zhu, H.~Ma, S.~Fidler, and R.~Urtasun}, {\em 3d
+  object proposals using stereo imagery for accurate object class detection},
+  IEEE transactions on pattern analysis and machine intelligence, 40 (2018),
+  pp.~1259--1272.
 
 \bibitem{chen2017multi}
 {\sc X.~Chen, H.~Ma, J.~Wan, B.~Li, and T.~Xia}, {\em Multi-view 3d object
@@ -150,6 +162,17 @@
   vehicles}, Jan 2018.
 \newblock
   https://www.navigantresearch.com/research/navigant-research-leaderboard-automated-driving-vehicles.
+
+\bibitem{shotton2011real}
+{\sc J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
+  A.~Kipman, and A.~Blake}, {\em Real-time human pose recognition in parts from
+  single depth images}, in Computer Vision and Pattern Recognition (CVPR), 2011
+  IEEE Conference on, Ieee, 2011, pp.~1297--1304.
+
+\bibitem{shotton2008semantic}
+{\sc J.~Shotton, M.~Johnson, and R.~Cipolla}, {\em Semantic texton forests for
+  image categorization and segmentation}, in Computer vision and pattern
+  recognition, 2008. CVPR 2008. IEEE Conference on, IEEE, 2008, pp.~1--8.
 
 \bibitem{yolo}
 {\sc M.~{Simon}, S.~{Milz}, K.~{Amende}, and H.-M. {Gross}}, {\em

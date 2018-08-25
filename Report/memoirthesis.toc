@@ -12,21 +12,33 @@
 \contentsline {subsection}{\numberline {2.2.1}Camera}{9}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Camera and Radar}{10}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}LiDAR, Camera and Radar}{10}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Related Research}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Classic Computer Vision}{10}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Legal, Ethical and Economic Considerations}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks}{11}{subsection.2.4.1}
-\contentsline {chapter}{\chapternumberline {3}Methodology}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Datasets}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2} Context Detection and Characterisation}{15}{section.3.2}
-\contentsline {subsubsection}{\numberline {3.2.0.1}Design}{16}{subsubsection.3.2.0.1}
-\contentsline {subsubsection}{\numberline {3.2.0.2}Evaluation}{16}{subsubsection.3.2.0.2}
-\contentsline {section}{\numberline {3.3}Context-Dependent Model Selection}{16}{section.3.3}
-\contentsline {subsubsection}{\numberline {3.3.0.1}VoxelNet }{16}{subsubsection.3.3.0.1}
-\contentsline {subsubsection}{\numberline {3.3.0.2}AVOD}{16}{subsubsection.3.3.0.2}
-\contentsline {subsection}{\numberline {3.3.1}Conclusion}{16}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Validation with different datasets}{16}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{17}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{19}{chapter.5}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{21}{appendix.A}
-\contentsline {chapter}{Bibliography}{23}{appendix*.14}
+\contentsline {section}{\numberline {2.3}Object Detection}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Object Detection using Classic Computer Vision Methods}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Object Detection using Deep Learning}{10}{subsection.2.3.2}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Datasets}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Context Classification}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Lidar Performance Evaluation}{13}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Can We Automatically Detect The Context in Driving Scenes?}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Image Context Detection}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}PointCloud Context Detection}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Implementation Issues}{16}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3} Do Some Object Detection Methods work better in Different Contexts?}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}VoxelNet}{16}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Architecture Overview}{17}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Implementation Details}{17}{subsubsection.3.3.1.2}
+\contentsline {subsection}{\numberline {3.3.2}AVOD}{17}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Architecture Overview}{17}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Implementation Details}{17}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.3}Evaluating with KITTI Dataset}{17}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Is VoxelNet Performance Valid for Different Datasets?}{17}{subsection.3.3.4}
+\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Context Detection Performance}{21}{section.4.1}
+\contentsline {subsubsection}{\numberline {4.1.0.1}Metrics}{21}{subsubsection.4.1.0.1}
+\contentsline {section}{\numberline {4.2}Model Performance }{21}{section.4.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Metrics}{21}{subsubsection.4.2.0.1}
+\contentsline {subsubsection}{\numberline {4.2.0.2}GPU Statistics}{21}{subsubsection.4.2.0.2}
+\contentsline {chapter}{\chapternumberline {5}Future Work}{23}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{25}{chapter.6}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{27}{appendix.A}
+\contentsline {chapter}{Bibliography}{29}{appendix*.27}

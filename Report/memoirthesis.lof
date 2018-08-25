@@ -2,9 +2,17 @@
 \par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {21}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , PUCK\relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {21}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16\relax }}{6}{figure.caption.7}
 \contentsline {figure}{\numberline {22}{\ignorespaces Components of Waymo's Self Driving Car \cite {waymo_2018}\relax }}{7}{figure.caption.8}
 \contentsline {figure}{\numberline {23}{\ignorespaces AV Leaderboard. Navigant Research\cite {navigantresearch_2018}\relax }}{9}{figure.caption.9}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {31}{\ignorespaces Urban scene\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {32}{\ignorespaces Non-Urban scene\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {33}{\ignorespaces Semantic Histograms\relax }}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {34}{\ignorespaces Ambiguous scene\relax }}{16}{figure.caption.14}
+\contentsline {figure}{\numberline {35}{\ignorespaces Smart Internet Lab Frame CSV\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {36}{\ignorespaces Veloview Frame of Smart Internet Lab data\relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {37}{\ignorespaces L-CAS Annotation Tool\relax }}{19}{figure.caption.20}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
