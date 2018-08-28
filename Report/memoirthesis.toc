@@ -27,9 +27,9 @@
 \contentsline {section}{\numberline {3.2}Can We Automatically Detect The Context in Driving Scenes?}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Image Context Detection}{17}{subsection.3.2.1}
 \contentsline {paragraph}{Extracting Semantic Histograms}{17}{section*.21}
-\contentsline {paragraph}{Training}{18}{section*.23}
-\contentsline {paragraph}{Evaluation}{18}{section*.24}
-\contentsline {paragraph}{Penalising misclassifications}{18}{section*.25}
+\contentsline {paragraph}{Training}{17}{section*.23}
+\contentsline {paragraph}{Evaluation}{17}{section*.24}
+\contentsline {paragraph}{Penalising misclassifications}{17}{section*.25}
 \contentsline {subsection}{\numberline {3.2.2}PointCloud Context Detection}{18}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Implementation Details}{19}{subsubsection.3.2.2.1}
 \contentsline {paragraph}{Training}{19}{section*.26}
@@ -45,7 +45,7 @@
 \contentsline {paragraph}{Training}{22}{section*.31}
 \contentsline {subsection}{\numberline {3.3.3}Evaluation}{23}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Is VoxelNet Performance Valid for Different Datasets?}{23}{subsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Validation}{26}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Validation}{25}{subsubsection.3.3.4.1}
 \contentsline {section}{\numberline {3.4}Conclusion}{26}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Results and Analysis}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Can We Automatically Detect Scene Contexts?}{27}{section.4.1}
@@ -53,15 +53,16 @@
 \contentsline {paragraph}{Precision}{27}{section*.39}
 \contentsline {paragraph}{Recall}{27}{section*.40}
 \contentsline {paragraph}{F1-score}{27}{section*.41}
-\contentsline {subsection}{\numberline {4.1.2}Results}{27}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Analysis}{27}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Do Object Detection Models Perform Better in Different Contexts?}{28}{section.4.2}
-\contentsline {subsubsection}{\numberline {4.2.0.1}GPU}{28}{subsubsection.4.2.0.1}
-\contentsline {subsection}{\numberline {4.2.1}Results}{29}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Running Each Model Exclusively}{29}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Running Both Models Simultaneously}{30}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Running Each Model Exclusively}{29}{subsubsection.4.2.0.1}
+\contentsline {paragraph}{Car}{30}{section*.53}
+\contentsline {paragraph}{Pedestrian}{30}{section*.54}
+\contentsline {paragraph}{GPU}{30}{section*.55}
+\contentsline {subsubsection}{\numberline {4.2.0.2}Analysis}{31}{subsubsection.4.2.0.2}
 \contentsline {section}{\numberline {4.3}Is VoxelNet Performance Valid For Different Datasets?}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Results}{31}{section.4.4}
+\contentsline {section}{\numberline {4.4}Analysis}{31}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Discussion and Future Work}{33}{chapter.5}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{35}{chapter.6}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}
-\contentsline {chapter}{Bibliography}{39}{appendix*.55}
+\contentsline {chapter}{Bibliography}{39}{appendix*.60}

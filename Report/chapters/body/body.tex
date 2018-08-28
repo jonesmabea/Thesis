@@ -5,13 +5,13 @@
 \chapter{Implementation}
 \label{chap:implementation}
 
-Following the prior discussion, this section seeks to address three challenges affecting affecting object detection models for AVs. This will be necessary to achieve the objectives outlined. First, the necessary datasets for the various tasks will be defined. Secondly, the plausibility of determining the context of images/point clouds will be determined by developing context detectors. Following this, classified images will be used to evaluate if the performance of multimodal vs LiDAR only models is affected in different contexts. Finally, the performance of LiDAR only models will be validated using an external dataset. 
+Following the prior discussion, this section seeks to address three challenges affecting affecting object detection models for AVs. This will be necessary to achieve the objectives outlined. Firstly, the necessary datasets to be used for the different evaluation tasks will be outlined . The second task will be to determine whether it is possible to detect the context of  images/point clouds from their features. Upon successful classification of images/pointclouds into their respective contexts, the performance of multimodal and LiDAR in different contexts will be assessed.  Finally, the performance of the LiDAR only model will be validated using an external dataset to determine if indeed LiDAR based object detection models are extrapolable to different datasets. 
 \section{Datasets}
 \subsection{Context Classification}
 \begin{enumerate}
 	\item \textbf{Cityscapes} - Cityscapes is a large-scale dataset used to develop pixel and instance level semantic segmentation models. It is composed of a scenes from 50 different cities captured using stereo cameras. In 5000 scenes, the images have been annotated on a pixel-level. 20000 scenes have also been coarsely annotated. In addition to this, a benchmark suite to evaluate these models is available.  
 	
-	\item \textbf{KITTI Object Detection}- The KITTI dataset was collected with the aim of encouraging the development of computer vision and robotic algorithms for AVs.The data was captured by a car was fitted with a number of sensors including a high resolution greyscale and colour cameras, Velodyne HDL-64 LiDAR and a GPS/IMU inertial navigation system. The vehicle was driven around a city, rural areas and highways. This dataset is available as part of a benchmark suite for various AV object detection models.The dataset consists of  a total of 14,999 images and corresponding point clouds with  7,481 as labelled training files and 7,518 being unlabelled. The test files are used for evaluating results through the official test server. However, the test server is not generally available for public use. 
+	\item \textbf{KITTI Object Detection}- KITTI dataset was collected with the aim of encouraging the development of computer vision and robotic algorithms for AVs.The data was captured by a car was fitted with a number of sensors including a high resolution greyscale and colour cameras, Velodyne HDL-64 LiDAR and a GPS/IMU inertial navigation system. The vehicle was driven around a city, rural areas and highways. This dataset is available as part of a benchmark suite for various AV object detection models.The dataset consists of  a total of 14,999 images and corresponding point clouds with  7,481 as labelled training files and 7,518 being unlabelled testing files. The testing set are used for evaluating results through the official test server. However, the test server is not available for general public use. 
 \end{enumerate}
 
 \subsection{LiDAR Performance Evaluation}
@@ -23,24 +23,27 @@ Following the prior discussion, this section seeks to address three challenges a
 
 \section{Can We Automatically Detect The  Context in Driving Scenes?}
 
-Determining the context from images and point clouds where no prior information about their location nor context  is provided is quite difficult. This is often the case in a lab setting where the data is obtained from public databases.Similarly, images and point clouds from the KITTI dataset did not have any such information. Consequently, creating a context detector that can be used in a lab setting would be very useful. 
+Determining the context from images and point clouds where no prior information about their location nor context  has been provided is quite difficult. This is often the case in a lab setting where the data is obtained from public database. This was indeed the case with images and point clouds from the KITTI dataset that did contain such information and since the  frames were discontinuous as they shuffled into training and testing sets, it was difficult to infer the context using the sequence of prior frames. Notably, this was also evident in the Cityscapes dataset. From this observation, it was necessary to create a context detector for images and furthermore point clouds that can be used in a lab setting. 
+%. As a result there was no way to determine the context aside from visual examination of images.
+%This was the intuition for creating a context detector that can be used in a lab setting by researchers looking to understand processes in  different contexts. 
 
 % In mowhere you are able to infer from a map. However in a lab setting where you are only using image data from datasets this becomes quite difficult. This is mostly due to loss of spatio-temporal information if not prior specified or if so, done coarsely. Both VoxelNet and AVOD models were trained using the KITTI data. The frames were discontinuous and shuffled into training and testing directories. As such it was difficult to infer the context of the frames prior as no information was provided about the location they were captured and whether it was rural or urban. Notably, this was also evident in the CityScapes dataset. From this observation, it was necessary to create a context detector for images and furthermore point clouds that can be used in a lab setting. 
 
 To begin with, I visually classified 3749 images from the KITTI dataset to be used as training and test data for the context detector. Of these 1029 were non-urban and the remaining 2720 urban. 
-The context of the image scenes were determined using the following criteria.
-Urban regions were characterised by:
+The context of the image scenes were determined using the following criteria defined by the UK Department for Environment, Food \& Rural Affairs \cite{2011ruralurbanclassification}
+\noindent
+Urban regions are characterised by:
 \begin{enumerate}
 	\item High density of road users often including pedestrians, cyclists and vehicles. 
-	\item Presence of large multi-story buildings. 
+	\item Presence of numerous  buildings that tend to be large and multi-story. 
 	\item Presence of multiple transport facilities such as trams. 
 \end{enumerate}
 
 \noindent
-Non-urban regions were characterised by: 
+Non-urban regions are characterised by: 
 \begin{enumerate}
 	\item Low/medium density of road users mostly vehicles.
-	\item Few or no buildings. 
+	\item Few or no buildings, mostly isolated dwellings.
 	\item Long stretches of motorways surrounded by vegetation. 
 \end{enumerate}
 
@@ -281,10 +284,10 @@ ROS Velodyne point cloud package\footnote{See listing \ref{lst:ros}}.
 	\caption{L-CAS Annotation Tool}
 	\label{fig:annot}
 \end{figure}
-Following this, I annotated 500 frames to be used for validation. The result of this was a list of files containing object labels and their bounding boxes for the validation frames.
 
 \subsubsection{Validation}
-Following this, the LiDAR point clouds were fed into VoxelNet to generate the predicted bounding boxes for different object classes. 
+Using the annotation tool, I annotated 500 frames to be used for validation. The output was a list of files containing object labels and their bounding boxes that would serve as the ground truth for validation. 
+I then  ran VoxelNet on these frames to generate the predicted bounding boxes for different object classes.  
 
 
 \section{Conclusion}

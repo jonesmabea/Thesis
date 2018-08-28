@@ -8,12 +8,12 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{28}{table.caption.42}
 \contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{28}{table.caption.43}
-\contentsline {table}{\numberline {43}{\ignorespaces Baseline\relax }}{29}{table.caption.46}
-\contentsline {table}{\numberline {44}{\ignorespaces Car AP\relax }}{29}{table.caption.47}
-\contentsline {table}{\numberline {45}{\ignorespaces Pedestrian AP\relax }}{29}{table.caption.48}
-\contentsline {table}{\numberline {46}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{30}{table.caption.49}
-\contentsline {table}{\numberline {47}{\ignorespaces Memory\relax }}{31}{table.caption.52}
+\contentsline {table}{\numberline {43}{\ignorespaces Baseline\relax }}{29}{table.caption.47}
+\contentsline {table}{\numberline {44}{\ignorespaces Car AP\relax }}{29}{table.caption.48}
+\contentsline {table}{\numberline {45}{\ignorespaces Pedestrian AP\relax }}{30}{table.caption.49}
+\contentsline {table}{\numberline {46}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{30}{table.caption.50}
+\contentsline {table}{\numberline {47}{\ignorespaces Memory\relax }}{31}{table.caption.57}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{37}{table.caption.54}
+\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{37}{table.caption.59}

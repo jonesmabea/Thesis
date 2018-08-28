@@ -13,18 +13,18 @@ Following the described methodology in the previous chapter, this chapter seeks 
 In evaluating the classifiers, it was  crucial to understand the predictive power of the two context classifiers. As such, precision, recall and f1-score were selected as the main performance metrics. 
 \paragraph{Precision} is the percentage of positive predictions that were correct. 
 \begin{equation*}
-	\centering
-	Precision=\frac{TP}{TP+FP}
+\centering
+Precision=\frac{TP}{TP+FP}
 \end{equation*}
 \paragraph{Recall} is the percentage of positive samples that were correctly predicted. 
 \begin{equation*}
-	\centering
-	Recall=\frac{TP}{TP+FN}
+\centering
+Recall=\frac{TP}{TP+FN}
 \end{equation*}
-\paragraph{F1-score} is the harmonic mean of the precision and recall.  
+\paragraph{F1-score} is the balanced mean of the precision and recall.  
 \begin{equation*}
-	\centering 
-	2\cdot\frac{precision\cdot recall}{precision+recall}
+\centering 
+2\cdot\frac{precision\cdot recall}{precision+recall}
 \end{equation*}
 \subsection{Analysis}
 
@@ -56,7 +56,7 @@ I established that determining the context from images is much more accurate tha
 	\label{my-label}
 \end{table}
 
-With regard to the point cloud context classifier, the majority classifier resulted in around 50:50 precision for both classes. The recall for the non-urban was 7 percent more than urban which was below 50\%. By implementing the penalty function in the point cloud classifier, recall for the urban class improved by 17\% to 62\%. as seen in table \ref{tab:penalisedpcl}. 
+With regard to the point cloud context classifier, the majority classifier resulted in around 50:50 precision for both classes. The recall for the non-urban was 7 percent more than urban which was below 50\%. By implementing the penalty function in the point cloud classifier, recall for the urban class improved by 17\%  as seen in table \ref{tab:penalisedpcl}. 
 
 \begin{table}[h] % Penalised
 	\centering
@@ -77,13 +77,13 @@ With regard to the point cloud context classifier, the majority classifier resul
 The models were evaluated using a similar method as the KITTI evaluation protocol. The average precision(AP) of the intersection over union(IoU) of the bounding boxes was used as the main metric.
 IoU is calculated as: \\ 
 \begin{math}
-	\centering
-	IoU = \frac{Overlap\, area}{Union\, area}
+\centering
+IoU = \frac{Overlap\, area}{Union\, area}
 \end{math} \\ 
 Where the overlap area is the region that is shared between the predicted bounding box and the ground truth bounding box and the Union area is the total area of the predicted bounding box and ground truth box.
 This was calculated for 2D bounding boxes, 3D bounding boxes and Bird-Eye View bounding boxes. Only IoU values $\geq$0.7 were considered for the car class and $\geq$0.5 for the pedestrian class in calculating the AP. 
 
-\subsubsection{GPU}
+\subsubsection*{GPU}
 For uniformity purposes, all the experiments were performed on single NVIDIA P100 GPU with 16GB High Bandwidth Memory. 
 During inference, GPU statistics were collected at an interval of 1 second using NVIDIA System Management Interface(nvidia-smi). The following metrics were collected. 
 \begin{itemize}[noitemsep]
@@ -91,8 +91,7 @@ During inference, GPU statistics were collected at an interval of 1 second using
 	\item \textbf{Memory Used } - MB
 	\item \textbf{Temperature} - $\degree$C
 	\item \textbf{Clock Speed} - MHz
- \end{itemize}
-
+\end{itemize}
 \subsubsection*{Baseline}
 Each model was run on the original KITTI validation dataset in order to obtain the baseline performance shown in \ref{tab:baseline}. 
 \begin{table}[h] %baseline
@@ -127,7 +126,7 @@ To establish if the performance of each model varies in different contexts, each
 \begin{table}[H] %Car AP
 	\centering
 	\resizebox{\textwidth}{!}{%
-			\begin{tabular}{|l|l|
+		\begin{tabular}{|l|l|
 				>{\columncolor[HTML]{FFCCC9}}l |
 				>{\columncolor[HTML]{FFCCC9}}l |
 				>{\columncolor[HTML]{FFCCC9}}l |
@@ -135,8 +134,8 @@ To establish if the performance of each model varies in different contexts, each
 				>{\columncolor[HTML]{96FFFB}}l |
 				>{\columncolor[HTML]{96FFFB}}l |}
 			\hline
-		\textbf{}                           & \textbf{Context}                   & \multicolumn{3}{l|}{\cellcolor[HTML]{FFCCC9}\textbf{Urban}}  & \multicolumn{3}{l|}{\cellcolor[HTML]{96FFFB}\textbf{Non-Urban}} \\ \hline
-		\textbf{Model}                           & \textbf{Difficulty}                & \textbf{Easy}      & \textbf{Medium}    & \textbf{Hard}      & \textbf{Easy}       & \textbf{Medium}     & \textbf{Hard}       \\ \hline
+			\textbf{}                           & \textbf{Context}                   & \multicolumn{3}{l|}{\cellcolor[HTML]{FFCCC9}\textbf{Urban}}  & \multicolumn{3}{l|}{\cellcolor[HTML]{96FFFB}\textbf{Non-Urban}} \\ \hline
+			\textbf{Model}                           & \textbf{Difficulty}                & \textbf{Easy}      & \textbf{Medium}    & \textbf{Hard}      & \textbf{Easy}       & \textbf{Medium}     & \textbf{Hard}       \\ \hline
 			\multirow{3}{*}{\textbf{AVOD}} & \textit{\textbf{2D Bounding Box}} & \textbf{86.987999} & \textbf{77.10569} & \textbf{68.012459} & \textbf{89.186172} & \textbf{79.754562} & \textbf{78.550514} \\ \cline{2-8} 
 			& \textit{\textbf{BEV Bounding Box}} & 86.00412 & 74.355942 & 65.62397 & 87.11274 & \textbf{76.859818} & \textbf{75.720955} \\ \cline{2-8} 
 			& \textit{\textbf{3D Bounding Box}} & \textbf{75.447769} & \textbf{63.742085} & \textbf{54.334251} & \textbf{75.430656} & \textbf{64.199951} & \textbf{62.902302} \\ \hline
@@ -174,15 +173,15 @@ To establish if the performance of each model varies in different contexts, each
 \end{table}
 \begin{table}[H]%Time
 	\centering
-%	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|l|l|l|l|}
-			\hline
-			\multirow{2}{*}{\textbf{Context}} & \multicolumn{3}{l|}{\textbf{VoxelNet}} & \multicolumn{3}{c|}{\textbf{AVOD}} \\ \cline{2-7} 
-			& \textbf{min} & \textbf{max} & \textbf{mean} & \textbf{min} & \textbf{max} & \textbf{mean} \\ \hline
-			\textbf{Urban} & 0.113 & 3.813 & 0.129 & \textbf{0.095} & \textbf{2.457} & \textbf{0.112} \\ \hline
-			\textbf{Non-urban} & 0.113 & \textbf{2.224} & 0.127 & \textbf{0.096} & 2.506 & \textbf{0.113} \\ \hline
-		\end{tabular}%
-%	}
+	%	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		\multirow{2}{*}{\textbf{Context}} & \multicolumn{3}{l|}{\textbf{VoxelNet}} & \multicolumn{3}{c|}{\textbf{AVOD}} \\ \cline{2-7} 
+		& \textbf{min} & \textbf{max} & \textbf{mean} & \textbf{min} & \textbf{max} & \textbf{mean} \\ \hline
+		\textbf{Urban} & 0.113 & 3.813 & 0.129 & \textbf{0.095} & \textbf{2.457} & \textbf{0.112} \\ \hline
+		\textbf{Non-urban} & 0.113 & \textbf{2.224} & 0.127 & \textbf{0.096} & 2.506 & \textbf{0.113} \\ \hline
+	\end{tabular}%
+	%	}
 	\caption{Inference Time on Single NVIDIA P100 GPU}
 	\label{tab:inftime}
 \end{table}
@@ -193,51 +192,29 @@ To establish if the performance of each model varies in different contexts, each
 		\caption{Temperature }
 		\label{fig:temp}
 	\end{minipage}
-%	\hfill
+	%	\hfill
 	\begin{minipage}[b]{0.49\textwidth}
 		\includegraphics[width=\textwidth]{images/gpupbox.png}
 		\caption{Power}
 		\label{fig:power}
 	\end{minipage}
-
+	
 \end{figure}
 
 
-\subsection{Analysis}
+\subsubsection*{Analysis}
 \paragraph{Car}Car AVOD outperformed VoxelNet on 2D and 3D detections in both contexts. However, VoxelNet in terms of bird-eye-view performed slightly better if not relatively similar to AVOD's. 
 \paragraph{Pedestrian} As compared to the car class, there was a distinct performance boundary whereby AVOD dominated all detections in the urban context whereas VoxelNet did in the non-urban context.
 \paragraph{GPU} 
 
-
-
 It is important to bear in mind that for the car class, the IoU threshold for detections is 0.5 as compared to the pedestrian IoU threshold of 0.5. As mentioned earlier while describing the model architectures, due to the fact that AVOD fuses the top proposals from the image and LiDAR point cloud feature maps, the predicted bounding boxes tend to be tighter and thus have a higher IoU. Given by the observation the pedestrian class result, it is plausible to argue that the performance of VoxelNet would have been higher or close to AVOD's given that the IoU threshold was slightly reduced.
 
-\subsubsection{Running Both Models Simultaneously}
-To investigate whether both models are capable of running on a single GPU, both models were simultaneously ran on a single NVIDIA P100 GPU. 
-In terms of power, running both models saw no notable difference in the mean power drawn as was the the spread of values was similar as can be seen in figure \ref{fig:jointpower}.
-With regard to temperature, the mean temperature was higher by about 2$\degree$C .However, the spread was relatively similar. 
 
-Memory-wise, the both models consumed a mean of 14.5GB  and 14.1GB when running on the urban and non-urban datasets respectively. 
+\subsubsection*{Running Both Models Simultaneously}
+Having identified that the the models perform differently in different contexts, I set out to further investigate whether it is possible to have both models running on a single GPU based on their performance in difference contexts. As such, I run AVOD using data from the urban context and VoxelNet on data from the non-urban context dataset.
 
 
-\begin{figure}[h] %JointPower
-	\centering
-	\begin{minipage}[b]{0.45\textwidth}
-		\includegraphics[width=\textwidth]{images/jointtempbox.png}
-		\caption{Temperature}
-		\label{fig:jointtemp}
-	\end{minipage}
-	%	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{images/jointpowerbox.png}
-		\caption{Power}
-		\label{fig:jointpower}
-	\end{minipage}
-\end{figure}
-
-
-
-\begin{table}[]
+\begin{table}[H] % memory
 	\centering
 	\caption{Memory}
 	\label{tab:mem}
@@ -246,13 +223,16 @@ Memory-wise, the both models consumed a mean of 14.5GB  and 14.1GB when running 
 		& \textbf{Min} & \textbf{Max} \\ \hline
 		\textbf{Memory(MB)} & 4608.500000  & 14320.000000 \\ \hline
 	\end{tabular}
-
+	
 \end{table}
+
+
+\subsubsection{Analysis}
+
 
 \section{Is VoxelNet Performance Valid For Different Datasets?}
 \subsection*{Metrics}
- For this evaluation, AP was used as the main performance metric. However, as there was no corresponding image data for the point clouds, only the 3D bounding boxes and Bird-Eye View bounding boxes were used in calculating the AP. 
+For this evaluation, AP was used as the main performance metric. However, as there was no corresponding image data for the point clouds, only the 3D bounding boxes and Bird-Eye View bounding boxes were used in calculating the AP. 
 Given that the data was collected from a stationary vehicle in an urban area with mostly pedestrians the dataset was evaluated on the pedestrian class only. IoU values $\geq$0.5 were used in calculating the AP. 
-\section{Results}
-
+\section{Analysis}
 
