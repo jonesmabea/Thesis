@@ -2,15 +2,18 @@
 \par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{12}{table.caption.10}
+\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{14}{table.caption.18}
 \addvspace {10pt}
-\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{18}{table.caption.18}
+\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{24}{table.caption.36}
 \addvspace {10pt}
-\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{21}{table.caption.21}
-\contentsline {table}{\numberline {42}{\ignorespaces My caption\relax }}{22}{table.caption.23}
-\contentsline {table}{\numberline {43}{\ignorespaces Car Detection AP\relax }}{22}{table.caption.24}
-\contentsline {table}{\numberline {44}{\ignorespaces Inference Time\relax }}{22}{table.caption.25}
+\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{28}{table.caption.42}
+\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{28}{table.caption.43}
+\contentsline {table}{\numberline {43}{\ignorespaces Baseline\relax }}{29}{table.caption.46}
+\contentsline {table}{\numberline {44}{\ignorespaces Car AP\relax }}{29}{table.caption.47}
+\contentsline {table}{\numberline {45}{\ignorespaces Pedestrian AP\relax }}{29}{table.caption.48}
+\contentsline {table}{\numberline {46}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{30}{table.caption.49}
+\contentsline {table}{\numberline {47}{\ignorespaces Memory\relax }}{31}{table.caption.52}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{27}{table.caption.26}
+\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{37}{table.caption.54}

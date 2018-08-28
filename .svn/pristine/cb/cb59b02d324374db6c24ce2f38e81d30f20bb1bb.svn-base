@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: memoirthesis.aux
+The style file: siam.bst
+Database file #1: thesisbiblio.bib
+Warning--I didn't find a database entry for ""
+Warning--can't use both volume and number fields in chen2017multi
+You've used 42 entries,
+            2030 wiz_defined-function locations,
+            722 strings with 11402 characters,
+and the built_in function-call counts, 15521 in all, are:
+= -- 1417
+> -- 790
+< -- 0
++ -- 315
+- -- 270
+* -- 1207
+:= -- 2413
+add.period$ -- 46
+call.type$ -- 42
+change.case$ -- 256
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 700
+empty$ -- 1206
+format.name$ -- 270
+if$ -- 3303
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 41
+newline$ -- 133
+num.names$ -- 84
+pop$ -- 319
+preamble$ -- 1
+purify$ -- 218
+quote$ -- 0
+skip$ -- 519
+stack$ -- 0
+substring$ -- 892
+swap$ -- 256
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 1
+while$ -- 149
+width$ -- 44
+write$ -- 382
+(There were 2 warnings)

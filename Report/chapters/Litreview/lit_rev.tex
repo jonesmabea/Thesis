@@ -53,7 +53,7 @@ Currently, AVs are divided into five levels of autonomy as defined be the Societ
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth]{media/waymo.png}
-	\caption{Components of Waymo's Self Driving Car \cite{waymo_2018}}
+	\caption{Components of Waymo's Self Driving Car, Source:\cite{waymo_2018}}
 	\label{fig:my_label}
 \end{figure}
 
@@ -87,7 +87,7 @@ In order to be viable, AVs need to meet a few constraints as discussed in \cite{
 Following the discussion above, the next subsections will review how different industry players are implementing their AV systems with special focus to the issue of perception
 \begin{figure}
 	\includegraphics[width=\textwidth]{media/avind.png}
-	\caption{AV Leaderboard. Navigant Research\cite{navigantresearch_2018}}
+	\caption{AV Leaderboard. Navigant Research. Source:\cite{navigantresearch_2018}}
 \end{figure}
 \subsection{Camera}
 Mobileye\cite{mobileye_2018}, is one of the top contenders in the development of camera only AVs. It was recently acquired by Intel and believes that AVs should be able to accurately and safely navigate using cameras only given the fact that humans are able to do so with vision only. Previously, MobilEye was a supplier of vision systems for Advanced Driver Assistance Systems and had a partnership with Tesla to supply their vision systems prior being acquired by Intel. 
@@ -95,53 +95,81 @@ Given their extensive background in developing these vision systems, the partner
  
 
 \subsection{Camera and  Radar}
-Another major contender that is using the camera and radar configuration is Tesla. Elon Musk, the founder, believes that LiDAR is not necessary for AV perception. However, just recently, a Tesla vehicle was involved in a crash while in 'autopilot' mode that resulted in the loss of life. A major attributing factor to this accident was caused by the fact that bright sunlight blinded the camera thus causing the vehicle not to detect a white truck that was ahead of it. The radar was also unable to detect it thus leading to a collision. 
-LiDAR on the other hand, would have been able to detect the truck despite the poor visibility. This illustrates how unreliable this configuration can be.
-
+Another major contender that is using the camera and radar configuration is Tesla. Elon Musk, the founder, believes that LiDAR is not necessary for AV perception following a similar argument as MobilEye. However, this argument was dispelled following a recent crash whereby due to bright sunlight, a Tesla vehicle on 'autopilot' mode was unable to detect a white vehicle thus resulting into an accident leading to loss of life. The invariance of LiDAR to different lighting conditions could have helped in detecting the vehicle. 
 
 \subsection{LiDAR, Camera and Radar}
-This configuration is used by most of the leading industry players such as Waymo and GM Cruise. This configuration has proven to be robust and accurate.
- However, in order to process the amount of fused data, they require large amounts of processing power which in turn may lead to increased power usage. 
+This configuration is used by most of the leading industry players such as Uber, Waymo and GM Cruise. This configuration has proven to be robust and accurate. However, in order to process the amount of fused data, they require large amounts of computational power which in turn may lead to increased power usage. 
 
 
 \section{Object  Detection} 
+In this section, related research on object detection methods for AV perception will be discussed. 
+
+
+
+
 \subsection{Object Detection using Classic Computer Vision Methods}
 Classic computer vision methods have advanced over the years from simple algorithms such as SIFT\cite{lowe1999object} and SURF\cite{bay2006surf} which use descriptors to detect interesting points in images for object detection to much higher level representations such as the Histogram of Gradient(HOG)\cite{dalal2005histograms} or Haar Features\cite{viola2001rapid}  that were used in classifiers.  However, these methods have been unreliably slow and not as accurate. In addition these features are only able to model 2D data. 3D methods such as Intrinsic Shape Signatures(ISS)\cite{}, NARF\cite{} and Uniform Sampling have since been developed but are lacking in terms speed. Furthermore, these feature detectors have to be hand-crafted manually which is a tedious process. As a result, they are rarely used in real-time AV applications due to their speed and accuracy.
 
 
 \subsection{Object Detection using Deep Learning}
+The advancement of neural networks has offset the reliance of classical methods of object detection by allowing for features to be automatically learnt by the network without the need for manual feature extraction. This is attributed to the networks having numerous number of deep layers that are able to capture these features.  
+\subsubsection*{Convolutional Neural Networks(CNN)}
+The idea of CNNs has been there for over two decades now and are inspired by the idea of receptive fields in the primary visual cortex. Currently, they are widely used in image object detection tasks and various CNN architectures have been developed. As compared to regular neural networks which have all neurals connected to each other between hidden layers, neurons in CNNs are connected to a small region in the layer before it(receptive field) and have three dimensions(width,height and depth). By doing so this reduces the number of parameters to be tuned during backpropagation as well as stored. 
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=\linewidth]{images/neuralnet}
+	\caption{NN vs CNN Source:\url{https://cs231n.github.io/convolutional-networks}}
+	\label{fig:cnn}
+\end{figure}
 
-The emergence and development of Deep Neural Networks such as Convolutional Neural Networks (CNNs)\cite{lawrence1997face} has offset the reliance of classical methods of object detection in images by allowing for features to be automatically learnt by the network without the need for manual feature extraction. This is due to the fact that these networks have numerous number of deep layers that are able to capture these features.  
 
-\textbf{Monocular and Stereo Vision} \\ 
+Most architectures consist of five main layers:
+\begin{itemize}[noitemsep]
+	\item  \textbf{Input Layer} Raw image data is fed through this layer. 
+	\item  \textbf{Convolution Layer} This layer calculates the output of neurons connected to a receptive field.
+	The size of the output is determined by the following equation. 
+	
+	$A_{out}= (A_{in}-K+2P)/S+1$
+	
+	where $A_{in}$ is the input size,  $A_{out}$ is the output size, K is the kernel size, P is the padding size and S is the stride of the kernel. 
+	\item  \textbf{Activation Layer} In this layer the output of the convolution is passed through an activation function such as sigmoid, ReLU or TanH. 
+	\item  \textbf{Pooling Layer} This layer downsamples the  output of the activation layer along the width and height dimensions. 
+	\item \textbf{Fully connected layer} Finally, this layer computes the probability scores for different classes by connecting all neurons from the pooling layer. 
+\end{itemize}
 
+\subsubsection*{Region Proposal Networks(RPN)}
+R- CNN\cite{} brought forth the idea of region based CNNs with the aim of increasing the accuracy of CNNs. By using selective search, regions of interest(ROI) in input images are proposed. These regions are then resized are then fed through a CNN to generate a bounding box and classification of the image. Finally a classifier, regressor are run on the output. However as this method requires a forward pass of the CNN for each proposal, its speed was quite slow. It also required the CNN, classifier and regressor to be trained separately. 
+Fast R-CNN\cite{girshickICCV15fastrcnn} iterated on R-CNN to further improve the speed and accuracy by using ROIPooling whereby instead of running each proposal in a CNN, regions that were overlapping were pooled and fed through the cnn thus sharing the computation. Furthermore, this model was end to end and thus combined the  classifier and regressor  by adding a softmax layer and linear regression layer after the CNN.
+Faster R-CNN\cite{ren2015faster} sought to remove the bottleneck imposed by the using selective search to propose regions. By using a sliding window with various anchor boxes on features maps generated by a forward pass of a CNN, bounding boxes on certain regions of the image could be generated. These regions were then passed onto Fast R-CNN to classify the objects. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{images/fastercnn}
+	\caption{Faster R-CNN overview. Source:\cite{ren2015faster}}
+\end{figure}
+
+
+Depending on the input, these two network architectures have formed the back bone of most 2D and 3D object detection applications. 
+\paragraph{Monocular Vision} 
 Monocular vision is derived from a single camera. This representation is 2D and lacks depth information. Mono3D by Chen et al \cite{chen2016monocular} is a state of the art object detection model that uses monocular images where they were fed through a CNN and the resulting 2D object proposals were extruded into 3D bounding boxes by performing segmentation.
 
-Stereo vision involves calibrating two cameras intrinsically and extrinsically by matching similar points in images from both cameras. Using the resulting stereo image, it is possible to estimate the depth of objects in the image. However the accuracy of this depends on a few factors such as the resolution, camera quality, lens distortion and the calibration algorithm. 3DOP \cite{chen20183d} 
+\paragraph{Stereo Vision}Stereo vision involves calibrating two cameras intrinsically and extrinsically by matching similar points in images from both cameras. Using the resulting stereo image, it is possible to estimate the depth of objects in the image. However the accuracy of this depends on a few factors such as the resolution, camera quality, lens distortion and the calibration algorithm. 3DOP \cite{chen20183d} is one of the state-of-the-art models that use stereo images in CNNs to detect objects.  
 
-%Includ 3dop 
- 
-\textbf{LiDAR+Camera} \\
+\paragraph{LiDAR+Camera}
 By fusing input from a monocular image and point clouds, it is possible to extract depth information from the images. Chen et al further reiterated their monocular approach into MV3D\cite{chen2017multi} a multiview 3D object detection network. In their work, they were able to fuse LiDAR and camera input to create a bird's eye view of the surrounding environment and further perform object detection of features. 
 
 
-\textbf{LiDAR} \\ 
-
+\paragraph{LiDAR} 
 Point cloud object detection is particularly challenging as established 3D object detection methods for images cannot be applied to point clouds. Point clouds are a set of geometric points in a euclidean space. They are unordered in nature and this presents a particular problem to deep learning methods as they need to be invariant to permutations of the input set.
-
-Depending on how they manipulate the point clouds, current point cloud based architectures can be split into three groups.
+Depending on how they manipulate the point clouds, current point cloud based object detection models can be split into three groups:
 \begin{enumerate}
-	
 	\item \textbf{Direct Manipulation} \\ . 
-	
-	Pointnet\cite{qi2017pointnet} developed by Qi et al was able to overcome this challenge on small sets of point clouds. By using point clouds as direct input into Recurrent Neural Networks\cite{medsker2001recurrent} They were able to create a global point cloud signature that could classify and segment 3D objects in the point cloud. They further improved this model into Pointnet++\cite{qi2017pointnet++} which recursively applied PointNet on nested partitions of the point clouds using a hierarchical neural network. In doing so they were able to capture the local structures of the point clouds as a result of their metric nature and thus achieve better performance than PointNet. For both of these publications, the source code was released for public use. Consequently, they have formed a fundamental foundation for further development of point cloud object detection methods.
-%	F-Pointnet developed for road object detection utilises a image based object detection model to propose objects. Point clouds within these bounding boxes are sampled and used as input in a point-wise object detector. 
+	Pointnet\cite{qi2017pointnet} developed by Qi et al was able to overcome this challenge on small sets of point clouds. By using point clouds as direct input into Recurrent Neural Networks\cite{medsker2001recurrent} They were able to create a global point cloud signature that could classify and segment 3D objects in the point cloud. They further improved this model into Pointnet++\cite{qi2017pointnet++} which recursively applied PointNet on nested partitions of the point clouds using a hierarchical neural network. In doing so they were able to capture the local structures of the point clouds as a result of their metric nature and thus achieve better performance than PointNet. However this approach has high memory and computational requirements. For both of these publications, the source code was released for public use. Consequently, they have formed a fundamental foundation for further development of point cloud object detection methods such as F-PointNet\cite{qi2017frustum}.
 	
 	\item \textbf{Voxel Based} \\
-	By dividing the pointclouds into 3D voxel grids, points within these voxels can be sampled to perform feature extraction. VoxelNet \cite{zhou2017voxelnet} is a state of the art architecture that uses this method to extract these features through Voxel Feature Extraction layer. The extracted features are then passed through a RPN to generate detextions. 
+	By dividing the pointclouds into 3D voxel grids, points within these voxels can be sampled to perform feature extraction. VoxelNet \cite{zhou2017voxelnet} is a state of the art architecture that uses this method to extract these features through Voxel Feature Extraction layer. The extracted features are then fed through a RPN to generate bounding boxes and classify objects within them. 
 	
 	\item \textbf{2D-Based }\\
-	This involves projecting the pointcloud into a 2D image plane coordinate system which can then be trained on existing image CNN models such as VGG-16. VeloFCN \cite{} was one of the first methods to implement this approach using a fully convolutional network. However, VeloFCN did not include bird eye and front view representations. 
+	This involves projecting the pointcloud into a 2D image plane coordinate system which can then be trained on existing image based CNNs  such as VGG-16. VeloFCN \cite{li2016vehicle} was one of the first methods to implement this approach using a fully convolutional network. However, VeloFCN lacked bird eye and front view representations. 
 	
 \end{enumerate}
 
@@ -168,7 +196,19 @@ Depending on how they manipulate the point clouds, current point cloud based arc
 
 
 
-%\section{Legal, Ethical and Economic Considerations}
+\section{Legal, Ethical and Economic Considerations}
+
+
+Despite improvements in traffic safety over the years, over  2.2$\%$ of deaths globally are caused by road accidents. Of these accidents, 94$\%$ are as a result of human error. It has been argued that AVs will reduce this figure by 
+
+According to \cite{gasser2016fundamental}, there are no public laws that cover the  use of independent autonomous vehicles in public spaces. In his article, he cites the fundamental issue as "understanding and accepting the effect of AVs as an independent action by a machine". Due to the lack of public laws on their use, he proposes extending fundamental rights such as the right to life into the framework for creating laws that cover emerging technologies that have an effect on the public, that are otherwise not accounted for in traditional laws.
+
+ 
+Bearing this in mind, it is important to note that  It has been predicted that upon mainstream 
+
+This creates a realistic baseline that can then be extended in evaluating the performance of AV systems. As such, if the risk of automation is lesser than the risk of human vehicle control then the AV would be beneficial. Consequently, the AVs are not to be considered as perfect systems but instead should be treated as systems that minimise the overall risk to the passenger and also their surroundings. 
+
+
 
 %
 %

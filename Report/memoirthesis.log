@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  25 AUG 2018 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  28 AUG 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1861,69 +1861,66 @@ Loading lettrine.cfg
 \c@cor=\count372
 \c@resu=\count373
 
-(./memoirthesis.aux
-
-LaTeX Warning: Label `my-label' multiply defined.
-
-)
+(./memoirthesis.aux)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 363.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 364.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 36
-3.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+4.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 363.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 363
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 364
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 363.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 363
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 364
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 363.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 363.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 364.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 363.
-LaTeX Font Info:    ... okay on input line 363.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 363.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 364.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 363.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 363.
+(Font)              scaled to size 10.18341pt on input line 364.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 364.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 363.
+Package layouts Warning: Layout scale set to 0.5 on input line 364.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1957,17 +1954,17 @@ e
 ))
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 363.
-Package gensymb Info: Math companion symbols declared on input line 363.
-LaTeX Info: Redefining \degree on input line 363.
-LaTeX Info: Redefining \celsius on input line 363.
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 364.
+Package gensymb Info: Math companion symbols declared on input line 364.
+LaTeX Info: Redefining \degree on input line 364.
+LaTeX Info: Redefining \celsius on input line 364.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 363.
-LaTeX Info: Redefining \ohm on input line 363.
-Package gensymb Info: Using \textohm for \ohm on input line 363.
-Package gensymb Info: Using \textmu for \micro on input line 363.
+erthousand on input line 364.
+LaTeX Info: Redefining \ohm on input line 364.
+Package gensymb Info: Using \textohm for \ohm on input line 364.
+Package gensymb Info: Using \textmu for \micro on input line 364.
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring ON on input line 363.
+Package hyperref Info: Link coloring ON on input line 364.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1979,15 +1976,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 363.
-LaTeX Info: Redefining \ref on input line 363.
-LaTeX Info: Redefining \pageref on input line 363.
-LaTeX Info: Redefining \nameref on input line 363.
+LaTeX Info: Redefining \nameref on input line 364.
+LaTeX Info: Redefining \ref on input line 364.
+LaTeX Info: Redefining \pageref on input line 364.
+LaTeX Info: Redefining \nameref on input line 364.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 363.
+LaTeX Info: Redefining \microtypecontext on input line 364.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2008,13 +2005,13 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count381
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 363.
+t line 364.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 363.
+t line 364.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 363.
+line 364.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 363.
+line 364.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -2022,13 +2019,13 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
-<logos/bristolcrest_colour.pdf, id=147, 114.4275pt x 137.51375pt>
-File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
-<use logos/bristolcrest_colour.pdf>
-Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 34.
-(pdftex.def)             Requested size: 68.65701pt x 82.50888pt.
+<logos/bristollogo_colour.pdf, id=175, 743.77875pt x 215.80624pt>
+File: logos/bristollogo_colour.pdf Graphic file (type pdf)
+<use logos/bristollogo_colour.pdf>
+Package pdftex.def Info: logos/bristollogo_colour.pdf  used on input line 34.
+(pdftex.def)             Requested size: 297.50623pt x 86.32095pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 10.18341pt on input line 40.
+(Font)              scaled to size 10.18341pt on input line 39.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 7.71893pt on input line 41.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2103,36 +2100,55 @@ LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 7.71893pt on input line 41.
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 5.57996pt on input line 41.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 47.
+runsystem(texcount -nc -inc -sum memoirthesis.tex > wordcount.tex)...disabled (
+restricted).
+
+runsystem(texcount -char -nc -freq memoirthesis.tex > charcount.tex)...disabled
+ (restricted).
+
+<images/barcode.png, id=176, 210.7875pt x 85.31876pt>
+File: images/barcode.png Graphic file (type png)
+<use images/barcode.png>
+Package pdftex.def Info: images/barcode.png  used on input line 55.
+(pdftex.def)             Requested size: 126.47346pt x 51.19164pt.
  [1
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logos
-/bristolcrest_colour.pdf>] [2
+/bristollogo_colour.pdf> <./images/barcode.png>] [2
 
-]) (./frontmatter/abstract.tex
+]) (./frontmatter/declaration.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 14.
+(Font)              scaled to size 13.39188pt on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 14.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 14.
+(Font)              scaled to size 13.39188pt on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 14.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 14.
+(Font)              scaled to size 13.39188pt on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 30.94487pt on input line 17.
+(Font)              scaled to size 30.94487pt on input line 24.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 45.523pt on input line 17.
+(Font)              scaled to size 45.523pt on input line 24.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 45.523pt on input line 17.
+(Font)              scaled to size 45.523pt on input line 24.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 30.
+LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 30.
+LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
+(Font)              scaled to size 10.18341pt on input line 30.
+LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 30.
+LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
+(Font)              scaled to size 10.18341pt on input line 30.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \clearpage
+l.33 \clearpage
                 [1
 
 
@@ -2140,23 +2156,17 @@ l.34 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.388 \clearemptydoublepage
+l.389 \clearemptydoublepage
                             [2
 
 
-] (./frontmatter/dedication.tex [3
+] (./frontmatter/abstract.tex [3
 
 ]) [4
 
 
 ]
-(./frontmatter/declaration.tex
-Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
- \T1/fnc/m/sc/10.95 (-20) SIGNED: .............................................
-....... DATE: .......................................... 
- []
-
-[5
+(./frontmatter/dedication.tex [5
 
 ]) [6
 
@@ -2171,18 +2181,25 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 [7])
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 403.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 400.
- [8] (./memoirthesis.lot
-LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 10.18341pt on input line 2.
-) [9
+(Font)              scaled to size 9.29993pt on input line 403.
+ [8] (./memoirthesis.lot) [9
 
 ] [10
 
-] (./memoirthesis.lof) [11] [12
+] (./memoirthesis.lof
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 8.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [11] [12
 
 ]
 (./chapters/intro/chap01.tex [1
@@ -2227,13 +2244,13 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 LaTeX Warning: Reference `app:lidar' on page 6 undefined on input line 31.
 
-<media/hdl-family.png, id=324, 752.8125pt x 484.81125pt>
+<media/hdl-family.png, id=385, 752.8125pt x 484.81125pt>
 File: media/hdl-family.png Graphic file (type png)
 <use media/hdl-family.png>
 Package pdftex.def Info: media/hdl-family.png  used on input line 35.
 (pdftex.def)             Requested size: 448.0pt x 288.52174pt.
 [6 <./media/hdl-family.png>]
-<media/waymo.png, id=334, 1189.44376pt x 897.3525pt>
+<media/waymo.png, id=395, 1189.44376pt x 897.3525pt>
 File: media/waymo.png Graphic file (type png)
 <use media/waymo.png>
 Package pdftex.def Info: media/waymo.png  used on input line 55.
@@ -2242,7 +2259,7 @@ Package pdftex.def Info: media/waymo.png  used on input line 55.
 Underfull \vbox (badness 3029) has occurred while \output is active []
 
  [7 <./media/waymo.png>] [8]
-<media/avind.png, id=355, 770.88pt x 389.455pt>
+<media/avind.png, id=415, 770.88pt x 389.455pt>
 File: media/avind.png Graphic file (type png)
 <use media/avind.png>
 Package pdftex.def Info: media/avind.png  used on input line 89.
@@ -2252,112 +2269,173 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 92.
  [9 <./media/avind.png (PNG copy)>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-[11]
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 155.
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 155.
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 10.18341pt on input line 155.
-) [12] (./chapters/body/body.tex [13
+<images/neuralnet.png, id=438, 805.0075pt x 277.035pt>
+File: images/neuralnet.png Graphic file (type png)
+<use images/neuralnet.png>
+Package pdftex.def Info: images/neuralnet.png  used on input line 120.
+(pdftex.def)             Requested size: 448.0pt x 154.17473pt.
+<images/fastercnn.png, id=443, 652.4375pt x 642.4pt>
+File: images/fastercnn.png Graphic file (type png)
+<use images/fastercnn.png>
+Package pdftex.def Info: images/fastercnn.png  used on input line 146.
+(pdftex.def)             Requested size: 224.0pt x 220.54999pt.
+ [11 <./images/neuralnet.png>] [12 <./images/fastercnn.png (PNG copy)>] [13]) [
+14]
+(./chapters/body/body.tex [15
 
 
 ]
-<images/urban.png, id=414, 1246.6575pt x 376.40625pt>
+<images/urban.png, id=502, 1246.6575pt x 376.40625pt>
 File: images/urban.png Graphic file (type png)
 <use images/urban.png>
-Package pdftex.def Info: images/urban.png  used on input line 54.
+Package pdftex.def Info: images/urban.png  used on input line 52.
 (pdftex.def)             Requested size: 179.19727pt x 54.10367pt.
-<images/non_urban.png, id=415, 1246.6575pt x 376.40625pt>
+<images/non_urban.png, id=503, 1246.6575pt x 376.40625pt>
 File: images/non_urban.png Graphic file (type png)
 <use images/non_urban.png>
-Package pdftex.def Info: images/non_urban.png  used on input line 59.
+Package pdftex.def Info: images/non_urban.png  used on input line 57.
 (pdftex.def)             Requested size: 179.19727pt x 54.10367pt.
- [14 <./images/urban.png (PNG copy)> <./images/non_urban.png (PNG copy)>]
-<images/semantic_hist.png, id=431, 1156.32pt x 650.43pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+<images/semantic_hist.png, id=519, 1156.32pt x 650.43pt>
 File: images/semantic_hist.png Graphic file (type png)
 <use images/semantic_hist.png>
-Package pdftex.def Info: images/semantic_hist.png  used on input line 76.
+Package pdftex.def Info: images/semantic_hist.png  used on input line 77.
 (pdftex.def)             Requested size: 448.0pt x 251.99931pt.
- [15 <./images/semantic_hist.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-<images/ambiguous.png, id=439, 1246.6575pt x 376.40625pt>
+ [17 <./images/urban.png (PNG copy)> <./images/non_urban.png (PNG copy)> <./ima
+ges/semantic_hist.png>] [18]
+<images/ambiguous.png, id=548, 1246.6575pt x 376.40625pt>
 File: images/ambiguous.png Graphic file (type png)
 <use images/ambiguous.png>
-Package pdftex.def Info: images/ambiguous.png  used on input line 108.
-(pdftex.def)             Requested size: 142.26378pt x 42.9498pt.
-[16 <./images/ambiguous.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Package pdftex.def Info: images/ambiguous.png  used on input line 134.
+(pdftex.def)             Requested size: 284.52756pt x 85.90536pt.
 
- []
+Underfull \vbox (badness 3068) has occurred while \output is active []
 
+ [19]
+[20 <./images/ambiguous.png (PNG copy)>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 163.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-<images/sildata.png, id=450, 1444.39626pt x 288.07625pt>
-File: images/sildata.png Graphic file (type png)
-<use images/sildata.png>
-Package pdftex.def Info: images/sildata.png  used on input line 167.
-(pdftex.def)             Requested size: 448.0pt x 89.35106pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.43994pt on input line 164.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.71893pt on input line 165.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 5.57996pt on input line 165.
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 173.
+(in both cases you will find help in the memoir manual). on input line 189.
 
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[17 <./images/sildata.png>]
-<images/sil.png, id=465, 1438.37375pt x 713.66624pt>
+[21]
+<images/vox_arch.png, id=583, 397.9668pt x 199.947pt>
+File: images/vox_arch.png Graphic file (type png)
+<use images/vox_arch.png>
+Package pdftex.def Info: images/vox_arch.png  used on input line 210.
+(pdftex.def)             Requested size: 201.59863pt x 101.2882pt.
+<images/avodarch.png, id=584, 13616.8725pt x 4727.6625pt>
+File: images/avodarch.png Graphic file (type png)
+<use images/avodarch.png>
+Package pdftex.def Info: images/avodarch.png  used on input line 216.
+(pdftex.def)             Requested size: 201.54318pt x 113.76198pt.
+
+Underfull \vbox (badness 4291) has occurred while \output is active []
+
+ [22]
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.06795pt on input line 229.
+<images/sildata.png, id=598, 1444.39626pt x 288.07625pt>
+File: images/sildata.png Graphic file (type png)
+<use images/sildata.png>
+Package pdftex.def Info: images/sildata.png  used on input line 235.
+(pdftex.def)             Requested size: 448.0pt x 89.35106pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/sil.png, id=599, 1438.37375pt x 713.66624pt>
 File: images/sil.png Graphic file (type png)
 <use images/sil.png>
-Package pdftex.def Info: images/sil.png  used on input line 176.
+Package pdftex.def Info: images/sil.png  used on input line 244.
 (pdftex.def)             Requested size: 448.0pt x 222.27965pt.
- [18 <./images/sil.png>]
-<images/annot.png, id=475, 1445.4pt x 903.375pt>
-File: images/annot.png Graphic file (type png)
-<use images/annot.png>
-Package pdftex.def Info: images/annot.png  used on input line 210.
-(pdftex.def)             Requested size: 448.0pt x 280.002pt.
-)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[19 <./images/annot.png (PNG copy)>] [20
+[23 <./images/vox_arch.png> <./images/avodarch.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./chapters/results/results.tex
-[21
+ [24 <./images/sildata.png> <./images/sil.png>]
+<images/annot.png, id=617, 1445.4pt x 903.375pt>
+File: images/annot.png Graphic file (type png)
+<use images/annot.png>
+Package pdftex.def Info: images/annot.png  used on input line 280.
+(pdftex.def)             Requested size: 448.0pt x 280.002pt.
 
-]) [22] (./chapters/future/future.tex) [23
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-] [24
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[25 <./images/annot.png (PNG copy)>]) [26] (./chapters/results/results.tex
+[27
+
+
+] [28]
+<images/gputepbox.png, id=644, 1156.32pt x 650.43pt>
+File: images/gputepbox.png Graphic file (type png)
+<use images/gputepbox.png>
+Package pdftex.def Info: images/gputepbox.png  used on input line 193.
+(pdftex.def)             Requested size: 201.59863pt x 113.39026pt.
+<images/gpupbox.png, id=645, 1156.32pt x 650.43pt>
+File: images/gpupbox.png Graphic file (type png)
+<use images/gpupbox.png>
+Package pdftex.def Info: images/gpupbox.png  used on input line 199.
+(pdftex.def)             Requested size: 219.52246pt x 123.4738pt.
+ [29]
+<images/jointtempbox.png, id=654, 1011.78pt x 578.16pt>
+File: images/jointtempbox.png Graphic file (type png)
+<use images/jointtempbox.png>
+Package pdftex.def Info: images/jointtempbox.png  used on input line 218.
+(pdftex.def)             Requested size: 201.59863pt x 115.19766pt.
+<images/jointpowerbox.png, id=655, 1011.78pt x 578.16pt>
+File: images/jointpowerbox.png Graphic file (type png)
+<use images/jointpowerbox.png>
+Package pdftex.def Info: images/jointpowerbox.png  used on input line 224.
+(pdftex.def)             Requested size: 219.52246pt x 125.44pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 232.
+
+
+Underfull \vbox (badness 5388) has occurred while \output is active []
+
+ [30 <./images/gputepbox.png> <./images/gpupbox.png> <./images/jointtempbox.png
+> <./images/jointpowerbox.png>]) [31] [32
+
+] (./chapters/future/future.tex) [33
+
+] [34
 
 ]
-(./chapters/conclusion/conclusion.tex) [25
+(./chapters/conclusion/conclusion.tex) [35
 
-] [26
+] [36
 
 ]
 (./chapters/appendices/app0A.tex
@@ -2371,10 +2449,10 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 6.50995pt on input line 31.
-) [27
+) [37
 
 ]
-[28
+[38
 
 ] (./memoirthesis.bbl
 
@@ -2387,15 +2465,15 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 14.
+(nag)                Use \scshape or \textsc instead on input line 13.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 19.
+(nag)                Use \scshape or \textsc instead on input line 18.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 23.
+(nag)                Use \scshape or \textsc instead on input line 22.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2403,7 +2481,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 32.
+(nag)                Use \scshape or \textsc instead on input line 34.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2411,39 +2489,39 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 44.
+(nag)                Use \scshape or \textsc instead on input line 43.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 50.
+(nag)                Use \scshape or \textsc instead on input line 47.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 54.
+(nag)                Use \scshape or \textsc instead on input line 51.
 
-[29
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 56.
+
+[39
 
 
 ]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 59.
+(nag)                Use \scshape or \textsc instead on input line 61.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 64.
+(nag)                Use \scshape or \textsc instead on input line 66.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 68.
+(nag)                Use \scshape or \textsc instead on input line 70.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 73.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 78.
+(nag)                Use \scshape or \textsc instead on input line 77.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2455,36 +2533,42 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 92.
+(nag)                Use \scshape or \textsc instead on input line 91.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 97.
+(nag)                Use \scshape or \textsc instead on input line 96.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 102.
+(nag)                Use \scshape or \textsc instead on input line 101.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 107.
+(nag)                Use \scshape or \textsc instead on input line 105.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 111.
+(nag)                Use \scshape or \textsc instead on input line 110.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 115.
 
-[30]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 122.
+(nag)                Use \scshape or \textsc instead on input line 120.
 
+[40]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 127.
+(nag)                Use \scshape or \textsc instead on input line 125.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+[]\T1/fnc/m/n/10.95 (+20) https://www.navigantresearch.com/research/navigant-re
+search-leaderboard-automated-
+ []
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2500,11 +2584,11 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 146.
+(nag)                Use \scshape or \textsc instead on input line 147.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 151.
+(nag)                Use \scshape or \textsc instead on input line 152.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2512,60 +2596,29 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 161.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-[]\T1/fnc/m/n/10.95 (+20) https://www.navigantresearch.com/research/navigant-re
-search-leaderboard-automated-
- []
+(nag)                Use \scshape or \textsc instead on input line 162.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 167.
+(nag)                Use \scshape or \textsc instead on input line 168.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 173.
+(nag)                Use \scshape or \textsc instead on input line 172.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 178.
+(nag)                Use \scshape or \textsc instead on input line 177.
 
-[31]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 183.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 187.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 193.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 197.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 203.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 208.
-
-) [32]
+[41]) [42]
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 459.
+(in both cases you will find help in the memoir manual). on input line 455.
 
 
-Package nag Warning: 43 complaints in total.
+Package nag Warning: 38 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -2576,39 +2629,40 @@ Package nag Warning: 43 complaints in total.
 \tf@lof=\write9
 \openout9 = `memoirthesis.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 459.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 459.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 455.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4CB00D15EA5F0F723FF1D1AE9EF6A063;2393.
+(rerunfilecheck)             Checksum: 9FEA2C931193BB581B187DD5DA13D932;2932.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 33675 strings out of 492649
- 612481 string characters out of 6129623
- 925591 words of memory out of 5000000
- 36280 multiletter control sequences out of 15000+600000
- 97263 words of font info for 337 fonts, out of 8000000 for 9000
+ 33780 strings out of 492649
+ 614490 string characters out of 6129623
+ 928660 words of memory out of 5000000
+ 36349 multiletter control sequences out of 15000+600000
+ 109015 words of font info for 329 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 55i,12n,108p,1012b,1309s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (46 pages, 4526666 bytes).
+ 55i,17n,108p,1075b,1309s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (56 pages, 8884419 bytes).
 PDF statistics:
- 629 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 191 named destinations out of 1000 (max. 500000)
- 43868 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 236 named destinations out of 1000 (max. 500000)
+ 46529 words of extra memory for PDF output out of 51595 (max. 10000000)
 

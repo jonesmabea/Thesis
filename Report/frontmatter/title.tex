@@ -31,21 +31,30 @@
 \vspace{6.5mm}
 {\large\textsc{Jones Mabea Agwata}}\\
 \vspace{11mm}
-\includegraphics[scale=0.6]{logos/bristolcrest_colour}\\
+\includegraphics[scale=0.4]{logos/bristollogo_colour}\\
 \vspace{6mm}
-{\large Department of Computer Science\\
-\textsc{University of Bristol}}\\
+{\large Department of Computer Science}\\
 \vspace{11mm}
 \begin{minipage}{10cm}
 A dissertation submitted to the University of Bristol in accordance with the requirements of the degree of \textsc{Master of Science} in the Faculty of Engineering.
+
 \end{minipage}\\
-\vspace{9mm}
-{\large\textsc{September 2018}}
+
+\vspace{20mm}
+{\large\textsc{September 2018 | CSMSC-18}} 
 \vspace{12mm}
 \end{center}
+
+\immediate\write18{texcount -nc -inc -sum memoirthesis.tex > wordcount.tex} \newcommand\wordcount{\verbatiminput{wordcount.tex}} 
+% Count of characters 
+\immediate\write18{texcount -char -nc -freq memoirthesis.tex > charcount.tex} \newcommand\charcount{\verbatiminput{charcount.tex}}
+
 \begin{flushright}
-{\small Word count: ten thousand and four}
+%{\small Word count: }\\ 
+\vspace{15mm}
+\includegraphics[scale=0.6]{images/barcode}
 \end{flushright}
+%\wordcount
 \end{adjustwidth*}
 \end{SingleSpace}
 \end{titlingpage}

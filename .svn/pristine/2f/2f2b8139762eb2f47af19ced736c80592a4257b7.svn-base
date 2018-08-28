@@ -1,0 +1,396 @@
+@ARTICLE{Geiger2013IJRR,
+  author = {Andreas Geiger and Philip Lenz and Christoph Stiller and Raquel Urtasun},
+  title = {Vision meets Robotics: The {KITTI} Dataset},
+  journal = {International Journal of Robotics Research (IJRR)},
+  year = {2013}
+} 
+
+@article{bonnefon2015autonomous,
+  title={Autonomous vehicles need experimental ethics: Are we ready for utilitarian cars?},
+  author={Bonnefon, Jean-Fran{\c{c}}ois and Shariff, Azim and Rahwan, Iyad},
+  journal={arXiv preprint arXiv:1510.03346},
+  year={2015},
+  publisher={eprint}
+}
+
+
+@article{zhou2017voxelnet,
+  title={VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection},
+  author={Zhou, Yin and Tuzel, Oncel},
+  journal={arXiv preprint arXiv:1711.06396},
+  year={2017}
+}
+
+@article{qi2017pointnet,
+  title={net: Deep learning on point sets for 3d classification and segmentation},
+  author={Qi, Charles R and Su, Hao and Mo, Kaichun and Guibas, Leonidas J},
+  journal={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+  volume={1},
+  number={2},
+  pages={4},
+  year={2017}
+}
+
+@article{ku2018defense,
+  title={In Defense of Classical Image Processing: Fast Depth Completion on the CPU},
+  author={Ku, Jason and Harakeh, Ali and Waslander, Steven L},
+  journal={arXiv preprint arXiv:1802.00036},
+  year={2018}
+}
+
+@ARTICLE{yolo,
+   author = {{Simon}, M. and {Milz}, S. and {Amende}, K. and {Gross}, H.-M.
+	},
+    title = "{Complex-YOLO: Real-time 3D Object Detection on Point Clouds}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1803.06199},
+ primaryClass = "cs.CV",
+ keywords = {Computer Science - Computer Vision and Pattern Recognition},
+     year = 2018,
+    month = mar,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180306199S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@article{li20163d,
+  title={3D fully convolutional network for vehicle detection in point cloud},
+  author={Li, Bo},
+  journal={arXiv preprint arXiv:1611.08069},
+  year={2016}
+}
+
+@inproceedings{ren2015faster,
+  title={Faster r-cnn: Towards real-time object detection with region proposal networks},
+  author={Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  booktitle={Advances in neural information processing systems},
+  pages={91--99},
+  year={2015}
+}
+
+@inproceedings{qi2017pointnet++,
+  title={Pointnet++: Deep hierarchical feature learning on point sets in a metric space},
+  author={Qi, Charles Ruizhongtai and Yi, Li and Su, Hao and Guibas, Leonidas J},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5105--5114},
+  year={2017}
+}
+
+@article{ku2017joint,
+  title={Joint 3D Proposal Generation and Object Detection from View Aggregation},
+  author={Ku, Jason and Mozifian, Melissa and Lee, Jungwook and Harakeh, Ali and Waslander, Steven},
+  journal={arXiv preprint arXiv:1712.02294},
+  year={2017}
+}
+
+@inproceedings{girshickICCV15fastrcnn,
+    Author = {Ross Girshick},
+    Title = {Fast R-CNN},
+    Booktitle = {International Conference on Computer Vision ({ICCV})},
+    Year = {2015}
+}
+
+@incollection{gasser2016fundamental,
+  title={Fundamental and special legal questions for autonomous vehicles},
+  author={Gasser, Tom Michael},
+  booktitle={Autonomous Driving},
+  pages={523--551},
+  year={2016},
+  publisher={Springer}
+}
+
+@inproceedings{abadi2016tensorflow,
+	title={TensorFlow: A System for Large-Scale Machine Learning.},
+	author={Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+	booktitle={OSDI},
+	volume={16},
+	pages={265--283},
+	year={2016}
+}
+
+@INPROCEEDINGS{Geiger2012CVPR,
+	author = {Andreas Geiger and Philip Lenz and Raquel Urtasun},
+	title = {Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite},
+	booktitle = {Conference on Computer Vision and Pattern	Recognition (CVPR)},
+	year = {2012}
+} 
+@book{brown2012field,
+	title={Field-programmable gate arrays},
+	author={Brown, Stephen D and Francis, Robert J and Rose, Jonathan and Vranesic, Zvonko G},
+	volume={180},
+	year={2012},
+	publisher={Springer Science \& Business Media}
+}
+
+@inproceedings{henry2010rgb,
+	title={RGB-D mapping: Using depth cameras for dense 3D modeling of indoor environments},
+	author={Henry, Peter and Krainin, Michael and Herbst, Evan and Ren, Xiaofeng and Fox, Dieter},
+	booktitle={In the 12th International Symposium on Experimental Robotics (ISER},
+	year={2010},
+	organization={Citeseer}
+}
+
+@inproceedings{lin2018architectural,
+	title={The Architectural Implications of Autonomous Driving: Constraints and Acceleration},
+	author={Lin, Shih-Chieh and Zhang, Yunqi and Hsu, Chang-Hong and Skach, Matt and Haque, Md E and Tang, Lingjia and Mars, Jason},
+	booktitle={Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems},
+	pages={751--766},
+	year={2018},
+	organization={ACM}
+}
+@book{smith1997application,
+	title={Application-specific integrated circuits},
+	author={Smith, Michael John Sebastian},
+	volume={7},
+	year={1997},
+	publisher={Addison-Wesley Reading, MA}
+}
+
+@misc{waymo_2018,
+	title={Waymo Safety Report},
+	author={Waymo},
+	note={https://waymo.com/safety/},
+	journal={Waymo},
+	year={2018}
+}
+
+@article{fagnant2015preparing,
+	title={Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations},
+	author={Fagnant, Daniel J and Kockelman, Kara},
+	journal={Transportation Research Part A: Policy and Practice},
+	volume={77},
+	pages={167--181},
+	year={2015},
+	publisher={Elsevier}
+}
+
+
+@book{buehler2009darpa,
+	title={The DARPA urban challenge: autonomous vehicles in city traffic},
+	author={Buehler, Martin and Iagnemma, Karl and Singh, Sanjiv},
+	volume={56},
+	year={2009},
+	publisher={springer}
+}
+
+@misc{mobileye_2018,
+	title={Enabling Autonomous - MobileEye},
+	author={MobilEye},
+	note={https://www.mobileye.com/future-of-mobility/mobileye-enabling-autonomous/},
+	journal={Mobileye},
+	year={2018}
+}
+
+
+@article{brown1994human,
+	title={Human factors: the journal of the human factors and ergonomics society},
+	author={Brown, I},
+	journal={Driver Fatigue},
+	volume={36},
+	pages={298--314},
+	year={1994}
+}
+
+@article{newell1985prospects,
+	title={The prospects for psychological science in human-computer interaction},
+	author={Newell, Allen and Card, Stuart K},
+	journal={Human-computer interaction},
+	volume={1},
+	number={3},
+	pages={209--242},
+	year={1985},
+	publisher={L. Erlbaum Associates Inc.}
+}
+
+@misc{intelsolutions_2018,
+	author={Intel},
+	note={https://www.intel.co.uk/content/www/uk/en/automotive/go-automated-driving.html},
+	journal={Intel},
+	year={2018}
+}
+
+@inproceedings{zeiler2014visualizing,
+	title={Visualizing and understanding convolutional networks},
+	author={Zeiler, Matthew D and Fergus, Rob},
+	booktitle={European conference on computer vision},
+	pages={818--833},
+	year={2014},
+	organization={Springer}
+}
+
+@inproceedings{pomerleau1989alvinn,
+	title={Alvinn: An autonomous land vehicle in a neural network},
+	author={Pomerleau, Dean A},
+	booktitle={Advances in neural information processing systems},
+	pages={305--313},
+	year={1989}
+}
+
+@inproceedings{dalal2005histograms,
+	title={Histograms of oriented gradients for human detection},
+	author={Dalal, Navneet and Triggs, Bill},
+	booktitle={Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on},
+	volume={1},
+	pages={886--893},
+	year={2005},
+	organization={IEEE}
+}
+
+@inproceedings{lowe1999object,
+	title={Object recognition from local scale-invariant features},
+	author={Lowe, David G},
+	booktitle={Computer vision, 1999. The proceedings of the seventh IEEE international conference on},
+	volume={2},
+	pages={1150--1157},
+	year={1999},
+	organization={Ieee}
+}
+
+@inproceedings{bay2006surf,
+	title={Surf: Speeded up robust features},
+	author={Bay, Herbert and Tuytelaars, Tinne and Van Gool, Luc},
+	booktitle={European conference on computer vision},
+	pages={404--417},
+	year={2006},
+	organization={Springer}
+}
+
+@inproceedings{viola2001rapid,
+	title={Rapid object detection using a boosted cascade of simple features},
+	author={Viola, Paul and Jones, Michael},
+	booktitle={Computer Vision and Pattern Recognition, 2001. CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on},
+	volume={1},
+	pages={I--I},
+	year={2001},
+	organization={IEEE}
+}
+
+@article{lawrence1997face,
+	title={Face recognition: A convolutional neural-network approach},
+	author={Lawrence, Steve and Giles, C Lee and Tsoi, Ah Chung and Back, Andrew D},
+	journal={IEEE transactions on neural networks},
+	volume={8},
+	number={1},
+	pages={98--113},
+	year={1997},
+	publisher={IEEE}
+}
+@inproceedings{chen2016monocular,
+	title={Monocular 3d object detection for autonomous driving},
+	author={Chen, Xiaozhi and Kundu, Kaustav and Zhang, Ziyu and Ma, Huimin and Fidler, Sanja and Urtasun, Raquel},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={2147--2156},
+	year={2016}
+}
+@misc{navigantresearch_2018, 
+	title={Navigant Research Leaderboard: Automated Driving Vehicles},
+	author={Navigant Research}, note={https://www.navigantresearch.com/research/navigant-research-leaderboard-automated-driving-vehicles}, journal={Navigant Research}, 
+	year={2018}, 
+	month={Jan}
+}
+
+@inproceedings{yang2016exploit,
+	title={Exploit all the layers: Fast and accurate cnn object detector with scale dependent pooling and cascaded rejection classifiers},
+	author={Yang, Fan and Choi, Wongun and Lin, Yuanqing},
+	booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={2129--2137},
+	year={2016}
+}
+@inproceedings{chen2017multi,
+	title={Multi-view 3d object detection network for autonomous driving},
+	author={Chen, Xiaozhi and Ma, Huimin and Wan, Ji and Li, Bo and Xia, Tian},
+	booktitle={IEEE CVPR},
+	volume={1},
+	number={2},
+	pages={3},
+	year={2017}
+}
+@article{li2016vehicle,
+	title={Vehicle detection from 3d lidar using fully convolutional network},
+	author={Li, Bo and Zhang, Tianlei and Xia, Tian},
+	journal={arXiv preprint arXiv:1608.07916},
+	year={2016}
+}
+@article{medsker2001recurrent,
+	title={Recurrent neural networks},
+	author={Medsker, LR and Jain, LC},
+	journal={Design and Applications},
+	volume={5},
+	year={2001},
+	publisher={Citeseer}
+}
+
+@article{chen2018deeplab,
+	title={Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs},
+	author={Chen, Liang-Chieh and Papandreou, George and Kokkinos, Iasonas and Murphy, Kevin and Yuille, Alan L},
+	journal={IEEE transactions on pattern analysis and machine intelligence},
+	volume={40},
+	number={4},
+	pages={834--848},
+	year={2018},
+	publisher={IEEE}
+}
+@inproceedings{shotton2008semantic,
+	title={Semantic texton forests for image categorization and segmentation},
+	author={Shotton, Jamie and Johnson, Matthew and Cipolla, Roberto},
+	booktitle={Computer vision and pattern recognition, 2008. CVPR 2008. IEEE Conference on},
+	pages={1--8},
+	year={2008},
+	organization={IEEE}
+}
+@inproceedings{shotton2011real,
+	title={Real-time human pose recognition in parts from single depth images},
+	author={Shotton, Jamie and Fitzgibbon, Andrew and Cook, Mat and Sharp, Toby and Finocchio, Mark and Moore, Richard and Kipman, Alex and Blake, Andrew},
+	booktitle={Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on},
+	pages={1297--1304},
+	year={2011},
+	organization={Ieee}
+}
+
+@article{chen20183d,
+	title={3d object proposals using stereo imagery for accurate object class detection},
+	author={Chen, Xiaozhi and Kundu, Kaustav and Zhu, Yukun and Ma, Huimin and Fidler, Sanja and Urtasun, Raquel},
+	journal={IEEE transactions on pattern analysis and machine intelligence},
+	volume={40},
+	number={5},
+	pages={1259--1272},
+	year={2018},
+	publisher={IEEE}
+}
+
+@article{salti2014shot,
+	title={SHOT: Unique signatures of histograms for surface and texture description},
+	author={Salti, Samuele and Tombari, Federico and Di Stefano, Luigi},
+	journal={Computer Vision and Image Understanding},
+	volume={125},
+	pages={251--264},
+	year={2014},
+	publisher={Elsevier}
+}
+
+@inproceedings{rusu2009fast,
+	title={Fast point feature histograms (FPFH) for 3D registration},
+	author={Rusu, Radu Bogdan and Blodow, Nico and Beetz, Michael},
+	booktitle={Robotics and Automation, 2009. ICRA'09. IEEE International Conference on},
+	pages={3212--3217},
+	year={2009},
+	organization={Citeseer}
+}
+
+@inproceedings{zhong2009intrinsic,
+	title={Intrinsic shape signatures: A shape descriptor for 3d object recognition},
+	author={Zhong, Yu},
+	booktitle={Computer Vision Workshops (ICCV Workshops), 2009 IEEE 12th International Conference on},
+	pages={689--696},
+	year={2009},
+	organization={IEEE}
+}
+
+@inproceedings{steder2010narf,
+	title={NARF: 3D range image features for object recognition},
+	author={Steder, Bastian and Rusu, Radu Bogdan and Konolige, Kurt and Burgard, Wolfram},
+	booktitle={Workshop on Defining and Solving Realistic Perception Problems in Personal Robotics at the IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS)},
+	volume={44},
+	year={2010}
+}

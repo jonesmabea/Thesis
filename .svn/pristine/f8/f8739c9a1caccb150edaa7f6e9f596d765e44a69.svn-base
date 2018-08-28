@@ -1,0 +1,151 @@
+% !TeX spellcheck = <engl>
+
+\let\textcircled=\pgftextcircled
+
+\chapter{Results and Analysis}
+\label{chap:results}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Can We Automatically Detect Scene Contexts?}
+\subsection{Metrics}
+The detectors were evaluated using the precision, recall and f1-score of their predictions.
+
+\subsection{Results}
+
+\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|
+				>{\columncolor[HTML]{FFFFFF}}l |
+				>{\columncolor[HTML]{FFFFC7}}l |
+				>{\columncolor[HTML]{FFFFC7}}l |
+				>{\columncolor[HTML]{FFFFC7}}l |
+				>{\columncolor[HTML]{FFFFC7}}l |
+				>{\columncolor[HTML]{96FFFB}}l |
+				>{\columncolor[HTML]{96FFFB}}l |
+				>{\columncolor[HTML]{96FFFB}}l |
+				>{\columncolor[HTML]{96FFFB}}l |}
+			\hline
+			{\color[HTML]{333333} \textbf{}} & \multicolumn{4}{l|}{\cellcolor[HTML]{FFFFC7}{\color[HTML]{333333} \textbf{Context Detection using PointCloud Feature Matching}}} & \multicolumn{4}{l|}{\cellcolor[HTML]{96FFFB}\textbf{Context Detection using Image Segmentation}} \\ \hline
+			{\color[HTML]{333333} \textbf{Context}} & {\color[HTML]{333333} \textbf{precision}} & {\color[HTML]{333333} \textbf{recall}} & {\color[HTML]{333333} \textbf{f1-score}} & {\color[HTML]{333333} \textbf{support}} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+			{\color[HTML]{333333} \textit{\textbf{non-urban}}} & {\color[HTML]{333333} \textbf{0.52}} & {\color[HTML]{333333} 0.45} & {\color[HTML]{333333} 0.48} & {\color[HTML]{333333} 206} & 0.81 & \textbf{0.9} & \textbf{0.85} & 193 \\ \hline
+			{\color[HTML]{333333} \textit{\textbf{urban}}} & {\color[HTML]{333333} 0.51} & {\color[HTML]{333333} \textbf{0.58}} & {\color[HTML]{333333} \textbf{0.55}} & {\color[HTML]{333333} 206} & \textbf{0.9} & 0.81 & \textbf{0.85} & 218 \\ \hline
+			{\color[HTML]{333333} \textbf{avg / total}} & {\color[HTML]{333333} 0.51} & {\color[HTML]{333333} 0.51} & {\color[HTML]{333333} 0.51} & {\color[HTML]{333333} 412} & 0.86 & 0.85 & 0.85 & 411 \\ \hline
+		\end{tabular}%
+	}
+	\caption{Comparison of context detection methods}
+	\label{my-label}
+\end{table}
+
+\section{Do Object Detection Models Perform Better in Different Contexts?}
+\subsection*{Metrics}
+The models were evaluated using a similar method as the KITTI evaluation protocol. The average precision(AP) of the intersection over union(IoU) of the bounding boxes was used as the main metric.
+IoU is calculated as: \\ 
+\begin{math}
+	\centering
+	IoU = \frac{Overlap\, area}{Union\, area}
+\end{math} \\ 
+Where the overlap area is the region that is shared between the predicted bounding box and the ground truth bounding box and the Union area is the total area of the predicted bounding box and ground truth box.
+This was calculated for 2D bounding boxes, 3D bounding boxes and Bird-Eye View bounding boxes. Only IoU values $\geq$0.7 were considered for the car class and $\geq$0.5 for the pedestrian class in calculating the AP. 
+
+\subsubsection{GPU}
+During inference, statistics about the GPU was collected at an interval of 1 second using NVIDIAs System Management Interval(nvidia-smi). The following metrics were collected. 
+\begin{itemize}[noitemsep]
+	\item \textbf{Power Draw } - Watts
+	\item \textbf{Memory Used } - MB
+	\item \textbf{Temperature} - $\degree$C
+	\item \textbf{Clock Speed} - MHz
+ \end{itemize}
+
+
+\subsection{Results}
+\subsubsection*{Baseline}
+
+\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|
+				>{\columncolor[HTML]{FFCCC9}}l |
+				>{\columncolor[HTML]{FFCCC9}}l |
+				>{\columncolor[HTML]{FFCCC9}}l |
+				>{\columncolor[HTML]{96FFFB}}l |
+				>{\columncolor[HTML]{96FFFB}}l |
+				>{\columncolor[HTML]{96FFFB}}l |}
+			\hline
+			& \textbf{Class}                     & \multicolumn{3}{l|}{\cellcolor[HTML]{FFCCC9}{\color[HTML]{000000} \textbf{Car}}}                                                  & \multicolumn{3}{l|}{\cellcolor[HTML]{96FFFB}{\color[HTML]{000000} \textbf{Pedestrian}}}                                           \\ \hline
+			\textbf{Architecture}               & \textbf{Difficulty}                & {\color[HTML]{000000} \textbf{Easy}}      & {\color[HTML]{000000} \textbf{Medium}}    & {\color[HTML]{000000} \textbf{Hard}}      & {\color[HTML]{000000} \textbf{Easy}}      & {\color[HTML]{000000} \textbf{Medium}}    & {\color[HTML]{000000} \textbf{Hard}}      \\ \hline
+			& \textit{\textbf{2D Bounding Box}}  & {\color[HTML]{000000} \textbf{86.987999}} & {\color[HTML]{000000} \textbf{77.10569}}  & {\color[HTML]{000000} \textbf{68.012459}} & {\color[HTML]{000000} 56.214417}          & {\color[HTML]{000000} 51.969517}          & {\color[HTML]{000000} 46.578247}          \\ \cline{2-8} 
+			& \textit{\textbf{BEV Bounding Box}} & {\color[HTML]{000000} \textbf{86.00412}}  & {\color[HTML]{000000} \textbf{74.355942}} & {\color[HTML]{000000} \textbf{65.62397}}  & {\color[HTML]{000000} \textbf{50.94368}}  & {\color[HTML]{000000} \textbf{49.857227}} & {\color[HTML]{000000} \textbf{44.704525}} \\ \cline{2-8} 
+			\multirow{-3}{*}{\textbf{AVOD}}     & \textit{\textbf{3D Bounding Box}}  & {\color[HTML]{000000} \textbf{75.447769}} & {\color[HTML]{000000} \textbf{63.742085}} & {\color[HTML]{000000} \textbf{54.334251}} & {\color[HTML]{000000} \textbf{48.757492}} & {\color[HTML]{000000} \textbf{44.84359}}  & {\color[HTML]{000000} \textbf{43.014023}} \\ \hline
+			& \textit{\textbf{2D Bounding Box}}  & {\color[HTML]{000000} 65.951279}          & {\color[HTML]{000000} 56.683437}          & {\color[HTML]{000000} 55.972511}          & {\color[HTML]{000000} \textbf{66.309807}} & {\color[HTML]{000000} \textbf{60.556213}} & {\color[HTML]{000000} \textbf{53.479141}} \\ \cline{2-8} 
+			& \textit{\textbf{BEV Bounding Box}} & {\color[HTML]{000000} 81.242409}          & {\color[HTML]{000000} 70.672707}          & {\color[HTML]{000000} 65.347595}          & {\color[HTML]{000000} 50.308723}          & {\color[HTML]{000000} 46.726196}          & {\color[HTML]{000000} 41.24551}           \\ \cline{2-8} 
+			\multirow{-3}{*}{\textbf{VoxelNet}} & \textit{\textbf{3D Bounding Box}}  & {\color[HTML]{000000} 40.000149}          & {\color[HTML]{000000} 34.892159}          & {\color[HTML]{000000} 31.376112}          & {\color[HTML]{000000} 34.161884}          & {\color[HTML]{000000} 30.576441}          & {\color[HTML]{000000} 28.982103}          \\ \hline
+		\end{tabular}%
+	}
+	\caption{Baseline}
+	\label{tab:baseline}
+\end{table}
+
+
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			\multicolumn{2}{|l|}{\textbf{Context}} & \textbf{Urban} & \textbf{} & \textbf{} & \textbf{Non-urban} & \textbf{} & \textbf{} \\ \hline
+			\multicolumn{2}{|l|}{\textbf{Difficulty}} & \textbf{Easy} & \textbf{Medium} & \textbf{Hard} & \textbf{Easy} & \textbf{Medium} & \textbf{Hard} \\ \hline
+			\multirow{3}{*}{\textbf{AVOD}} & \textit{\textbf{2D Bounding Box}} & \textbf{86.987999} & \textbf{77.10569} & \textbf{68.012459} & \textbf{89.186172} & \textbf{79.754562} & \textbf{78.550514} \\ \cline{2-8} 
+			& \textit{\textbf{BEV Bounding Box}} & 86.00412 & 74.355942 & 65.62397 & 87.11274 & \textbf{76.859818} & \textbf{75.720955} \\ \cline{2-8} 
+			& \textit{\textbf{3D Bounding Box}} & \textbf{75.447769} & \textbf{63.742085} & \textbf{54.334251} & \textbf{75.430656} & \textbf{64.199951} & \textbf{62.902302} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{3}{*}{\textbf{VoxelNet}}} & \textit{\textbf{2D Bounding Box}} & 69.597939 & 65.98201 & 59.284454 & 77.520409 & 67.733231 & 62.281651 \\ \cline{2-8} 
+			\multicolumn{1}{|c|}{} & \textit{\textbf{BEV Bounding Box}} & \textbf{86.34037} & \textbf{76.187859} & \textbf{68.103294} & \textbf{88.635025} & 75.361214 & 69.502548 \\ \cline{2-8} 
+			\multicolumn{1}{|c|}{} & \textit{\textbf{3D Bounding Box}} & 73.632263 & 58.473991 & 50.744587 & 68.620865 & 49.455608 & 45.809917 \\ \hline
+		\end{tabular}%
+	}
+	\caption{Car  Detection AP}
+	\label{tab:cardetap}
+\end{table}
+
+
+
+\begin{table}[h]
+	\centering
+%	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+			\multirow{2}{*}{\textbf{Context}} & \multicolumn{3}{l|}{\textbf{VoxelNet}} & \multicolumn{3}{c|}{\textbf{AVOD}} \\ \cline{2-7} 
+			& \textbf{min} & \textbf{max} & \textbf{mean} & \textbf{min} & \textbf{max} & \textbf{mean} \\ \hline
+			\textbf{Urban} & 0.113 & 3.813 & 0.129 & \textbf{0.095} & \textbf{2.457} & \textbf{0.112} \\ \hline
+			\textbf{Non-urban} & 0.113 & \textbf{2.224} & 0.127 & \textbf{0.096} & 2.506 & \textbf{0.113} \\ \hline
+		\end{tabular}%
+%	}
+	\caption{Inference Time}
+	\label{tab:inftime}
+\end{table}
+
+\section{Is VoxelNet Performance Valid For Different Datasets?}
+\subsection*{Metrics}
+ The average precision(AP) of the intersection over union(IoU) of the bounding boxes was used as the main performance metric. However, as there was no corresponding image data for the point clouds, only the 3D bounding boxes and Bird-Eye View bounding boxes were used in calculating the AP. 
+Given that the data was collected from a stationary vehicle in an area with mostly pedestrians the dataset was evaluated on the pedestrian class only. IoU values $\geq$0.5 were used in calculating the AP. 
+\section{Results}
+
+

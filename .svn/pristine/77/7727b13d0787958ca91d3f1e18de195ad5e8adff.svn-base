@@ -1,0 +1,18 @@
+%!TeX spellcheck = <engl>
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+% Description: Introduction chapter where the biology goes.
+%
+\let\textcircled=\pgftextcircled
+\chapter{Discussion and Future Work}
+\label{chap:fw}
+
+
+
+
+
+
+
+Context Detection models using rnn 
+End to End Pipeline model 
