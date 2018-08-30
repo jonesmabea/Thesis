@@ -56,13 +56,15 @@
 \contentsline {subsection}{\numberline {4.1.2}Analysis}{27}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Do Object Detection Models Perform Better in Different Contexts?}{28}{section.4.2}
 \contentsline {subsubsection}{\numberline {4.2.0.1}Running Each Model Exclusively}{29}{subsubsection.4.2.0.1}
-\contentsline {paragraph}{Car}{30}{section*.53}
-\contentsline {paragraph}{Pedestrian}{30}{section*.54}
-\contentsline {paragraph}{GPU}{30}{section*.55}
-\contentsline {subsubsection}{\numberline {4.2.0.2}Analysis}{31}{subsubsection.4.2.0.2}
-\contentsline {section}{\numberline {4.3}Is VoxelNet Performance Valid For Different Datasets?}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Analysis}{31}{section.4.4}
-\contentsline {chapter}{\chapternumberline {5}Discussion and Future Work}{33}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{35}{chapter.6}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}
-\contentsline {chapter}{Bibliography}{39}{appendix*.60}
+\contentsline {paragraph}{Car}{31}{section*.54}
+\contentsline {paragraph}{Pedestrian}{31}{section*.55}
+\contentsline {paragraph}{GPU}{31}{section*.56}
+\contentsline {subsubsection}{\numberline {4.2.0.2}Analysis*}{31}{subsubsection.4.2.0.2}
+\contentsline {paragraph}{Temperature}{31}{section*.59}
+\contentsline {paragraph}{Power}{31}{section*.60}
+\contentsline {paragraph}{Memory}{32}{section*.61}
+\contentsline {section}{\numberline {4.3}Is VoxelNet Performance Valid For Different Datasets?}{32}{section.4.3}
+\contentsline {chapter}{\chapternumberline {5}Discussion and Future Work}{35}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{37}{chapter.6}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{39}{appendix.A}
+\contentsline {chapter}{Bibliography}{41}{appendix*.67}

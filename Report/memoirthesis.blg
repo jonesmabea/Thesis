@@ -8,48 +8,46 @@ Repeated entry---line 422 of file thesisbiblio.bib
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
-Warning--to sort, need author or key in 2011ruralurbanclassification
-Warning--empty author in 2011ruralurbanclassification
 Warning--can't use both volume and number fields in chen2017multi
-You've used 37 entries,
+You've used 36 entries,
             2030 wiz_defined-function locations,
-            697 strings with 10530 characters,
-and the built_in function-call counts, 13228 in all, are:
-= -- 1202
-> -- 653
+            693 strings with 10451 characters,
+and the built_in function-call counts, 12903 in all, are:
+= -- 1168
+> -- 658
 < -- 0
-+ -- 262
-- -- 222
-* -- 1024
-:= -- 2055
-add.period$ -- 41
-call.type$ -- 37
-change.case$ -- 219
++ -- 263
+- -- 224
+* -- 1004
+:= -- 2022
+add.period$ -- 40
+call.type$ -- 36
+change.case$ -- 217
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 605
-empty$ -- 1054
-format.name$ -- 222
-if$ -- 2819
+cite$ -- 37
+duplicate$ -- 582
+empty$ -- 1012
+format.name$ -- 224
+if$ -- 2736
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 35
-newline$ -- 118
+int.to.str$ -- 36
+missing$ -- 34
+newline$ -- 115
 num.names$ -- 72
-pop$ -- 278
+pop$ -- 272
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 184
 quote$ -- 0
-skip$ -- 439
+skip$ -- 423
 stack$ -- 0
-substring$ -- 744
-swap$ -- 215
+substring$ -- 707
+swap$ -- 206
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 142
-warning$ -- 3
-while$ -- 125
-width$ -- 39
-write$ -- 340
+type$ -- 138
+warning$ -- 1
+while$ -- 122
+width$ -- 38
+write$ -- 331
 (There was 1 error message)

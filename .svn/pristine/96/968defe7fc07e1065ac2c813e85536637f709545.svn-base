@@ -1,0 +1,24 @@
+%!TeX spellcheck = <engl>
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+% Description: Introduction chapter where the biology goes.
+%
+\let\textcircled=\pgftextcircled
+\chapter{Discussion and Future Work}
+\label{chap:fw}
+
+Following the analysis, we have identified that indeed it is possible to detect and characterise images with relatively high accuracy and point clouds to a much lesser extent. In addition, we have determined that multimodal methods perform better in dynamic environments as compared to LiDAR only models. Finally, we were able to realise the impact of using point clouds from different LiDAR sensors on LiDAR only models. 
+In this chapter, I wish to further discuss the implications of these findings on the development and production of AVs. To conclude, I will discuss how this work can be further improved. 
+
+Despite seeing the higher temperature and power usage, this occured when both models were running simultaneously. However this would not be the case in an actual implementation as one model will only be used while the other one will be inactive. This can be implemented using a pipeline system whereby both Tensorflow graphs can be loaded on a single GPU, however, depending on the context, the input can be fed into  either graph while the other one remains dormant and vice versa. Therefore the usage would be much lesser than actually having running both. 
+
+
+
+multimodal for small object detection  common in urban
+lidar for the non-urban context 
+
+using LiDARs with more points/sec or standardise models to use a specific LiDAR
+
+Context Detection models using rnn 
+End to End Pipeline model 
