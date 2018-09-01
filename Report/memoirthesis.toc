@@ -1,70 +1,75 @@
 \babel@toc {english}{}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Tables}{ix}{section*.4}
-\contentsline {chapter}{List of Figures}{xi}{section*.5}
+\contentsline {chapter}{List of Tables}{vii}{section*.3}
+\contentsline {chapter}{List of Figures}{ix}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Aims and Objectives}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Deliverables}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Report structure}{3}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Background}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Components of an AV}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Industrial Approaches}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Camera}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Camera and Radar}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}LiDAR, Camera and Radar}{10}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Object Detection}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Object Detection using Classic Computer Vision Methods}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Object Detection using Deep Learning}{10}{subsection.2.3.2}
-\contentsline {paragraph}{Monocular Vision}{12}{section*.14}
-\contentsline {paragraph}{Stereo Vision}{13}{section*.15}
-\contentsline {paragraph}{LiDAR+Camera}{13}{section*.16}
-\contentsline {paragraph}{LiDAR}{13}{section*.17}
-\contentsline {section}{\numberline {2.4}Legal, Ethical and Economic Considerations}{14}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}Implementation}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Datasets}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Context Classification}{15}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}LiDAR Performance Evaluation}{16}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Can We Automatically Detect The Context in Driving Scenes?}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Image Context Detection}{17}{subsection.3.2.1}
-\contentsline {paragraph}{Extracting Semantic Histograms}{17}{section*.21}
-\contentsline {paragraph}{Training}{17}{section*.23}
-\contentsline {paragraph}{Evaluation}{17}{section*.24}
-\contentsline {paragraph}{Penalising misclassifications}{17}{section*.25}
-\contentsline {subsection}{\numberline {3.2.2}PointCloud Context Detection}{18}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Implementation Details}{19}{subsubsection.3.2.2.1}
-\contentsline {paragraph}{Training}{19}{section*.26}
-\contentsline {subsection}{\numberline {3.2.3}Implementation Issues}{19}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3} Do Some Object Detection Methods work better in Different Contexts?}{20}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}VoxelNet}{20}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Architecture Overview}{20}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Implementation Details}{21}{subsubsection.3.3.1.2}
-\contentsline {paragraph}{Training}{21}{section*.28}
-\contentsline {paragraph}{Changes to Loss Function }{21}{section*.29}
-\contentsline {subsection}{\numberline {3.3.2}AVOD}{22}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Architecture Overview}{22}{subsubsection.3.3.2.1}
-\contentsline {paragraph}{Training}{22}{section*.31}
-\contentsline {subsection}{\numberline {3.3.3}Evaluation}{23}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Is VoxelNet Performance Valid for Different Datasets?}{23}{subsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Validation}{25}{subsubsection.3.3.4.1}
-\contentsline {section}{\numberline {3.4}Conclusion}{26}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Can We Automatically Detect Scene Contexts?}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Metrics}{27}{subsection.4.1.1}
-\contentsline {paragraph}{Precision}{27}{section*.39}
-\contentsline {paragraph}{Recall}{27}{section*.40}
-\contentsline {paragraph}{F1-score}{27}{section*.41}
-\contentsline {subsection}{\numberline {4.1.2}Analysis}{27}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Do Object Detection Models Perform Better in Different Contexts?}{28}{section.4.2}
-\contentsline {subsubsection}{\numberline {4.2.0.1}Running Each Model Exclusively}{29}{subsubsection.4.2.0.1}
-\contentsline {paragraph}{Car}{31}{section*.54}
-\contentsline {paragraph}{Pedestrian}{31}{section*.55}
-\contentsline {paragraph}{GPU}{31}{section*.56}
-\contentsline {subsubsection}{\numberline {4.2.0.2}Analysis*}{31}{subsubsection.4.2.0.2}
-\contentsline {paragraph}{Temperature}{31}{section*.59}
-\contentsline {paragraph}{Power}{31}{section*.60}
-\contentsline {paragraph}{Memory}{32}{section*.61}
-\contentsline {section}{\numberline {4.3}Is VoxelNet Performance Valid For Different Datasets?}{32}{section.4.3}
-\contentsline {chapter}{\chapternumberline {5}Discussion and Future Work}{35}{chapter.5}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{37}{chapter.6}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{39}{appendix.A}
-\contentsline {chapter}{Bibliography}{41}{appendix*.67}
+\contentsline {section}{\numberline {2.1}Components of an AV}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Industrial Approaches}{9}{section.2.2}
+\contentsline {subsubsection}{\numberline {2.2.0.1}Modelling Risk}{9}{subsubsection.2.2.0.1}
+\contentsline {subsubsection}{\numberline {2.2.0.2}Legal and Economic Concerns}{10}{subsubsection.2.2.0.2}
+\contentsline {subsubsection}{\numberline {2.2.0.3}Acceptance and }{10}{subsubsection.2.2.0.3}
+\contentsline {subsection}{\numberline {2.2.1}Hardware Considerations}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Camera}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Camera and Radar}{12}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}LiDAR, Camera and Radar}{12}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}LiDAR }{12}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Object Detection}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Object Detection using Classic Computer Vision Methods}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Object Detection using Deep Learning}{13}{subsection.2.3.2}
+\contentsline {paragraph}{Monocular Vision}{14}{section*.7}
+\contentsline {paragraph}{Stereo Vision}{14}{section*.8}
+\contentsline {paragraph}{LiDAR+Camera}{15}{section*.9}
+\contentsline {paragraph}{LiDAR}{15}{section*.10}
+\contentsline {section}{\numberline {2.4}Conclusion}{16}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Datasets}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Context Classification}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}LiDAR Performance Evaluation}{18}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Can We Automatically Detect The Context in Driving Scenes?}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Image Context Detection}{19}{subsection.3.2.1}
+\contentsline {paragraph}{Extracting Semantic Histograms}{19}{section*.12}
+\contentsline {paragraph}{Training}{19}{section*.13}
+\contentsline {paragraph}{Evaluation}{19}{section*.14}
+\contentsline {paragraph}{Penalising misclassifications}{19}{section*.15}
+\contentsline {subsection}{\numberline {3.2.2}PointCloud Context Detection}{20}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Implementation Details}{21}{subsubsection.3.2.2.1}
+\contentsline {paragraph}{Training}{21}{section*.16}
+\contentsline {subsection}{\numberline {3.2.3}Implementation Issues}{21}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3} Do Some Object Detection Methods work better in Different Contexts?}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}VoxelNet}{22}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Architecture Overview}{22}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Implementation Details}{23}{subsubsection.3.3.1.2}
+\contentsline {paragraph}{Training}{23}{section*.17}
+\contentsline {paragraph}{Changes to Loss Function }{23}{section*.18}
+\contentsline {subsection}{\numberline {3.3.2}AVOD}{24}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Architecture Overview}{24}{subsubsection.3.3.2.1}
+\contentsline {paragraph}{Training}{24}{section*.20}
+\contentsline {subsection}{\numberline {3.3.3}Evaluation}{25}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Is VoxelNet Performance Valid for Different Datasets?}{25}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Validation}{27}{subsubsection.3.3.4.1}
+\contentsline {section}{\numberline {3.4}Conclusion}{27}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Results and Analysis}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Can We Automatically Detect Scene Contexts?}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Metrics}{29}{subsection.4.1.1}
+\contentsline {paragraph}{Precision}{29}{section*.23}
+\contentsline {paragraph}{Recall}{29}{section*.24}
+\contentsline {paragraph}{F1-score}{29}{section*.25}
+\contentsline {subsection}{\numberline {4.1.2}Analysis}{29}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Do Object Detection Models Perform Better in Different Contexts?}{30}{section.4.2}
+\contentsline {subsubsection}{\numberline {4.2.0.1}Running Each Model Exclusively}{31}{subsubsection.4.2.0.1}
+\contentsline {paragraph}{Car}{31}{section*.31}
+\contentsline {paragraph}{Pedestrian}{32}{section*.32}
+\contentsline {paragraph}{GPU}{32}{section*.33}
+\contentsline {paragraph}{Temperature}{34}{section*.36}
+\contentsline {paragraph}{Power}{34}{section*.37}
+\contentsline {paragraph}{Memory}{34}{section*.38}
+\contentsline {section}{\numberline {4.3}Is VoxelNet Performance Valid For Different Datasets?}{34}{section.4.3}
+\contentsline {chapter}{\chapternumberline {5}Discussion and Future Work}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{37}{section.5.1}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{39}{chapter.6}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{41}{appendix.A}
+\contentsline {chapter}{Bibliography}{43}{appendix*.41}

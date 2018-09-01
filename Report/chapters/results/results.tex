@@ -187,17 +187,17 @@ To investigate whether the performance of each model varies in different context
 	\caption{Inference Time on Single NVIDIA P100 GPU}
 	\label{tab:inftime}
 \end{table}
-\begin{figure}[H] %Power&Temp
+\begin{figure}[h] %Power&Temp
 	\centering
 	\begin{minipage}[b]{0.7\textwidth}
 		\includegraphics[width=\textwidth]{images/gputepbox.png}
-		\caption{Temperature }
+		\caption{Temperature boxplots of evaluation runs.Voxelnet(blue) AVOD(gold) AVOD+VoxelNet(Red)}
 		\label{fig:temp}
 	\end{minipage}
 	%	\hfill
 	\begin{minipage}[b]{0.7\textwidth}
 		\includegraphics[width=\textwidth]{images/gpupbox.png}
-		\caption{Power}
+		\caption{Power boxplots of evaluation runs. Voxelnet(blue), AVOD(gold), AVOD+VoxelNet(Red}
 		\label{fig:power}
 	\end{minipage}
 	
@@ -229,7 +229,7 @@ Having identified that AVOD is better at detecting cars and pedestrians in urban
 \end{table}
 
 
-\subsubsection{Analysis*}
+\subsubsection*{Analysis}
 
 \paragraph{Temperature} - Running both models simultaneously resulted in significantly higher temperatures as compared running them exclusively. The average temperature was 7\degree hotter than the maximum mean temperature from running the models exclusively. 
 \paragraph{Power} - Similarly, the mean power usage was 10 watts greater than  the maximum mean power from running the models exclusively. 

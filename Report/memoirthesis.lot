@@ -2,18 +2,18 @@
 \par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{14}{table.caption.18}
+\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures}}{16}{table.2.1}
 \addvspace {10pt}
-\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{24}{table.caption.36}
+\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.}}{27}{table.3.1}
 \addvspace {10pt}
-\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{28}{table.caption.42}
-\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{28}{table.caption.43}
-\contentsline {table}{\numberline {43}{\ignorespaces Baseline\relax }}{29}{table.caption.48}
-\contentsline {table}{\numberline {44}{\ignorespaces Car AP\relax }}{30}{table.caption.49}
-\contentsline {table}{\numberline {45}{\ignorespaces Pedestrian AP\relax }}{30}{table.caption.50}
-\contentsline {table}{\numberline {46}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{30}{table.caption.51}
-\contentsline {table}{\numberline {47}{\ignorespaces Memory\relax }}{31}{table.caption.58}
+\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods}}{30}{table.4.1}
+\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier}}{30}{table.4.2}
+\contentsline {table}{\numberline {41}{\ignorespaces Baseline}}{31}{table.4.1}
+\contentsline {table}{\numberline {41}{\ignorespaces Car AP}}{32}{table.4.1}
+\contentsline {table}{\numberline {42}{\ignorespaces Pedestrian AP}}{32}{table.4.2}
+\contentsline {table}{\numberline {43}{\ignorespaces Inference Time on Single NVIDIA P100 GPU}}{32}{table.4.3}
+\contentsline {table}{\numberline {44}{\ignorespaces Memory}}{33}{table.4.4}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{39}{table.caption.66}
+\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family}}{41}{table.A.1}

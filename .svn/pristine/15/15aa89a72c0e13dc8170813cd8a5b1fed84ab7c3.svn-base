@@ -1,0 +1,74 @@
+% !TeX spellcheck = <engl>
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+% Description: Introduction chapter where the biology goes.
+%
+\let\textcircled=\pgftextcircled
+\chapter{Introduction}
+\label{chap:intro}
+
+Accelerated by recent advancements in technology, the prospect of Autonomous Vehicles (AVs) driving in public roads is becoming more and more a reality. As this is an emerging field, there are numerous variations of implementations by different companies. Arguably, a key characteristic of these implementations is a large number of perception sensors including cameras, radars and Light detection ranging sensors(LiDAR). This is necessary for mapping the environment around the vehicle in order to safely navigate. In addition to the high cost of these sensors, fusing their input and running object detection models requires powerful processing units such as GPUs. This process consumes a lot of power and generates a lot of heat. In an effort to reduce the cost, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety. As this is an emerging field, most AVs are still being tested in lab environments with controlled factors. In addition, there are no guidelines as to what sensors and what combinations should be used and in order for safe deployment of AVs there needs to be robust safety and testing procedures across all implementations. 
+
+
+
+
+ At the moment, extensive research has been undertaken to assess the performance of these sensors in different weather scenarios such as in rain, fog and snow. 
+
+
+
+However, the performance of these sensors in different area contexts, that is urban or non-urban, has not been exhaustively explored. Urban environments tend to have more dynamic objects and scenarios as compared to the static ones in most non-urban areas. As such, it can be argued that depending on the area context, the sensor configuration could be modified. 
+
+reducing the number of sensors in AVs  reducing the number of sensors in AVs in different contexts (e.g. urban buses may be able to get rid of some sensors if urban performance is very poor).
+
+
+
+
+You probably need to present a succinct critique comment for each of the top 4 pieces of related work (which 'coincidentally' are limitations you try to address in your aims). Why do we need to test with different datasets? different models? Why is this important scientifically and also for companies developing lidar-onlu systems?
+
+In order to investigate this, state of the art object detection models will be considered. 
+Firstly, VoxelNet \cite{zhou2017voxelnet}], a LiDAR only  model that uses point clouds as input. Secondly, Aggregated View Object Detection(AVOD) \cite{ku2017joint}, a multimodal model that fuses image and point cloud data. Both model implementations were available on GitHub and were modified in order to align with the aims of this project. 
+
+\section{Aims and Objectives}
+Following the motivations in the presented discussion , the performance of LiDAR only and multimodal(LiDAR and Camera) models in different contexts will be investigated with the aim of reducing the number of sensors in AVs. 
+To achieve this aim, the following objectives will need to be fulfilled:
+\begin{enumerate}
+	\item Detect and characterise the context of images and point clouds.
+	%\item Evaluate the performance of sensors in different contexts. 
+	\item Evaluate the performance of single sensor and multimodal models in different contexts. 
+	\item Validate performance of the single sensor model on a custom dataset. 
+	%\item Legal, social and economic analysis of current implementations and proposed improvements. 
+\end{enumerate}
+
+\section{Deliverables}
+
+The deliverables are: 
+\begin{itemize}
+	 \item \textbf{Image and LiDAR Context Classifier}. Available as Jupyter interactive notebooks including pre-trained models.  
+	 \item \textbf{Custom VoxelNet Model} Modified VoxelNet model including  interactive notebooks for training, testing and validating the model. 
+	 \item \textbf{Custom AVOD Model} Modified AVOD model including interactive notebooks for training, testing and validating the model.
+	 \item \textbf{Validation Dataset} Point Cloud dataset obtained from the University of Bristol Smart Internet Lab working on connected and AVs. Tools to convert the dataset into a trainable input for VoxelNet will be provided as well as some annotated sample frames. 
+	  
+	\item \textbf{Evaluation report.} The following topics will be discussed. 
+	\begin{enumerate}
+		\item A review of related research and implementations tackling object detection in AVs. 
+		\item Economic, ethical and legal analysis of the implementation and its potential impact on the development of AVs. 
+		\item Evaluation of context classifiers and object detection models in different contexts. 
+		\item Validation of VoxelNet using the Smart Internet Lab dataset.
+	\end{enumerate}
+\end{itemize}
+
+\section{Report structure}
+This report will consist of five main chapters. 
+
+\begin{itemize}
+
+	\item Chapter 2 discusses the different components of AVs, current implementations in the industry, a background on the research that has been undertaken in the field of object detection.
+	
+	\item Chapter 3 details the project execution and the methods undertaken to achieve the objectives.  
+	
+	\item In Chapter 4, the results following evaluation of the methods will be discussed and analysed. 
+	\item Finally, a concluding chapter discusses the major findings, whether the objectives were achieved and a justification of their implications. 
+\end{itemize}
+
+

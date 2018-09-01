@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  30 AUG 2018 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.4)  1 SEP 2018 23:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1753,55 +1753,24 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count351
 \AM@templatesizebox=\box76
 )
-
-Class memoir Warning: You are using the caption package with the memoir class. 
-To prepare we will now reset all captioning macros and configurations to kernel
- defaults, and then let the caption package take over. Please remember to use
- the caption package interfaces in order to
- configure your captions.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen286
-\captionmargin@=\dimen287
-\captionwidth=\dimen288
-\caption@tempdima=\dimen289
-\caption@indent=\dimen290
-\caption@parindent=\dimen291
-\caption@hangindent=\dimen292
-)
-\c@ContinuedFloat=\count352
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-)
-Package caption Info: rotating package is loaded.
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count353
+\lst@mode=\count352
 \lst@gtempboxa=\box77
 \lst@token=\toks66
-\lst@length=\count354
-\lst@currlwidth=\dimen293
-\lst@column=\count355
-\lst@pos=\count356
-\lst@lostspace=\dimen294
-\lst@width=\dimen295
-\lst@newlines=\count357
-\lst@lineno=\count358
-\lst@maxwidth=\dimen296
+\lst@length=\count353
+\lst@currlwidth=\dimen286
+\lst@column=\count354
+\lst@pos=\count355
+\lst@lostspace=\dimen287
+\lst@width=\dimen288
+\lst@newlines=\count356
+\lst@lineno=\count357
+\lst@maxwidth=\dimen289
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count359
-\lst@skipnumbers=\count360
+\c@lstnumber=\count358
+\lst@skipnumbers=\count359
 \lst@framebox=\box78
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
@@ -1812,128 +1781,131 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip294
-\multirow@cntb=\count361
+\multirow@cntb=\count360
 \multirow@dima=\skip295
-\bigstrutjot=\dimen297
+\bigstrutjot=\dimen290
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks67
 \labelindent=\skip296
-\enit@outerparindent=\dimen298
+\enit@outerparindent=\dimen291
 \enit@toks=\toks68
 \enit@inbox=\box79
-\enitdp@description=\count362
+\enitdp@description=\count361
 )
-\c@proofcount=\count363
+\c@proofcount=\count362
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
-\c@DefaultLines=\count364
-\c@DefaultDepth=\count365
-\DefaultFindent=\dimen299
-\DefaultNindent=\dimen300
-\DefaultSlope=\dimen301
-\DiscardVskip=\dimen302
+\c@DefaultLines=\count363
+\c@DefaultDepth=\count364
+\DefaultFindent=\dimen292
+\DefaultNindent=\dimen293
+\DefaultSlope=\dimen294
+\DiscardVskip=\dimen295
 \L@lbox=\box80
 \L@tbox=\box81
-\c@L@lines=\count366
-\c@L@depth=\count367
-\L@Pindent=\dimen303
-\L@Findent=\dimen304
-\L@Nindent=\dimen305
-\L@lraise=\dimen306
-\L@first=\dimen307
-\L@next=\dimen308
-\L@slope=\dimen309
-\L@height=\dimen310
-\L@novskip=\dimen311
-\LettrineWidth=\dimen312
-\LettrineHeight=\dimen313
-\LettrineDepth=\dimen314
+\c@L@lines=\count365
+\c@L@depth=\count366
+\L@Pindent=\dimen296
+\L@Findent=\dimen297
+\L@Nindent=\dimen298
+\L@lraise=\dimen299
+\L@first=\dimen300
+\L@next=\dimen301
+\L@slope=\dimen302
+\L@height=\dimen303
+\L@novskip=\dimen304
+\LettrineWidth=\dimen305
+\LettrineHeight=\dimen306
+\LettrineDepth=\dimen307
 
 Loading lettrine.cfg
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-\c@theo=\count368
-\c@prop=\count369
-\c@dfn=\count370
-\c@lema=\count371
-\c@cor=\count372
-\c@resu=\count373
+\c@theo=\count367
+\c@prop=\count368
+\c@dfn=\count369
+\c@lema=\count370
+\c@cor=\count371
+\c@resu=\count372
 
-(./memoirthesis.aux)
+(./memoirthesis.aux
+
+LaTeX Warning: Label `fig:lidar' multiply defined.
+
+)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 364.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 36
-4.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 391.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 39
+1.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 364.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 364
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 391.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 391
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 364.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 364
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 391.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 391
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 364.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 364.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 391.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 391.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 364.
-LaTeX Font Info:    ... okay on input line 364.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 364.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 391.
+LaTeX Font Info:    ... okay on input line 391.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 391.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 364.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 364.
+(Font)              scaled to size 10.18341pt on input line 391.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 391.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 364.
+Package layouts Warning: Layout scale set to 0.5 on input line 391.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
-\scratchdimen=\dimen315
+\scratchcounter=\count373
+\scratchdimen=\dimen308
 \scratchbox=\box82
-\nofMPsegments=\count375
-\nofMParguments=\count376
+\nofMPsegments=\count374
+\nofMParguments=\count375
 \everyMPshowfont=\toks69
-\MPscratchCnt=\count377
-\MPscratchDim=\dimen316
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
+\MPscratchCnt=\count376
+\MPscratchDim=\dimen309
+\MPnumerator=\count377
+\makeMPintoPDFobject=\count378
 \everyMPtoPDFconversion=\toks70
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1954,17 +1926,17 @@ e
 ))
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 364.
-Package gensymb Info: Math companion symbols declared on input line 364.
-LaTeX Info: Redefining \degree on input line 364.
-LaTeX Info: Redefining \celsius on input line 364.
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 391.
+Package gensymb Info: Math companion symbols declared on input line 391.
+LaTeX Info: Redefining \degree on input line 391.
+LaTeX Info: Redefining \celsius on input line 391.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 364.
-LaTeX Info: Redefining \ohm on input line 364.
-Package gensymb Info: Using \textohm for \ohm on input line 364.
-Package gensymb Info: Using \textmu for \micro on input line 364.
+erthousand on input line 391.
+LaTeX Info: Redefining \ohm on input line 391.
+Package gensymb Info: Using \textohm for \ohm on input line 391.
+Package gensymb Info: Using \textmu for \micro on input line 391.
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring ON on input line 364.
+Package hyperref Info: Link coloring ON on input line 391.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1972,19 +1944,19 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count380
+\c@section@level=\count379
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 364.
-LaTeX Info: Redefining \ref on input line 364.
-LaTeX Info: Redefining \pageref on input line 364.
-LaTeX Info: Redefining \nameref on input line 364.
+LaTeX Info: Redefining \nameref on input line 391.
+LaTeX Info: Redefining \ref on input line 391.
+LaTeX Info: Redefining \pageref on input line 391.
+LaTeX Info: Redefining \nameref on input line 391.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 364.
+LaTeX Info: Redefining \microtypecontext on input line 391.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2000,18 +1972,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 ABD: EveryShipout initializing macros
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: listings package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count381
+\c@lstlisting=\count380
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
+put line 391.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 364.
+t line 391.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 364.
+t line 391.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 364.
+line 391.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 364.
+line 391.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -2019,7 +1990,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
-<logos/bristollogo_colour.pdf, id=167, 743.77875pt x 215.80624pt>
+<logos/bristollogo_colour.pdf, id=179, 743.77875pt x 215.80624pt>
 File: logos/bristollogo_colour.pdf Graphic file (type pdf)
 <use logos/bristollogo_colour.pdf>
 Package pdftex.def Info: logos/bristollogo_colour.pdf  used on input line 34.
@@ -2106,7 +2077,7 @@ restricted).
 runsystem(texcount -char -nc -freq memoirthesis.tex > charcount.tex)...disabled
  (restricted).
 
-<images/barcode.png, id=168, 210.7875pt x 85.31876pt>
+<images/barcode.png, id=180, 210.7875pt x 85.31876pt>
 File: images/barcode.png Graphic file (type png)
 <use images/barcode.png>
 Package pdftex.def Info: images/barcode.png  used on input line 55.
@@ -2117,61 +2088,47 @@ Package pdftex.def Info: images/barcode.png  used on input line 55.
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logos
 /bristollogo_colour.pdf> <./images/barcode.png>] [2
 
-]) (./frontmatter/declaration.tex
+]) (./frontmatter/abstract.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 21.
+(Font)              scaled to size 13.39188pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 21.
+(Font)              scaled to size 13.39188pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 21.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 21.
+(Font)              scaled to size 13.39188pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 30.94487pt on input line 24.
+(Font)              scaled to size 30.94487pt on input line 17.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 45.523pt on input line 24.
+(Font)              scaled to size 45.523pt on input line 17.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 45.523pt on input line 24.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 30.
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 30.
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 10.18341pt on input line 30.
-LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 30.
-LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 10.18341pt on input line 30.
+(Font)              scaled to size 45.523pt on input line 17.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \clearpage
+l.34 \clearpage
                 [1
+
 
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 \clearemptydoublepage
+l.419 \clearemptydoublepage
                             [2
 
 
-] (./frontmatter/abstract.tex [3
+] (./frontmatter/dedication.tex [3
 
 ]) [4
 
 
 ]
-(./frontmatter/dedication.tex [5
-
-]) [6
-
-
-] (./memoirthesis.toc
+(./memoirthesis.toc
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
 (nag)                Use \bfseries or \textbf instead on input line 2.
@@ -2180,17 +2137,22 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-[7])
+[5])
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 403.
+(Font)              scaled to size 9.29993pt on input line 430.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 403.
- [8] (./memoirthesis.lot) [9
+(Font)              scaled to size 9.29993pt on input line 430.
+ [6] (./memoirthesis.lot
+LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
+(Font)              scaled to size 10.18341pt on input line 2.
+) [7
 
-] [10
+] [8
 
 ] (./memoirthesis.lof
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 8.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2199,7 +2161,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [11] [12
+) [9] [10
 
 ]
 (./chapters/intro/chap01.tex [1
@@ -2208,94 +2170,198 @@ Package microtype Info: Loading generic protrusion settings for font family
 ] [2]) [3] [4
 
 ] (./chapters/Litreview/lit_rev.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
+<images/alvinn.png, id=373, 582.175pt x 293.095pt>
+File: images/alvinn.png Graphic file (type png)
+<use images/alvinn.png>
+Package pdftex.def Info: images/alvinn.png  used on input line 11.
+(pdftex.def)             Requested size: 448.0pt x 225.54967pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 []|\T1/fnc/b/n/10.95 SAE
  []
 
 
-Overfull \hbox (52.45274pt too wide) in paragraph at lines 11--20
+Overfull \hbox (52.45274pt too wide) in paragraph at lines 20--29
 [][] 
  []
 
-[5
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
 
 ]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 31.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 31.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 31.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 31.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 31.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 31.
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 31.
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 31.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 31.
+<images/sil.png, id=381, 1438.37375pt x 713.66624pt>
+File: images/sil.png Graphic file (type png)
+<use images/sil.png>
+Package pdftex.def Info: images/sil.png  used on input line 38.
+(pdftex.def)             Requested size: 448.0pt x 222.27965pt.
 
 
-LaTeX Warning: Reference `app:lidar' on page 6 undefined on input line 31.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<media/hdl-family.png, id=376, 752.8125pt x 484.81125pt>
+<media/hdl-family.png, id=382, 752.8125pt x 484.81125pt>
 File: media/hdl-family.png Graphic file (type png)
 <use media/hdl-family.png>
-Package pdftex.def Info: media/hdl-family.png  used on input line 35.
+Package pdftex.def Info: media/hdl-family.png  used on input line 48.
 (pdftex.def)             Requested size: 448.0pt x 288.52174pt.
-[6 <./media/hdl-family.png>]
-<media/waymo.png, id=386, 1189.44376pt x 897.3525pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.56 	
+       <./images/alvinn.png>] [7pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 
+      <./images/sil.png>]
+<media/waymo.png, id=395, 1189.44376pt x 897.3525pt>
 File: media/waymo.png Graphic file (type png)
 <use media/waymo.png>
-Package pdftex.def Info: media/waymo.png  used on input line 55.
+Package pdftex.def Info: media/waymo.png  used on input line 69.
 (pdftex.def)             Requested size: 448.0pt x 337.98514pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+}) has been already used, duplicate ignored
 
-Underfull \vbox (badness 3029) has occurred while \output is active []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.80 	
+       <./media/hdl-family.png>]
 
- [7 <./media/waymo.png>] [8]
-<media/avind.png, id=406, 770.88pt x 389.455pt>
+LaTeX Warning: Reference `fig:risk' on page 9 undefined on input line 89.
+
+
+LaTeX Warning: Reference `fig:riskrel' on page 9 undefined on input line 89.
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.91 \begin{equation}
+                      <./media/waymo.png>]
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 105.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 105.
+ [10]
+<media/avind.png, id=425, 770.88pt x 389.455pt>
 File: media/avind.png Graphic file (type png)
 <use media/avind.png>
-Package pdftex.def Info: media/avind.png  used on input line 89.
+Package pdftex.def Info: media/avind.png  used on input line 123.
 (pdftex.def)             Requested size: 448.0pt x 226.32974pt.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 92.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 92.
- [9 <./media/avind.png (PNG copy)>] [10]
-<images/neuralnet.png, id=433, 805.0075pt x 277.035pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 	\caption
+               {AV Leaderboard. Navigant Research. Source:\cite{navigantrese...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 ...rch. Source:\cite{navigantresearch_2018}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.2.1}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.124 ...rch. Source:\cite{navigantresearch_2018}}
+                                                   [11 <./media/avind.png (PNG 
+copy)>] [12]
+<images/neuralnet.png, id=452, 805.0075pt x 277.035pt>
 File: images/neuralnet.png Graphic file (type png)
 <use images/neuralnet.png>
-Package pdftex.def Info: images/neuralnet.png  used on input line 120.
+Package pdftex.def Info: images/neuralnet.png  used on input line 153.
 (pdftex.def)             Requested size: 448.0pt x 154.17473pt.
-<images/fastercnn.png, id=438, 652.4375pt x 642.4pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 	\caption
+               {NN vs CNN Source: \url{https://cs231n.github.io/convolutiona...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 ...cs231n.github.io/convolutional-networks}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.2.1}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.154 ...cs231n.github.io/convolutional-networks}}
+                                                   [13 <./images/neuralnet.png>
+]
+<images/fastercnn.png, id=465, 652.4375pt x 642.4pt>
 File: images/fastercnn.png Graphic file (type png)
 <use images/fastercnn.png>
-Package pdftex.def Info: images/fastercnn.png  used on input line 146.
+Package pdftex.def Info: images/fastercnn.png  used on input line 179.
 (pdftex.def)             Requested size: 224.0pt x 220.54999pt.
- [11 <./images/neuralnet.png>] [12 <./images/fastercnn.png (PNG copy)>] [13]) [
-14]
-(./chapters/body/body.tex [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 	\caption
+               {Faster R-CNN overview. Source:\cite{ren2015faster}}pdfTeX warni
+ng (ext4): destination with the same identifier (name{figure.2.2}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 ...NN overview. Source:\cite{ren2015faster}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.2.2}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.180 ...NN overview. Source:\cite{ren2015faster}}
+                                                  
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14] [15 <./images/fastercnn.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 216.
+LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 216.
+LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
+(Font)              scaled to size 10.18341pt on input line 216.
+) [16pdfTeX warning (ext4): destination with the same identifier (name{table.2.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.450 \clearemptydoublepage
+                           ] (./chapters/body/body.tex [17
 
 
-] [16]
-<images/urban.png, id=509, 1246.6575pt x 376.40625pt>
+] [18]
+<images/urban.png, id=528, 1246.6575pt x 376.40625pt>
 File: images/urban.png Graphic file (type png)
 <use images/urban.png>
 Package pdftex.def Info: images/urban.png  used on input line 55.
 (pdftex.def)             Requested size: 179.19727pt x 54.10367pt.
-<images/non_urban.png, id=510, 1246.6575pt x 376.40625pt>
+<images/non_urban.png, id=529, 1246.6575pt x 376.40625pt>
 File: images/non_urban.png Graphic file (type png)
 <use images/non_urban.png>
 Package pdftex.def Info: images/non_urban.png  used on input line 60.
 (pdftex.def)             Requested size: 179.19727pt x 54.10367pt.
-<images/semantic_hist.png, id=514, 1156.32pt x 650.43pt>
+<images/semantic_hist.png, id=533, 1156.32pt x 650.43pt>
 File: images/semantic_hist.png Graphic file (type png)
 <use images/semantic_hist.png>
 Package pdftex.def Info: images/semantic_hist.png  used on input line 80.
@@ -2304,14 +2370,71 @@ Package pdftex.def Info: images/semantic_hist.png  used on input line 80.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./images/urban.png (PNG copy)> <./images/non_urban.png (PNG copy)>]
-[18 <./images/semantic_hist.png>]
-<images/ambiguous.png, id=541, 1246.6575pt x 376.40625pt>
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.101 \end{gather*}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.3.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.101 \end{gather*}
+                    <./images/urban.png (PNG copy)> <./images/non_urban.png (PN
+G copy)>] [20pdfTeX warning (ext4): destination with the same identifier (name{
+figure.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.116 	\item \textbf
+                    {Feature description} \\pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.3.1}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.116 	\item \textbf
+                    {Feature description} \\ <./images/semantic_hist.png>]
+<images/ambiguous.png, id=560, 1246.6575pt x 376.40625pt>
 File: images/ambiguous.png Graphic file (type png)
 <use images/ambiguous.png>
 Package pdftex.def Info: images/ambiguous.png  used on input line 137.
 (pdftex.def)             Requested size: 284.52756pt x 85.90536pt.
- [19] [20 <./images/ambiguous.png (PNG copy)>]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 	\caption
+               {Ambiguous scene}%pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 	\caption{Ambiguous scene}
+                                %pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 	\caption{Ambiguous scene}
+                                % [21]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 146.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 146.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 146.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 146.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 146.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 146.
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 146.
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 146.
+ [22 <./images/ambiguous.png (PNG copy)>]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 166.
@@ -2332,37 +2455,84 @@ either increase the head height or redesign the header
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[21]
-<images/vox_arch.png, id=576, 397.9668pt x 199.947pt>
+[23]
+<images/vox_arch.png, id=597, 397.9668pt x 199.947pt>
 File: images/vox_arch.png Graphic file (type png)
 <use images/vox_arch.png>
 Package pdftex.def Info: images/vox_arch.png  used on input line 211.
 (pdftex.def)             Requested size: 201.59863pt x 101.2882pt.
-<images/avodarch.png, id=577, 13616.8725pt x 4727.6625pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212 		\caption
+                {VoxelNet Architecture}pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.212 		\caption{VoxelNet Architecture}
+                                       pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.212 		\caption{VoxelNet Architecture}
+                                       
+<images/avodarch.png, id=598, 13616.8725pt x 4727.6625pt>
 File: images/avodarch.png Graphic file (type png)
 <use images/avodarch.png>
 Package pdftex.def Info: images/avodarch.png  used on input line 217.
 (pdftex.def)             Requested size: 201.54318pt x 113.76198pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 		\caption
+                {AVOD Architecture}
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+[][]
+ []
 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 		\caption{AVOD Architecture}
+                                   pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 		\caption{AVOD Architecture}
+                                   
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [24]
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 8.36993pt on input line 230.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.06795pt on input line 230.
-<images/sildata.png, id=591, 1444.39626pt x 288.07625pt>
+<images/sildata.png, id=611, 1444.39626pt x 288.07625pt>
 File: images/sildata.png Graphic file (type png)
 <use images/sildata.png>
 Package pdftex.def Info: images/sildata.png  used on input line 236.
 (pdftex.def)             Requested size: 448.0pt x 89.35106pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/sil.png, id=592, 1438.37375pt x 713.66624pt>
-File: images/sil.png Graphic file (type png)
-<use images/sil.png>
-Package pdftex.def Info: images/sil.png  used on input line 245.
-(pdftex.def)             Requested size: 448.0pt x 222.27965pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 	\caption
+               {SIL Data Frame CSV}pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 	\caption{SIL Data Frame CSV}
+                                   pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 	\caption{SIL Data Frame CSV}
+                                   
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2370,85 +2540,256 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[23 <./images/vox_arch.png> <./images/avodarch.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24 <./images/sildata.png> <./images/sil.png>]
-<images/annot.png, id=610, 1445.4pt x 903.375pt>
+[25 <./images/vox_arch.png> <./images/avodarch.png>]
+File: images/sil.png Graphic file (type png)
+<use images/sil.png>
+Package pdftex.def Info: images/sil.png  used on input line 245.
+(pdftex.def)             Requested size: 448.0pt x 222.27965pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 	\caption
+               {Veloview Frame of SIL data}pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.3.2}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.246 	\caption{Veloview Frame of SIL data}
+                                           pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.3.2}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.246 	\caption{Veloview Frame of SIL data}
+                                            [26 <./images/sildata.png>]
+<images/annot.png, id=629, 1445.4pt x 903.375pt>
 File: images/annot.png Graphic file (type png)
 <use images/annot.png>
 Package pdftex.def Info: images/annot.png  used on input line 281.
 (pdftex.def)             Requested size: 448.0pt x 280.002pt.
 
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./images/annot.png (PNG copy)>]) [26] (./chapters/results/results.tex
-[27
+) [27pdfTeX warning (ext4): destination with the same identifier (name{table.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.453 \clearemptydoublepage
+                           ] [28pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.3.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.453 \clearemptydoublepage
+                            <./images/annot.png (PNG copy)>]
+(./chapters/results/results.tex [29
 
 
 ]
-Underfull \vbox (badness 2050) has occurred while \output is active []
+Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [28]
+ [30pdfTeX warning (ext4): destination with the same identifier (name{table.4.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \begin{itemize}[noitemsep]
+                               pdfTeX warning (ext4): destination with the same
+ identifier (name{table.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \begin{itemize}[noitemsep]
+                               ]pdfTeX warning (ext4): destination with the sam
+e identifier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 	\caption
+               {Baseline}pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 	\caption{Baseline}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 	\caption{Baseline}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 	\caption
+               {Car AP}pdfTeX warning (ext4): destination with the same identif
+ier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 	\caption{Car AP}
+                       pdfTeX warning (ext4): destination with the same identif
+ier (name{table.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 	\caption{Car AP}
+                       
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 	\caption
+               {Pedestrian AP}pdfTeX warning (ext4): destination with the same 
+identifier (name{table.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 	\caption{Pedestrian AP}
+                              pdfTeX warning (ext4): destination with the same 
+identifier (name{table.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 	\caption{Pedestrian AP}
+                              
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/gputepbox.png, id=640, 1156.32pt x 650.43pt>
+<images/gputepbox.png, id=659, 1156.32pt x 650.43pt>
 File: images/gputepbox.png Graphic file (type png)
 <use images/gputepbox.png>
 Package pdftex.def Info: images/gputepbox.png  used on input line 193.
 (pdftex.def)             Requested size: 313.59863pt x 176.39258pt.
-<images/gpupbox.png, id=641, 1156.32pt x 650.43pt>
+<images/gpupbox.png, id=660, 1156.32pt x 650.43pt>
 File: images/gpupbox.png Graphic file (type png)
 <use images/gpupbox.png>
 Package pdftex.def Info: images/gpupbox.png  used on input line 199.
 (pdftex.def)             Requested size: 313.59863pt x 176.39258pt.
 
-Underfull \vbox (badness 7558) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [29]
-Overfull \vbox (109.6049pt too high) has occurred while \output is active []
+[31] [32pdfTeX warning (ext4): destination with the same identifier (name{table
+.4.3}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+      ]
+Underfull \vbox (badness 4660) has occurred while \output is active []
 
-[30 <./images/gputepbox.png> <./images/gpupbox.png>] [31]
-<images/kitti_bv.jpg, id=672, 963.6pt x 803.0pt>
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.235 \paragraph
+                {Power} - Similarly, the mean power usage was 10 watts great...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.235 \paragraph
+                {Power} - Similarly, the mean power usage was 10 watts great...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.235 \paragraph
+                {Power} - Similarly, the mean power usage was 10 watts great...
+ <./images/gputepbox.png> <./images/gpupbox.png>]
+<images/kitti_bv.jpg, id=688, 963.6pt x 803.0pt>
 File: images/kitti_bv.jpg Graphic file (type jpg)
 <use images/kitti_bv.jpg>
 Package pdftex.def Info: images/kitti_bv.jpg  used on input line 249.
 (pdftex.def)             Requested size: 219.52077pt x 184.94342pt.
-<images/sil_bv.jpg, id=673, 1413.28pt x 1606.0pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 		\caption
+                *{KITTI bird eye view}
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 		\caption*
+                 {KITTI bird eye view}pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 		\caption*
+                 {KITTI bird eye view}
+<images/sil_bv.jpg, id=689, 1413.28pt x 1606.0pt>
 File: images/sil_bv.jpg Graphic file (type jpg)
 <use images/sil_bv.jpg>
 Package pdftex.def Info: images/sil_bv.jpg  used on input line 255.
 (pdftex.def)             Requested size: 219.509pt x 184.94342pt.
-<images/density.png, id=674, 722.7pt x 722.7pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 		\caption
+                *{SIL bird eye view}
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+[][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 		\caption*
+                 {SIL bird eye view}pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 		\caption*
+                 {SIL bird eye view}
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+<images/density.png, id=701, 722.7pt x 722.7pt>
 File: images/density.png Graphic file (type png)
 <use images/density.png>
 Package pdftex.def Info: images/density.png  used on input line 265.
 (pdftex.def)             Requested size: 268.80273pt x 268.80632pt.
 )
-Underfull \vbox (badness 2913) has occurred while \output is active []
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+}) has been already used, duplicate ignored
 
- [32 <./images/kitti_bv.jpg> <./images/sil_bv.jpg>] [33 <./images/density.png>]
- [34
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.4.4}) has been already used, duplicate ignored
 
-]
-(./chapters/future/future.tex) [35
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.456 \clearemptydoublepage
+                            <./images/kitti_bv.jpg> <./images/sil_bv.jpg> <./im
+ages/density.png>] [36
 
-] [36
-
-] (./chapters/conclusion/conclusion.tex) [37
+] (./chapters/future/future.tex) [37
 
 ] [38
 
-] (./chapters/appendices/app0A.tex
+]
+(./chapters/conclusion/conclusion.tex) [39
+
+] [40
+
+]
+(./chapters/appendices/app0A.tex
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -2459,51 +2800,52 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 6.50995pt on input line 31.
-) [39
+) [41
 
-]
-[40
+pdfTeX warning (ext4): destination with the same identifier (name{table.A.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.468 \clearemptydoublepage
+                           ] [42
 
 ] (./memoirthesis.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 4.
+(nag)                Use \scshape or \textsc instead on input line 7.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 9.
+(nag)                Use \scshape or \textsc instead on input line 12.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 13.
+(nag)                Use \scshape or \textsc instead on input line 16.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 18.
+(nag)                Use \scshape or \textsc instead on input line 21.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 22.
+(nag)                Use \scshape or \textsc instead on input line 27.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 28.
+(nag)                Use \scshape or \textsc instead on input line 33.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 34.
+(nag)                Use \scshape or \textsc instead on input line 37.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 38.
+(nag)                Use \scshape or \textsc instead on input line 42.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 43.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 48.
+(nag)                Use \scshape or \textsc instead on input line 47.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2511,94 +2853,94 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 57.
+(nag)                Use \scshape or \textsc instead on input line 56.
 
-[41
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 61.
+
+[43
 
 
 ]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 62.
+(nag)                Use \scshape or \textsc instead on input line 66.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 67.
+(nag)                Use \scshape or \textsc instead on input line 70.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 71.
+(nag)                Use \scshape or \textsc instead on input line 77.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 78.
+(nag)                Use \scshape or \textsc instead on input line 82.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 83.
+(nag)                Use \scshape or \textsc instead on input line 87.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 88.
+(nag)                Use \scshape or \textsc instead on input line 91.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 92.
+(nag)                Use \scshape or \textsc instead on input line 96.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 97.
+(nag)                Use \scshape or \textsc instead on input line 101.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 102.
+(nag)                Use \scshape or \textsc instead on input line 105.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 106.
+(nag)                Use \scshape or \textsc instead on input line 110.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 111.
+(nag)                Use \scshape or \textsc instead on input line 115.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 116.
+(nag)                Use \scshape or \textsc instead on input line 120.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 121.
+(nag)                Use \scshape or \textsc instead on input line 125.
 
-[42]
+[44]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 126.
+(nag)                Use \scshape or \textsc instead on input line 130.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 []\T1/fnc/m/n/10.95 (+20) https://www.navigantresearch.com/research/navigant-re
 search-leaderboard-automated-
  []
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 132.
+(nag)                Use \scshape or \textsc instead on input line 141.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 137.
+(nag)                Use \scshape or \textsc instead on input line 146.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 142.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 148.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 153.
+(nag)                Use \scshape or \textsc instead on input line 151.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2606,29 +2948,38 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 163.
+(nag)                Use \scshape or \textsc instead on input line 162.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 169.
+(nag)                Use \scshape or \textsc instead on input line 166.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 173.
+(nag)                Use \scshape or \textsc instead on input line 172.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 178.
 
-[43]) [44]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 182.
+
+[45]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 187.
+
+) [46]
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 455.
+(in both cases you will find help in the memoir manual). on input line 482.
 
 
-Package nag Warning: 38 complaints in total.
+Package nag Warning: 39 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
@@ -2639,26 +2990,29 @@ Package nag Warning: 38 complaints in total.
 \tf@lof=\write9
 \openout9 = `memoirthesis.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 455.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9B174978D8A52CE71D0FB616ECC7F130;2818.
+(rerunfilecheck)             Checksum: EC3AFB65E072732225FDCA2C8584F891;2981.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 33803 strings out of 492649
- 614732 string characters out of 6129623
- 928802 words of memory out of 5000000
- 36351 multiletter control sequences out of 15000+600000
- 109386 words of font info for 334 fonts, out of 8000000 for 9000
+ 32787 strings out of 492649
+ 595631 string characters out of 6129623
+ 918450 words of memory out of 5000000
+ 35338 multiletter control sequences out of 15000+600000
+ 109174 words of font info for 341 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 55i,17n,108p,1075b,1309s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,17n,108p,1642b,1325s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/tex
@@ -2669,10 +3023,10 @@ ve/2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (58 pages, 8892651 bytes).
+Output written on memoirthesis.pdf (58 pages, 9251520 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 719 compressed objects within 8 object streams
- 247 named destinations out of 1000 (max. 500000)
- 46518 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 245 named destinations out of 1000 (max. 500000)
+ 46547 words of extra memory for PDF output out of 51595 (max. 10000000)
 

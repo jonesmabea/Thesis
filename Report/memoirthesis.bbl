@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{doxel}
+{\em Artificial intelligence for construction productivity}, 2018.
+
 \bibitem{bay2006surf}
 {\sc H.~Bay, T.~Tuytelaars, and L.~Van~Gool}, {\em Surf: Speeded up robust
   features}, in European conference on computer vision, Springer, 2006,
@@ -13,10 +16,6 @@
 {\sc S.~D. Brown, R.~J. Francis, J.~Rose, and Z.~G. Vranesic}, {\em
   Field-programmable gate arrays}, vol.~180, Springer Science \& Business
   Media, 2012.
-
-\bibitem{buehler2009darpa}
-{\sc M.~Buehler, K.~Iagnemma, and S.~Singh}, {\em The DARPA urban challenge:
-  autonomous vehicles in city traffic}, vol.~56, springer, 2009.
 
 \bibitem{chen2016monocular}
 {\sc X.~Chen, K.~Kundu, Z.~Zhang, H.~Ma, S.~Fidler, and R.~Urtasun}, {\em
@@ -44,14 +43,14 @@
   definitions for policy purposes in england and wales: Methodology (v1.0)},
   GOV.UK,  (2018).
 
+\bibitem{Geiger2012CVPR}
+{\sc A.~Geiger, P.~Lenz, and R.~Urtasun}, {\em Are we ready for autonomous
+  driving? the kitti vision benchmark suite}, in Conference on Computer Vision
+  and Pattern Recognition (CVPR), 2012.
+
 \bibitem{girshickICCV15fastrcnn}
 {\sc R.~Girshick}, {\em Fast r-cnn}, in International Conference on Computer
   Vision ({ICCV}), 2015.
-
-\bibitem{henry2010rgb}
-{\sc P.~Henry, M.~Krainin, E.~Herbst, X.~Ren, and D.~Fox}, {\em Rgb-d mapping:
-  Using depth cameras for dense 3d modeling of indoor environments}, in In the
-  12th International Symposium on Experimental Robotics (ISER, Citeseer, 2010.
 
 \bibitem{intelsolutions_2018}
 {\sc Intel}, 2018.
@@ -101,6 +100,16 @@
 \bibitem{thesisSTUDIENARBEITPlotkin}
 {\sc L.~Plotkin}, {\em Pydriver}, bachelor's thesis ({Studienarbeit}),
   Karlsruhe Institute of Technology, Germany, Mar. 2015.
+
+\bibitem{pomerleau1991rapidly}
+{\sc D.~Pomerleau}, {\em Rapidly adapting artificial neural networks for
+  autonomous navigation}, in Advances in neural information processing systems,
+  1991, pp.~429--435.
+
+\bibitem{pomerleau1989alvinn}
+{\sc D.~A. Pomerleau}, {\em Alvinn: An autonomous land vehicle in a neural
+  network}, in Advances in neural information processing systems, 1989,
+  pp.~305--313.
 
 \bibitem{qi2017frustum}
 {\sc C.~R. Qi, W.~Liu, C.~Wu, H.~Su, and L.~J. Guibas}, {\em Frustum pointnets
