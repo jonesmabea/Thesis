@@ -27,6 +27,7 @@ Recall=\frac{TP}{TP+FN}
 2\cdot\frac{precision\cdot recall}{precision+recall}
 \end{equation*}
 \subsection{Analysis}
+Tables \ref{tab:penalisedpcl} and \ref{tab:context} form the basis of this analysis.
 
 I established that determining the context from images is much more accurate than from point clouds. As highlighted before, images offer higher representational power and resolution than sparse point clouds. As seen in figure 41, the f1-score of the image classifier outperformed the point cloud classifier by more than 30\% . 
 
@@ -53,7 +54,7 @@ I established that determining the context from images is much more accurate tha
 		\end{tabular}%
 	}
 	\caption{Comparison of context detection methods}
-	\label{my-label}
+	\label{tab:context}
 \end{table}
 
 With regard to the point cloud context classifier, majority voting resulted in around 50:50 precision for both classes. The recall for the non-urban was 7 percent more than urban which was below 50\%. By implementing the penalty function in the point cloud classifier, recall for the urban class improved by 17\%  as seen in table \ref{tab:penalisedpcl}. 
@@ -97,7 +98,7 @@ For uniformity purposes, all the experiments were performed on single NVIDIA P10
 \subsubsection*{Baseline}
  A baseline, was established by running each model was run on the original KITTI validation dataset. The results can be seen in table  in \ref{tab:baseline}. In addition, the temperature and power metrics were collected and can be seen in the last boxplot of figures \ref{fig:temp} and \ref{fig:power}.
 
-\begin{table}[h] %baseline
+\begin{table}[H] %baseline
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|
@@ -173,6 +174,35 @@ To investigate whether the performance of each model varies in different context
 	\caption{Pedestrian AP}
 	\label{tab:pedap}
 \end{table}
+
+
+\begin{figure}[H] %Power&Temp
+	\centering
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/gputepbox.png}
+		\caption{Temperature boxplots of evaluation runs.Voxelnet(blue) AVOD(gold) AVOD+VoxelNet(Red)}
+		\label{fig:temp}
+	\end{minipage}
+	%	\hfill
+	\begin{minipage}[b]{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/gpupbox.png}
+		\caption{Power boxplots of evaluation runs. Voxelnet(blue), AVOD(gold), AVOD+VoxelNet(Red}
+		\label{fig:power}
+	\end{minipage}
+	
+\end{figure}
+
+
+\subsubsection*{Analysis}
+The qualitative results of the models are illustrated in tables \ref{tab:cardetap}, \ref{tab:pedap} and \ref{tab:inftime} .Results for the urban context are highlighted in pink whereas non-urban results are highlighted in blue. GPU results are available in form of boxplots on figures \ref{fig:power} and \ref{fig:temp}. For this evaluation, the first six boxplots form the basis of this analysis. The median is highlighted at the bottom of the x-axis in gold and blue while the average is in black font next to the 'X' marker.
+
+
+
+\paragraph{Car} - AVOD outperformed VoxelNet on 2D and 3D detections in both contexts. However, VoxelNet performed slightly better in bird-eye-view detections as compared to AVOD. 
+\paragraph{Pedestrian} - As compared to the car class, there was a distinct performance boundary whereby AVOD dominated all detections in the urban context whereas VoxelNet did in the non-urban context.
+
 \begin{table}[h]%Time
 	\centering
 	%	\resizebox{\textwidth}{!}{%
@@ -187,34 +217,17 @@ To investigate whether the performance of each model varies in different context
 	\caption{Inference Time on Single NVIDIA P100 GPU}
 	\label{tab:inftime}
 \end{table}
-\begin{figure}[h] %Power&Temp
-	\centering
-	\begin{minipage}[b]{0.7\textwidth}
-		\includegraphics[width=\textwidth]{images/gputepbox.png}
-		\caption{Temperature boxplots of evaluation runs.Voxelnet(blue) AVOD(gold) AVOD+VoxelNet(Red)}
-		\label{fig:temp}
-	\end{minipage}
-	%	\hfill
-	\begin{minipage}[b]{0.7\textwidth}
-		\includegraphics[width=\textwidth]{images/gpupbox.png}
-		\caption{Power boxplots of evaluation runs. Voxelnet(blue), AVOD(gold), AVOD+VoxelNet(Red}
-		\label{fig:power}
-	\end{minipage}
-	
-\end{figure}
 
+In terms of inference time, AVOD was slightly faster than VoxelNet in both contexts Notably, the minimum time for VoxelNet was AVOD's mean time. Nonetheless both were able to achieve a frame rate of about \textbf{9 FPS}. 
 
-\subsubsection*{Analysis}
-\paragraph{Car} - AVOD outperformed VoxelNet on 2D and 3D detections in both contexts. However, VoxelNet performed slightly better in bird-eye-view detections as compared to AVOD. 
-\paragraph{Pedestrian} - As compared to the car class, there was a distinct performance boundary whereby AVOD dominated all detections in the urban context whereas VoxelNet did in the non-urban context.
+\paragraph{GPU} - As seen in figures \ref{fig:power} and \ref{fig:temp},AVOD generally ran at a lower temperature and consumed less power as compared to VoxelNet. 
+Generally, VoxelNet caused higher temperatures more than 75\% of the time. The spread of temperature was smaller for AVOD as compared to VoxelNet's. 
+In terms of \textbf{power usage}, a similar pattern was seen whereby the AVOD's usage stabilised within a very small range most of the time as compared to VoxelNet which exhibited  a significantly higher range fluctuation. 
+With regard to the context, running the models on a specific context resulted in lower median temperatures as seen in figure 41. For VoxelNet, the median temperature reduced by around 4\degree Celsius whereas for AVOD the median temperature was reduced by around 3\degree  Celsius. Additionally, VoxelNet had a smaller spread while running on the urban context as compared to VoxelNet. AVOD did not exhibit any significant changes in terms of spread while running in different contexts. AVOD's and VoxelNet's median power usage did not exhibit any significant reduction. However, AVOD running in a non-urban context resulted in a very small spread with a slightly lower mean temperature as compared to running in an urban context. An opposite effect was seen in VoxelNet's spread where running in a non-urban context resulted in a larger spread and slightly higher mean temperature.
 
-It is important to bear in mind that for the car class, the IoU threshold for detections is 0.7 as compared to the pedestrian IoU threshold of 0.5. As mentioned earlier while describing the model architectures, due to the fact that AVOD fuses the top proposals from the image and LiDAR point cloud feature maps, the predicted bounding boxes tend to be tighter and thus have a higher IoU. Going by the pedestrian class result, it is plausible to argue that the performance of VoxelNet would have been higher or close to AVOD's given that the IoU threshold was slightly reduced. 
-
-\paragraph{GPU} - As seen in figures \ref{fig:power} and \ref{fig:temp},AVOD generally ran at a lower temperature and consumed less power as compared to VoxelNet.In fact, temperature-wise, VoxelNet ran hotter over 75\% of the time.  Furthermore, AVOD's temperature and power usage varied less  as compared to VoxelNet's which fluctuated along a larger range. 
-With regard to context, by only running the models on a specific context dataset, power usage and temperature decreased for both VoxelNet and AVOD. 
 
 \subsubsection*{Running Both Models Simultaneously}
-Having identified that AVOD is better at detecting cars and pedestrians in urban contexts and VoxelNet in non-urban contexts, I set out to further investigate whether it is possible to have both models running on a single GPU. 
+Having identified that AVOD is better at detecting cars and pedestrians in urban contexts and VoxelNet in non-urban contexts, I set out to further investigate whether it is possible to have both models running optimally on a single GPU. This was done by running both models simultaneously. Each model was started on an initial memory fraction of 40\%(6.4GB) and was allowed to grow. This was done by setting the \textit{\textbf{gpu\_mem\_fraction}} to \textbf{0.4} and \textbf{\textit{allow\_mem\_growth}} to \textbf{True} before running the respective Tensorflow graphs. 
 
 \begin{table}[H] % memory
 	\centering
@@ -228,27 +241,29 @@ Having identified that AVOD is better at detecting cars and pedestrians in urban
 	
 \end{table}
 
-
 \subsubsection*{Analysis}
-
-\paragraph{Temperature} - Running both models simultaneously resulted in significantly higher temperatures as compared running them exclusively. The average temperature was 7\degree hotter than the maximum mean temperature from running the models exclusively. 
-\paragraph{Power} - Similarly, the mean power usage was 10 watts greater than  the maximum mean power from running the models exclusively. 
-\paragraph{Memory} - Running both models resulted in a total memory usage of 14.3 GB out of the total memory of 16GB thereby proving that they are able to run optimally on a GPU with 16GB+ memory.  
-
+The results are available in form of boxplots on figures \ref{fig:power} and \ref{fig:temp} as well as table \ref{tab:mem}. For this test, the last boxplot forms the basis of this analysis.The median is highlighted at the bottom of the x-axis in red while the average is in black font next to the 'X' marker.
+\paragraph{Temperature} - Running both models simultaneously resulted in significantly higher temperatures as compared running them exclusively. The average temperature was 7\degree hotter than the maximum mean temperature from running the models exclusively. In addition, the temperature exhibited a significantly greater spread than running either model on any context.
+\paragraph{Power} - A similar trend was seen power-wise. The mean power usage was 10 watts greater than the maximum mean power from running the models exclusively. In addition, the spread of power was much larger than running either context. The median power usage was also much higher by around 16 Watts. 
+\paragraph{Memory} - Running both models resulted in a total memory usage of 14.3 GB out of the total memory of 16GB. Both models were able to run optimally with no memory exhaustion errors. 
 
 \section{Is VoxelNet Performance Valid For Different Datasets?}
 \subsection*{Metrics}
 Given that the data was collected from a stationary vehicle in an urban area with mostly pedestrians,  VoxelNet was evaluated on the pedestrian class only. However, as there was no corresponding image data for the point clouds, only the 3D bounding boxes and Bird-Eye View bounding boxes with IoU $\geq$ 0.5. were used in calculating the AP. 
 \subsection*{Analysis}
-VoxelNet was not able to predict any objects on the SIL dataset. As highlighted before, the VLP-16 LiDAR sensor has a lower frequency than that of the HDL-64E. This therefore affected the point cloud density and is visible in figure \ref{fig:difference} . SIL point clouds had an average point cloud density per frame that was lower than that of KITTI's by 42\%  in 1000 samples as seen in figure \ref{fig:density}. This was evaluated by calculating the number of points in each point cloud frame and dividing by the frame size. It is therefore safe to conclude that the point cloud density has a positive correlation to the performance of LiDAR only models. 
+VoxelNet was \textbf{not} able to predict any objects on the SIL dataset. As highlighted before, the VLP-16 LiDAR sensor has a lower frequency than that of the HDL-64E. This therefore affected the point cloud density and is visible in figure \ref{fig:difference}. From this figure, we can see that more SIL point cloud density was significantly lower than that of KITTI. SIL point clouds had an average point cloud density per frame that was lower than that of KITTI's by 42\%  with a median of 0.0048 in 1000 samples as seen in figure \ref{fig:density} as compared to SIL's of 0.0028. In fact, close to 100\% of the KITTI point cloud density was higher than that of SIL. Nonetheless, the KITTI point cloud density fluctuated along a larger range as compared to the SIL dataset.
 
+The point cloud density was calculated as: 
+
+$density = \frac{N_{i}}{S_{i}}  $  \\
+where N is the number of points in point cloud frame \textit{i} and S is the XY size of the frame \textit{i}.
 
 \begin{figure}[H] %SIL KITTI
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
 		\includegraphics[width=\textwidth,height=6.5cm]{images/kitti_bv}
 		\caption*{KITTI bird eye view}
-%		\label{fig:kittibv}
+%	\label{fig:kittibv}
 	\end{minipage}
 	%	\hfill
 	\begin{minipage}[b]{0.49\textwidth}
@@ -266,3 +281,10 @@ VoxelNet was not able to predict any objects on the SIL dataset. As highlighted 
 	\caption{Point Cloud Density}
 	\label{fig:density}
 \end{figure}
+
+
+Following this evaluation, I established that there was a positive correlation between the performance of the LiDAR only models and the point cloud density of the input. As mentioned in the precious section, point clouds are sparse and as a result suffer from poor contour retrieval for objects. An increase in the point density could help alleviate this by allowing for more shape information to be recovered.
+
+
+\section{Discussion}
+

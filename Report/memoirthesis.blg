@@ -7,48 +7,47 @@ Repeated entry---line 422 of file thesisbiblio.bib
  : @article{li2016vehicle
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in doxel
 Warning--can't use both volume and number fields in chen2017multi
-You've used 38 entries,
+You've used 44 entries,
             2030 wiz_defined-function locations,
-            702 strings with 10560 characters,
-and the built_in function-call counts, 13494 in all, are:
-= -- 1234
-> -- 645
+            732 strings with 11385 characters,
+and the built_in function-call counts, 15628 in all, are:
+= -- 1450
+> -- 682
 < -- 0
-+ -- 258
-- -- 218
-* -- 1026
-:= -- 2081
-add.period$ -- 42
-call.type$ -- 38
-change.case$ -- 221
++ -- 274
+- -- 228
+* -- 1153
+:= -- 2371
+add.period$ -- 48
+call.type$ -- 44
+change.case$ -- 244
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 624
-empty$ -- 1091
-format.name$ -- 218
-if$ -- 2891
+cite$ -- 46
+duplicate$ -- 747
+empty$ -- 1308
+format.name$ -- 228
+if$ -- 3390
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 34
-newline$ -- 121
-num.names$ -- 74
-pop$ -- 284
+int.to.str$ -- 44
+missing$ -- 39
+newline$ -- 139
+num.names$ -- 86
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 202
 quote$ -- 0
-skip$ -- 460
+skip$ -- 559
 stack$ -- 0
-substring$ -- 780
-swap$ -- 225
+substring$ -- 970
+swap$ -- 277
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
+type$ -- 172
 warning$ -- 2
-while$ -- 130
-width$ -- 40
-write$ -- 345
+while$ -- 157
+width$ -- 46
+write$ -- 400
 (There was 1 error message)

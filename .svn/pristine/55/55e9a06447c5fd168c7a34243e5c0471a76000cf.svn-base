@@ -1,0 +1,73 @@
+% !TeX spellcheck = <engl>
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+% Description: Introduction chapter where the biology goes.
+%
+\let\textcircled=\pgftextcircled
+\chapter{Introduction}
+\label{chap:intro}
+
+Accelerated by recent advancements in technology, the prospect of Autonomous Vehicles (AVs) driving in public roads is becoming more and more a reality. As this is an emerging field, there are numerous variations of implementations by different companies. Arguably, a key characteristic of these implementations is a large number of perception sensors including cameras, radars and Light detection ranging sensors(LiDAR) that are necessary for mapping the environment around the vehicle in order to safely navigate. Most of these sensors are quite expensive and fusing their input and processing it requires powerful processing units such as GPUs. This process consumes a lot of power and generates a lot of heat. In an effort to reduce the cost of such systems, companies are exploring different ways to reduce the number of sensors while still achieving a high level of navigational accuracy and safety. 
+
+% used and in order for safe deployment of AVs there needs to be robust safety and testing procedures across all implementations. 
+Compared to humans who are able to easily adapt to different situations, AVs need to be trained and tested in different possible situations. Different regions in the world pose varying challenges, such as poor visibility in Scandinavian countries due to heavy snow, and on the other hand heavily populated regions with heavy traffic such as New York pose challenges such as high occlusion of objects. An effective way of testing and evaluating AV systems is using a scenario-based approach. This has been the basis of Software-in-Loop and Hardware-in-Loop tests that test these systems in a virtual real-time environment to understand how they would react. This is done by modelling conditions and evaluating them on the corresponding software and hardware \cite{winkle2016development}. As a stepping stone, the scenario-based approach can be used to develop AV systems that are tailor-made for certain environments/regions and later on generalised as the systems become more adaptable to different environments. There are some companies and institutions that adopt this approach and have deployed autonomous prototypes in different areas. For example, Uber currently has some AVs in Steel City, Pittsburgh whereas Waymo has deployed some in Phoenix, Arizona. Other companies are still developing their AVs within test tracks\cite{miller_2018}. Using these approaches such companies are able to collect a large amount of data for testing and evaluating future models. However, this data is not always released to the public therefore limiting the variation and amount of data that is available to other parties working on AVs. 
+
+Currently, a lot of cutting-edge research on AV systems relies on a small subset of data. Most research is based on the  KITTI \cite{Geiger2012CVPR} dataset that was collected to aid the development of AV systems by providing the necessary data to develop models to achieve different task. Such tasks included, stereo, optical, depth, odometry, sceneflow and object detection. As a result it is highly favoured in the development of novel computer vision algorithm. 
+In equal light, relying on few datasets creates a bottleneck in terms of validation as these algorithms may end up performing sub par when evaluated on different datasets or even worse in a real-time setting. 
+
+Following this argument, a viable scenario that could be beneficial to explore is how different sensors and corresponding object detection models perform in urban and non-urban contexts. In doing so, companies developing AVs can fit different sensors in AVs that work in different contexts with the aim of maximising their performance in that context while reducing the cost by removing redundant sensors. The most reliable and accurate combination of sensors in terms of and reliability is camera and LiDAR. However, there has been increased interest in developing LiDAR only systems that are able to exploit highly accurate depth information from LiDAR such as Doxel\cite{doxel} that is an autonomous robot that uses LiDAR to monitor construction sites. As such it may be possible to develop LiDAR only units that can be used in a specific context. 
+
+\section{Aims and Objectives}
+Following the motivations in the presented discussion , the performance of single sensor ()LiDAR only) and multimodal(LiDAR and Camera) models in different contexts will be investigated with the aim of reducing the number of sensors in AVs.
+% To investigate this, VoxelNet \cite{zhou2017voxelnet}, a LiDAR only  model that uses point clouds as input. Secondly, Aggregated View Object Detection(AVOD) \cite{ku2017joint}, a multimodal model that fuses image and point cloud data. Both model implementations were available on GitHub and were modified in order to align with the aims of this project. 
+
+To achieve this aim, the following objectives will need to be fulfilled:
+\begin{enumerate}
+	\item \textbf{Detect and characterise the context of images and point clouds.}
+	%\item Evaluate the performance of sensors in different contexts. 
+	\item \textbf{Evaluate the performance of single sensor and multimodal models in different contexts. }
+	\item \textbf{Validate performance of the single sensor model on a custom dataset. Validate performance of the single sensor model on a custom dataset.}
+	%\item Legal, social and economic analysis of current implementations and proposed improvements. 
+\end{enumerate}
+
+\section{Deliverables}
+
+The deliverables are categorized in terms of the related objectives: 
+\begin{enumerate}
+	\item \textbf{Context Detection}
+	\begin{itemize}
+		 \item \textbf{Image and LiDAR Context Classifier} - Available as a software deliverable in the form of Python scripts and Jupyter interactive notebooks including pre-trained models.  
+	\end{itemize}
+	\item \textbf{Multimodal and single sensor evaluation}
+	\begin{itemize}
+		\item \textbf{Custom VoxelNet Model} - Modified VoxelNet model including  interactive notebooks for training, testing and validating the model. 
+		\item \textbf{Custom AVOD Model} - Modified AVOD model including interactive notebooks for training, testing and validating the model.
+	\end{itemize}
+	\item \textbf{Single sensor validation}
+	\begin{itemize}
+		\item Point Cloud dataset obtained from the University of Bristol Smart Internet Lab working on connected and AVs. Tools to convert the dataset into compatible input for VoxelNet will be provided as well as some annotated sample frames for training and evaluation.
+		
+	\end{itemize}
+	\item \textbf{Report containing the following discussions:}
+	\begin{itemize}
+		\item A review of related research and implementations tackling object detection in AVs. 
+		\item Evaluation and analysis of context classifiers and object detection models in different contexts. 
+		\item Validation results of single sensor model using external dataset from the Smart Internet Lab on connected and autonomous vehicles.
+	\end{itemize}
+\end{enumerate}
+
+\section{Report structure}
+This report will consist of five main chapters. 
+
+\begin{itemize}
+
+	\item Chapter 2 discusses the different components of AVs, current implementations in the industry, a background on the research that has been undertaken in the field of object detection.
+	
+	\item Chapter 3 details the project execution and the methods undertaken to achieve the objectives.  
+	
+	\item In Chapter 4, the results following evaluation of the methods will be discussed and analysed. 
+	\item Finally, a concluding chapter discusses the major findings, whether the objectives were achieved and a justification of their implications. 
+\end{itemize}
+
+

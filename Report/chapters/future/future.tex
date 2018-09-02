@@ -5,7 +5,7 @@
 % Description: Introduction chapter where the biology goes.
 %
 \let\textcircled=\pgftextcircled
-\chapter{Discussion and Future Work}
+\chapter{Conclusion and Future Work}
 \label{chap:fw}
 
 Following the analysis, we have identified that indeed it is possible to detect and characterise images with relatively high accuracy and point clouds to a much lesser extent. In addition, we have determined that multimodal methods perform better in dynamic environments as compared to LiDAR only models. Finally, we were able to realise the impact of using point clouds from different LiDAR sensors on LiDAR only models. 
@@ -19,8 +19,25 @@ Despite seeing the higher temperature and power usage, this occured when both mo
 multimodal for small object detection  common in urban
 lidar for the non-urban context 
 
-using LiDARs with more points/sec or standardise models to use a specific LiDAR
+Depth filling 
+
+
 
 \section{Future Work}
-Context Detection models using rnn 
-End to End Pipeline model 
+Deep learning methods for the point cloud and image classifier to enable an end to end network. 
+Creation of a automatic annotation network. 
+Experimenting with use of ASICs and FPGAs 
+
+
+
+
+
+\section{Personal Reflection}
+
+This project greatly helped me understand various perspectives on the development of AVs. Starting from the technical, then legal and even economic aspects that form the driving force for different design choices. 
+This project evolved from simply trying to replicate the VoxelNet model that was not publicly released to later on realising a gap in the assessment of object detection models in different contexts and further to realising the impact of different LiDAR sensors on the performance of these models. This process helped me understand more about how the development of such systems tend to be quite complex and involve the collaboration of different disciplines to better understand how they can be fully integrated.
+In terms of programming, the graph model abstraction of the Tensorflow framework presented a steep learning curve for me as I was used to imperative programming frameworks. Debugging was quite difficult but over time, I was able to understand how to manipulate the graphs. This was especially the case while implementing the focal loss function that resulted in inf and nan errors. Another time consuming element was hyper parameter tuning for the networks. Most models that were released in public did not include the best parameters for training these networks, as such a lot of time was spent in finding these parameters. 
+CometML greatly helped in tracking the parameters that were the best performing and I could automatically create a GitHub pull request for them. 	
+
+ Working with point clouds also tended to be quite difficult as there are not many Python libraries that can manipulate point clouds and those that are available do not support as many features. As a result, a lot of time was spent in the research of different methods to handle the point clouds for the task of context detection and object detection. This resulted in using a lot of boiler plate code using different libraries. If there was enough time, this could've been improved by compiling these functions into one library that could provide these functions in a simpler manner. 
+ 

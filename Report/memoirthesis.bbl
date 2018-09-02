@@ -43,6 +43,19 @@
   definitions for policy purposes in england and wales: Methodology (v1.0)},
   GOV.UK,  (2018).
 
+\bibitem{dietmayer2016predicting}
+{\sc K.~Dietmayer}, {\em Predicting of machine perception for automated
+  driving}, in Autonomous Driving, Springer, 2016, pp.~407--424.
+
+\bibitem{fried2012does}
+{\sc B.~H. Fried}, {\em What does matter? the case for killing the trolley
+  problem (or letting it die)}, The Philosophical Quarterly, 62 (2012),
+  pp.~505--529.
+
+\bibitem{gasser2016fundamental}
+{\sc T.~M. Gasser}, {\em Fundamental and special legal questions for autonomous
+  vehicles}, in Autonomous Driving, Springer, 2016, pp.~523--551.
+
 \bibitem{Geiger2012CVPR}
 {\sc A.~Geiger, P.~Lenz, and R.~Urtasun}, {\em Are we ready for autonomous
   driving? the kitti vision benchmark suite}, in Conference on Computer Vision
@@ -52,15 +65,20 @@
 {\sc R.~Girshick}, {\em Fast r-cnn}, in International Conference on Computer
   Vision ({ICCV}), 2015.
 
+\bibitem{girshick2014rich}
+{\sc R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik}, {\em Rich feature
+  hierarchies for accurate object detection and semantic segmentation}, in
+  Proceedings of the IEEE conference on computer vision and pattern
+  recognition, 2014, pp.~580--587.
+
 \bibitem{intelsolutions_2018}
 {\sc Intel}, 2018.
 \newblock
   https://www.intel.co.uk/content/www/uk/en/automotive/go-automated-driving.html.
 
-\bibitem{ku2017joint}
-{\sc J.~Ku, M.~Mozifian, J.~Lee, A.~Harakeh, and S.~Waslander}, {\em Joint 3d
-  proposal generation and object detection from view aggregation}, arXiv
-  preprint arXiv:1712.02294,  (2017).
+\bibitem{law2001law}
+{\sc P.~Law}, {\em Law 106-398,“floyd d}, Spence National Defense
+  Authorization Act for Fiscal Year,  (2001).
 
 \bibitem{li2016vehicle}
 {\sc B.~Li, T.~Zhang, and T.~Xia}, {\em Vehicle detection from 3d lidar using
@@ -86,6 +104,10 @@
 \bibitem{medsker2001recurrent}
 {\sc L.~Medsker and L.~Jain}, {\em Recurrent neural networks}, Design and
   Applications, 5 (2001).
+
+\bibitem{miller_2018}
+{\sc A.~Miller}, {\em Some of the companies that are working on driverless car
+  technology}, 2018.
 
 \bibitem{mobileye_2018}
 {\sc MobilEye}, {\em Enabling autonomous - mobileeye}, 2018.
@@ -177,6 +199,11 @@
 \bibitem{waymo_2018}
 {\sc Waymo}, {\em Waymo safety report}, 2018.
 \newblock https://waymo.com/safety/.
+
+\bibitem{winkle2016development}
+{\sc T.~Winkle}, {\em Development and approval of automated vehicles:
+  considerations of technical, legal, and economic risks}, in Autonomous
+  Driving, Springer, 2016, pp.~589--618.
 
 \bibitem{zhong2009intrinsic}
 {\sc Y.~Zhong}, {\em Intrinsic shape signatures: A shape descriptor for 3d
