@@ -9,7 +9,7 @@ Following the prior discussion, this section seeks to address three challenges a
 \section{Datasets}
 \subsection{Context Classification}
 \begin{enumerate}
-	\item \textbf{Cityscapes} - Cityscapes is a large-scale dataset used to develop pixel and instance level semantic segmentation models. It is composed of a scenes from 50 different cities captured using stereo cameras. In 5000 scenes, the images have been annotated on a pixel-level. 20000 scenes have also been coarsely annotated. In addition to this, a benchmark suite to evaluate these models is available.  
+	\item \textbf{Cityscapes} - Cityscapes is a large-scale dataset used to develop pixel and instance level semantic segmentation models. It is composed of a scenes from 50 different cities captured using stereo cameras. In 5000 scenes, the images have been annotated on a pixel-level. 20000 scenes have also been coarsely annotated. In addition to this, a benchmark suite to evaluate segmentation models is available.  
 	
 	\item \textbf{KITTI Object Detection}- KITTI dataset was collected with the aim of encouraging the development of computer vision and robotic algorithms for AVs.The data was captured by a car was fitted with a number of sensors including a high resolution greyscale and colour cameras, Velodyne HDL-64 LiDAR and a GPS/IMU inertial navigation system. The vehicle was driven around a city, rural areas and highways. This dataset is available as part of a benchmark suite for various AV object detection models.The dataset consists of  a total of 14,999 images and corresponding point clouds with  7,481 as labelled training files and 7,518 being unlabelled testing files. The testing set are used for evaluating results through the official test server. However, the test server is not available for general public use. 
 \end{enumerate}
@@ -145,6 +145,7 @@ Having been able to successfully classify and create a dataset of urban and non-
 
 For this task, VoxelNet(LiDAR only) and AVOD(LiDAR+image) proved to be the most suitable candidates. As seen in table \ref{tab:arch} both models had the least inference time that would similar inference times, and both were open-source with the only exception being that the VoxelNet implementation was unofficial\footnote{Had similar evaluation results as the unreleased original on KITTI benchmark.}. Both of these models were written in Python and run on TensorFlow Deep Learning Framework.
 
+
 \subsection{VoxelNet}
 VoxelNet is an end to end point cloud based 3D object detection network that was recently  published by researchers at Apple Inc. The network is one of the top performing LiDAR only models on the KITTI benchmark. However, the code was never released and only unofficial implementations are currently available online.
 Code is available at \url{https://github.com/qianguih/voxelnet}
@@ -160,6 +161,7 @@ To better understand how it works it is important to understand the architecture
 	Finally, the feature maps from the convolutional middle layers are fed through a RPN to classify and generate  oriented 3D bounding boxes for the objects. 
 	
 \end{enumerate}
+
 \noindent
 \textbf{Loss Function} 
 
@@ -183,9 +185,8 @@ VoxelNet was trained both car and pedestrian classes on two NVIDIA P100 GPUs wit
 
 
 \paragraph{Changes to Loss Function } - 
-In an effort to improve performance of pedestrian and cyclist detection, I implemented the focal loss function as defined in \cite{lin2018focal}. This stemmed from the fact that there were few frames with pedestrians as compared to the car class and as a result the class imbalance was high in that negative anchors $\gg$ positive anchors. 
-
-
+In an effort to improve performance of pedestrian and cyclist detection, I implemented the focal loss function as defined in \cite{lin2018focal}. Focal loss was introduced with the aim of solving high foreground-background imbalance in single stage detectors. While running VoxelNet on the cyclist class, there were few positive anchors for cyclists as there were very few frames with cyclists and as such the negative anchors $\gg$ positive anchors. Therefore, implementing the focal loss would focus on hard negatives.
+ 
 \subsection{AVOD}
 AVOD is a state of the art multimodal network that offers improved performance for small object classification by fusing LiDAR point clouds and images to perform detection. 
 Code is available at \url{https://github.com/kujason/avod}
@@ -221,9 +222,9 @@ Similar to VoxelNet's training method, the model was trained on 3732 point cloud
 \end{figure}
 
 
-\subsection{Evaluation} - 
+\subsection{Evaluation} 
 
-Once both models were trained, they were evaluated on 2058 images/point clouds from the context dataset with equal number of class samples. This was necessary to avoid bias as the urban samples were significantly more than the non-urban samples. For each context, each model was run on a single NVIDIA P100 GPU and the results of 3 runs  averaged. 
+Once both models were trained, they were evaluated on 2058 images/point clouds from the context dataset with equal number of class samples(1029 each). This was necessary to avoid bias as the urban samples were significantly more than the non-urban samples. For each context, each model was run on a single NVIDIA P100 GPU and the results of 3 runs  averaged. 
 
 \subsection{Is VoxelNet Performance Valid for Different Datasets?}
 As compared to image object detection methods that are can perform well regardless of  the input image resolution, LiDAR point clouds can vary in different scenes. This can depend on various factors but is largely determined by the LiDAR sensor and it's frequency in terms of points per second. Coupled with the sparse nature of point clouds, this implies that LiDAR only models may not be able to generalise to input from different LiDAR sensors with different frequencies. I  therefore set out to understand how LiDAR sensors with different frequencies affect the performance of VoxelNet
@@ -272,7 +273,7 @@ The SIL dataset did not contain any ground truth labels for the point clouds as 
 
 \noindent
 \textbf{L-CAS Annotation Tool} \\ 
-Developed by the Lincoln Centre for Autonomous Systems Research, this tool provides a semi-automatic labelling function that clusters and highlight regions of interest that may contain objects. The user can then label them depending on the object class such as car, cyclist, pedestrian. The result is then stored in a file containing the objects and their positions in the point cloud. 
+Developed by the Lincoln Centre for Autonomous Systems Research, this tool provides a semi-automatic labelling function that clusters and highlight regions of interest that may contain objects\cite{yz17iros}. The user can then label them depending on the object class such as car, cyclist, pedestrian. The result is then stored in a file containing the objects and their positions in the point cloud. 
 To use this tool, the .pcap capture files were converted into .pcd format using the 
 ROS Velodyne point cloud package\footnote{See listing \ref{lst:ros}}. 
 
@@ -289,5 +290,5 @@ I then  ran VoxelNet on these frames to generate the predicted bounding boxes fo
 
 
 \section{Conclusion}
-In the beginning of this section I set out to answer three important questions. Following a methodological approach I was able to establish tools to detect and characterise the context of images and point clouds. Building up on this, I was able to identify two neural networks that could potentially perform better in different contexts. 
-Finally, I was able to identify a potential challenge with LiDAR only models and we were able to test whether VoxelNet would still perform given a different dataset. 
+In the beginning of this section I set out to answer three important questions. Following a methodological approach I was able to establish tools to detect and characterise the context of images and point clouds. Building up on this, I was able to identify AVOD(LiDAR+image) and VoxelNet(LiDAR only) as the suitable object detection models to test whether they perform better in different contexts.
+Finally, I was able to identify a potential challenge with LiDAR only models that require the specifications of the LiDAR sensor in order to ensure correct projection and manipulation of the point clouds. As such, using point clouds from different sensors may result in incorrect predictions. 

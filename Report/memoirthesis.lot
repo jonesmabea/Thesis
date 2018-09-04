@@ -2,17 +2,17 @@
 \par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{17}{table.caption.24}
+\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{19}{table.caption.32}
 \addvspace {10pt}
-\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{28}{table.caption.42}
+\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{32}{table.caption.50}
 \addvspace {10pt}
-\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{32}{table.caption.48}
-\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{32}{table.caption.49}
-\contentsline {table}{\numberline {41}{\ignorespaces Baseline\relax }}{33}{table.caption.54}
-\contentsline {table}{\numberline {41}{\ignorespaces Car AP\relax }}{34}{table.caption.55}
-\contentsline {table}{\numberline {42}{\ignorespaces Pedestrian AP\relax }}{34}{table.caption.56}
-\contentsline {table}{\numberline {43}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{35}{table.caption.61}
-\contentsline {table}{\numberline {44}{\ignorespaces Memory\relax }}{36}{table.caption.64}
+\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{36}{table.caption.56}
+\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{36}{table.caption.57}
+\contentsline {table}{\numberline {41}{\ignorespaces Baseline\relax }}{37}{table.caption.61}
+\contentsline {table}{\numberline {42}{\ignorespaces Car AP\relax }}{38}{table.caption.63}
+\contentsline {table}{\numberline {43}{\ignorespaces Pedestrian AP\relax }}{38}{table.caption.64}
+\contentsline {table}{\numberline {44}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{38}{table.caption.68}
+\contentsline {table}{\numberline {45}{\ignorespaces Memory\relax }}{41}{table.caption.72}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{41}{table.caption.73}
+\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{51}{table.caption.89}

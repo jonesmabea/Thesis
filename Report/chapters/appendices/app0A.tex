@@ -37,3 +37,47 @@
 	$ rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_points _prefix:=(path to save .pcd file) 
 	
 \end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption=Calculating FLOPS and Parameters,label={lst:profiler}]
+def calculate_metrics(chkpoint):
+	"""
+	Profiles a Tensorflow Graph to obtain the parameters and FLOPS
+	params:
+	chkpoint: Tensorflow checkpoint. 
+	returns: 
+	stats: FLOPS proto object 
+	params: Parameters proto objects
+	
+"""
+	with tf.Graph().as_default():
+		#GPU options. 
+		gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4,
+																visible_device_list='0',
+																allow_growth=True)
+		#create session config proto object
+		config = tf.ConfigProto(
+							gpu_options=gpu_options,
+							device_count={"GPU": 1},
+							allow_soft_placement=True,
+							log_device_placement=False
+						)
+		#Include to initialise variables. 
+		run_metadata = tf.RunMetadata()
+		# Run session with specified configs.
+		with tf.Session(config=config) as sess:
+				saver = tf.train.import_meta_graph(chkpoint+'.meta', clear_devices=True)
+				saver.restore(sess, chkpoint)
+				opts =tf.profiler.ProfileOptionBuilder.float_operation()
+				stats = tf.profiler.profile(sess.graph, run_meta= run_metadata, cmd='op', options=opts)
+				opts = tf.profiler.ProfileOptionBuilder.trainable_variables_parameter()    
+				params = tf.profiler.profile(sess.graph, run_meta=run_metadata, cmd='op', options=opts)
+		return stats,params
+
+\end{lstlisting}
+
+\section{Code Listing}
+
+The full code listing is contained on a Github repository that can be accessed through the following link: 
+
+\url {https://github.com/jonesmabea/Thesis/tree/master/src}

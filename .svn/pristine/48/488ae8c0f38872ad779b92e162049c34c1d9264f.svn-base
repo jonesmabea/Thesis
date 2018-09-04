@@ -1,0 +1,51 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Appendix A}
+
+
+\begin{table}[H]
+	\centering
+		\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+			\textbf{LiDAR}       & \textbf{Hor FOV} & \textbf{Ver FOV} & \textbf{Range} & \textbf{Angular Resolution} & \textbf{Points/second}          & \textbf{Channels} \\ \hline
+			\textit{\textbf{VLS-128}} & 360\degree                    & +15\degree to -25\degree          & 300m           & 0.11\degree                               & $\sim$9.6 Million & 128               \\ \hline
+			\textit{\textbf{HDL-64E}} & 360\degree                    & 26.9\degree                 & 120m           & $\sim$0.4\degree                          & $\sim$2.2 Million                   & 64                \\ \hline
+			\textit{\textbf{HDL-32E}} & 360\degree                    & +10\degree to -30\degree          & 80m-100m       & 0.1\degree                                & $\sim$1.39 Million                  & 32                \\ \hline
+			\textit{\textbf{VLP-32C}} & 360\degree                    & +15\degree to -25\degree          & 200m           & 0.1\degree                                & $\sim$1.2 Million                   & 32                \\ \hline
+			\textit{\textbf{VLP-16}}  & 360\degree                    & $\pm$ 15\degree                 & 100m           & 0.1\degree                                & 600,000                             & 16                \\ \hline
+	\end{tabular}
+	}
+	
+	\caption{Velodyne LiDAR Family}
+	\label{velodyne-table}
+\end{table}
+
+
+
+\begin{lstlisting}[language=bash, caption={.pcap -> .pcd},label={lst:ros}]
+	#Code to read .pcap files and convert them to .pcd 
+	
+	#Load existing pcap file and create a sensor publisher
+	$ roslaunch velodyne_pointcloud VLP-16-points.launch pcap:=(path to .pcap file) 
+	
+	#Receiver to  convert sensor messages to .pcd (In separate terminal window)
+	$ rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_points _prefix:=(path to save .pcd file) 
+	
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption=Calculating FLOPS and Parameters,label={lst:profiler}]
+#Code to read .pcap files and convert them to .pcd 
+
+#Load existing pcap file and create a sensor publisher
+$ roslaunch velodyne_pointcloud VLP-16-points.launch pcap:=(path to .pcap file) 
+
+#Receiver to  convert sensor messages to .pcd (In separate terminal window)
+$ rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_points _prefix:=(path to save .pcd file) 
+
+\end{lstlisting}

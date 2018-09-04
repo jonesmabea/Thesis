@@ -76,6 +76,11 @@
 \newblock
   https://www.intel.co.uk/content/www/uk/en/automotive/go-automated-driving.html.
 
+\bibitem{depth}
+{\sc J.~Ku, A.~Harakeh, and S.~L. Waslander}, {\em In defense of classical
+  image processing: Fast depth completion on the {CPU}}, CoRR, abs/1802.00036
+  (2018).
+
 \bibitem{law2001law}
 {\sc P.~Law}, {\em Law 106-398,“floyd d}, Spence National Defense
   Authorization Act for Fiscal Year,  (2001).
@@ -184,17 +189,31 @@
 {\sc M.~J.~S. Smith}, {\em Application-specific integrated circuits}, vol.~7,
   Addison-Wesley Reading, MA, 1997.
 
+\bibitem{somerville_2018}
+{\sc H.~Somerville}, {\em Uber's use of fewer safety sensors prompts questions
+  after arizona...}, Mar 2018.
+
 \bibitem{steder2010narf}
 {\sc B.~Steder, R.~B. Rusu, K.~Konolige, and W.~Burgard}, {\em Narf: 3d range
   image features for object recognition}, in Workshop on Defining and Solving
   Realistic Perception Problems in Personal Robotics at the IEEE/RSJ Int. Conf.
   on Intelligent Robots and Systems (IROS), vol.~44, 2010.
 
+\bibitem{tachet2016revisiting}
+{\sc R.~Tachet, P.~Santi, S.~Sobolevsky, L.~I. Reyes-Castro, E.~Frazzoli,
+  D.~Helbing, and C.~Ratti}, {\em Revisiting street intersections using
+  slot-based systems}, PloS one, 11 (2016), p.~e0149607.
+
 \bibitem{viola2001rapid}
 {\sc P.~Viola and M.~Jones}, {\em Rapid object detection using a boosted
   cascade of simple features}, in Computer Vision and Pattern Recognition,
   2001. CVPR 2001. Proceedings of the 2001 IEEE Computer Society Conference on,
   vol.~1, IEEE, 2001, pp.~I--I.
+
+\bibitem{wang2018pointseg}
+{\sc Y.~Wang, T.~Shi, P.~Yun, L.~Tai, and M.~Liu}, {\em Pointseg: Real-time
+  semantic segmentation based on 3d lidar point cloud}, arXiv preprint
+  arXiv:1807.06288,  (2018).
 
 \bibitem{waymo_2018}
 {\sc Waymo}, {\em Waymo safety report}, 2018.
@@ -204,6 +223,16 @@
 {\sc T.~Winkle}, {\em Development and approval of automated vehicles:
   considerations of technical, legal, and economic risks}, in Autonomous
   Driving, Springer, 2016, pp.~589--618.
+
+\bibitem{wu2015product}
+{\sc S.~S. Wu}, {\em Product liability issues in the us and associated risk
+  management}, in Autonomes Fahren, Springer, 2015, pp.~575--592.
+
+\bibitem{yz17iros}
+{\sc Z.~Yan, T.~Duckett, and N.~Bellotto}, {\em Online learning for human
+  classification in 3d lidar-based tracking}, in In Proceedings of the 2017
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS),
+  Vancouver, Canada, September 2017.
 
 \bibitem{zhong2009intrinsic}
 {\sc Y.~Zhong}, {\em Intrinsic shape signatures: A shape descriptor for 3d

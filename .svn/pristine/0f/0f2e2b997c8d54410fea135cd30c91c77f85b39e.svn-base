@@ -1,0 +1,51 @@
+%!TeX spellcheck = <engl>
+%
+% File: chap01.tex
+% Author: Victor F. Brena-Medina
+% Description: Introduction chapter where the biology goes.
+%
+\let\textcircled=\pgftextcircled
+\chapter{Conclusion and Future Work}
+\label{chap:fw}
+
+
+
+In conclusion, this project was able to achieve all of the objectives as stipulated in chapter \ref{chap:intro}. From the introduction, the need to  in order to was established. The impact of such systems was explored and the importance to perform tests for different scenarios was highlighted. From this it was clear that there was a lapse in the evaluation of object detection models for AVs in different contexts.
+
+By providing an in depth review of related research and chapter \ref{chap:background}, t an overview of current research into different perspectives of the AV landscape was discussed and the implica
+Established the need to carefully consider the constraints 
+
+multimodal for small object detection  common in urban
+lidar for the non-urban context 
+
+Depth filling 
+
+
+
+\section{Future Work}
+At it's inception, this project was related to  cutting edge research on LiDAR only object detection, as of now, there has been a lot of attention in this field and some challenges encountered while working on some aspects may have been solved. N
+Nonetheless, a few improvements can be changed in future iterations of my implementations. 
+Firstly, the process of context detection can be implemented using deep learning methods instead of using manual feature extraction. In doing so, this can allow an end to end pipeline system whereby depending on the context, it may be able to 
+In terms of  learning methods fo
+Creation of a automatic annotation network. 
+Experimenting with use of ASICs and FPGAs 
+Other models to try in future 
+
+Connected and autonomous vehicles can share information  
+Use of maps to obtain context information. 
+
+
+
+
+
+
+
+\section{Personal Reflection}
+
+This project greatly helped me understand various perspectives on the development of AVs. Starting from the technical, then legal and even economic aspects that form the driving force for different design choices. 
+This project evolved from simply trying to replicate the VoxelNet model that was not publicly released to later on realising a gap in the assessment of object detection models in different contexts and further to realising the impact of different LiDAR sensors on the performance of these models. This process helped me understand more about how the development of such systems tend to be quite complex and involve the collaboration of different disciplines to better understand how they can be fully integrated.
+In terms of programming, the graph model abstraction of the Tensorflow framework presented a steep learning curve for me as I was used to imperative programming frameworks. Debugging was quite difficult but over time, I was able to understand how to manipulate the graphs. This was especially the case while implementing the focal loss function that resulted in inf and nan errors. Another time consuming element was hyper parameter tuning for the networks. Most models that were released in public did not include the best parameters for training these networks, as such a lot of time was spent in finding these parameters. 
+CometML greatly helped in tracking the parameters that were the best performing and I could automatically create a GitHub pull request for them. 	
+
+ Working with point clouds also tended to be quite difficult as there are not many Python libraries that can manipulate point clouds and those that are available do not support as many features. As a result, a lot of time was spent in the research of different methods to handle the point clouds for the task of context detection and object detection. This resulted in using a lot of boiler plate code using different libraries. If there was enough time, this could've been improved by compiling these functions into one library that could provide these functions in a simpler manner. 
+ 

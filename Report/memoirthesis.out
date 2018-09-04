@@ -7,38 +7,41 @@
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Components of an AV}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Industrial Approaches}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{Hardware Considerations}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{Camera}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.3}{Camera and Radar}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Legal and Economic Concerns}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Hardware Considerations}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Perception}{section.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.4}{LiDAR, Camera and Radar}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.5}{LiDAR }{section.2.2}% 14
 \BOOKMARK [1][-]{section.2.3}{Object Detection}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.3.1}{Object Detection using Classic Computer Vision Methods}{section.2.3}% 16
 \BOOKMARK [2][-]{subsection.2.3.2}{Object Detection using Deep Learning}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Conclusion}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Datasets}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.1.1}{Context Classification}{section.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.1.2}{LiDAR Performance Evaluation}{section.3.1}% 22
-\BOOKMARK [1][-]{section.3.2}{Can We Automatically Detect The Context in Driving Scenes?}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{Image Context Detection}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.2}{PointCloud Context Detection}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.3}{Implementation Issues}{section.3.2}% 26
-\BOOKMARK [1][-]{section.3.3}{ Do Some Object Detection Methods work better in Different Contexts?}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.1}{VoxelNet}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.2}{AVOD}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.3}{Evaluation}{section.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.4}{Is VoxelNet Performance Valid for Different Datasets?}{section.3.3}% 31
-\BOOKMARK [1][-]{section.3.4}{Conclusion}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Results and Analysis}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Can We Automatically Detect Scene Contexts?}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.1.1}{Metrics}{section.4.1}% 35
-\BOOKMARK [2][-]{subsection.4.1.2}{Analysis}{section.4.1}% 36
-\BOOKMARK [1][-]{section.4.2}{Do Object Detection Models Perform Better in Different Contexts?}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Datasets}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{Context Classification}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.2}{LiDAR Performance Evaluation}{section.3.1}% 21
+\BOOKMARK [1][-]{section.3.2}{Can We Automatically Detect The Context in Driving Scenes?}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Image Context Detection}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.2}{PointCloud Context Detection}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.3}{Implementation Issues}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{ Do Some Object Detection Methods work better in Different Contexts?}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{VoxelNet}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{AVOD}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.3}{Evaluation}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.4}{Is VoxelNet Performance Valid for Different Datasets?}{section.3.3}% 30
+\BOOKMARK [1][-]{section.3.4}{Conclusion}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Results and Analysis}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Can We Automatically Detect Scene Contexts?}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.1.1}{Metrics}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.2}{Analysis}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{Do Object Detection Models Perform Better in Different Contexts?}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{Metrics}{section.4.2}% 37
 \BOOKMARK [1][-]{section.4.3}{Is VoxelNet Performance Valid For Different Datasets?}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 39
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.2}{Personal Reflection}{chapter.5}% 42
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 43
-\BOOKMARK [0][-]{appendix*.74}{Bibliography}{}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Metrics}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Analysis}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{Personal Reflection}{chapter.5}% 44
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 45
+\BOOKMARK [1][-]{section.A.1}{Code Listing}{appendix.A}% 46
+\BOOKMARK [0][-]{appendix*.90}{Bibliography}{}% 47

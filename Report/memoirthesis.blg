@@ -9,45 +9,45 @@ Repeated entry---line 422 of file thesisbiblio.bib
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in doxel
 Warning--can't use both volume and number fields in chen2017multi
-You've used 44 entries,
+You've used 50 entries,
             2030 wiz_defined-function locations,
-            732 strings with 11385 characters,
-and the built_in function-call counts, 15628 in all, are:
-= -- 1450
-> -- 682
+            765 strings with 12469 characters,
+and the built_in function-call counts, 17658 in all, are:
+= -- 1628
+> -- 798
 < -- 0
-+ -- 274
-- -- 228
-* -- 1153
-:= -- 2371
-add.period$ -- 48
-call.type$ -- 44
-change.case$ -- 244
++ -- 320
+- -- 268
+* -- 1313
+:= -- 2693
+add.period$ -- 54
+call.type$ -- 50
+change.case$ -- 282
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 747
-empty$ -- 1308
-format.name$ -- 228
-if$ -- 3390
+cite$ -- 52
+duplicate$ -- 844
+empty$ -- 1456
+format.name$ -- 268
+if$ -- 3814
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 39
-newline$ -- 139
-num.names$ -- 86
-pop$ -- 321
+int.to.str$ -- 50
+missing$ -- 44
+newline$ -- 157
+num.names$ -- 98
+pop$ -- 368
 preamble$ -- 1
-purify$ -- 202
+purify$ -- 234
 quote$ -- 0
-skip$ -- 559
+skip$ -- 631
 stack$ -- 0
-substring$ -- 970
-swap$ -- 277
+substring$ -- 1048
+swap$ -- 313
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
+type$ -- 196
 warning$ -- 2
-while$ -- 157
-width$ -- 46
-write$ -- 400
+while$ -- 173
+width$ -- 52
+write$ -- 451
 (There was 1 error message)
