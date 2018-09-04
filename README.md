@@ -48,12 +48,20 @@ This project, will  focus on LiDAR which projects the surrounding environment as
    ### AVOD 
   - [X] Obtain baseline results with pretrained model
   - [X] Notebooks for interactive training and testing
-  - [X] Implement GPU Monitor for inference code. 
-
+  - [X] Implement GPU Monitor for inference code.
+  
+  ## VALIDATION Dataset from SIL. 
+  - [X] Convert .pcap to bin 
+  - [x] Convert .pcap frames to .pcd for annotations 
+  - [x] Modify config files to include VLP-16 specifications. 
+  - [x] Run VoxelNet on dataset. 
     
    ### Analysis
   - [x] Research GPU metrics to be logged during model inference 
   - [X] Notebooks for interactive analysis 
+  - [x] Calculate FLOPs and No of parameters 
+  - [x] Calculate point cloud density
+
 
    
     
