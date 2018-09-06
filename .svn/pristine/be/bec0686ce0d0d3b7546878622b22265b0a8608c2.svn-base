@@ -1,0 +1,50 @@
+%
+% File: abstract.tex
+% Author: V?ctor Bre?a-Medina
+% Description: Contains the text for thesis abstract
+%
+% UoB guidelines:
+%
+% Each copy must include an abstract or summary of the dissertation in not
+% more than 300 words, on one side of A4, which should be single-spaced in a
+% font size in the range 10 to 12. If the dissertation is in a language other
+% than English, an abstract in that language and an abstract in English must
+% be included.
+
+\chapter*{Executive Summary}
+\begin{SingleSpace}
+\initial 
+{T}he need for robust object detection in 3D point clouds has greatly increased with the ongoing push for autonomous vehicles (AVs). Most of these systems use Light Detection and Ranging (LiDAR), cameras or a combination of both in order to perform object detection. LiDAR presents objects as point clouds in a 3D space thus offering critical shape information of objects in view. However, this representation is sparse. As a result, LiDAR-based detection performs poorly as compared to multimodal methods that have helped overcome this. Nonetheless, multimodal methods are often complex to set up and synchronise with the cost of components running into thousands of pounds.
+In light of this, reducing the number of sensors while still maintaining or even improving the accuracy has become a topic of interest by industry players who are developing AVs.  
+With the cost of LiDAR declining following recent improvements in solid-state LiDAR technology, dropping the number cameras in favour of LiDAR has become more plausible as cameras suffer from drawbacks such as visibility issues in extreme weather.
+
+This project will be 65\% type I (Software Development)  and 35\% type II (Theoretical) and will explore the use of multimodal methods and LiDAR only methods in different contexts with the aim of reducing the number of sensors in AVs.
+
+The main contributions and achievements of this project are: 
+\begin{itemize}
+	\item A cross-discipline review of issues affecting AV and their adaptation. (Chapter \ref{chap:background})
+	
+	\item Developing an image and point-cloud context classifier. (Chapter \ref{chap:implementation})
+	
+	\item Open sourcing and annotating sample frames from Smart Internet Lab dataset that can be used for training and developing object detection models. (Chapter \ref{chap:implementation})
+	
+	\item Demonstrated impact of Tensorflow graph parameters and floating point operations on GPU memory usage and Temperature. (Chapter \ref{chap:results})
+		
+	\item Establishing a bottleneck in LiDAR only object detection models that have only been validated on a single dataset.(Chapter \ref{chap:results})
+		
+
+	
+\end{itemize}
+%Software development of the deep learning framework will involve obtaining AV videos and point cloud data from public datasets such as KITTI. This data will then be used in the development and training of the RPN. On completion of development, the model will be evaluated against the KITTI benchmark.
+%%Tentatively, datasets from the University of Bristol Robotics department from their AV project will be tested on the implementation and a sanitised LiDAR dataset released. 
+%The aim of this project is to replicate and improve on VoxelNet, A Region Proposal Network for point cloud object detection that was recently released by Apple Inc. 
+%Doing so will be of added value as the implementation is currently proprietary to Apple Inc. If successful, my implementation will be made open source and can be used for further research in the field of object detection from LiDAR point clouds. In addition, through the evaluation and analysis, I hope to propose ways in which my implementation can be used in making cheaper AVs through the use of solid-state LiDAR without having to use cameras at all. 
+%
+%In consideration of this, two main objectives emerge. The first is to develop a region proposal network for object detection from LiDAR point clouds. This will be implemented using the TensorFlow machine learning framework.
+%The second will be a detailed evaluation report containing research into this topic area as well as an analysis and comparison of the performance of my implementation. 
+%Finally, an evaluation of the VoxelNet implementation will be performed to establish it's limitations and possible ways to improve it will be discussed. 
+
+\clearpage
+
+\end{SingleSpace}
+

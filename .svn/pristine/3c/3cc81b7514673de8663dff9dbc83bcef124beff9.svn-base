@@ -1,0 +1,208 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Appendix A}
+
+
+\begin{table}[H]
+	\centering
+		\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+			\textbf{LiDAR}       & \textbf{Hor FOV} & \textbf{Ver FOV} & \textbf{Range} & \textbf{Angular Resolution} & \textbf{Points/second}          & \textbf{Channels} \\ \hline
+			\textit{\textbf{VLS-128}} & 360\degree                    & +15\degree to -25\degree          & 300m           & 0.11\degree                               & $\sim$9.6 Million & 128               \\ \hline
+			\textit{\textbf{HDL-64E}} & 360\degree                    & 26.9\degree                 & 120m           & $\sim$0.4\degree                          & $\sim$2.2 Million                   & 64                \\ \hline
+			\textit{\textbf{HDL-32E}} & 360\degree                    & +10\degree to -30\degree          & 80m-100m       & 0.1\degree                                & $\sim$1.39 Million                  & 32                \\ \hline
+			\textit{\textbf{VLP-32C}} & 360\degree                    & +15\degree to -25\degree          & 200m           & 0.1\degree                                & $\sim$1.2 Million                   & 32                \\ \hline
+			\textit{\textbf{VLP-16}}  & 360\degree                    & $\pm$ 15\degree                 & 100m           & 0.1\degree                                & 600,000                             & 16                \\ \hline
+	\end{tabular}
+	}
+	
+	\caption{Velodyne LiDAR Family}
+	\label{velodyne-table}
+\end{table}
+
+
+\section{Code Listings}
+\begin{lstlisting}[language=bash, caption={.pcap -> .pcd},label={lst:ros}]
+	#Code to read .pcap files and convert them to .pcd 
+	
+	#Load existing pcap file and create a sensor publisher
+	$ roslaunch velodyne_pointcloud VLP-16-points.launch pcap:=(path to .pcap file) 
+	
+	#Receiver to  convert sensor messages to .pcd (In separate terminal window)
+	$ rosrun pcl_ros pointcloud_to_pcd input:=/velodyne_points _prefix:=(path to save .pcd file) 
+	
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Python, caption=Calculating FLOPS and Parameters,label={lst:profiler}]
+def calculate_metrics(chkpoint):
+	"""
+	Profiles a Tensorflow Graph to obtain the parameters and FLOPS
+	params:
+	chkpoint: Tensorflow checkpoint. 
+	returns: 
+	stats: FLOPS proto object 
+	params: Parameters proto objects
+	
+"""
+	with tf.Graph().as_default():
+		#GPU options. 
+		gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4,
+																visible_device_list='0',
+																allow_growth=True)
+		#create session config proto object
+		config = tf.ConfigProto(
+							gpu_options=gpu_options,
+							device_count={"GPU": 1},
+							allow_soft_placement=True,
+							log_device_placement=False
+						)
+		#Include to initialise variables. 
+		run_metadata = tf.RunMetadata()
+		# Run session with specified configs.
+		with tf.Session(config=config) as sess:
+				saver = tf.train.import_meta_graph(chkpoint+'.meta', clear_devices=True)
+				saver.restore(sess, chkpoint)
+				opts =tf.profiler.ProfileOptionBuilder.float_operation()
+				stats = tf.profiler.profile(sess.graph, run_meta= run_metadata, cmd='op', options=opts)
+				opts = tf.profiler.ProfileOptionBuilder.trainable_variables_parameter()    
+				params = tf.profiler.profile(sess.graph, run_meta=run_metadata, cmd='op', options=opts)
+		return stats,params
+
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[language=Python, caption=NVIDIA SMI Logging Tool ,label={lst:logger}]
+class GPULogging:
+	'''
+	GPU statistics logging utility using NVIDIA SMI 
+	params: 
+	name : str name for ouput log 
+	device_id: str ID for GPU device to log
+	'''
+	def __init__(self, name='',device_id='0'):
+		self.name=name
+		self.device_id =device_id
+		self.log = open(f'/mnt/storage/home/ja17618/{self.name}.out','w+')
+		self.process=None
+	def start(self):
+		self.log.flush()
+		if self.process is None:
+			self.process = subprocess.Popen(f'nvidia-smi -i {self.device_id} --format=csv -l 1 --query-gpu=index,timestamp,power.draw,utilization.gpu,clocks.current.sm,temperature.gpu,memory.used',stdout = self.log, shell=True)
+	def stop(self):
+		if self.process is not None:
+			self.process.kill()
+			self.log.flush()
+			self.log.close()
+			
+\end{lstlisting}
+\section{Project Repository}
+
+The full repository containing the software and datasets is contained on a Github repository that can be accessed through the following link: 
+
+\url {https://github.com/jonesmabea/Thesis/tree/master/src}
+
+
+\chapter{Appendix B}
+\section{VoxelNet Car Class Results}
+
+\begin{table}[H]
+	\centering
+	\caption{Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010}
+	\label{}
+	\begin{tabular}{llll}
+		& Easy      & Medium    & Hard      \\
+		2D BB  & 66.694275 & 61.794048 & 56.704201 \\
+		BEV BB & 83.221397 & 71.564476 & 65.815987 \\
+		3D BB  & 44.193409 & 37.166309 & 34.312012
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Batch Size-2, Alpha-1.5, Beta-1, Learning Rate-0.001, SGD(Stochastic Gradient Descent)}
+	\label{}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{llll}
+			&           &           &           \\
+			2D BB  & 54.1314   & 51.987816 & 49.846    \\
+			BEV BB & 67.7886   & 60.139378 & 57.110561 \\
+			3D BB  & 27.949509 & 24.58765  & 23.919827
+		\end{tabular}%
+	}
+\end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\caption{Batch Size-2, Alpha-1.5, Beta-1, Learning Rate-0.001}
+	\label{my-label}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{llll}
+			& Easy      & Medium    & Hard      \\
+			2D BB  & 58.13995  & 55.034439 & 52.658123 \\
+			BEV BB & 71.448044 & 62.753643 & 59.43668  \\
+			3D BB  & 29.088995 & 25.889782 & 25.196236
+		\end{tabular}%
+	}
+\end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+	\centering
+	\caption{Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010, Epochs-200}
+	\label{my-label}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{llll}
+			& Easy      & Medium    & Hard      \\
+			2D BB  & 66.286095 & 60.794079 & 56.602215 \\
+			BEV BB & 80.853729 & 70.397255 & 65.429283 \\
+			3D BB  & 40.968906 & 35.093216 & 32.869728
+		\end{tabular}%
+	}
+\end{table}
+
+
+\section{VoxelNet Pedestrian Class Results}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\caption{Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010}
+	\label{my-label}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{llll}
+			& Easy      & Medium    & Hard      \\
+			2D BB  & 66.309807 & 60.556213 & 53.479141 \\
+			BEV BB & 50.308723 & 46.726196 & 41.24551  \\
+			3D BB  & 34.161884 & 30.576441 & 28.982103
+		\end{tabular}%
+	}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\caption{Batch Size-5, Alpha-1, Beta-10, Learning Rate-0.0010}
+	\label{my-label}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{llll}
+			& Easy      & Medium    & Hard      \\
+			2D BB  & 58.860611 & 57.009262 & 51.562225 \\
+			BEV BB & 45.534058 & 44.515095 & 40.178875 \\
+			3D BB  & 27.838013 & 27.808207 & 26.696507
+		\end{tabular}%
+	}
+\end{table}

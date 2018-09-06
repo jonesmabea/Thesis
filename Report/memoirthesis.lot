@@ -2,17 +2,24 @@
 \par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{19}{table.caption.32}
+\contentsline {table}{\numberline {21}{\ignorespaces Modes of Operation of Common Architectures\relax }}{19}{table.caption.34}
 \addvspace {10pt}
-\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{32}{table.caption.50}
+\contentsline {table}{\numberline {31}{\ignorespaces Velodyne HDL-64E and VLP-16 Specifications.\relax }}{32}{table.caption.53}
 \addvspace {10pt}
-\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{36}{table.caption.56}
-\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{36}{table.caption.57}
-\contentsline {table}{\numberline {41}{\ignorespaces Baseline\relax }}{37}{table.caption.61}
-\contentsline {table}{\numberline {42}{\ignorespaces Car AP\relax }}{38}{table.caption.63}
-\contentsline {table}{\numberline {43}{\ignorespaces Pedestrian AP\relax }}{38}{table.caption.64}
-\contentsline {table}{\numberline {44}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{38}{table.caption.68}
-\contentsline {table}{\numberline {45}{\ignorespaces Memory\relax }}{41}{table.caption.72}
+\contentsline {table}{\numberline {41}{\ignorespaces Comparison of context detection methods\relax }}{36}{table.caption.59}
+\contentsline {table}{\numberline {42}{\ignorespaces Penalised Point Cloud classifier\relax }}{36}{table.caption.60}
+\contentsline {table}{\numberline {41}{\ignorespaces Baseline\relax }}{37}{table.caption.64}
+\contentsline {table}{\numberline {42}{\ignorespaces Car AP\relax }}{38}{table.caption.66}
+\contentsline {table}{\numberline {43}{\ignorespaces Pedestrian AP\relax }}{38}{table.caption.69}
+\contentsline {table}{\numberline {44}{\ignorespaces Inference Time on Single NVIDIA P100 GPU\relax }}{39}{table.caption.72}
+\contentsline {table}{\numberline {45}{\ignorespaces Memory\relax }}{41}{table.caption.76}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{51}{table.caption.89}
+\contentsline {table}{\numberline {A1}{\ignorespaces Velodyne LiDAR Family\relax }}{53}{table.caption.94}
+\addvspace {10pt}
+\contentsline {table}{\numberline {B1}{\ignorespaces Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010, Epochs-160\relax }}{57}{table.caption.95}
+\contentsline {table}{\numberline {B4}{\ignorespaces Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010, Epochs-200\relax }}{58}{table.caption.98}
+\contentsline {table}{\numberline {B2}{\ignorespaces Batch Size-2, Alpha-1.5, Beta-1, Learning Rate-0.001, SGD(Stochastic Gradient Descent), Epochs-160\relax }}{58}{table.caption.96}
+\contentsline {table}{\numberline {B3}{\ignorespaces Batch Size-2, Alpha-1.5, Beta-1, Learning Rate-0.001, Epochs-160\relax }}{58}{table.caption.97}
+\contentsline {table}{\numberline {B1}{\ignorespaces Batch Size-2, Alpha-1, Beta-10, Learning Rate-0.0010, Epochs-160\relax }}{59}{table.caption.99}
+\contentsline {table}{\numberline {B2}{\ignorespaces Batch Size-5, Alpha-1, Beta-10, Learning Rate-0.0010, Epochs-160\relax }}{59}{table.caption.100}

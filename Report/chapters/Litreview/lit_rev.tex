@@ -4,7 +4,7 @@
 \chapter{Background}
 \label{chap:background}
 
-Despite recent interest in autonomous vehicles(AVs), the idea of autonomous vehicles(AVs) is not new. In fact, there had been attempts to autonomously navigate using cameras as early as 1990. Dan Pomerleau, a leading researcher from Carnegie Mellon, had developed a neural network, ALVINN(Autonomous Land Vehicle in Neural Network)\cite{pomerleau1989alvinn},  that could steer a van using camera input and avoid obstacles using a laser range finder . His system used artificial neural networks to categorise road and non-road segments and detect objects in them\cite{pomerleau1991rapidly}.This was one of the pioneering research in this field. Despite the success, a major limitation was the low computational power of computers at that time that led to long training times for artificial neural networks. Due to this limitation, interest in AVs slowly waned off as interest in the internet revolution peaked. 
+Despite recent interest in autonomous vehicles (AVs), the idea of AVs is not new. In fact, there had been attempts to autonomously navigate using cameras as early as 1990. Dan Pomerleau, a leading researcher from Carnegie Mellon, had developed a neural network, ALVINN (Autonomous Land Vehicle in Neural Network)\cite{pomerleau1989alvinn},  that could steer a van using camera input and avoid obstacles using a laser range finder . His system used artificial neural networks to categorise road and non-road segments and detect objects in them\cite{pomerleau1991rapidly}.This was one of the pioneering research in this field. Despite the success, a major limitation was the low computational power of computers at that time that led to long training times for artificial neural networks. Due to this limitation, interest in AVs slowly waned off as interest in the internet revolution peaked. 
 
  \begin{figure}[h]
 	\centering
@@ -13,9 +13,9 @@ Despite recent interest in autonomous vehicles(AVs), the idea of autonomous vehi
 	\label{fig:alvinn}
 \end{figure}
 
- It was not until around 2004 when the AV landscape started seeing major development. At around this period, the US congress had passed regulation to replace 33\% of military vehicles with AVs\cite{law2001law}. Despite major military investment, there was not much progress and therefore  Defense Advanced Research Projects Agency(DARPA) opted to revolutionise the process by opening up the challenge to the public. In February 2003, DARPA hosted the Grand Challenge with a prize of 1\$ million dollars to develop an AV that could finish a 142 mile course that was set up in Mojave Desert to simulate harsh difficult conditions. Of 160 competitors, there was no winner. In the 2005 Grand Challenge, Stanford University had the fastest car to complete the course and consequently won the challenge. Subsequent challenges were held and more AVs were able to complete the course aided by advances in AI methods. Following these challenges, more research was undertaken to create more reliable and accurate sensors. Notably, Velodyne came about as a result of the Grand Challenge and is currently the leading supplier of LiDAR units. 
+ It was not until around 2004 when the AV landscape started seeing major development. At around this period, the US congress had passed regulation to replace 33\% of military vehicles with AVs\cite{law2001law}. Despite major military investment, there was not much progress and therefore the Defense Advanced Research Projects Agency (DARPA) opted to revolutionise the process by opening up the challenge to the public. In February 2003, DARPA hosted the Grand Challenge with a prize of 1\$ million dollars to develop an AV that could finish a 142 mile course that was set up in Mojave Desert to simulate harsh difficult conditions. Of 160 competitors, there was no winner. In the 2005 Grand Challenge, Stanford University had the fastest car to complete the course and consequently won the challenge. Subsequent challenges were held and more AVs were able to complete the course aided by advances in AI methods. Following these challenges, more research was undertaken to create more reliable and accurate sensors. Notably, Velodyne came about as a result of the Grand Challenge and is currently the leading supplier of LiDAR units. 
  
-With different types of autonomous systems being deployed in vehicles nowadays, the Society of Automotive Engineers(SAE) defined five levels of autonomy to differentiate them: 
+With different types of autonomous systems being deployed in vehicles nowadays, the Society of Automotive Engineers (SAE) defined five levels of autonomy to differentiate them: 
 \begin{table}[H]
 	\begin{tabular}{p{1cm}p{\linewidth}}
 		\textbf{SAE level} & \textbf{Description}                                                                                                                                         \\ \hline
@@ -46,7 +46,7 @@ With different types of autonomous systems being deployed in vehicles nowadays, 
 	 \begin{figure}[h]
 	 	\centering
 	 	\includegraphics[width=\textwidth]{media/hdl-family.png}
-	 	\caption{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16}
+	 	\caption{Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16. Source: Velodyne} 
 	 	\label{fig:lidar}
 	 \end{figure}
 	
@@ -59,14 +59,14 @@ With different types of autonomous systems being deployed in vehicles nowadays, 
 	\item \textbf{Distance Sensors} - Distance sensors such as radars and sonars are important for gauging the distance of objects on the road. 
 	Radars are the most commonly used distance sensors and they function by transmitting radio waves and recording the reflected radio waves from objects. As compared to cameras and LiDARs, radars work well in a variety of low visibility scenarios such as in heavy snow/rainfall. However, the reflectivity of these radio waves depends on the nature of objects, their size, absorption characteristics and the transmitting power. As such, it is may not be effective for detecting objects with low absorption characteristics such as pedestrians and animals.
 	
-	\item \textbf{Processing Unit} - In order to process all the data in real-time from sensors on the vehicle, AVs require powerful processing units. Most ML/AI algorithms used for detecting and identifying objects from LiDAR and camera data demand large amounts of processing power. This is achieved through the use of CPUs, GPUs, Field Programmable Gate Arrays(FPGA)\cite{brown2012field}, Application Specific Integrated Circuits(ASICs)\cite{smith1997application} or combinations with each other. 
+	\item \textbf{Processing Unit} - In order to process all the data in real-time from sensors on the vehicle, AVs require powerful processing units. Most ML/AI algorithms used for detecting and identifying objects from LiDAR and camera data demand large amounts of processing power. This is achieved through the use of CPUs, GPUs, Field Programmable Gate Arrays (FPGA)\cite{brown2012field}, Application Specific Integrated Circuits (ASICs)\cite{smith1997application} or combinations with each other. 
 
 \end{itemize}
 
 
 
 
-These components are used in different operations. In most AV implementations, these operations can be grouped into three categories. 
+These components are used in different operations. In most AV implementations, these operations can be grouped into three categories:
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\centering
@@ -74,9 +74,9 @@ These components are used in different operations. In most AV implementations, t
 	\caption{Detailed operation pipeline. Source:\cite{dietmayer2016predicting}}
 \end{wrapfigure}
 
-\paragraph{Perception} - This is the first step which involves processing the input from the sensors. In this mode tasks such as object detection and tracking, lane detection, traffic sign detection and recognition are performed.
-\paragraph{Planning} - This is the next step after detection and recognition tasks are performed . In this stage route and trajectory planning algorithms are run to plan how the vehicle should navigate in the immediate environment as well as a route to a target location. These algorithms are required to handle complex situations to ensure safety of the passengers and other road users. 
-\paragraph{Control} - This stage involves the execution of plans created in the planning stage. This stage is crucial as the actuators involved in steering and movement have to be able to accurately follow the planned routes and actions. At this stage the trajectories and movement of other road users and objects have to be calculated in order to anticipate and avoid any accidents. 
+\paragraph{Perception}This is the first step which involves processing the input from the sensors. In this mode tasks such as object detection and tracking, lane detection, traffic sign detection and recognition are performed.
+\paragraph{Planning}This is the next step after detection and recognition tasks are performed . In this stage route and trajectory planning algorithms are run to plan how the vehicle should navigate in the immediate environment as well as a route to a target location. These algorithms are required to handle complex situations to ensure safety of the passengers and other road users. 
+\paragraph{Control}This stage involves the execution of plans created in the planning stage. This stage is crucial as the actuators involved in steering and movement have to be able to accurately follow the planned routes and actions. At this stage the trajectories and movement of other road users and objects have to be calculated in order to anticipate and avoid any accidents. 
 	
 
 \section{Industrial Approaches}
@@ -130,7 +130,7 @@ AVs should be able to store maps of different areas with fine granularity for ac
 	\label{fig:powerred}
 \end{wrapfigure}
 Most of the major industry players have moved to electric-vehicles for their AV systems. Depending on the equipment and sensor configurations used in these systems, the power usage can range from 500 watts to 1.5 kilowatts. Total power consumption includes the computing, storage and cooling overheads. Given that the AVs have limited battery capacity, heavy power consumption by these systems can lead to poor driving ranges hence making the cars less viable.
-From their evaluation, a system with 1 CPUs and 3GPUs operating fully can lead to a 6\% reduction in the driving range and 11.5\% if the whole system is considered. Furthermore, they established that cooling such a system would result in a 77\% overhead of the total power usage.
+From their evaluation, a system with 1 CPUs and 3 GPUs operating fully can lead to a 6\% reduction in the driving range and 11.5\% if the whole system is considered. Furthermore, they established that cooling such a system would result in a 77\% overhead of the total power usage.
 Therefore,  the configuration of these systems has to be carefully considered to ensure a reasonable driving range. 
 
 \subsubsection*{Thermal} 
@@ -148,10 +148,10 @@ Mobileye\cite{mobileye_2018}, is one of the top contenders in the development of
 Given their extensive background in developing these vision systems, the partnership with Intel aims to develop a complete autonomous driving package\cite{intelsolutions_2018}.
  
 
-\subsection*{Camera and  Radar}
-Another major contender that is using the camera and radar configuration is Tesla. Elon Musk, the founder, believes that LiDAR is not necessary for AV perception following a similar argument as MobilEye. However, this argument was dispelled following a recent crash whereby due to bright sunlight, a Tesla vehicle on 'autopilot' mode was unable to detect a white vehicle thus resulting into an accident leading to loss of life. The invariance of LiDAR to different lighting conditions could have helped in detecting the vehicle. 
+\subsubsection*{Camera and  Radar}
+Another major contender that is using the camera and radar configuration is Tesla. Elon Musk, the founder, believes that LiDAR is not necessary for AV perception following a similar argument as MobilEye. However, this argument was dispelled following a recent crash whereby due to bright sunlight, a Tesla vehicle on 'autopilot' mode was unable to detect a white vehicle thus resulting in an accident leading to loss of life. The invariance of LiDAR to different lighting conditions could have helped in detecting the vehicle. 
 
-\subsection{LiDAR, Camera and Radar}
+\subsubsection*{LiDAR, Camera and Radar}
 This configuration is used by most of the leading industry players such as Uber, Waymo and GM Cruise. This configuration has proven to be robust and accurate. However, in order to process the amount of fused data, they require large amounts of computational power which in turn may lead to increased power usage. 
 \begin{figure}[t]
 	\centering
@@ -159,21 +159,21 @@ This configuration is used by most of the leading industry players such as Uber,
 	\caption{Waymo's Self Driving Car Configuration, Source:\cite{waymo_2018}}
 	\label{fig:waymo}
 \end{figure}
-\subsection{LiDAR }
+\subsubsection*{LiDAR }
 LiDAR-only systems have not been explored by major companies working on AVs for driving on public roads. However,various autonomous robots have been developed to assist in other industries such as the Neato house cleaning robot. Doxel, a start up aiming to solve problems in the construction industry has also created an autonomous robot that autonomously scans and captures the progress of different construction sites and further process them using neural networks.
 \section{Object  Detection} 
 Object detection has seen a rapid increase in innovation over the past few years. From the early days of the sliding window method used in classic computer vision algorithms to the development of deep learning algorithms that are able to learn complex features automatically. 
-In this section, I will explore different object detections methods that have been used and their underlying methods of operation.
+In this section, I will explore different object detection methods that have been used and their underlying methods of operation.
 
 \subsection{Object Detection using Classic Computer Vision Methods}
-Classic computer vision methods have advanced over the years from simple algorithms such as SIFT\cite{lowe1999object} and SURF\cite{bay2006surf} which use descriptors to detect interesting points in images for object detection to much higher level representations such as the Histogram of Gradient(HOG)\cite{dalal2005histograms} or Haar Features\cite{viola2001rapid}  that were used in classifiers applied on a sliding window. 
+Classic computer vision methods have advanced over the years from simple algorithms such as SIFT\cite{lowe1999object} and SURF\cite{bay2006surf} which use descriptors to detect interesting points in images for object detection to much higher level representations such as the Histogram of Gradient (HOG)\cite{dalal2005histograms} or Haar Features\cite{viola2001rapid}  that were used in classifiers applied on a sliding window. 
 
-However, these methods have been unreliably slow and not as accurate. In addition these features are only able to model 2D data. 3D methods such as Intrinsic Shape Signatures(ISS)\cite{zhong2009intrinsic}, NARF\cite{steder2010narf} and Uniform Sampling have since been developed but are lacking in terms speed. Furthermore, these feature detectors have to be hand-crafted manually which is a tedious process. As a result, they are rarely used in real-time AV applications due to their speed and accuracy.
+However, these methods have been unreliably slow and not as accurate. In addition these features are only able to model 2D data. 3D methods such as Intrinsic Shape Signatures(ISS)\cite{zhong2009intrinsic}, NARF\cite{steder2010narf} and Uniform Sampling have since been developed but are lacking in terms of speed. Furthermore, these feature detectors have to be hand-crafted manually which is a tedious process. As a result, they are rarely used in real-time AV applications due to their speed and accuracy.
 
 \subsection{Object Detection using Deep Learning}
-The advancement of neural networks has offset the reliance of classical methods of object detection by allowing for features to be automatically learnt by the network without the need for manual feature extraction. This is attributed to the networks having numerous number of deep layers that are able to capture these features.  
-\subsubsection*{Convolutional Neural Networks(CNN)}
-The idea of CNNs has been there for over two decades now and are inspired by the idea of receptive fields in the primary visual cortex. Currently, they are widely used in image object detection tasks and various CNN architectures have been developed. As compared to regular neural networks which have all neurons connected to each other between hidden layers, neurons in CNNs are connected to a small region in the layer before it(receptive field) and have three dimensions(width,height and depth). By doing so this reduces the number of parameters to be tuned during back-propagation as well as stored. 
+The advancement of neural networks has offset the reliance of classical methods of object detection by allowing for features to be automatically learnt by the network without the need for manual feature extraction. This is attributed to the networks having a numerous number of deep layers that are able to capture these features.  
+\subsubsection*{Convolutional Neural Networks (CNN)}
+CNNs have been there for over two decades now and are inspired by the idea of receptive fields in the primary visual cortex. Currently, they are widely used in image object detection tasks and various CNN architectures have been developed. As compared to regular neural networks which have all neurons connected to each other between hidden layers, neurons in CNNs are connected to a small region in the layer before it(receptive field) and have three dimensions(width,height and depth). By doing so this reduces the number of parameters to be tuned during back-propagation as well as to be stored. 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=\linewidth]{images/neuralnet}
@@ -197,9 +197,9 @@ Common architectures implement five main layers.
 \end{itemize}
 
 \subsubsection*{Region Proposal Networks(RPN)}
-R-CNN\cite{girshick2014rich} brought forth the idea of region-based CNNs with the aim of increasing the accuracy of CNNs. By using selective search, regions of interest(ROI) in input images are proposed. These regions are then resized are then fed through a CNN to generate a bounding box and classification of the image. Finally a classifier and regressor are run on the output. However, as this method requires a forward pass of the CNN for each proposal, its speed was quite slow. In addition, the CNN, classifier and regressor have to be trained and tuned separately. 
+R-CNN\cite{girshick2014rich} brought forth the idea of region-based CNNs with the aim of increasing the accuracy of CNNs. By using selective search, regions of interest(ROI) in input images are proposed. These regions are then resized and fed through a CNN to generate a bounding box and classification of the image. Finally a classifier and regressor are run on the output. However, as this method requires a forward pass of the CNN for each proposal, its speed was quite slow. In addition, the CNN, classifier and regressor have to be trained and tuned separately. 
 Fast R-CNN\cite{girshickICCV15fastrcnn} iterated on R-CNN to further improve the speed and accuracy by using ROIPooling whereby instead of running each proposal in a CNN, regions that were overlapping were pooled and fed through the CNN thus sharing the computation. Furthermore, this model was end-to-end and thus combined the classifier and regressor  by adding a softmax layer and linear regression layer after the CNN.
-Faster R-CNN\cite{ren2015faster} sought to remove the bottleneck imposed by the using selective search to propose regions. This was solved by using a sliding window with various anchor boxes on features maps generated by a forward pass of a CNN. Bounding boxes on certain regions of the image could be generated. These regions are then passed onto Fast R-CNN to classify the objects. 
+Faster R-CNN\cite{ren2015faster} sought to remove the bottleneck imposed by the using selective search to propose regions. This was solved by using a sliding window with various anchor boxes on feature maps generated by a forward pass of a CNN. Bounding boxes on certain regions of the image could be generated. These regions are then passed onto Fast R-CNN to classify the objects. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{images/fastercnn}
@@ -209,9 +209,9 @@ Faster R-CNN\cite{ren2015faster} sought to remove the bottleneck imposed by the 
 
 Depending on the input, these two network architectures have formed the back bone of most 2D and 3D object detection applications. 
 \paragraph{Monocular Vision} 
-Monocular vision is derived from a single camera. This representation is 2D and lacks depth information. Mono3D by Chen et al \cite{chen2016monocular} is a state of the art object detection model that uses monocular images where they were fed through a CNN and the resulting 2D object proposals were extruded into 3D bounding boxes by performing segmentation.
+Monocular vision is derived from a single camera. This representation is 2D and lacks depth information. Mono3D\cite{chen2016monocular} by Chen et al.  is a state of the art object detection model that uses monocular images where they were fed through a CNN and the resulting 2D object proposals were extruded into 3D bounding boxes by performing segmentation.
 
-\paragraph{Stereo Vision}Stereo vision involves calibrating two cameras intrinsically and extrinsically by matching similar points in images from both cameras. Using the resulting stereo image, it is possible to estimate the depth of objects in the image. However the accuracy of this depends on a few factors such as the resolution, camera quality, lens distortion and the calibration algorithm. 3DOP \cite{chen20183d} is one of the state-of-the-art models that use stereo images in CNNs to detect objects.  
+\paragraph{Stereo Vision}Stereo vision involves calibrating two cameras intrinsically and extrinsically by matching similar points in images from both cameras. Using the resulting stereo image, it is possible to estimate the depth of objects in the image. However the accuracy of this depends on a few factors such as the resolution, camera quality, lens distortion and the calibration algorithm. 3DOP \cite{chen20183d} is one of the state-of-the-art models that uses stereo images in CNNs to detect objects.  
 
 \paragraph{LiDAR+Camera}
 By fusing input from a monocular image and point clouds, it is possible to extract depth information from the images. Chen et al further reiterated their monocular approach into MV3D\cite{chen2017multi} a multiview 3D object detection network. In their work, they were able to fuse LiDAR and camera input to create a bird's eye view of the surrounding environment and further perform object detection of features. 

@@ -4,31 +4,33 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {21}{\ignorespaces ALVINN architectures. Left: With camera and laser range finder. Right: camera only. Source: \cite {pomerleau1991rapidly}\relax }}{6}{figure.caption.5}
 \contentsline {figure}{\numberline {21}{\ignorespaces LiDAR Point Cloud\relax }}{7}{figure.caption.7}
-\contentsline {figure}{\numberline {22}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {22}{\ignorespaces Velodyne LiDAR family. From left: Velodyne HDL-64E , HDL-32E , VLP-16. Source: Velodyne\relax }}{8}{figure.caption.8}
 \contentsline {figure}{\numberline {23}{\ignorespaces Detailed operation pipeline. Source:\cite {dietmayer2016predicting}\relax }}{9}{figure.caption.9}
 \contentsline {figure}{\numberline {21}{\ignorespaces Diagram illustrating distribution between types of risk and severity. Source:\cite {gasser2016fundamental}\relax }}{10}{figure.caption.14}
 \contentsline {figure}{\numberline {21}{\ignorespaces Graph illustrating reduction of power range against the processing unit configurations. Source:\cite {lin2018architectural}\relax }}{12}{figure.caption.18}
 \contentsline {figure}{\numberline {21}{\ignorespaces AV Leaderboard by Navigant Research. Source:\cite {navigantresearch_2018}\relax }}{13}{figure.caption.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Waymo's Self Driving Car Configuration, Source:\cite {waymo_2018}\relax }}{15}{figure.caption.23}
-\contentsline {figure}{\numberline {21}{\ignorespaces NN vs CNN Source: \url {https://cs231n.github.io/convolutional-networks}\relax }}{16}{figure.caption.25}
-\contentsline {figure}{\numberline {22}{\ignorespaces Faster R-CNN overview. Source:\cite {ren2015faster}\relax }}{18}{figure.caption.27}
+\contentsline {figure}{\numberline {22}{\ignorespaces Waymo's Self Driving Car Configuration, Source:\cite {waymo_2018}\relax }}{15}{figure.caption.24}
+\contentsline {figure}{\numberline {21}{\ignorespaces NN vs CNN Source: \url {https://cs231n.github.io/convolutional-networks}\relax }}{16}{figure.caption.27}
+\contentsline {figure}{\numberline {22}{\ignorespaces Faster R-CNN overview. Source:\cite {ren2015faster}\relax }}{18}{figure.caption.29}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {31}{\ignorespaces Urban scene\relax }}{23}{figure.caption.33}
-\contentsline {figure}{\numberline {32}{\ignorespaces Non-Urban scene\relax }}{23}{figure.caption.33}
-\contentsline {figure}{\numberline {31}{\ignorespaces Semantic Histograms\relax }}{24}{figure.caption.36}
-\contentsline {figure}{\numberline {31}{\ignorespaces Ambiguous scene\relax }}{27}{figure.caption.41}
-\contentsline {figure}{\numberline {31}{\ignorespaces VoxelNet Architecture\relax }}{30}{figure.caption.46}
-\contentsline {figure}{\numberline {32}{\ignorespaces AVOD Architecture\relax }}{30}{figure.caption.46}
-\contentsline {figure}{\numberline {31}{\ignorespaces SIL Data Frame CSV\relax }}{31}{figure.caption.48}
-\contentsline {figure}{\numberline {32}{\ignorespaces Veloview Frame of SIL data\relax }}{32}{figure.caption.49}
-\contentsline {figure}{\numberline {33}{\ignorespaces L-CAS Annotation Tool\relax }}{33}{figure.caption.52}
+\contentsline {figure}{\numberline {31}{\ignorespaces Urban scene\relax }}{23}{figure.caption.35}
+\contentsline {figure}{\numberline {32}{\ignorespaces Non-Urban scene\relax }}{23}{figure.caption.35}
+\contentsline {figure}{\numberline {31}{\ignorespaces Semantic Histograms for Urban and Non-urban Scenes\relax }}{24}{figure.caption.38}
+\contentsline {figure}{\numberline {31}{\ignorespaces Ambiguous scene\relax }}{27}{figure.caption.43}
+\contentsline {figure}{\numberline {31}{\ignorespaces VoxelNet Architecture. Source:\cite {zhou2017voxelnet}\relax }}{30}{figure.caption.48}
+\contentsline {figure}{\numberline {32}{\ignorespaces AVOD Architecture.Source:\cite {ku2017joint}\relax }}{30}{figure.caption.48}
+\contentsline {figure}{\numberline {31}{\ignorespaces SIL Data Frame CSV\relax }}{31}{figure.caption.51}
+\contentsline {figure}{\numberline {32}{\ignorespaces Veloview Frame of SIL data\relax }}{32}{figure.caption.52}
+\contentsline {figure}{\numberline {33}{\ignorespaces L-CAS Annotation Tool\relax }}{33}{figure.caption.55}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {41}{\ignorespaces Temperature boxplots of evaluation runs.Voxelnet(blue), AVOD(gold), AVOD+VoxelNet(Red)\relax }}{40}{figure.caption.70}
-\contentsline {figure}{\numberline {42}{\ignorespaces Power boxplots of evaluation runs. Voxelnet(blue), AVOD(gold), AVOD+VoxelNet(Red)\relax }}{40}{figure.caption.70}
-\contentsline {figure}{\numberline {41}{\ignorespaces Bird Eye View Difference between SIL and KITTI\relax }}{42}{figure.caption.77}
-\contentsline {figure}{\numberline {42}{\ignorespaces Point Cloud Density\relax }}{43}{figure.caption.78}
-\contentsline {figure}{\numberline {41}{\ignorespaces AVOD Tensorflow Graph\relax }}{45}{figure.caption.84}
-\contentsline {figure}{\numberline {42}{\ignorespaces VoxelNet Tensorflow Graph\relax }}{46}{figure.caption.86}
+\contentsline {figure}{\numberline {41}{\ignorespaces Temperature boxplots of evaluation runs.Voxelnet (blue), AVOD (gold), AVOD+VoxelNet (Red)\relax }}{40}{figure.caption.74}
+\contentsline {figure}{\numberline {42}{\ignorespaces Power boxplots of evaluation runs. Voxelnet (blue), AVOD (gold), AVOD+VoxelNet (Red)\relax }}{40}{figure.caption.74}
+\contentsline {figure}{\numberline {41}{\ignorespaces Bird Eye View Difference between SIL and KITTI\relax }}{42}{figure.caption.81}
+\contentsline {figure}{\numberline {42}{\ignorespaces Point Cloud Density\relax }}{43}{figure.caption.82}
+\contentsline {figure}{\numberline {41}{\ignorespaces AVOD Tensorflow Graph\relax }}{45}{figure.caption.88}
+\contentsline {figure}{\numberline {42}{\ignorespaces VoxelNet Tensorflow Graph\relax }}{46}{figure.caption.90}
+\contentsline {figure}{\numberline {41}{\ignorespaces Distribution of weight and power per component in medium connected AV . Source:\cite {lifecycle}\relax }}{47}{figure.caption.92}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {51}{\ignorespaces Context-Dependent Model Pipeline Prototype\relax }}{48}{figure.caption.88}
+\contentsline {figure}{\numberline {51}{\ignorespaces Context-Dependent Model Pipeline Prototype\relax }}{50}{figure.caption.93}
+\addvspace {10pt}
 \addvspace {10pt}

@@ -56,6 +56,13 @@
 {\sc T.~M. Gasser}, {\em Fundamental and special legal questions for autonomous
   vehicles}, in Autonomous Driving, Springer, 2016, pp.~523--551.
 
+\bibitem{lifecycle}
+{\sc J.~H. Gawron, G.~A. Keoleian, R.~D. De~Kleine, T.~J. Wallington, and H.~C.
+  Kim}, {\em Life cycle assessment of connected and automated vehicles: Sensing
+  and computing subsystem and vehicle level effects}, Environmental Science \&
+  Technology, 52 (2018), pp.~3249--3256.
+\newblock PMID: 29446302.
+
 \bibitem{Geiger2012CVPR}
 {\sc A.~Geiger, P.~Lenz, and R.~Urtasun}, {\em Are we ready for autonomous
   driving? the kitti vision benchmark suite}, in Conference on Computer Vision
@@ -80,6 +87,11 @@
 {\sc J.~Ku, A.~Harakeh, and S.~L. Waslander}, {\em In defense of classical
   image processing: Fast depth completion on the {CPU}}, CoRR, abs/1802.00036
   (2018).
+
+\bibitem{ku2017joint}
+{\sc J.~Ku, M.~Mozifian, J.~Lee, A.~Harakeh, and S.~Waslander}, {\em Joint 3d
+  proposal generation and object detection from view aggregation}, arXiv
+  preprint arXiv:1712.02294,  (2017).
 
 \bibitem{law2001law}
 {\sc P.~Law}, {\em Law 106-398,“floyd d}, Spence National Defense
@@ -198,6 +210,12 @@
   image features for object recognition}, in Workshop on Defining and Solving
   Realistic Perception Problems in Personal Robotics at the IEEE/RSJ Int. Conf.
   on Intelligent Robots and Systems (IROS), vol.~44, 2010.
+
+\bibitem{stephens2016estimated}
+{\sc T.~Stephens, J.~Gonder, Y.~Chen, Z.~Lin, C.~Liu, and D.~Gohlke}, {\em
+  Estimated bounds and important factors for fuel use and consumer costs of
+  connected and automated vehicles}, tech. rep., National Renewable Energy
+  Lab.(NREL), Golden, CO (United States), 2016.
 
 \bibitem{tachet2016revisiting}
 {\sc R.~Tachet, P.~Santi, S.~Sobolevsky, L.~I. Reyes-Castro, E.~Frazzoli,
