@@ -1,6 +1,6 @@
 # Introduction
 
-This is an unofficial inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in TensorFlow by [@qianguih]. 
+This is an unofficial inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in TensorFlow by [@qianguih]. Original repository is [here](https://github.com/qianguih/voxelnet/)
 A large part of this project is based on the work [here](https://github.com/jeasinema/VoxelNet-tensorflow) by [@jeasinema](https://github.com/jeasinema).
 
 # Dependencies
