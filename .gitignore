@@ -29,6 +29,8 @@ machine.*
 *.swp
 *.txt
 /predictions
+/repo
+.svn
 checkpoint*
 # OS generated files #
 ######################
